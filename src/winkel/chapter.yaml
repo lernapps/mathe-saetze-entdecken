@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Winkelsätze und der Satz des Thales
+summary: Winkel an Geraden und im Dreieck berechnen, Sehne, Sekante und Tangente unterscheiden und den Satz des Thales begründen.
+pages: [recap, thales]

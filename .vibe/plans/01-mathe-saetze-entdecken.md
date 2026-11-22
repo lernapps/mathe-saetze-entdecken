@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: {}
+failedChecks: { accessible: 1, app-content-guide: 1 }
 ---
 
 # Plan: mathe-saetze-entdecken, first version
@@ -37,7 +37,8 @@ Lernende der Stufen 7-8 entdecken beim Ziehen an Figuren Sätze der ebenen Geome
 - Archetyp `explainer`: Lernende brauchen Erklärung, Zugmodus-Bilder und Übungen dazwischen. `quiz` zu knapp (kein Erklärteil), `interactive` ist kein Spiel/Simulation von eigenem Modell. Zugmodus als Vue-Komponente mit statischer Form zuerst.
 - Strang `mathematik/geometrie`, Format 2 (aus Issue #430).
 - Quellen der Entscheidungen: Issue #430 (Auftrag des Orchestrators), nicht ein Interview. Ziel, Zielgruppe, Kapitel stehen im Issue.
-
+- `scope` in `src/app.yaml` und auf jeder Seite: ja, weil die Begründung je Seite als `open-task` gebaut wird (der Tutor beurteilt sie nach dem Scope). Auch ohne das nützlich, um den Tutor im Strang zu halten.
+- Komponentendateien liegen flach in `src/components/` (Skill), nicht im Unterordner; der Content-Guide wird angepasst.
 
 ## Notes
 
@@ -210,16 +211,16 @@ page, which a link. -->
 
 - [x] Load skill `lernapps-cli`. Create the app as its section "Create" says:
       `npx --no -- lernapps create --archetype explainer`.
-- [ ] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
+- [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
-- [ ] Load skill `lernapps-explainer`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer`.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite Satz des Thales (Kapitel 2) mit Komponente Zugmodus (Tastatur, nojs-Form, Textalternative), Zyklus entdecken→Vermutung→Warum→Begründung, ≥4 Aufgaben mit Rückmeldung; Recap-Seite K2 als Stub
+- [x] Musterseite Satz des Thales (Kapitel 2) mit Komponente Zugmodus (Tastatur, nojs-Form, Textalternative), Zyklus entdecken→Vermutung→Warum→Begründung, ≥4 Aufgaben mit Rückmeldung; Recap-Seite K2 als Stub
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A

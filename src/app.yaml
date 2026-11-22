@@ -1,10 +1,19 @@
 # yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 format: 2
-# The strand of the learning map the app stays in, <subject>/<strand> (e.g. mathematik/stochastik); then each page
-# names its competencies. none: the app is on no strand, and no page names competencies. A unit app across the strands
-# of a subject whose map allows it names subject: <subject> (e.g. franzoesisch) instead of strand.
-strand: none
-title: Platzhalter
-intro: Dieses Kapitel hält den Platz frei, bis der geplante Inhalt da ist.
+strand: mathematik/geometrie
+title: "Sätze entdecken und begründen: Vierecke, Winkel, Dreiecke und Kreise"
+intro: |
+  Du ziehst an Figuren und beobachtest, was gleich bleibt. Daraus wird eine Vermutung, dann ein Satz mit einer
+  Begründung. Für Klasse 7 und 8.
 languages: [de]
-chapters: [thema]
+scope:
+  text: |
+    Sätze der ebenen Geometrie in Klasse 7 und 8: das Haus der Vierecke, Winkelsätze und der Winkelsummensatz,
+    Sehne, Sekante und Tangente, der Satz des Thales, die Konstruktion von Dreiecken, die Kongruenzsätze und die
+    besonderen Linien im Dreieck mit Um- und Inkreis. Jede Seite folgt dem Weg: ziehen und beobachten, vermuten,
+    begründen mit bekannten Sätzen, üben, in eigenen Worten begründen.
+  out:
+    - Ähnlichkeit, Satz des Pythagoras und Trigonometrie
+    - Zeichnen und Abbilden als Grundlage (nur kurz wiederholt)
+    - Seitenhalbierende und Schwerpunkt
+chapters: [winkel]

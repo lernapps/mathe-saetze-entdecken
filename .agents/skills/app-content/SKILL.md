@@ -28,7 +28,7 @@ Wörter der Karte (Haus der Vierecke, Winkelsätze, Sehne, Sekante, Tangente, Sa
 
 ## Exercise patterns
 
-- Zugmodus (Komponente `Zugmodus`, Datei `src/components/Zugmodus/`): ziehbare Figur, Messwerte. Tastatur: Pfeiltasten bewegen, Tab wechselt den Punkt; `nojs`-Form mit drei Stellungen; Textalternative sagt, was gleich bleibt; `aria-live` für den Messwert. Zeigt nie die Antwort. Je Seite eine Konfiguration (Punkte, Messgrößen).
+- Zugmodus (Komponente `Zugmodus`, Datei `src/components/Zugmodus.vue`, `Zugmodus.ts`): ziehbare Figur, Messwerte. Tastatur: Pfeiltasten bewegen, Tab wechselt den Punkt; `nojs`-Form mit drei Stellungen; Textalternative sagt, was gleich bleibt; `aria-live` für den Messwert. Zeigt nie die Antwort. Je Seite eine Konfiguration (Punkte, Messgrößen).
 - Wahr/Falsch mit Begründung, Zuordnen (Viereck ↔ Eigenschaft, Daten `src/data/viereck-eigenschaften.yaml`), Ordnen (nur feste Reihenfolge, z. B. Konstruktionsschritte), Einfach-/Mehrfachwahl mit begründeten Falschoptionen (Kongruenzsatz: SSS, SWS, WSW, SsW, keiner).
 - `generated` Winkelaufgaben (Mistakes: Nebenwinkel statt Scheitelwinkel, Summe 90° statt 180°), `generated` Eindeutigkeit (0/1/2 Lösungen, nie unsinnige Größen).
 - Zirkelzeichnen wird nicht geprüft: Konstruktion über Ordnen der Schritte und Komponente `Konstruktion`.
@@ -49,3 +49,8 @@ Eigene Herleitungen und eigene Aufgaben; Lernlandkarte Mathematik (lernapps.net)
 3. Zugmodus-Konfiguration und Aufgaben nach den Mustern; mindestens 3 Aufgaben je Baustein, die erste ohne Vorwissen lösbar.
 4. 1 bis 3 ihrer Übungen in `selfAssessment` aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt.
 5. `npx --no -- lernapps check`, Commit.
+
+## Rules learned from mistakes
+
+- Formeln: `\angle` ist nicht erlaubt, `\text{Winkel } MCA` benutzen. Lange Formeln in zwei Zeilen teilen (360 px).
+- Mit `scope` in `src/app.yaml` braucht jede Seite, auch Recap-Seiten, ein `scope`.

@@ -1,0 +1,208 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Der Satz des Thales
+description: "Einen Punkt auf dem Halbkreis ziehen, den rechten Winkel entdecken und begründen, warum er immer entsteht."
+competencies: [satz-des-thales]
+scope: |
+  Der Satz des Thales: Liegt der Punkt C auf dem Kreis über dem Durchmesser AB, dann hat das Dreieck ABC bei C einen
+  rechten Winkel. Entdeckt wird er im Zugmodus: C wandert auf dem Halbkreis, die Winkel bei A, B und C werden
+  gemessen, der Winkel bei C bleibt 90°. Begründet wird er mit zwei gleichschenkligen Dreiecken (Mittelpunkt M mit
+  MA = MB = MC, gleiche Basiswinkel α und β) und dem Winkelsummensatz: α + β + γ = 180° mit γ = α + β, also
+  2γ = 180° und γ = 90°. Aufgaben: Winkelsumme, welcher Winkel gleich bleibt, Außenpunkt-Irrtum, β aus α berechnen,
+  Konstruktionsschritte ordnen, Begründung in eigenen Worten.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: |
+          Du kannst gleich erklären, warum ein Winkel am Kreis immer 90° groß ist. Du brauchst dafür die Winkelsumme
+          im Dreieck.
+      - type: text
+        text: |
+          **Selin:** Der Teich im Schulgarten ist rund. Der Weg *AB* geht quer durch die Mitte.
+
+          **Piet:** Wir spannen von *A* und *B* je eine Schnur zu einem Pfosten *C* am Teichrand.
+
+          **Selin:** Wo muss *C* stehen, damit die Ecke bei *C* ein rechter Winkel wird?
+      - type: single-choice
+        id: winkelsumme-wiederholen
+        text: Wie groß ist die Summe der drei Winkel in einem Dreieck?
+        options:
+          - text: 180°
+            correct: true
+            info: Das gilt für jedes Dreieck, auch für das Dreieck aus den Schnüren und dem Weg.
+          - text: 90°
+            correct: false
+            info: 90° ist ein rechter Winkel, nicht die Summe aller drei Winkel.
+          - text: 360°
+            correct: false
+            info: 360° ist die Winkelsumme im Viereck, im Dreieck sind es 180°.
+        explanation: Die Winkel eines Dreiecks ergeben immer 180°.
+        links:
+          - title: Innenwinkelsumme (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Innenwinkelsumme"
+  - type: section
+    id: entdecken
+    title: Am Halbkreis ziehen
+    blocks:
+      - type: text
+        text: |
+          Der Weg *AB* ist der Durchmesser des Kreises. Ziehe den Punkt *C* auf dem Halbkreis. Mit der Maus oder
+          dem Finger ziehst du den markierten Punkt *C*. Mit der Tastatur wählst du den Punkt mit der Tabulatortaste und
+          bewegst ihn mit den Pfeiltasten. Beobachte die drei Winkel *α*, *β* und *γ*.
+      - type: vue-component
+        id: zugmodus-thales
+        component: Zugmodus
+        props:
+          handle: "Punkt C auf dem Halbkreis, mit den Pfeiltasten ziehen"
+          position: "Winkel bei A {α}°, bei B {β}°, bei C {γ}°"
+          measure: "α = {α}°, β = {β}°, γ = {γ}°"
+          reset: Zurück zum Start
+        nojs: |
+          Ein Halbkreis über dem Durchmesser *AB*, darauf der Punkt *C*. Drei Stellungen von *C*, gemessen am Dreieck
+          *ABC*: Steht *C* nah bei *B*, ist α = 15°, β = 75° und γ = 90°. Steht *C* oben in der Mitte, ist α = 45°,
+          β = 45° und γ = 90°. Steht *C* nah bei *A*, ist α = 75°, β = 15° und γ = 90°. Die Winkel bei *A* und *B*
+          ändern sich, der Winkel bei *C* nicht.
+  - type: section
+    id: vermutung
+    title: Was bleibt gleich?
+    blocks:
+      - type: single-choice
+        id: welcher-winkel
+        text: Welcher Winkel bleibt gleich groß, wenn du C auf dem Halbkreis ziehst?
+        options:
+          - text: α, der Winkel bei A
+            correct: false
+            info: α wird beim Ziehen größer, wenn C zu A wandert, und kleiner, wenn C zu B wandert.
+          - text: β, der Winkel bei B
+            correct: false
+            info: β ändert sich entgegengesetzt zu α. Es bleibt nicht gleich.
+          - text: γ, der Winkel bei C
+            correct: true
+            info: Die Messung zeigt an jeder Stelle denselben Wert, 90°.
+        explanation: Beim Ziehen ändern sich α und β, γ bleibt 90°. Das ist erst eine Vermutung. Gleich begründest du sie.
+        links:
+          - title: Satz des Thales (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Satz_des_Thales"
+  - type: section
+    id: warum
+    title: Warum ist das so?
+    blocks:
+      - type: text
+        text: |
+          Messen zeigt dir nur einzelne Stellungen. Ein Beweis gilt für jede. Zeichne den Radius von *M*, der Mitte
+          des Kreises, nach *C*. Dann sind *MA*, *MB* und *MC* alle gleich lang, nämlich so lang wie der Radius *r*.
+      - type: figure
+        image: images/thales-beweis.svg
+        source: eigene Zeichnung
+        licence: CC0-1.0
+        alt: Ein Halbkreis über dem Durchmesser AB mit Mittelpunkt M, darauf der Punkt C. Die Strecken MA, MB und MC sind gleich lang und mit r beschriftet. In den beiden Dreiecken AMC und MBC sind die Basiswinkel mit α und β beschriftet.
+        caption: Zwei gleichschenklige Dreiecke teilen das Dreieck ABC. Schau auf die Winkel bei A und C im linken Dreieck und bei B und C im rechten.
+      - type: text
+        text: "Der Beweis in vier Schritten:"
+      - type: formula
+        formula: '\text{1. } MA = MC \Rightarrow \text{Winkel } MCA = \alpha'
+      - type: formula
+        formula: '\text{2. } MB = MC \Rightarrow \text{Winkel } MCB = \beta'
+      - type: formula
+        formula: '\text{3. } \gamma = \alpha + \beta'
+      - type: formula
+        formula: '\text{4. } \alpha + \beta + \gamma = 180^\circ'
+      - type: formula
+        formula: '\Rightarrow 2\gamma = 180^\circ \Rightarrow \gamma = 90^\circ'
+      - type: text
+        text: |
+          Schritt 1 und 2: In einem gleichschenkligen Dreieck sind die Winkel an der Basis gleich. Schritt 3: Der Winkel
+          bei *C* besteht aus den beiden kleinen Winkeln. Schritt 4: Die Winkelsumme im Dreieck *ABC* ist 180°.
+  - type: section
+    id: merke
+    title: Merke
+    blocks:
+      - type: definition
+        term: Satz des Thales
+        explanation: Liegt der Punkt *C* auf dem Kreis über dem Durchmesser *AB*, dann hat das Dreieck *ABC* bei *C* einen rechten Winkel.
+      - type: note
+        title: Achtung
+        blocks:
+          - type: text
+            text: Der Satz gilt nur für Punkte auf dem Kreis. Liegt *C* innerhalb oder außerhalb des Kreises, ist der Winkel bei *C* nicht 90°.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: true-false
+        id: innerhalb
+        text: Der Pfosten C steht im Inneren des Teichs, nicht am Rand. Der Winkel bei C ist trotzdem 90°.
+        answer: false
+        explanation: Der Winkel bei C ist nur 90°, wenn C auf dem Kreis liegt. Im Inneren des Kreises ist er größer.
+        links:
+          - title: Satz des Thales (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Satz_des_Thales"
+      - type: generated
+        id: beta-berechnen
+        given:
+          alpha: { oneOf: [20, 25, 30, 35, 40, 50, 55, 60, 65, 70] }
+        task:
+          text: "Der Punkt C liegt auf dem Halbkreis über AB. Im Dreieck ABC ist α = {{alpha}}°. Wie groß ist β?"
+        answer: { value: "90 - alpha", compare: { number: { format: integer, unit: "°" } } }
+        mistakes:
+          - value: "180 - alpha"
+            message: "Du hast 180° minus α gerechnet. Der Winkel bei C ist 90° (Thales), also bleiben für α und β zusammen nur 90°."
+          - value: "alpha"
+            message: "β ist nur dann gleich α, wenn C genau über der Mitte steht."
+        hint: "Der Winkel bei C ist 90°. Die drei Winkel ergeben 180°."
+        steps:
+          - "Der Satz des Thales sagt: γ = 90°."
+          - "Die Winkelsumme ist 180°, also α + β = 180° − 90° = 90°."
+          - "β = 90° − {{alpha}}° = {{answer}}°."
+      - type: ordering
+        id: rechtwinkliges-dreieck
+        text: "Du sollst ein rechtwinkliges Dreieck mit dem Durchmesser AB als Seite konstruieren. Bringe die Schritte in die richtige Reihenfolge."
+        items:
+          - Zeichne die Strecke AB.
+          - Bestimme die Mitte M von AB.
+          - Zeichne den Kreis um M durch A und B.
+          - Wähle einen Punkt C auf dem Kreis.
+          - Verbinde C mit A und mit B.
+        explanation: Erst der Kreis, dann der Punkt auf ihm. Der Winkel bei C ist dann 90°, ohne Messen.
+        links:
+          - title: Satz des Thales (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Satz_des_Thales"
+      - type: single-choice
+        id: umkehrung-erkennen
+        text: Welche Begründung zeigt, dass der Winkel bei C im Halbkreis 90° ist?
+        options:
+          - text: Die Winkel bei A und B sind gleich, also ist der Winkel bei C ein rechter.
+            correct: false
+            info: α und β sind nur gleich groß, wenn C genau über der Mitte steht. Das gilt nicht für jeden Punkt.
+          - text: Mit M als Mitte sind MA, MB und MC gleich lang. Zwei gleichschenklige Dreiecke und die Winkelsumme geben γ = 90°.
+            correct: true
+            info: So geht der Beweis. Er gilt für jede Stellung von C.
+          - text: Ich habe den Winkel in drei Stellungen gemessen, immer 90°.
+            correct: false
+            info: Messen zeigt einzelne Fälle und stützt die Vermutung. Ein Beweis gilt für jeden Fall.
+        explanation: Ein Beweis gilt für jede Stellung von C.
+        links:
+          - title: Mathematischer Beweis (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Mathematischer_Beweis"
+  - type: section
+    id: begruendung
+    title: Begründe in eigenen Worten
+    blocks:
+      - type: open-task
+        id: thales-begruenden
+        task: Erkläre in zwei bis vier Sätzen, warum der Winkel bei C im Halbkreis immer 90° groß ist.
+        points:
+          - text: Mit dem Mittelpunkt M sind MA, MB und MC gleich lang, so entstehen zwei gleichschenklige Dreiecke.
+            source: /winkel/thales/#warum
+          - text: In jedem gleichschenkligen Dreieck sind die Basiswinkel gleich, der Winkel bei C ist α + β.
+            source: /winkel/thales/#warum
+          - text: Mit der Winkelsumme 180° folgt 2γ = 180°, also γ = 90°.
+            source: /winkel/thales/#warum
+          - text: Ganze Sätze mit einer Begründung (weil …, darum …).
+            kind: form
+        solution: |
+          Ich zeichne den Mittelpunkt M des Kreises. Dann sind MA, MB und MC gleich lang, es entstehen zwei
+          gleichschenklige Dreiecke. Darin sind die Basiswinkel gleich: der Winkel bei C ist α plus β. Die
+          Winkelsumme im Dreieck ABC ist 180°, also 2 · γ = 180° und γ = 90°.

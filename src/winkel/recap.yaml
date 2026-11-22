@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+recap: [mathematik/winkel-messen, mathematik/grundfiguren-eben, mathematik/konstruktionen]
+scope: |
+  Wiederholung ohne Aufgaben: Winkel messen und zeichnen, ebene Grundfiguren (Dreieck, Kreis, Mittelpunkt, Radius) und
+  das Zeichnen und Konstruieren mit Geodreieck und Zirkel, als Grundlage für die Winkelsätze und den Satz des Thales.
+blocks:
+  - type: text
+    text: |
+      Kannst du das schon? Ich kann Winkel messen, zeichnen und nach ihrer Größe einteilen (Winkel messen und
+      zeichnen). Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben, zum Beispiel
+      Dreieck, Kreis, Mittelpunkt und Radius (Ebene Grundfiguren). Ich kann Figuren mit Geodreieck, Zirkel oder
+      Geometriesoftware zeichnen und konstruieren (Zeichnen und Konstruieren).
