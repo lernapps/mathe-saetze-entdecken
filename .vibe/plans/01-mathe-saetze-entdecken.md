@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: plan
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -110,9 +110,10 @@ Quellen geöffnet: Karte mathematik.json (lernapps.net). Hessen-Kerncurriculum u
       off), and which misconception the feedback catches.
 - [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
       elements", never a silent "1–20"), the languages.
-- [ ] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
+- [x] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
       approach, the scope, every "(guess)", the sources and what is unchecked, the archetype and its reason. Stop and
       wait. Changes: change them, then ask again.
+      Creator: Recherche freigegeben (Orchestrator in Vertretung)
 
 ### Answers
 
@@ -150,10 +151,10 @@ Quellen geöffnet: Karte mathematik.json (lernapps.net). Hessen-Kerncurriculum u
 
 ### Tasks
 
-- [ ] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
+- [x] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
       "Content method".
-- [ ] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
-- [ ] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
+- [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
+- [x] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
       opening task, the change of activity, the reward, the story.
 - [ ] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
@@ -172,6 +173,27 @@ checks and what it cannot; how a later agent adds a chapter. It becomes the cont
 <!-- An explainer: per figure, model and component its learning action in two to four sentences
 (`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
 page, which a link. -->
+
+**Gemeinsamer Zyklus jeder Satz-Seite** (Abschnittsids überall gleich): `einstieg` (Ziel in einem Satz, erste leichte Aufgabe) · `entdecken` (Zugmodus) · `vermutung` (Aufgabe: was bleibt gleich?) · `warum` (Beweis aus bekannten Bausteinen) · `merke` · `uebung` (≥ 4 Aufgaben, steigend) · `begruendung` (freie Begründung in eigenen Worten, Selbstvergleich mit Musterbegründung; die App prüft sie nicht). Kapitel enden mit einem Rückblick.
+**Zugmodus** = Vue-Komponente `Zugmodus` (Grund: kein Block zeigt eine ziehbare Figur; `prefer-built-in-block`). Je Seite eine Figur-Konfiguration (Punkte, Messgrößen). Pflicht: (1) per Tastatur: Punkt fokussierbar, Pfeiltasten bewegen ihn, Tab wechselt den Punkt; (2) statische Form zuerst (`nojs`): SVG mit drei Stellungen nebeneinander und der Zahlenreihe; (3) Textalternative: sagt, was gleich bleibt (z. B. „Der Winkel bei C bleibt 90°.“) und in `aria-live` die aktuelle Messung; (4) Farbe nie allein (Beschriftung am Winkel); (5) Kontrast AA, 360 px. Er zeigt vor dem Ziehen die Aufgabe, nicht die Antwort (`explainer-figure-hides-answer`): die Messwerte erscheinen, die Aussage „bleibt gleich“ formuliert erst die Lernende in der Vermutung.
+**Konstruktion**: Zirkel/Geodreieck werden nicht geprüft. Offen gesagt: Konstruieren üben die Lernenden über (a) `ordering` der Konstruktionsschritte, (b) Komponente `Konstruktion`: Schritte am Bildschirm (Zirkelkreis um Punkt mit Radius, Gerade durch zwei Punkte), Prüfung am Ergebnis. Was fehlt: freies Zeichnen auf Papier.
+**Aufgabenmuster** (je Baustein ≥ 3 Aufgaben, die erste ohne Vorwissen lösbar):
+- true-false mit Begründung in der Rückmeldung (Haus der Vierecke: „Jedes Quadrat ist ein Rechteck“); matching (Viereck ↔ Eigenschaften); ordering (Beweisschritte, nur feste Reihenfolge); single-choice „Was folgt?“ mit begründeten Falschoptionen; `generated` Winkel berechnen (Winkelsatz, Winkelsumme, Thales: α aus β, Seed, Mistakes: Nebenwinkel statt Scheitelwinkel, 90° statt 180° Summe); `generated` Eindeutigkeit (Stücke gegeben, 0/1/2 Lösungen); multiple-choice Kongruenzsatz „SSS, SWS, WSW, SsW, keiner“ mit „SSA“ und „WWW“ als typische Fehler; Komponente Zugmodus-Aufgabe (ziehe den Punkt so, dass …).
+- Datendatei: `src/data/viereck-eigenschaften.yaml` (Viereck × Eigenschaft, einmal je Fakt; für Zuordnen/Haus). Sonst keine Daten.
+**Je Seite (Eröffnung · Wechsel · Belohnung · Story)**:
+- Alle Seiten: Story (Klasse 7-8): kurze Chat-Nachrichten zweier erfundener Jugendlicher, die im Schulgarten/Gestalten-Projekt etwas abstecken; nur wo sie etwas zeigt; Namen gemischt, keine Marken. Auf jeder Seite ein Auftrag aus dem Projekt, am Ende der nächste Schritt (guess: Story leicht, da Sätze der Geometrie im Zentrum stehen).
+- haus-der-vierecke: Eröffnung: Viereck ziehen, bis vier gleich lange Seiten; Wechsel: ziehen → zuordnen → begründen; Belohnung: eigenes Haus gebaut (Pfeile „ist ein“).
+- winkelsaetze: Eröffnung: Wechselwinkel ablesen; ziehen an Parallelen; Belohnung: Winkelsumme 180° begründet.
+- kreis-sehne-tangente: Eröffnung: Gerade ziehen, Schnittpunkte zählen; Tangente senkrecht zum Radius.
+- satz-des-thales (MUSTERSEITE): Eröffnung: Punkt C auf dem Halbkreis ziehen, Winkel bei C ablesen (leicht: C bei A fast); dann Vermutung, Warum (Radius-Dreiecke, Winkelsumme), Begründung.
+- dreieckskonstruktion: Eröffnung: drei Stücke vorgeben, Dreieck entsteht; Schritte sortieren; Eindeutigkeit.
+- kongruenz: Eröffnung: Stücke fest, Dreieck ziehen; Satz wählen; SSA-Gegenbeispiel.
+- linien-im-dreieck: Eröffnung: Ecke ziehen, Schnittpunkt bleibt; Treffpunkt dreier Orte, größter Kreis.
+**Musterseite: Satz des Thales.** Grund: Er hat den vollen Zyklus (entdecken → Vermutung → Warum → Begründung) und braucht beides: Zugmodus und Beweis mit Bausteinen von Seite 2 und 3 (Winkelsumme, gleichschenklig); Winkelsätze wäre einfacher, zeigt aber die Begründung kürzer. Thales ist tragender für die Sätze der Seiten danach. Voraussetzungen aus Winkelsätzen/Tangente werden für die Musterseite in der Sammel-Wiederholung angesprochen (guess: die Musterseite steht später an ihrer Stelle in Kapitel 2).
+**Tutor**: nichts Besonderes. Selbsteinschätzung: nicht geplant (guess).
+**Schreibweisen**: Winkel `90°` (geschütztes Leerzeichen nicht nötig bei °), Längen `3 cm`, Minus `−`, Winkel als *α*, Punkte *A*, *B*, *C*; Brüche gesetzt (kaum nötig).
+**Wie ein späterer Agent ein Kapitel ergänzt**: Zugmodus-Konfiguration je Seite, Zyklus, Aufgabenmuster, Datendatei, Ids im Content-Guide.
+
 
 ## Code
 
@@ -196,11 +218,17 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: pattern: the one page or screen that is the pattern for the others -->
+- [ ] Musterseite Satz des Thales (Kapitel 2) mit Komponente Zugmodus (Tastatur, nojs-Form, Textalternative), Zyklus entdecken→Vermutung→Warum→Begründung, ≥4 Aufgaben mit Rückmeldung; Recap-Seite K2 als Stub
+<!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-<!-- tasks: pages: the other pages or screens, after the pattern -->
+- [ ] Kapitel 1: Recap und Seite Haus der Vierecke (Datei viereck-eigenschaften, Zuordnen, Wahr/Falsch mit Begründung), Kapitelrückblick
+- [ ] Kapitel 2: Recap, Seiten Winkelsätze und Sehne/Sekante/Tangente (generated Winkelaufgaben mit Mistakes), Rückblick
+- [ ] Kapitel 3: Recap, Seite Dreieckskonstruktion mit Komponente Konstruktion und Eindeutigkeit
+- [ ] Kapitel 3: Seiten Kongruenz (Kongruenzsätze, SSA/WWW-Gegenbeispiel) und Besondere Linien im Dreieck (Um-/Inkreis), Rückblick
+- [ ] Startseite, Baustein→Seite-Liste im Content-Guide, Medienübersicht, Katalogtext-Entwurf
+<!-- tasks: pages (5 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
