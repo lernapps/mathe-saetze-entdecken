@@ -72,6 +72,8 @@ Wie Lernende dahin kommen (Herleitung) · Fehlvorstellung, die die Rückmeldung 
 Scope: drin: alle 7 Bausteine, alle vier Kongruenzsätze, Mittelsenkrechten, Winkelhalbierende, Höhen; Um- und Inkreis. Draußen: Ähnlichkeit, Pythagoras, Trigonometrie (#399); Zeichnen/Abbilden (#397); Seitenhalbierende/Schwerpunkt (nicht im Baustein, Karte: Mittelsenkrechten, Winkelhalbierende, Höhen). Sprache: Deutsch.
 Quellen geöffnet: Karte mathematik.json (lernapps.net). Hessen-Kerncurriculum und KMK nicht geöffnet: nicht geprüft; Karte gibt die Ordnung. Hinweis: Das Issue nennt `haus-der-vierecke` als Ausnahme (nur ein Baustein im Kapitel).
 
+Lernenden-Check der Musterseite (unabhängiger Prüfer, Klasse 7): gefunden und behoben: γ am Punkt C nicht markiert (jetzt in Figur), Anfasser sah aus wie Knopf (jetzt der Punkt selbst, fokussierbar), falsche r-Beschriftung im Beweisbild, M nicht im Zugmodus, Schritt 4 sprang zu 2γ (jetzt Schritt 5 und 6), Achtung-Box gab Wahr/Falsch-Antwort preis, Auftrag „Beobachte“ ohne Hinweis, Optionen der Begründungsfrage unterschiedlich lang. Offen/Laufzeit (nicht in dieser App behebbar): Hinweistext „Antworte zuerst: Wähle, tippe oder ordne alles zu“ bei Textfeld; Start bei zufälliger „Aufgabe Nr.“; Rückmeldung bei Wahr/Falsch allgemein („Lies dazu noch einmal“).
+
 ## Explore
 
 <!--

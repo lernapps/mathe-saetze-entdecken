@@ -27,6 +27,12 @@ const c = computed(() => ({
   y: 160 - 130 * Math.sin((t.value * Math.PI) / 180),
 }));
 
+// the label of γ inside the triangle, a little from C towards M
+const gamma = computed(() => ({
+  x: c.value.x + (160 - c.value.x) * 0.2 - 4,
+  y: c.value.y + (160 - c.value.y) * 0.2 + 12,
+}));
+
 function onKey(event: KeyboardEvent): void {
   const next = tForKey(t.value, event.key);
   if (next === undefined) return;
@@ -58,34 +64,37 @@ function resetPosition(): void {
       ref="svg"
       viewBox="0 0 320 190"
       class="zugmodus-figure"
-      aria-hidden="true"
       @pointermove="move"
       @pointerup="dragging = false"
       @pointercancel="dragging = false"
     >
-      <path d="M 30 160 A 130 130 0 0 1 290 160" class="zugmodus-circle" />
-      <line x1="30" y1="160" x2="290" y2="160" class="zugmodus-line" />
-      <polygon :points="`30,160 290,160 ${c.x},${c.y}`" class="zugmodus-triangle" />
-      <text x="14" y="182" class="zugmodus-label">A</text>
-      <text x="294" y="182" class="zugmodus-label">B</text>
-      <text :x="c.x + 8" :y="c.y - 8" class="zugmodus-label">C</text>
-      <text x="48" y="152" class="zugmodus-angle">α</text>
-      <text x="262" y="152" class="zugmodus-angle">β</text>
-      <circle :cx="c.x" :cy="c.y" r="22" class="zugmodus-hit" @pointerdown="down" />
+      <path aria-hidden="true" d="M 30 160 A 130 130 0 0 1 290 160" class="zugmodus-circle" />
+      <line aria-hidden="true" x1="30" y1="160" x2="290" y2="160" class="zugmodus-line" />
+      <polygon aria-hidden="true" :points="`30,160 290,160 ${c.x},${c.y}`" class="zugmodus-triangle" />
+      <circle aria-hidden="true" cx="160" cy="160" r="3" class="zugmodus-dot" />
+      <text aria-hidden="true" x="14" y="182" class="zugmodus-label">A</text>
+      <text aria-hidden="true" x="294" y="182" class="zugmodus-label">B</text>
+      <text aria-hidden="true" x="156" y="182" class="zugmodus-label">M</text>
+      <text aria-hidden="true" :x="c.x + 16" :y="c.y - 12" class="zugmodus-label">C</text>
+      <text aria-hidden="true" x="48" y="152" class="zugmodus-angle">α</text>
+      <text aria-hidden="true" x="262" y="152" class="zugmodus-angle">β</text>
+      <text aria-hidden="true" :x="gamma.x" :y="gamma.y" class="zugmodus-angle">γ</text>
+      <circle
+        :cx="c.x"
+        :cy="c.y"
+        r="14"
+        class="zugmodus-hit"
+        role="slider"
+        tabindex="0"
+        :aria-label="handle"
+        aria-valuemin="10"
+        aria-valuemax="170"
+        :aria-valuenow="t"
+        :aria-valuetext="fill(position, measured)"
+        @pointerdown="down"
+        @keydown="onKey"
+      />
     </svg>
-    <div
-      class="zugmodus-handle"
-      role="slider"
-      tabindex="0"
-      :aria-label="handle"
-      aria-valuemin="10"
-      aria-valuemax="170"
-      :aria-valuenow="t"
-      :aria-valuetext="fill(position, measured)"
-      @keydown="onKey"
-    >
-      {{ handle }}
-    </div>
     <p class="zugmodus-measure" aria-live="polite">{{ fill(measure, measured) }}</p>
     <button type="button" class="zugmodus-reset" @click="resetPosition">{{ reset }}</button>
   </div>
@@ -125,27 +134,21 @@ function resetPosition(): void {
   font-style: italic;
 }
 
+.zugmodus-dot {
+  fill: var(--page-text);
+}
+
+.zugmodus-hit:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 3px;
+}
+
 .zugmodus-hit {
   fill: var(--page-accent);
   fill-opacity: 0.35;
   stroke: var(--page-accent);
   stroke-width: 2;
   cursor: grab;
-}
-
-.zugmodus-handle {
-  display: inline-block;
-  min-height: 44px;
-  padding: 0.6rem 0.9rem;
-  border: 2px solid var(--page-accent);
-  border-radius: 0.4rem;
-  background: var(--page-surface);
-  color: var(--page-text);
-}
-
-.zugmodus-handle:focus-visible {
-  outline: 3px solid var(--page-accent);
-  outline-offset: 2px;
 }
 
 .zugmodus-measure {

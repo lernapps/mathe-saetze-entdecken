@@ -48,9 +48,9 @@ blocks:
     blocks:
       - type: text
         text: |
-          Der Weg *AB* ist der Durchmesser des Kreises. Ziehe den Punkt *C* auf dem Halbkreis. Mit der Maus oder
+          Der Weg *AB* ist der Durchmesser des Kreises, *M* ist seine Mitte. Ziehe den Punkt *C* auf dem Halbkreis. Mit der Maus oder
           dem Finger ziehst du den markierten Punkt *C*. Mit der Tastatur wählst du den Punkt mit der Tabulatortaste und
-          bewegst ihn mit den Pfeiltasten. Beobachte die drei Winkel *α*, *β* und *γ*.
+          bewegst ihn mit den Pfeiltasten. Stelle *C* nah an *A*, in die Mitte und nah an *B*. Lies jedes Mal die Winkel *α*, *β* und *γ* ab.
       - type: vue-component
         id: zugmodus-thales
         component: Zugmodus
@@ -58,7 +58,7 @@ blocks:
           handle: "Punkt C auf dem Halbkreis, mit den Pfeiltasten ziehen"
           position: "Winkel bei A {α}°, bei B {β}°, bei C {γ}°"
           measure: "α = {α}°, β = {β}°, γ = {γ}°"
-          reset: Zurück zum Start
+          reset: Punkt C zurück auf den Start
         nojs: |
           Ein Halbkreis über dem Durchmesser *AB*, darauf der Punkt *C*. Drei Stellungen von *C*, gemessen am Dreieck
           *ABC*: Steht *C* nah bei *B*, ist α = 15°, β = 75° und γ = 90°. Steht *C* oben in der Mitte, ist α = 45°,
@@ -91,16 +91,16 @@ blocks:
     blocks:
       - type: text
         text: |
-          Messen zeigt dir nur einzelne Stellungen. Ein Beweis gilt für jede. Zeichne den Radius von *M*, der Mitte
-          des Kreises, nach *C*. Dann sind *MA*, *MB* und *MC* alle gleich lang, nämlich so lang wie der Radius *r*.
+          Messen zeigt dir nur einzelne Stellungen. Ein Beweis gilt für jede. Ein Beweis erklärt mit Sätzen, die du schon hast, warum eine Vermutung immer stimmt. Im Bild
+          siehst du den Radius von *M*, der Mitte des Kreises, nach *C*. Dann sind *MA*, *MB* und *MC* alle gleich lang, nämlich so lang wie der Radius *r*.
       - type: figure
         image: images/thales-beweis.svg
         source: eigene Zeichnung
         licence: CC0-1.0
         alt: Ein Halbkreis über dem Durchmesser AB mit Mittelpunkt M, darauf der Punkt C. Die Strecken MA, MB und MC sind gleich lang und mit r beschriftet. In den beiden Dreiecken AMC und MBC sind die Basiswinkel mit α und β beschriftet.
-        caption: Zwei gleichschenklige Dreiecke teilen das Dreieck ABC. Schau auf die Winkel bei A und C im linken Dreieck und bei B und C im rechten.
+        caption: Zwei gleichschenklige Dreiecke teilen das Dreieck ABC. Im linken Dreieck AMC liegt α bei A und bei C, im rechten Dreieck MBC liegt β bei B und bei C.
       - type: text
-        text: "Der Beweis in vier Schritten:"
+        text: "Der Beweis in sechs Schritten:"
       - type: formula
         formula: '\text{1. } MA = MC \Rightarrow \text{Winkel } MCA = \alpha'
       - type: formula
@@ -110,11 +110,13 @@ blocks:
       - type: formula
         formula: '\text{4. } \alpha + \beta + \gamma = 180^\circ'
       - type: formula
-        formula: '\Rightarrow 2\gamma = 180^\circ \Rightarrow \gamma = 90^\circ'
+        formula: '\text{5. } \gamma + \gamma = 180^\circ \text{ wegen 3.}'
+      - type: formula
+        formula: '\text{6. } \gamma = 90^\circ'
       - type: text
         text: |
-          Schritt 1 und 2: In einem gleichschenkligen Dreieck sind die Winkel an der Basis gleich. Schritt 3: Der Winkel
-          bei *C* besteht aus den beiden kleinen Winkeln. Schritt 4: Die Winkelsumme im Dreieck *ABC* ist 180°.
+          In Schritt 1 und 2 sind die Basiswinkel gleich, weil die Dreiecke gleichschenklig sind. In Schritt 5 ersetzt du
+          α + β durch γ.
   - type: section
     id: merke
     title: Merke
@@ -126,16 +128,16 @@ blocks:
         title: Achtung
         blocks:
           - type: text
-            text: Der Satz gilt nur für Punkte auf dem Kreis. Liegt *C* innerhalb oder außerhalb des Kreises, ist der Winkel bei *C* nicht 90°.
+            text: Der Satz gilt nur, wenn *AB* der Durchmesser ist und *C* auf dem Kreis liegt.
   - type: section
     id: uebung
     title: Übung
     blocks:
       - type: true-false
-        id: innerhalb
-        text: Der Pfosten C steht im Inneren des Teichs, nicht am Rand. Der Winkel bei C ist trotzdem 90°.
+        id: nur-durchmesser
+        text: Der Satz des Thales gilt auch, wenn AB kein Durchmesser des Kreises ist, sondern eine kürzere Sehne.
         answer: false
-        explanation: Der Winkel bei C ist nur 90°, wenn C auf dem Kreis liegt. Im Inneren des Kreises ist er größer.
+        explanation: Der Beweis braucht, dass MA, MB und MC gleich lang sind. Das ist nur beim Durchmesser so.
         links:
           - title: Satz des Thales (Wikipedia)
             url: "https://de.wikipedia.org/wiki/Satz_des_Thales"
@@ -176,10 +178,10 @@ blocks:
           - text: Die Winkel bei A und B sind gleich, also ist der Winkel bei C ein rechter.
             correct: false
             info: α und β sind nur gleich groß, wenn C genau über der Mitte steht. Das gilt nicht für jeden Punkt.
-          - text: Mit M als Mitte sind MA, MB und MC gleich lang. Zwei gleichschenklige Dreiecke und die Winkelsumme geben γ = 90°.
+          - text: Mit M als Mitte sind MA, MB und MC gleich lang. Dann folgt aus der Winkelsumme γ = 90°.
             correct: true
             info: So geht der Beweis. Er gilt für jede Stellung von C.
-          - text: Ich habe den Winkel in drei Stellungen gemessen, immer 90°.
+          - text: Ich habe drei Stellungen gemessen, immer 90°, also gilt es immer.
             correct: false
             info: Messen zeigt einzelne Fälle und stützt die Vermutung. Ein Beweis gilt für jeden Fall.
         explanation: Ein Beweis gilt für jede Stellung von C.
