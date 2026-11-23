@@ -2,12 +2,147 @@
 title: Das brauchst du hier
 recap: [mathematik/winkel-messen, mathematik/grundfiguren-eben, mathematik/konstruktionen]
 scope: |
-  Wiederholung ohne Aufgaben: Winkel messen und zeichnen, ebene Grundfiguren (Dreieck, Kreis, Mittelpunkt, Radius) und
-  das Zeichnen und Konstruieren mit Geodreieck und Zirkel, als Grundlage für die Winkelsätze und den Satz des Thales.
+  Wiederholung ohne Aufgaben für das Kapitel „Winkelsätze und der Satz des Thales“. Winkel messen und zeichnen: Winkel,
+  Schenkel, Scheitel, spitzer, stumpfer und gestreckter Winkel, rechter Winkel als 90°. Ebene Grundfiguren: Dreieck, gleichschenkliges Dreieck
+  mit Basiswinkeln, Kreis mit Mittelpunkt, Radius und Durchmesser. Zeichnen und Konstruieren: parallel, senkrecht, Lot, Mitte
+  einer Strecke, Zirkel und Geodreieck. Dazu ein Selbsttest mit Rückmeldung je Baustein und die Checkliste.
 blocks:
   - type: text
     text: |
-      Kannst du das schon? Ich kann Winkel messen, zeichnen und nach ihrer Größe einteilen (Winkel messen und
-      zeichnen). Ich kann ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben, zum Beispiel
-      Dreieck, Kreis, Mittelpunkt und Radius (Ebene Grundfiguren). Ich kann Figuren mit Geodreieck, Zirkel oder
-      Geometriesoftware zeichnen und konstruieren (Zeichnen und Konstruieren).
+      **Das brauchst du für dieses Kapitel.** Du berechnest Winkel, arbeitest am Kreis und konstruierst. Dafür musst du drei
+      Dinge schon können: Winkel messen, die ebenen Grundfiguren und das Zeichnen mit Geodreieck und Zirkel. Lies die
+      Begriffe, mach die Kurztests und prüfe am Ende die Checkliste.
+  - type: section
+    id: winkel-messen
+    title: Winkel messen und zeichnen
+    blocks:
+      - type: definition
+        term: Winkel
+        explanation: "Ein Winkel entsteht, wenn zwei Strahlen von einem Punkt ausgehen. Der Punkt heißt Scheitel, die Strahlen heißen Schenkel. Du misst ihn in Grad (°). Beispiel: Zwei Schenkel, die sich wie ein aufgeklapptes Buch öffnen, bilden einen Winkel von 90°."
+      - type: definition
+        term: Spitzer Winkel
+        explanation: "Ein Winkel kleiner als 90°. Beispiel: 35°."
+      - type: definition
+        term: Stumpfer Winkel
+        explanation: "Ein Winkel zwischen 90° und 180°. Beispiel: 120°."
+      - type: definition
+        term: Gestreckter Winkel
+        explanation: "Ein Winkel von 180°: Die beiden Schenkel bilden eine gerade Linie. Beispiel: Beide Seiten einer Geraden an einem Punkt ergeben zusammen 180°."
+      - type: text
+        text: Ein **rechter Winkel** hat 90°, wie die Ecke eines Geodreiecks.
+      - type: vue-component
+        id: test-winkel
+        component: Kurztest
+        props:
+          question: Ein Winkel misst 120°. Was für ein Winkel ist das?
+          options:
+            - { text: "spitz", correct: false, info: "Spitz ist kleiner als 90°." }
+            - { text: "rechter Winkel", correct: false, info: "Ein rechter Winkel hat genau 90°." }
+            - { text: "stumpf", correct: true, info: "120° liegt zwischen 90° und 180°." }
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Ein Winkel misst 120°. Was für ein Winkel ist das? Spitz, rechter Winkel oder stumpf. Antwort: stumpf, denn
+          120° liegt zwischen 90° und 180°.
+      - type: text
+        text: "Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) nach."
+  - type: section
+    id: grundfiguren-eben
+    title: Ebene Grundfiguren
+    blocks:
+      - type: definition
+        term: Gleichschenkliges Dreieck
+        explanation: "Ein Dreieck mit zwei gleich langen Seiten, den Schenkeln. Die dritte Seite heißt Basis. Die beiden Winkel an der Basis sind die Basiswinkel, sie sind gleich groß. Beispiel: Schenkel 5 cm und 5 cm, Basis 6 cm, beide Basiswinkel 53°."
+      - type: definition
+        term: Kreis
+        explanation: "Alle Punkte, die von einem Punkt, dem Mittelpunkt M, gleich weit entfernt sind. Beispiel: Alle Punkte mit 4 cm Abstand von M bilden einen Kreis."
+      - type: definition
+        term: Radius
+        explanation: "Die Strecke vom Mittelpunkt zu einem Punkt auf dem Kreis, oder ihre Länge. Beispiel: Radius 4 cm."
+      - type: definition
+        term: Durchmesser
+        explanation: "Eine Strecke durch den Mittelpunkt von einem Punkt des Kreises zum gegenüberliegenden, doppelt so lang wie der Radius. Beispiel: Radius 4 cm, Durchmesser 8 cm."
+      - type: vue-component
+        id: test-kreis
+        component: Kurztest
+        props:
+          question: Ein Kreis hat den Radius 3 cm. Wie lang ist sein Durchmesser?
+          options:
+            - {
+                text: "1,5 cm",
+                correct: false,
+                info: "Das wäre die Hälfte des Radius. Der Durchmesser ist größer als der Radius.",
+              }
+            - { text: "6 cm", correct: true, info: "Der Durchmesser ist doppelt so lang wie der Radius: 2 · 3 cm." }
+            - {
+                text: "9 cm",
+                correct: false,
+                info: "Das ist das Dreifache des Radius. Der Durchmesser ist das Doppelte.",
+              }
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Ein Kreis hat den Radius 3 cm. Wie lang ist sein Durchmesser? 1,5 cm, 6 cm oder 9 cm. Antwort: 6 cm, denn der
+          Durchmesser ist doppelt so lang wie der Radius.
+      - type: vue-component
+        id: test-gleichschenklig
+        component: Kurztest
+        props:
+          question: In einem gleichschenkligen Dreieck ist ein Basiswinkel 55° groß. Wie groß ist der andere Basiswinkel?
+          options:
+            - { text: "35°", correct: false, info: "Die Basiswinkel sind gleich groß, nicht Ergänzungen zu 90°." }
+            - {
+                text: 55°,
+                correct: true,
+                info: "Die beiden Basiswinkel eines gleichschenkligen Dreiecks sind gleich groß.",
+              }
+            - { text: "125°", correct: false, info: "Dieser Wert ergänzt 55° zu 180°. Das gilt hier nicht." }
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: In einem gleichschenkligen Dreieck ist ein Basiswinkel 55° groß. Wie groß ist der andere Basiswinkel? 35°, 55°
+          oder 125°. Antwort: 55°, denn die Basiswinkel sind gleich groß.
+      - type: text
+        text: "Wenn du unsicher warst: Lies den Baustein **Ebene Grundfiguren** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/) nach."
+  - type: section
+    id: konstruktionen
+    title: Zeichnen und Konstruieren
+    blocks:
+      - type: text
+        text: Zwei Linien sind **parallel**, wenn sie überall denselben Abstand haben. Du zeichnest sie mit dem Geodreieck.
+      - type: definition
+        term: Senkrecht
+        explanation: "Zwei Linien stehen senkrecht aufeinander, wenn sie einen rechten Winkel bilden (90°). Beispiel: Die Seiten eines Rechtecks in einer Ecke."
+      - type: definition
+        term: Lot
+        explanation: "Die Senkrechte von einem Punkt auf eine Gerade. Beispiel: Du legst das Geodreieck so an die Gerade, dass seine Mittellinie durch den Punkt geht, und ziehst die Linie."
+      - type: definition
+        term: Mitte einer Strecke
+        explanation: "Der Punkt, der die Strecke in zwei gleich lange Teile teilt. Beispiel: Bei einer Strecke von 8 cm ist die Mitte 4 cm von jedem Ende entfernt."
+      - type: text
+        text: Mit dem **Zirkel** zeichnest du einen Kreis um einen Punkt mit einem Radius, den du vorher an einer Strecke abgegriffen hast.
+      - type: vue-component
+        id: test-mitte
+        component: Kurztest
+        props:
+          question: Die Strecke AB ist 10 cm lang. Wie weit ist ihre Mitte M von A entfernt?
+          options:
+            - { text: "5 cm", correct: true, info: "Die Mitte teilt die Strecke in zwei gleiche Teile: 10 cm : 2." }
+            - { text: "10 cm", correct: false, info: "So weit ist B von A entfernt, nicht die Mitte." }
+            - { text: "20 cm", correct: false, info: "Das ist doppelt so lang wie die ganze Strecke." }
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Die Strecke AB ist 10 cm lang. Wie weit ist ihre Mitte M von A entfernt? 5 cm, 10 cm oder 20 cm. Antwort: 5 cm,
+          denn die Mitte teilt die Strecke in zwei gleiche Teile.
+      - type: text
+        text: "Wenn du unsicher warst: Lies den Baustein **Zeichnen und Konstruieren** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/konstruktionen/) nach."
+  - type: section
+    id: bereit
+    title: Du bist bereit, wenn du …
+    blocks:
+      - type: text
+        text: |
+          - **Winkel messen und zeichnen:** Du kannst Winkel messen, zeichnen und nach ihrer Größe einteilen.
+          - **Ebene Grundfiguren:** Du kannst ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.
+          - **Zeichnen und Konstruieren:** Du kannst Figuren mit Geodreieck, Zirkel oder Geometriesoftware zeichnen und konstruieren.

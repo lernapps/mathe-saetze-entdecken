@@ -8,7 +8,7 @@ phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: { accessible: 1, app-content-guide: 1, checks-pass: 1 }
+failedChecks: { accessible: 1, app-content-guide: 1, checks-pass: 2 }
 ---
 
 # Plan: mathe-saetze-entdecken, first version
