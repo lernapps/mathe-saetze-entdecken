@@ -11,7 +11,7 @@ scope: |
 blocks:
   - type: section
     id: einstieg
-    title: Worum es geht
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
@@ -35,9 +35,6 @@ blocks:
             correct: false
             info: 20° wäre 90° − 70°. Hier geht es aber um eine Gerade, also um 180°.
         explanation: Nebenwinkel ergänzen sich zu 180°.
-        links:
-          - title: Nebenwinkel (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Nebenwinkel"
   - type: section
     id: entdecken
     title: An Parallelen ziehen
@@ -83,9 +80,6 @@ blocks:
             correct: true
             info: α und δ liegen nebeneinander auf einer Geraden, sie sind Nebenwinkel.
         explanation: Stufenwinkel und Wechselwinkel an Parallelen sind gleich, Nebenwinkel ergänzen sich zu 180°. Das ist erst eine Vermutung aus den Messungen.
-        links:
-          - title: Stufenwinkel und Wechselwinkel (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Stufenwinkel_und_Wechselwinkel"
   - type: section
     id: dreieck
     title: Im Dreieck ziehen
@@ -113,9 +107,6 @@ blocks:
         tolerance: 0
         unit: "°"
         explanation: Die drei Winkel ergeben immer 180°. Das ist der Winkelsummensatz. Gleich begründest du ihn.
-        links:
-          - title: Innenwinkelsumme (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Innenwinkelsumme"
   - type: section
     id: warum
     title: Warum ist die Summe 180°?
@@ -198,9 +189,6 @@ blocks:
         text: Ein Dreieck hat die Winkel 100°, 50° und 40°.
         answer: false
         explanation: Die Summe ist 190°. In einem Dreieck sind es immer 180°, so ein Dreieck gibt es nicht.
-        links:
-          - title: Innenwinkelsumme (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Innenwinkelsumme"
       - type: ordering
         id: winkelsumme-schritte
         text: Bringe die Schritte der Begründung des Winkelsummensatzes in die richtige Reihenfolge.
@@ -209,9 +197,6 @@ blocks:
           - Die beiden Winkel bei C neben γ sind gleich α und β (Wechselwinkel).
           - Die drei Winkel bei C liegen auf einer Geraden und ergeben 180°.
         explanation: Erst die Hilfslinie, dann die Winkel, am Ende die Gerade. So steht α + γ + β = 180°.
-        links:
-          - title: Innenwinkelsumme (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Innenwinkelsumme"
   - type: section
     id: begruendung
     title: Begründe in eigenen Worten

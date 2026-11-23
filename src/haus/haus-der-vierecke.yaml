@@ -14,7 +14,7 @@ scope: |
 blocks:
   - type: section
     id: einstieg
-    title: Worum es geht
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
@@ -39,16 +39,13 @@ blocks:
             correct: false
             info: Ein Rechteck hat in jeder Ecke einen rechten Winkel.
         explanation: Ein Rechteck hat vier rechte Winkel.
-        links:
-          - title: Rechteck (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Rechteck"
   - type: section
     id: entdecken
     title: Das Viereck ziehen
     blocks:
       - type: text
         text: |
-          Die Ecken *A* und *B* bleiben liegen. Du ziehst *C* und *D* auf dem Gitter, ein Kästchen ist 1 cm. Mit der
+          Die Ecken *A* und *B* bleiben liegen. Du ziehst *C* und *D* von Gitterpunkt zu Gitterpunkt, zwischen zwei Punkten liegt 1 cm. Mit der
           Tastatur wählst du eine Ecke mit der Tabulatortaste und bewegst sie mit den Pfeiltasten. Stelle der Reihe nach
           ein: zwei Paare paralleler Seiten, vier rechte Winkel, vier gleich lange Seiten, und dann alles zugleich.
           Lies jedes Mal unter dem Bild ab, was sich ändert.
@@ -78,9 +75,6 @@ blocks:
         text: Jedes Quadrat ist ein Rechteck.
         answer: true
         explanation: Wenn du vier rechte Winkel einstellst, ist die Figur ein Rechteck, auch bei vier gleich langen Seiten. Das ist erst eine Vermutung. Gleich begründest du sie.
-        links:
-          - title: Haus der Vierecke (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Viereck"
   - type: section
     id: warum
     title: Warum ist das so?
@@ -128,17 +122,11 @@ blocks:
         text: Jedes Rechteck ist ein Quadrat.
         answer: false
         explanation: Ein Rechteck mit den Seiten 5 cm und 3 cm hat vier rechte Winkel, aber nicht vier gleich lange Seiten.
-        links:
-          - title: Rechteck (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Rechteck"
       - type: true-false
         id: raute-ist-drachen
         text: Jede Raute ist ein Drachen.
         answer: true
         explanation: Eine Raute hat vier gleich lange Seiten, also auch zwei Paare benachbarter gleich langer Seiten.
-        links:
-          - title: Drachenviereck (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Drachenviereck"
       - type: multiple-choice
         id: immer-parallelogramm
         text: Welche Vierecke sind immer Parallelogramme?
@@ -159,9 +147,6 @@ blocks:
             correct: false
             info: Ein Trapez muss nur ein Paar paralleler Seiten haben, ein Parallelogramm hat immer zwei.
         explanation: Rechteck, Raute und Quadrat haben zwei Paare paralleler Seiten.
-        links:
-          - title: Parallelogramm (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Parallelogramm"
       - type: matching
         id: eigenschaft-zuordnen
         text: Ordne jedem Viereck die Beschreibung zu, die es genau kennzeichnet.
@@ -173,9 +158,6 @@ blocks:
           - left: Drachen
             right: zwei Paare benachbarter gleich langer Seiten
         explanation: Jede Beschreibung nennt, was dieses Viereck vom Parallelogramm oder Viereck unterscheidet.
-        links:
-          - title: Viereck (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Viereck"
       - type: generated
         id: achsen-zaehlen
         given:

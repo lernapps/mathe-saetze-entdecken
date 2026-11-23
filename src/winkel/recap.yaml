@@ -34,16 +34,19 @@ blocks:
         id: test-winkel
         component: Kurztest
         props:
-          question: Ein Winkel misst 120°. Was für ein Winkel ist das?
+          question: "Ein Winkel ist halb so groß wie ein gestreckter Winkel. Was für ein Winkel ist das?"
           options:
-            - { text: "spitz", correct: false, info: "Spitz ist kleiner als 90°." }
-            - { text: "rechter Winkel", correct: false, info: "Ein rechter Winkel hat genau 90°." }
-            - { text: "stumpf", correct: true, info: "120° liegt zwischen 90° und 180°." }
+            - {
+                text: "spitz",
+                correct: false,
+                info: "Spitz ist kleiner als 90°. Die Hälfte von 180° ist aber genau 90°.",
+              }
+            - { text: "rechter Winkel", correct: true, info: "180° : 2 = 90°, das ist ein rechter Winkel." }
+            - { text: "stumpf", correct: false, info: "Stumpf ist größer als 90°, die Hälfte von 180° ist es nicht." }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Ein Winkel misst 120°. Was für ein Winkel ist das? Spitz, rechter Winkel oder stumpf. Antwort: stumpf, denn
-          120° liegt zwischen 90° und 180°.
+          Kurztest: Ein Winkel ist halb so groß wie ein gestreckter Winkel. Was für ein Winkel ist das? Spitz, rechter Winkel oder stumpf. Antwort: rechter Winkel, denn 180° : 2 = 90°.
       - type: vue-component
         id: test-skala
         component: Kurztest
@@ -86,24 +89,19 @@ blocks:
         id: test-kreis
         component: Kurztest
         props:
-          question: Ein Kreis hat den Radius 3 cm. Wie lang ist sein Durchmesser?
+          question: "Ein Kreis hat den Durchmesser 14 cm. Wie lang ist sein Radius?"
           options:
             - {
-                text: "1,5 cm",
+                text: "28 cm",
                 correct: false,
-                info: "Das wäre die Hälfte des Radius. Der Durchmesser ist größer als der Radius.",
+                info: "Das wäre das Doppelte des Durchmessers. Der Radius ist die Hälfte.",
               }
-            - { text: "6 cm", correct: true, info: "Der Durchmesser ist doppelt so lang wie der Radius: 2 · 3 cm." }
-            - {
-                text: "9 cm",
-                correct: false,
-                info: "Das ist das Dreifache des Radius. Der Durchmesser ist das Doppelte.",
-              }
+            - { text: "7 cm", correct: true, info: "Der Radius ist halb so lang wie der Durchmesser: 14 cm : 2." }
+            - { text: "14 cm", correct: false, info: "So lang ist der Durchmesser, nicht der Radius." }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Ein Kreis hat den Radius 3 cm. Wie lang ist sein Durchmesser? 1,5 cm, 6 cm oder 9 cm. Antwort: 6 cm, denn der
-          Durchmesser ist doppelt so lang wie der Radius.
+          Kurztest: Ein Kreis hat den Durchmesser 14 cm. Wie lang ist sein Radius? 28 cm, 7 cm oder 14 cm. Antwort: 7 cm, denn der Radius ist die Hälfte des Durchmessers.
       - type: vue-component
         id: test-gleichschenklig
         component: Kurztest
@@ -145,16 +143,19 @@ blocks:
         id: test-mitte
         component: Kurztest
         props:
-          question: Die Strecke AB ist 10 cm lang. Wie weit ist ihre Mitte M von A entfernt?
+          question: "Die Strecke AB ist 13 cm lang. Wie weit ist ihre Mitte M von A entfernt?"
           options:
-            - { text: "5 cm", correct: true, info: "Die Mitte teilt die Strecke in zwei gleiche Teile: 10 cm : 2." }
-            - { text: "10 cm", correct: false, info: "So weit ist B von A entfernt, nicht die Mitte." }
-            - { text: "20 cm", correct: false, info: "Das ist doppelt so lang wie die ganze Strecke." }
+            - {
+                text: "6 cm",
+                correct: false,
+                info: "6 cm + 6 cm sind erst 12 cm. Die Mitte teilt 13 cm in zwei gleiche Teile.",
+              }
+            - { text: "6,5 cm", correct: true, info: "13 cm : 2 = 6,5 cm." }
+            - { text: "7 cm", correct: false, info: "7 cm + 7 cm sind 14 cm, das ist zu viel." }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Die Strecke AB ist 10 cm lang. Wie weit ist ihre Mitte M von A entfernt? 5 cm, 10 cm oder 20 cm. Antwort: 5 cm,
-          denn die Mitte teilt die Strecke in zwei gleiche Teile.
+          Kurztest: Die Strecke AB ist 13 cm lang. Wie weit ist ihre Mitte M von A entfernt? 6 cm, 6,5 cm oder 7 cm. Antwort: 6,5 cm, denn 13 cm : 2 = 6,5 cm.
       - type: vue-component
         id: test-lot
         component: Kurztest

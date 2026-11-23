@@ -13,7 +13,7 @@ scope: |
 blocks:
   - type: section
     id: einstieg
-    title: Worum es geht
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
@@ -37,16 +37,13 @@ blocks:
             correct: false
             info: 1 m + 2 m ist genau 3 m, die Latten liegen flach.
         explanation: Jede Seite muss kürzer sein als die beiden anderen zusammen.
-        links:
-          - title: Dreiecksungleichung (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Dreiecksungleichung"
   - type: section
     id: entdecken
     title: Stücke verändern
     blocks:
       - type: text
         text: |
-          Wähle die Stücke. Verschiebe den Regler und beobachte, wie viele verschiedene Dreiecke zu den Stücken passen.
+          Ein Dreieck hat die Ecken A, B, C, die Seiten a, b, c (a liegt A gegenüber) und die Winkel α, β, γ. S steht für eine Seite, W für einen Winkel: SWS heißt Seite, Winkel, Seite. Wähle die Stücke. Verschiebe den Regler und beobachte, wie viele verschiedene Dreiecke zu den Stücken passen.
           Beginne mit SSS und schiebe *c* von 1 cm bis 11 cm. Probiere dann die anderen Stücke. Bei „zwei Seiten und ein
           Winkel“ siehst du ein zweites Dreieck gestrichelt.
       - type: vue-component
@@ -102,9 +99,6 @@ blocks:
             correct: false
             info: 4 cm + 6 cm ist genau 10 cm, flach.
         explanation: c muss größer sein als der Unterschied und kleiner als die Summe der anderen Seiten.
-        links:
-          - title: Dreiecksungleichung (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Dreiecksungleichung"
       - type: single-choice
         id: ssa-vermuten
         text: Wie viele verschiedene Dreiecke passen zu b = 5 cm, α = 40° und a = 4 cm (a liegt α gegenüber)?
@@ -119,9 +113,6 @@ blocks:
             correct: true
             info: Der Kreis um C schneidet den Schenkel zweimal.
         explanation: Bei SSA gibt es manchmal zwei Lösungen.
-        links:
-          - title: Kongruenzsatz (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Kongruenzsatz"
   - type: section
     id: warum
     title: Warum ist das so?
@@ -174,9 +165,6 @@ blocks:
             correct: true
             info: WSW, 50° + 60° ist weniger als 180°.
         explanation: SSS und WSW legen hier ein Dreieck fest.
-        links:
-          - title: Kongruenzsatz (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Kongruenzsatz"
       - type: generated
         id: kleinste-seite
         given:
@@ -219,9 +207,6 @@ blocks:
           - Trage auf dem freien Schenkel von A aus die Länge b ab. Du erhältst C.
           - Verbinde C mit B.
         explanation: Erst die feste Seite, dann der Winkel, dann die zweite Seite.
-        links:
-          - title: Dreieckskonstruktion (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Dreieck#Konstruktion"
   - type: section
     id: begruendung
     title: Begründe in eigenen Worten

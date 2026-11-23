@@ -11,7 +11,7 @@ scope: |
 blocks:
   - type: section
     id: einstieg
-    title: Worum es geht
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
@@ -38,9 +38,6 @@ blocks:
             correct: false
             info: Eine Gerade ist gerade. Sie kann einen Kreis höchstens zweimal treffen.
         explanation: Null, ein oder zwei gemeinsame Punkte. Welche Lage welchen Namen hat, siehst du gleich.
-        links:
-          - title: Kreis (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Kreis"
   - type: section
     id: entdecken
     title: Die Gerade verschieben
@@ -81,9 +78,6 @@ blocks:
             correct: false
             info: Bei 5 cm gibt es keinen gemeinsamen Punkt, die Gerade liegt außerhalb.
         explanation: "Abstand gleich Radius: Die Gerade berührt den Kreis."
-        links:
-          - title: Tangente (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Tangente"
       - type: single-choice
         id: tangente-winkel
         text: Bei d = 4 cm zeigt die gestrichelte Strecke vom Mittelpunkt M zum Berührpunkt. Welchen Winkel bildet sie mit der Geraden?
@@ -98,9 +92,6 @@ blocks:
             correct: true
             info: Die Strecke steht senkrecht auf der Geraden, im Bild ein rechter Winkel.
         explanation: Die Tangente steht im Berührpunkt senkrecht auf dem Radius.
-        links:
-          - title: Tangente (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Tangente"
   - type: section
     id: warum
     title: Warum steht die Tangente senkrecht?
@@ -138,9 +129,6 @@ blocks:
           - left: Tangente
             right: Gerade mit genau einem gemeinsamen Punkt
         explanation: Sekante und Tangente sind Geraden, die Sehne eine Strecke.
-        links:
-          - title: Sekante (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Sekante"
       - type: single-choice
         id: lage-erkennen
         text: Ein Kreis hat den Radius 3 cm. Eine Gerade hat vom Mittelpunkt den Abstand 3 cm. Was ist die Gerade?
@@ -155,9 +143,6 @@ blocks:
             correct: false
             info: Eine Sehne ist eine Strecke, keine Gerade.
         explanation: "Abstand gleich Radius: Tangente."
-        links:
-          - title: Tangente (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Tangente"
       - type: generated
         id: laengste-sehne
         given:
@@ -181,9 +166,6 @@ blocks:
           - Lege das Geodreieck so an, dass es im Punkt P senkrecht zum Radius steht.
           - Zeichne die Gerade durch P. Sie ist die Tangente.
         explanation: Die Tangente steht in P senkrecht auf dem Radius, darum brauchst du erst den Radius.
-        links:
-          - title: Tangente (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Tangente"
   - type: section
     id: begruendung
     title: Begründe in eigenen Worten

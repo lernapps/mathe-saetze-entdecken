@@ -69,6 +69,8 @@ function choose(i: number): void {
       <g v-for="(s, k) in shapes" :key="k">
         <polygon :points="s.points" class="stuecke-shape" :class="{ 'stuecke-second': k === 1 }" />
         <circle :cx="s.c.x" :cy="s.c.y" r="4" class="stuecke-dot" />
+        <text :x="s.c.x + 8" :y="s.c.y - 6" class="stuecke-label">C</text>
+        <text :x="s.b.x + 6" :y="s.b.y + 14" class="stuecke-label">B</text>
       </g>
       <text x="14" y="182" class="stuecke-label">A</text>
     </svg>

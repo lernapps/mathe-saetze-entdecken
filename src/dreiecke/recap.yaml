@@ -54,16 +54,15 @@ blocks:
         id: test-winkel-messen
         component: Kurztest
         props:
-          question: Der Schenkel liegt auf der Null. Wo liest du an einem rechten Winkel ab?
+          question: "Der Nullstrich liegt auf einem Schenkel. Am anderen Schenkel liest du auf den zwei Skalen 65° und 115° ab. Der Winkel sieht spitz aus. Welcher Wert gehört zum Winkel?"
           options:
-            - { text: "45°", correct: false, info: "45° ist nur ein halber rechter Winkel." }
-            - { text: "90°", correct: true, info: "Ein rechter Winkel hat 90°." }
-            - { text: "180°", correct: false, info: "180° ist ein gestreckter Winkel, eine gerade Linie." }
+            - { text: "65°", correct: true, info: "Ein spitzer Winkel ist kleiner als 90°." }
+            - { text: "115°", correct: false, info: "115° wäre ein stumpfer Winkel, größer als 90°." }
+            - { text: "90°", correct: false, info: "90° steht auf keiner der beiden Skalen, die du abgelesen hast." }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Der erste Schenkel liegt auf der Null des Geodreiecks. Wo liest du an einem rechten Winkel ab? 45°, 90° oder 180°.
-          Antwort: 90°.
+          Kurztest: Der Nullstrich liegt auf einem Schenkel. Am anderen Schenkel liest du auf den zwei Skalen 65° und 115° ab. Der Winkel sieht spitz aus. Welcher Wert gehört zum Winkel? Antwort: 65°, denn ein spitzer Winkel ist kleiner als 90°.
       - type: vue-component
         id: test-skala
         component: Kurztest
@@ -125,28 +124,19 @@ blocks:
         id: test-spiegeln
         component: Kurztest
         props:
-          question: Ein Punkt liegt 2 cm links von der Spiegelachse. Wo liegt sein Bildpunkt?
+          question: "Ein Punkt hat 3 cm Abstand zur Spiegelachse. Wie weit sind der Punkt und sein Bildpunkt voneinander entfernt?"
           options:
             - {
-                text: "2 cm rechts der Achse",
-                correct: true,
-                info: "Der Bildpunkt hat denselben Abstand auf der anderen Seite.",
-              }
-            - {
-                text: "4 cm rechts der Achse",
+                text: "3 cm",
                 correct: false,
-                info: "Der Abstand bleibt gleich, er verdoppelt sich nicht.",
+                info: "Das ist nur der Abstand bis zur Achse. Der Bildpunkt liegt noch einmal so weit auf der anderen Seite.",
               }
-            - {
-                text: "2 cm links der Achse",
-                correct: false,
-                info: "Der Bildpunkt liegt auf der anderen Seite der Achse.",
-              }
+            - { text: "6 cm", correct: true, info: "3 cm bis zur Achse und 3 cm von der Achse zum Bildpunkt." }
+            - { text: "9 cm", correct: false, info: "Der Bildpunkt hat denselben Abstand, nicht den dreifachen." }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Ein Punkt liegt 2 cm links von der Spiegelachse. Wo liegt sein Bildpunkt? 2 cm rechts der Achse, 4 cm rechts oder
-          2 cm links. Antwort: 2 cm rechts der Achse, denn der Abstand bleibt gleich auf der anderen Seite.
+          Kurztest: Ein Punkt hat 3 cm Abstand zur Spiegelachse. Wie weit sind der Punkt und sein Bildpunkt voneinander entfernt? 3 cm, 6 cm oder 9 cm. Antwort: 6 cm, denn der Bildpunkt hat auf der anderen Seite denselben Abstand.
       - type: text
         text: "Wenn du unsicher warst: Lies den Baustein **Spiegeln, Verschieben, Drehen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/) nach."
   - type: section

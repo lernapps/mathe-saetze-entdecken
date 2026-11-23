@@ -14,7 +14,7 @@ scope: |
 blocks:
   - type: section
     id: einstieg
-    title: Worum es geht
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
@@ -32,9 +32,6 @@ blocks:
         tolerance: 0
         unit: cm
         explanation: Die Mitte teilt die Strecke in zwei gleiche Teile, 8 cm geteilt durch 2 ist 4 cm.
-        links:
-          - title: Mittelsenkrechte (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Mittelsenkrechte"
   - type: section
     id: umkreis
     title: Mittelsenkrechten ziehen
@@ -74,9 +71,6 @@ blocks:
             correct: false
             info: Bei einem rechten Winkel liegt U auf einer Seite, sonst innen oder außen.
         explanation: Darum gibt es einen Kreis um U durch A, B und C.
-        links:
-          - title: Umkreis (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Umkreis"
   - type: section
     id: warum
     title: Warum treffen sie sich in einem Punkt?
@@ -126,9 +120,6 @@ blocks:
             correct: false
             info: Dort wäre der Kreis an den anderen Seiten schnell am Rand.
         explanation: Die Winkelhalbierenden treffen sich im Mittelpunkt des Inkreises.
-        links:
-          - title: Inkreis (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Inkreis"
   - type: section
     id: hoehen
     title: Höhen ziehen
@@ -166,9 +157,6 @@ blocks:
             correct: false
             info: Die Messung zeigt 0 cm Abstand, H liegt auf jeder Höhe.
         explanation: Die drei Höhen treffen sich in einem Punkt, auch wenn dieser außerhalb des Dreiecks liegt.
-        links:
-          - title: Höhe (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Höhe_(Geometrie)"
   - type: section
     id: merke
     title: Merke
@@ -197,9 +185,6 @@ blocks:
           - Markiere den Schnittpunkt U der beiden Linien.
           - Zeichne den Kreis um U durch A.
         explanation: Zwei Mittelsenkrechten reichen für U. Dann bestimmt der Abstand zu A den Radius.
-        links:
-          - title: Umkreis (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Umkreis"
       - type: ordering
         id: inkreis-konstruieren
         text: Du sollst den Inkreis eines Dreiecks ABC konstruieren. Bringe die Schritte in die richtige Reihenfolge.
@@ -209,9 +194,6 @@ blocks:
           - Fälle von I das Lot auf die Seite AB. Der Fußpunkt F ist der Punkt, wo das Lot AB trifft.
           - Zeichne den Kreis um I durch F.
         explanation: I ist der Mittelpunkt, der Abstand IF ist der Radius.
-        links:
-          - title: Inkreis (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Inkreis"
       - type: matching
         id: linie-zuordnen
         text: Ordne jeder Linie ihre Eigenschaft zu.
@@ -223,17 +205,11 @@ blocks:
           - left: Höhe
             right: geht durch eine Ecke senkrecht zur gegenüberliegenden Seite
         explanation: Jede Linie ist durch ihre Lage zu Ecken, Seiten und Winkeln erklärt.
-        links:
-          - title: Dreieck (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Dreieck"
       - type: true-false
         id: umkreis-innen
         text: Der Mittelpunkt des Umkreises liegt in jedem Dreieck im Inneren.
         answer: false
         explanation: Bei einem Dreieck mit stumpfem Winkel liegt er außerhalb, bei einem rechten Winkel liegt er auf der Seite.
-        links:
-          - title: Umkreis (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Umkreis"
       - type: generated
         id: umkreisradius
         given:

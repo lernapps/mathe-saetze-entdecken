@@ -13,7 +13,7 @@ scope: |
 blocks:
   - type: section
     id: einstieg
-    title: Worum es geht
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
@@ -37,16 +37,13 @@ blocks:
             correct: false
             info: Man darf ein Dreieck verschieben, drehen und spiegeln, ohne dass es sich ändert.
         explanation: Deckungsgleiche Dreiecke stimmen in allen Seiten und Winkeln überein, nur die Lage darf verschieden sein.
-        links:
-          - title: Kongruenz (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Kongruenz_(Geometrie)"
   - type: section
     id: entdecken
     title: Stücke vergleichen
     blocks:
       - type: text
         text: |
-          Wähle gegebene Stücke und verschiebe den Regler. Die Anzeige zählt, wie viele verschiedene Dreiecke zu den Stücken
+          Wähle gegebene Stücke (S steht für eine Seite, W für einen Winkel, SWS heißt Seite, Winkel, Seite) und verschiebe den Regler. Die Anzeige zählt, wie viele verschiedene Dreiecke zu den Stücken
           passen. Zähle bei jeder Einstellung mit. Probiere SSS, SWS, WSW, SSA und WWW.
       - type: vue-component
         id: zug-stuecke-kongruenz
@@ -100,9 +97,6 @@ blocks:
             correct: false
             info: Es passen unendlich viele Dreiecke, jedes größere hat dieselben Winkel.
         explanation: SSS, SWS und WSW legen ein Dreieck fest. WWW nicht, und SSA nur manchmal.
-        links:
-          - title: Kongruenzsatz (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Kongruenzsatz"
   - type: section
     id: warum
     title: Warum gilt das?
@@ -149,17 +143,11 @@ blocks:
           - left: "α = 50°, β = 60°, γ = 70°"
             right: kein Kongruenzsatz
         explanation: Wichtig ist, wo der Winkel liegt. Bei drei Winkeln fehlt eine Seite.
-        links:
-          - title: Kongruenzsatz (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Kongruenzsatz"
       - type: true-false
         id: gleiche-winkel
         text: Zwei Dreiecke mit denselben drei Winkeln sind immer kongruent.
         answer: false
         explanation: Ein Dreieck lässt sich vergrößern, ohne dass sich die Winkel ändern. WWW ist kein Kongruenzsatz.
-        links:
-          - title: Kongruenzsatz (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Kongruenzsatz"
       - type: single-choice
         id: ssa-kleinere-seite
         text: Zwei Dreiecke stimmen in zwei Seiten und in einem Winkel überein. Der Winkel liegt der kürzeren der beiden Seiten gegenüber. Sind sie kongruent?
@@ -174,9 +162,6 @@ blocks:
             correct: false
             info: Es kann sein, dass die Dreiecke kongruent sind, es ist aber nicht sicher.
         explanation: Liegt der Winkel der kürzeren Seite gegenüber, ist das kein Kongruenzsatz.
-        links:
-          - title: Kongruenzsatz (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Kongruenzsatz"
       - type: generated
         id: winkel-kongruent
         given:

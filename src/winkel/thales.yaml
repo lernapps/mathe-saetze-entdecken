@@ -12,7 +12,7 @@ scope: |
 blocks:
   - type: section
     id: einstieg
-    title: Worum es geht
+    title: Was du hier lernst
     blocks:
       - type: text
         text: |
@@ -39,9 +39,6 @@ blocks:
             correct: false
             info: 360° ist die Winkelsumme im Viereck, im Dreieck sind es 180°.
         explanation: Die Winkel eines Dreiecks ergeben immer 180°.
-        links:
-          - title: Innenwinkelsumme (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Innenwinkelsumme"
   - type: section
     id: entdecken
     title: Am Halbkreis ziehen
@@ -82,9 +79,6 @@ blocks:
             correct: true
             info: Die Messung zeigt an jeder Stelle denselben Wert, 90°.
         explanation: Beim Ziehen ändern sich α und β, γ bleibt 90°. Das ist erst eine Vermutung. Gleich begründest du sie.
-        links:
-          - title: Satz des Thales (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Satz_des_Thales"
   - type: section
     id: warum
     title: Warum ist das so?
@@ -138,9 +132,6 @@ blocks:
         text: Der Satz des Thales gilt auch, wenn AB kein Durchmesser des Kreises ist, sondern eine kürzere Sehne.
         answer: false
         explanation: Der Beweis braucht, dass M auf AB liegt. Nur dann ist der Winkel bei C gleich α + β.
-        links:
-          - title: Satz des Thales (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Satz_des_Thales"
       - type: generated
         id: beta-berechnen
         given:
@@ -168,9 +159,6 @@ blocks:
           - Wähle einen Punkt C auf dem Kreis.
           - Verbinde C mit A und mit B.
         explanation: Erst der Kreis, dann der Punkt auf ihm. Der Winkel bei C ist dann 90°, ohne Messen.
-        links:
-          - title: Satz des Thales (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Satz_des_Thales"
       - type: single-choice
         id: beweis-erkennen
         text: Welche Begründung zeigt, dass der Winkel bei C im Halbkreis 90° ist?
@@ -185,9 +173,6 @@ blocks:
             correct: false
             info: Messen zeigt einzelne Fälle und stützt die Vermutung. Ein Beweis gilt für jeden Fall.
         explanation: Ein Beweis gilt für jede Stellung von C.
-        links:
-          - title: Mathematischer Beweis (Wikipedia)
-            url: "https://de.wikipedia.org/wiki/Mathematischer_Beweis"
   - type: section
     id: begruendung
     title: Begründe in eigenen Worten
