@@ -131,8 +131,8 @@ blocks:
         caption: Schau auf die drei Winkel bei C. Sie liegen nebeneinander auf der Geraden p.
       - type: text
         text: |
-          1. Der linke Winkel bei *C* ist ein Wechselwinkel zu α an *p* und *AB*, also gleich α.
-          2. Der rechte Winkel bei *C* ist ein Wechselwinkel zu β, also gleich β.
+          1. Die Gerade *AC* schneidet die Parallelen *p* und *AB*. Der linke Winkel bei *C* ist ein Wechselwinkel zu α, also gleich α.
+          2. Die Gerade *BC* schneidet sie ebenfalls. Der rechte Winkel bei *C* ist ein Wechselwinkel zu β, also gleich β.
           3. Die drei Winkel bei *C* liegen nebeneinander auf der Geraden *p*.
           4. Darum gilt α + γ + β = 180°.
   - type: section
@@ -146,6 +146,7 @@ blocks:
           - [Nebenwinkel, nebeneinander auf einer Geraden, ergeben zusammen 180°]
           - [Stufenwinkel, an der gleichen Stelle beider Geraden, gleich groß]
           - [Wechselwinkel, innen auf verschiedenen Seiten der schneidenden Geraden, gleich groß]
+          - [Scheitelwinkel, "gegenüber, wo sich zwei Geraden schneiden", "immer gleich groß"]
       - type: definition
         term: Winkelsummensatz
         explanation: In jedem Dreieck ergeben die drei Winkel zusammen 180°.
@@ -186,8 +187,8 @@ blocks:
         mistakes:
           - value: "a"
             message: "Das ist β selbst. Gesucht ist der Nebenwinkel von β, also 180° − β."
-          - value: "90 - a"
-            message: "Nebenwinkel ergeben 180°, nicht 90°."
+          - value: "360 - a"
+            message: "Nebenwinkel ergeben 180°, nicht 360°."
         hint: "Stufenwinkel an Parallelen sind gleich groß. Nebenwinkel ergeben zusammen 180°."
         steps:
           - "An Parallelen sind Stufenwinkel gleich: β = α = {{a}}°."
@@ -205,8 +206,7 @@ blocks:
         text: Bringe die Schritte der Begründung des Winkelsummensatzes in die richtige Reihenfolge.
         items:
           - Zeichne durch C die Parallele zu AB.
-          - Der linke Winkel bei C ist gleich α (Wechselwinkel).
-          - Der rechte Winkel bei C ist gleich β (Wechselwinkel).
+          - Die beiden Winkel bei C neben γ sind gleich α und β (Wechselwinkel).
           - Die drei Winkel bei C liegen auf einer Geraden und ergeben 180°.
         explanation: Erst die Hilfslinie, dann die Winkel, am Ende die Gerade. So steht α + γ + β = 180°.
         links:

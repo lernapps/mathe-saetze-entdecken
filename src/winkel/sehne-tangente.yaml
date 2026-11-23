@@ -47,21 +47,21 @@ blocks:
     blocks:
       - type: text
         text: |
-          Der Kreis hat den Radius 4 cm. Die Gerade liegt im Abstand *d* vom Mittelpunkt *M*. Verschiebe sie mit den
-          Pfeiltasten (Tabulatortaste zum Punkt rechts) oder mit der Maus. Stelle *d* auf 0 cm, 2 cm, 4 cm und 5 cm ein
+          Der Kreis hat den Radius 4 cm. Die Gerade liegt im Abstand *d* vom Mittelpunkt *M*. Verschiebe sie mit den
+          Pfeiltasten (Tabulatortaste zum Punkt rechts) oder mit der Maus. Stelle *d* auf 0 cm, 2 cm, 4 cm und 5 cm ein
           und lies jedes Mal die gemeinsamen Punkte ab.
       - type: vue-component
         id: zug-kreisgerade
         component: Kreisgerade
         props:
           handle: "Abstand der Geraden vom Mittelpunkt, mit den Pfeiltasten ändern"
-          position: "Abstand {d} cm, {n} gemeinsame Punkte"
-          measure: "Abstand d = {d} cm · gemeinsame Punkte: {n} · Strecke zwischen ihnen: {s} cm"
+          position: "Abstand {d} cm, {n} gemeinsame Punkte"
+          measure: "Abstand d = {d} cm · gemeinsame Punkte: {n} · Strecke zwischen ihnen: {s} cm"
           reset: Gerade zurück auf den Start
         nojs: |
-          Ein Kreis mit Radius 4 cm und eine waagerechte Gerade im Abstand *d* vom Mittelpunkt. Bei d = 0 cm gibt es zwei
-          gemeinsame Punkte, die Strecke zwischen ihnen ist 8 cm lang. Bei d = 2 cm sind es zwei Punkte, die Strecke ist
-          6,9 cm lang. Bei d = 4 cm gibt es genau einen gemeinsamen Punkt, die Gerade berührt den Kreis. Bei d = 5 cm gibt
+          Ein Kreis mit Radius 4 cm und eine waagerechte Gerade im Abstand *d* vom Mittelpunkt. Bei d = 0 cm gibt es zwei
+          gemeinsame Punkte, die Strecke zwischen ihnen ist 8 cm lang. Bei d = 2 cm sind es zwei Punkte, die Strecke ist
+          6,9 cm lang. Bei d = 4 cm gibt es genau einen gemeinsamen Punkt, die Gerade berührt den Kreis. Bei d = 5 cm gibt
           es keinen gemeinsamen Punkt.
   - type: section
     id: vermutung
@@ -71,22 +71,22 @@ blocks:
         id: wann-beruehrt
         text: Bei welchem Abstand d berührt die Gerade den Kreis in genau einem Punkt?
         options:
-          - text: d = 2 cm
+          - text: d = 2 cm
             correct: false
-            info: Bei 2 cm gibt es zwei gemeinsame Punkte, die Gerade läuft durch den Kreis.
-          - text: d = 4 cm
+            info: Bei 2 cm gibt es zwei gemeinsame Punkte, die Gerade läuft durch den Kreis.
+          - text: d = 4 cm
             correct: true
-            info: 4 cm ist der Radius. Dann berührt die Gerade den Kreis genau einmal.
-          - text: d = 5 cm
+            info: 4 cm ist der Radius. Dann berührt die Gerade den Kreis genau einmal.
+          - text: d = 5 cm
             correct: false
-            info: Bei 5 cm gibt es keinen gemeinsamen Punkt, die Gerade liegt außerhalb.
+            info: Bei 5 cm gibt es keinen gemeinsamen Punkt, die Gerade liegt außerhalb.
         explanation: "Abstand gleich Radius: Die Gerade berührt den Kreis."
         links:
           - title: Tangente (Wikipedia)
             url: "https://de.wikipedia.org/wiki/Tangente"
       - type: single-choice
         id: tangente-winkel
-        text: Bei d = 4 cm zeigt die gestrichelte Strecke vom Mittelpunkt M zum Berührpunkt. Welchen Winkel bildet sie mit der Geraden?
+        text: Bei d = 4 cm zeigt die gestrichelte Strecke vom Mittelpunkt M zum Berührpunkt. Welchen Winkel bildet sie mit der Geraden?
         options:
           - text: 45°
             correct: false
@@ -107,8 +107,8 @@ blocks:
     blocks:
       - type: text
         text: |
-          Angenommen, der Radius steht nicht senkrecht auf der Geraden. Dann kannst du den Berührpunkt an der Senkrechten
-          durch *M* spiegeln. Der Spiegelpunkt liegt auch auf dem Kreis und auf der Geraden. Dann gäbe es zwei gemeinsame
+          Angenommen, der Radius steht nicht senkrecht auf der Geraden. Dann kannst du den Berührpunkt am Lot von *M* auf
+          die Gerade spiegeln. Der Spiegelpunkt ist ein anderer Punkt. Der Spiegelpunkt liegt auch auf dem Kreis und auf der Geraden. Dann gäbe es zwei gemeinsame
           Punkte, und die Gerade wäre keine Tangente. Also muss der Radius senkrecht stehen.
   - type: section
     id: merke
@@ -143,11 +143,11 @@ blocks:
             url: "https://de.wikipedia.org/wiki/Sekante"
       - type: single-choice
         id: lage-erkennen
-        text: Ein Kreis hat den Radius 3 cm. Eine Gerade hat vom Mittelpunkt den Abstand 3 cm. Was ist die Gerade?
+        text: Ein Kreis hat den Radius 3 cm. Eine Gerade hat vom Mittelpunkt den Abstand 3 cm. Was ist die Gerade?
         options:
           - text: eine Sekante
             correct: false
-            info: Eine Sekante schneidet den Kreis zweimal, dann wäre der Abstand kleiner als 3 cm.
+            info: Eine Sekante schneidet den Kreis zweimal, dann wäre der Abstand kleiner als 3 cm.
           - text: eine Tangente
             correct: true
             info: Der Abstand ist so groß wie der Radius, die Gerade berührt den Kreis genau einmal.
@@ -163,7 +163,7 @@ blocks:
         given:
           r: { int: [2, 12] }
         task:
-          text: "Ein Kreis hat den Radius {{r}} cm. Wie lang ist seine längste Sehne? Gib die Länge in cm an."
+          text: "Ein Kreis hat den Radius {{r}} cm. Wie lang ist seine längste Sehne? Gib die Länge in cm an."
         answer: { value: "2 * r", compare: { number: { format: integer, unit: cm } } }
         mistakes:
           - value: "r"
@@ -171,7 +171,7 @@ blocks:
         hint: "Die längste Sehne geht durch den Mittelpunkt M."
         steps:
           - "Die längste Sehne ist der Durchmesser."
-          - "Durchmesser = 2 · Radius = 2 · {{r}} cm = {{answer}} cm."
+          - "Durchmesser = 2 · Radius = 2 · {{r}} cm = {{answer}} cm."
       - type: ordering
         id: tangente-zeichnen
         text: Du sollst die Tangente an einen Punkt P auf dem Kreis zeichnen. Bringe die Schritte in die richtige Reihenfolge.
@@ -192,7 +192,7 @@ blocks:
         id: tangente-begruenden
         task: Erkläre in zwei bis vier Sätzen, warum die Tangente im Berührpunkt senkrecht auf dem Radius steht.
         points:
-          - text: Stünde der Radius schief, könnte man den Berührpunkt an der Senkrechten durch M spiegeln.
+          - text: Stünde der Radius schief, ließe sich der Berührpunkt am Lot von M auf die Gerade spiegeln.
             source: /winkel/sehne-tangente/#warum
           - text: Der Spiegelpunkt läge auch auf dem Kreis und auf der Geraden, es gäbe zwei gemeinsame Punkte.
             source: /winkel/sehne-tangente/#warum
@@ -201,6 +201,6 @@ blocks:
           - text: Ganze Sätze mit einer Begründung (weil …, darum …).
             kind: form
         solution: |
-          Wenn der Radius nicht senkrecht auf der Geraden stünde, könnte ich den Berührpunkt an der Senkrechten durch M
+          Wenn der Radius nicht senkrecht auf der Geraden stünde, könnte ich den Berührpunkt am Lot von M auf die Gerade
           spiegeln. Der Spiegelpunkt läge auch auf dem Kreis und auf der Geraden. Dann hätten die Gerade und der Kreis
           zwei gemeinsame Punkte, aber eine Tangente hat nur einen. Darum steht der Radius senkrecht.

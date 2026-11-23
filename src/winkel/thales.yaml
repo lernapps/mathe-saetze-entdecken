@@ -7,7 +7,7 @@ scope: |
   rechten Winkel. Entdeckt wird er im Zugmodus: C wandert auf dem Halbkreis, die Winkel bei A, B und C werden
   gemessen, der Winkel bei C bleibt 90°. Begründet wird er mit zwei gleichschenkligen Dreiecken (Mittelpunkt M mit
   MA = MB = MC, gleiche Basiswinkel α und β) und dem Winkelsummensatz: α + β + γ = 180° mit γ = α + β, also
-  2γ = 180° und γ = 90°. Aufgaben: Winkelsumme, welcher Winkel gleich bleibt, Außenpunkt-Irrtum, β aus α berechnen,
+  γ + γ = 180° und γ = 90°. Aufgaben: Winkelsumme, welcher Winkel gleich bleibt, Außenpunkt-Irrtum, β aus α berechnen,
   Konstruktionsschritte ordnen, Begründung in eigenen Worten.
 blocks:
   - type: section
@@ -115,7 +115,7 @@ blocks:
         formula: '\text{6. } \gamma = 90^\circ'
       - type: text
         text: |
-          In Schritt 1 und 2 sind die Basiswinkel gleich, weil die Dreiecke gleichschenklig sind. In Schritt 5 ersetzt du
+          In Schritt 1 und 2 sind die Basiswinkel gleich, weil die Dreiecke gleichschenklig sind. In Schritt 3 liegt *M* auf *AB*, darum liegt der Strahl *CM* im Winkel bei *C*. In Schritt 5 ersetzt du
           α + β durch γ.
   - type: section
     id: merke
@@ -123,7 +123,7 @@ blocks:
     blocks:
       - type: definition
         term: Satz des Thales
-        explanation: Liegt der Punkt *C* auf dem Kreis über dem Durchmesser *AB*, dann hat das Dreieck *ABC* bei *C* einen rechten Winkel.
+        explanation: Liegt der Punkt *C* (nicht *A* oder *B*) auf dem Kreis über dem Durchmesser *AB*, dann hat das Dreieck *ABC* bei *C* einen rechten Winkel.
       - type: note
         title: Achtung
         blocks:
@@ -137,7 +137,7 @@ blocks:
         id: nur-durchmesser
         text: Der Satz des Thales gilt auch, wenn AB kein Durchmesser des Kreises ist, sondern eine kürzere Sehne.
         answer: false
-        explanation: Der Beweis braucht, dass MA, MB und MC gleich lang sind. Das ist nur beim Durchmesser so.
+        explanation: Der Beweis braucht, dass M auf AB liegt. Nur dann ist der Winkel bei C gleich α + β.
         links:
           - title: Satz des Thales (Wikipedia)
             url: "https://de.wikipedia.org/wiki/Satz_des_Thales"
@@ -172,7 +172,7 @@ blocks:
           - title: Satz des Thales (Wikipedia)
             url: "https://de.wikipedia.org/wiki/Satz_des_Thales"
       - type: single-choice
-        id: umkehrung-erkennen
+        id: beweis-erkennen
         text: Welche Begründung zeigt, dass der Winkel bei C im Halbkreis 90° ist?
         options:
           - text: Die Winkel bei A und B sind gleich, also ist der Winkel bei C ein rechter.
@@ -200,14 +200,14 @@ blocks:
             source: /winkel/thales/#warum
           - text: In jedem gleichschenkligen Dreieck sind die Basiswinkel gleich, der Winkel bei C ist α + β.
             source: /winkel/thales/#warum
-          - text: Mit der Winkelsumme 180° folgt 2γ = 180°, also γ = 90°.
+          - text: Mit der Winkelsumme 180° folgt γ + γ = 180°, also γ = 90°.
             source: /winkel/thales/#warum
           - text: Ganze Sätze mit einer Begründung (weil …, darum …).
             kind: form
         solution: |
           Ich zeichne den Mittelpunkt M des Kreises. Dann sind MA, MB und MC gleich lang, es entstehen zwei
           gleichschenklige Dreiecke. Darin sind die Basiswinkel gleich: der Winkel bei C ist α plus β. Die
-          Winkelsumme im Dreieck ABC ist 180°, also 2 · γ = 180° und γ = 90°.
+          Winkelsumme im Dreieck ABC ist 180°, also γ + γ = 180° und γ = 90°.
   - type: section
     id: rueckblick
     title: Rückblick

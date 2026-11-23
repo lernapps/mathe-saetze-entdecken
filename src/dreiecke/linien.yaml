@@ -27,11 +27,11 @@ blocks:
           **Piet:** Und ein Teich soll als größter Kreis in ein dreieckiges Beet passen.
       - type: number
         id: mitte-abstand
-        text: Die Strecke AB ist 8 cm lang. M ist ihre Mitte. Wie weit ist M von A entfernt?
+        text: Die Strecke AB ist 8 cm lang. M ist ihre Mitte. Wie weit ist M von A entfernt?
         answer: 4
         tolerance: 0
         unit: cm
-        explanation: Die Mitte teilt die Strecke in zwei gleiche Teile, 8 cm geteilt durch 2 ist 4 cm.
+        explanation: Die Mitte teilt die Strecke in zwei gleiche Teile, 8 cm geteilt durch 2 ist 4 cm.
         links:
           - title: Mittelsenkrechte (Wikipedia)
             url: "https://de.wikipedia.org/wiki/Mittelsenkrechte"
@@ -50,15 +50,15 @@ blocks:
         props:
           kind: umkreis
           handle: "Ecke C, mit den Pfeiltasten ziehen"
-          position: "Abstände von U zu A, B und C: {w1} cm, {w2} cm, {w3} cm"
-          measure: "Abstand von U zu A, B, C: {w1} cm · {w2} cm · {w3} cm. U liegt {lage} des Dreiecks."
+          position: "Abstände von U zu A, B und C: {w1} cm, {w2} cm, {w3} cm"
+          measure: "Abstand von U zu A, B, C: {w1} cm · {w2} cm · {w3} cm. U liegt {lage} des Dreiecks."
           inside: innerhalb
           outside: außerhalb oder auf einer Seite
           reset: Ecke C zurück auf den Start
         nojs: |
           Ein Dreieck *ABC* mit den drei Mittelsenkrechten der Seiten. Sie treffen sich in einem Punkt *U*, der von *A*, *B*
-          und *C* gleich weit entfernt ist. Bei *C* = (0 | 3) ist der Abstand von *U* zu allen drei Ecken 2,2 cm. Bei
-          *C* = (0,5 | 2,5) sind es 2,1 cm. Bei *C* = (2,5 | 2) sind es 2,5 cm. Um *U* liegt ein Kreis durch *A*, *B*
+          und *C* gleich weit entfernt ist. Bei *C* = (0 | 3) ist der Abstand von *U* zu allen drei Ecken 2,2 cm. Bei
+          *C* = (0,5 | 2,5) sind es 2,1 cm. Bei *C* = (2,5 | 2) sind es 2,5 cm. Um *U* liegt ein Kreis durch *A*, *B*
           und *C*, der Umkreis.
       - type: single-choice
         id: umkreis-vermuten
@@ -83,9 +83,11 @@ blocks:
     blocks:
       - type: text
         text: |
+          Merke vorab: Ein Punkt ist genau dann von *A* und *B* gleich weit entfernt, wenn er auf der Mittelsenkrechten von *AB* liegt.
+
           1. Ein Punkt auf der Mittelsenkrechten von *AB* ist von *A* und *B* gleich weit entfernt.
           2. Ein Punkt auf der Mittelsenkrechten von *BC* ist von *B* und *C* gleich weit entfernt.
-          3. Der Schnittpunkt *U* dieser beiden Linien ist von *A*, *B* und *C* gleich weit entfernt.
+          3. Die beiden Linien sind nicht parallel, sie schneiden sich in *U*. *U* ist von *A*, *B* und *C* gleich weit entfernt.
           4. Dann liegt *U* auch auf der Mittelsenkrechten von *CA*. Alle drei treffen sich in *U*.
   - type: section
     id: inkreis
@@ -101,15 +103,15 @@ blocks:
         props:
           kind: inkreis
           handle: "Ecke C, mit den Pfeiltasten ziehen"
-          position: "Abstände von I zu den drei Seiten: {w1} cm, {w2} cm, {w3} cm"
-          measure: "Abstand von I zu den drei Seiten: {w1} cm · {w2} cm · {w3} cm. I liegt {lage} des Dreiecks."
+          position: "Abstände von I zu den drei Seiten: {w1} cm, {w2} cm, {w3} cm"
+          measure: "Abstand von I zu den drei Seiten: {w1} cm · {w2} cm · {w3} cm. I liegt {lage} des Dreiecks."
           inside: innerhalb
           outside: außerhalb
           reset: Ecke C zurück auf den Start
         nojs: |
           Ein Dreieck *ABC* mit den drei Winkelhalbierenden. Sie treffen sich in einem Punkt *I* im Inneren des Dreiecks. *I*
           ist von allen drei Seiten gleich weit entfernt, der Kreis um *I* mit diesem Abstand berührt alle drei Seiten, der
-          Inkreis. Bei *C* = (0 | 3) ist der Abstand 1,2 cm.
+          Inkreis. Bei *C* = (0 | 3) ist der Abstand 1,1 cm.
       - type: single-choice
         id: inkreis-vermuten
         text: Du willst im dreieckigen Beet einen runden Teich so groß wie möglich anlegen. Wo liegt sein Mittelpunkt?
@@ -141,14 +143,14 @@ blocks:
         props:
           kind: hoehen
           handle: "Ecke C, mit den Pfeiltasten ziehen"
-          position: "Abstände von H zu den drei Höhen: {w1} cm, {w2} cm, {w3} cm"
-          measure: "Abstand von H zu den drei Höhen: {w1} cm · {w2} cm · {w3} cm. H liegt {lage} des Dreiecks."
+          position: "Abstände von H zu den drei Höhen: {w1} cm, {w2} cm, {w3} cm"
+          measure: "Abstand von H zu den drei Höhen: {w1} cm · {w2} cm · {w3} cm. H liegt {lage} des Dreiecks."
           inside: innerhalb
           outside: außerhalb oder auf einer Ecke
           reset: Ecke C zurück auf den Start
         nojs: |
           Ein Dreieck *ABC* mit den drei Höhen. Sie treffen sich in einem Punkt *H*. Die Abstände von *H* zu den drei Höhen
-          sind 0 cm, *H* liegt auf allen drei. Bei einem Dreieck mit stumpfem Winkel liegt *H* außerhalb, bei
+          sind 0 cm, *H* liegt auf allen drei. Bei einem Dreieck mit stumpfem Winkel liegt *H* außerhalb, bei
           *C* = (−2,5 | 1,5) zum Beispiel.
       - type: single-choice
         id: hoehen-vermuten
@@ -162,7 +164,7 @@ blocks:
             info: Die dritte Höhe läuft durch den Schnittpunkt der anderen.
           - text: in keinem Punkt
             correct: false
-            info: Die Messung zeigt 0 cm Abstand, H liegt auf jeder Höhe.
+            info: Die Messung zeigt 0 cm Abstand, H liegt auf jeder Höhe.
         explanation: Die drei Höhen treffen sich in einem Punkt, auch wenn dieser außerhalb des Dreiecks liegt.
         links:
           - title: Höhe (Wikipedia)
@@ -191,14 +193,25 @@ blocks:
         id: umkreis-konstruieren
         text: Du sollst den Umkreis eines Dreiecks ABC konstruieren. Bringe die Schritte in die richtige Reihenfolge.
         items:
-          - Zeichne die Mittelsenkrechte von AB.
-          - Zeichne die Mittelsenkrechte von BC.
+          - Zeichne die Mittelsenkrechten von AB und BC.
           - Markiere den Schnittpunkt U der beiden Linien.
           - Zeichne den Kreis um U durch A.
         explanation: Zwei Mittelsenkrechten reichen für U. Dann bestimmt der Abstand zu A den Radius.
         links:
           - title: Umkreis (Wikipedia)
             url: "https://de.wikipedia.org/wiki/Umkreis"
+      - type: ordering
+        id: inkreis-konstruieren
+        text: Du sollst den Inkreis eines Dreiecks ABC konstruieren. Bringe die Schritte in die richtige Reihenfolge.
+        items:
+          - Zeichne die Winkelhalbierenden bei A und bei B.
+          - Markiere den Schnittpunkt I der beiden Linien.
+          - Fälle von I das Lot auf die Seite AB. Der Fußpunkt ist F.
+          - Zeichne den Kreis um I durch F.
+        explanation: I ist der Mittelpunkt, der Abstand IF ist der Radius.
+        links:
+          - title: Inkreis (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Inkreis"
       - type: matching
         id: linie-zuordnen
         text: Ordne jeder Linie ihre Eigenschaft zu.
@@ -226,15 +239,15 @@ blocks:
         given:
           c: { int: [4, 20], step: 2 }
         task:
-          text: "Ein Dreieck hat bei C einen rechten Winkel. Die Seite AB ist {{c}} cm lang. Der Umkreis geht durch A, B und C und sein Mittelpunkt liegt in der Mitte von AB. Wie groß ist der Radius des Umkreises?"
+          text: "Ein Dreieck hat bei C einen rechten Winkel. Die Seite AB ist {{c}} cm lang. Der Umkreis geht durch A, B und C und sein Mittelpunkt liegt in der Mitte von AB. Wie groß ist der Radius des Umkreises?"
         answer: { value: "c / 2", compare: { number: { format: integer, unit: cm } } }
         mistakes:
           - value: "c"
-            message: "Das ist der Durchmesser AB. Der Radius ist die halbe Strecke vom Mittelpunkt zu einer Ecke."
+            message: "Das ist der Durchmesser AB. Der Radius ist der Abstand vom Mittelpunkt zu einer Ecke, also die Hälfte von AB."
         hint: "Der Mittelpunkt liegt in der Mitte von AB, der Radius ist der Abstand zu A."
         steps:
-          - "Der Mittelpunkt M liegt in der Mitte von AB, also ist AM = {{c}} cm : 2."
-          - "Der Radius ist {{answer}} cm."
+          - "Der Mittelpunkt M liegt in der Mitte von AB, also ist AM = {{c}} cm : 2."
+          - "Der Radius ist {{answer}} cm."
   - type: section
     id: begruendung
     title: Begründe in eigenen Worten

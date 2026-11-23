@@ -48,7 +48,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Die Ecken *A* und *B* bleiben liegen. Du ziehst *C* und *D* auf dem Gitter, ein Kästchen ist 1 cm. Mit der
+          Die Ecken *A* und *B* bleiben liegen. Du ziehst *C* und *D* auf dem Gitter, ein Kästchen ist 1 cm. Mit der
           Tastatur wählst du eine Ecke mit der Tabulatortaste und bewegst sie mit den Pfeiltasten. Stelle der Reihe nach
           ein: zwei Paare paralleler Seiten, vier rechte Winkel, vier gleich lange Seiten, und dann alles zugleich.
           Lies jedes Mal unter dem Bild ab, was sich ändert.
@@ -65,9 +65,9 @@ blocks:
           reset: Ecken zurück auf den Start
         nojs: |
           Ein Viereck *ABCD* auf einem Gitter, *A* = (0 | 0) und *B* = (5 | 0). Drei Stellungen von *C* und *D*:
-          *C* = (5 | 5), *D* = (0 | 5): alle Seiten 5 cm, zwei parallele Seitenpaare, vier rechte Winkel, vier
-          Symmetrieachsen, punktsymmetrisch. *C* = (5 | 3), *D* = (0 | 3): Seiten 5 cm, 3 cm, 5 cm, 3 cm, zwei parallele
-          Seitenpaare, vier rechte Winkel, zwei Achsen, punktsymmetrisch. *C* = (8 | 4), *D* = (3 | 4): alle Seiten 5 cm,
+          *C* = (5 | 5), *D* = (0 | 5): alle Seiten 5 cm, zwei parallele Seitenpaare, vier rechte Winkel, vier
+          Symmetrieachsen, punktsymmetrisch. *C* = (5 | 3), *D* = (0 | 3): Seiten 5 cm, 3 cm, 5 cm, 3 cm, zwei parallele
+          Seitenpaare, vier rechte Winkel, zwei Achsen, punktsymmetrisch. *C* = (8 | 4), *D* = (3 | 4): alle Seiten 5 cm,
           zwei parallele Seitenpaare, kein rechter Winkel, zwei Achsen, punktsymmetrisch.
   - type: section
     id: vermutung
@@ -127,10 +127,18 @@ blocks:
         id: rechteck-ist-quadrat
         text: Jedes Rechteck ist ein Quadrat.
         answer: false
-        explanation: Ein Rechteck mit den Seiten 5 cm und 3 cm hat vier rechte Winkel, aber nicht vier gleich lange Seiten.
+        explanation: Ein Rechteck mit den Seiten 5 cm und 3 cm hat vier rechte Winkel, aber nicht vier gleich lange Seiten.
         links:
           - title: Rechteck (Wikipedia)
             url: "https://de.wikipedia.org/wiki/Rechteck"
+      - type: true-false
+        id: raute-ist-drachen
+        text: Jede Raute ist ein Drachen.
+        answer: true
+        explanation: Eine Raute hat vier gleich lange Seiten, also auch zwei Paare benachbarter gleich langer Seiten.
+        links:
+          - title: Drachenviereck (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Drachenviereck"
       - type: multiple-choice
         id: immer-parallelogramm
         text: Welche Vierecke sind immer Parallelogramme?
@@ -149,7 +157,7 @@ blocks:
             info: Ein Drachen muss keine parallelen Seiten haben.
           - text: Trapez
             correct: false
-            info: Ein Trapez hat nur ein Paar paralleler Seiten, ein Parallelogramm hat zwei.
+            info: Ein Trapez muss nur ein Paar paralleler Seiten haben, ein Parallelogramm hat immer zwei.
         explanation: Rechteck, Raute und Quadrat haben zwei Paare paralleler Seiten.
         links:
           - title: Parallelogramm (Wikipedia)

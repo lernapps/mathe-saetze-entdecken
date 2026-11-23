@@ -1,5 +1,5 @@
-// Logic of the drag mode for a line and a circle: a circle with radius 4 cm and a horizontal line at the distance d
-// from the centre, d = 0 to 6 cm in steps of 1 cm. The number of common points is computed, never stated.
+// Logic of the drag mode for a line and a circle: a circle with radius 4\u00A0cm and a horizontal line at the distance d
+// from the centre, d = 0 to 6\u00A0cm in steps of 1\u00A0cm. The number of common points is computed, never stated.
 // Pure functions, no browser globals.
 export const RADIUS = 4;
 export const D_MAX = 6;

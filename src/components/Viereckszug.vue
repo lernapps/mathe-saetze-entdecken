@@ -99,7 +99,7 @@ function resetPosition(): void {
         aria-valuemin="0"
         aria-valuemax="9"
         :aria-valuenow="c.x"
-        :aria-valuetext="`C: ${c.x} cm nach rechts, ${c.y} cm nach oben`"
+        :aria-valuetext="`C: ${c.x}\u00A0cm nach rechts, ${c.y}\u00A0cm nach oben`"
         @pointerdown="down('c', $event)"
         @keydown="onKey('c', $event)"
       />
@@ -114,7 +114,7 @@ function resetPosition(): void {
         aria-valuemin="0"
         aria-valuemax="9"
         :aria-valuenow="d.x"
-        :aria-valuetext="`D: ${d.x} cm nach rechts, ${d.y} cm nach oben`"
+        :aria-valuetext="`D: ${d.x}\u00A0cm nach rechts, ${d.y}\u00A0cm nach oben`"
         @pointerdown="down('d', $event)"
         @keydown="onKey('d', $event)"
       />

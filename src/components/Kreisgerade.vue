@@ -20,9 +20,9 @@ const d = ref(start);
 const dragging = ref(false);
 const svg = ref<SVGSVGElement | null>(null);
 
-// 25 px per cm, M at (160, 140)
-const scale = 25;
-const y = computed(() => 140 - scale * d.value);
+// 18 px per cm, M at (160, 118)
+const scale = 18;
+const y = computed(() => 118 - scale * d.value);
 const half = computed(() => (chordLength(d.value) / 2) * scale);
 const points = computed(() => {
   const n = commonPoints(d.value);
@@ -40,7 +40,7 @@ function onKey(event: KeyboardEvent): void {
 function move(event: PointerEvent): void {
   if (!dragging.value || !svg.value) return;
   const box = svg.value.getBoundingClientRect();
-  d.value = clampD((140 - (event.clientY - box.top) * (190 / box.height)) / scale);
+  d.value = clampD((118 - (event.clientY - box.top) * (190 / box.height)) / scale);
 }
 
 function down(event: PointerEvent): void {
@@ -61,12 +61,12 @@ function down(event: PointerEvent): void {
       @pointercancel="dragging = false"
     >
       <g aria-hidden="true">
-        <circle cx="160" cy="140" :r="RADIUS * scale" class="kreisgerade-circle" />
-        <circle cx="160" cy="140" r="3" class="kreisgerade-dot" />
-        <text x="166" y="156" class="kreisgerade-label">M</text>
+        <circle cx="160" cy="118" :r="RADIUS * scale" class="kreisgerade-circle" />
+        <circle cx="160" cy="118" r="3" class="kreisgerade-dot" />
+        <text x="166" y="134" class="kreisgerade-label">M</text>
         <line x1="10" :y1="y" x2="310" :y2="y" class="kreisgerade-line" />
         <circle v-for="x in points" :key="x" :cx="x" :cy="y" r="4.5" class="kreisgerade-point" />
-        <line x1="160" y1="140" x2="160" :y2="y" class="kreisgerade-radius" />
+        <line x1="160" y1="118" x2="160" :y2="y" class="kreisgerade-radius" />
       </g>
       <circle
         cx="296"

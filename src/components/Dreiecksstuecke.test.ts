@@ -29,6 +29,6 @@ test("SSA: none, two or one triangle depending on the side opposite the given an
 test("WWW fits triangles of every size; texts are filled", () => {
   expect(count("www", 3)).toBe("many");
   expect(sideLength(triangles("www", 2)[0]!.a, triangles("www", 2)[0]!.b)).toBe(2);
-  expect(fill("c = {v} cm: {n}", 4.5, words, "ssa")).toBe("c = 4,5 cm: zwei");
+  expect(fill("c = {v}\u00A0cm: {n}", 4.5, words, "ssa")).toBe("c = 4,5\u00A0cm: zwei");
   expect(MODES).toHaveLength(5);
 });

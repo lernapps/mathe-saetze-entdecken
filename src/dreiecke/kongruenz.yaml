@@ -60,11 +60,11 @@ blocks:
             - "SSA: zwei Seiten und ein Winkel gegenüber einer Seite"
             - "WWW: drei Winkel"
           given:
-            - "Gegeben: a = 4 cm, b = 6 cm, c = {v} cm"
-            - "Gegeben: b = 5 cm, c = 6 cm, α = {v}°"
-            - "Gegeben: c = 6 cm, α = 50°, β = {v}°"
-            - "Gegeben: b = 5 cm, α = 40°, a = {v} cm (a liegt α gegenüber)"
-            - "Gegeben: α = 50°, β = 60°, γ = 70°, die Seite c ist {v} cm lang"
+            - "Gegeben: a = 4 cm, b = 6 cm, c = {v} cm"
+            - "Gegeben: b = 5 cm, c = 6 cm, α = {v}°"
+            - "Gegeben: c = 6 cm, α = 50°, β = {v}°"
+            - "Gegeben: b = 5 cm, α = 40°, a = {v} cm (a liegt α gegenüber)"
+            - "Gegeben: α = 50°, β = 60°, γ = 70°, die Seite c ist {v} cm lang"
           slider:
             - "Seite c in cm"
             - "Winkel α in Grad"
@@ -75,9 +75,9 @@ blocks:
           words: [keins, eins, zwei, unendlich viele]
           legend: Gegebene Stücke
         nojs: |
-          Gegebene Stücke und die Zahl der Dreiecke, die dazu passen. SSS (a = 4 cm, b = 6 cm, c = 5 cm): ein Dreieck. SWS
-          (b = 5 cm, c = 6 cm, α = 60°): ein Dreieck. WSW (c = 6 cm, α = 50°, β = 60°): ein Dreieck. SSA (b = 5 cm,
-          α = 40°, a = 4 cm): zwei Dreiecke, bei a = 5 cm ein Dreieck. WWW (α = 50°, β = 60°, γ = 70°): unendlich viele
+          Gegebene Stücke und die Zahl der Dreiecke, die dazu passen. SSS (a = 4 cm, b = 6 cm, c = 5 cm): ein Dreieck. SWS
+          (b = 5 cm, c = 6 cm, α = 60°): ein Dreieck. WSW (c = 6 cm, α = 50°, β = 60°): ein Dreieck. SSA (b = 5 cm,
+          α = 40°, a = 4 cm): zwei Dreiecke, bei a = 5 cm ein Dreieck. WWW (α = 50°, β = 60°, γ = 70°): unendlich viele
           Dreiecke, jede Größe passt.
   - type: section
     id: vermutung
@@ -111,7 +111,7 @@ blocks:
         text: |
           Legen drei Stücke das Dreieck fest, dann kannst du es nur auf eine Art konstruieren. Zwei Dreiecke, die in diesen
           Stücken übereinstimmen, entstehen aus derselben Konstruktion. Die Konstruktion liefert dasselbe Dreieck, nur an
-          einem anderen Ort. Also passen die Dreiecke aufeinander. Bei SSA mit der Winkelseite *a* kleiner als *b* gibt es
+          einem anderen Ort. Also passen die Dreiecke aufeinander. Bei SSA mit *a* kleiner als *b*, aber größer als der Abstand von *C* zu *AB*, gibt es
           zwei Konstruktionen. Ist *a* größer als *b*, ist die Konstruktion eindeutig. Das ist der Satz SsW.
   - type: section
     id: merke
@@ -138,12 +138,14 @@ blocks:
         id: satz-zuordnen
         text: Ordne den Angaben den passenden Kongruenzsatz zu.
         pairs:
-          - left: "a = 5 cm, b = 6 cm, c = 7 cm"
+          - left: "a = 5 cm, b = 6 cm, c = 7 cm"
             right: SSS
-          - left: "b = 5 cm, c = 6 cm, α = 40° (α liegt zwischen b und c)"
+          - left: "b = 5 cm, c = 6 cm, α = 40° (α liegt zwischen b und c)"
             right: SWS
-          - left: "c = 6 cm, α = 50°, β = 60°"
+          - left: "c = 6 cm, α = 50°, β = 60°"
             right: WSW
+          - left: "a = 7 cm, b = 5 cm, α = 60° (α liegt der längeren Seite a gegenüber)"
+            right: SsW
           - left: "α = 50°, β = 60°, γ = 70°"
             right: kein Kongruenzsatz
         explanation: Wichtig ist, wo der Winkel liegt. Bei drei Winkeln fehlt eine Seite.
@@ -201,7 +203,7 @@ blocks:
         id: www-begruenden
         task: Erkläre in zwei bis vier Sätzen, warum drei gleiche Winkel nicht reichen, damit zwei Dreiecke kongruent sind.
         points:
-          - text: Man kann ein Dreieck vergrößern, ohne dass sich seine Winkel ändern.
+          - text: Ein Dreieck lässt sich vergrößern, ohne dass sich seine Winkel ändern.
             source: /dreiecke/kongruenz/#entdecken
           - text: Das größere Dreieck hat dieselben Winkel, aber längere Seiten.
             source: /dreiecke/kongruenz/#merke

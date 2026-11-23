@@ -1,5 +1,5 @@
 // Logic of the drag mode for quadrilaterals: A = (0, 0) and B = (5, 0) stay, the learner moves C and D on a grid of
-// 1 cm. The properties of the quadrilateral ABCD are computed from the corners, never stated. Pure functions.
+// 1\u00A0cm. The properties of the quadrilateral ABCD are computed from the corners, never stated. Pure functions.
 export type P = { x: number; y: number };
 export type Corners = { c: P; d: P };
 
@@ -85,7 +85,7 @@ function num(value: number): string {
 export function fill(template: string, corners: Corners, yes: string, no: string): string {
   const m = measure(corners);
   return template
-    .replaceAll("{seiten}", m.sides.map((s) => `${num(s)} cm`).join(" · "))
+    .replaceAll("{seiten}", m.sides.map((s) => `${num(s)}\u00A0cm`).join(" · "))
     .replaceAll("{parallel}", String(m.parallelPairs))
     .replaceAll("{recht}", String(m.rightAngles))
     .replaceAll("{achsen}", String(m.axes))
