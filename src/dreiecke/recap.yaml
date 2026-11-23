@@ -18,12 +18,12 @@ blocks:
     blocks:
       - type: definition
         term: Abtragen
-        explanation: "Eine Strecke von bestimmter Länge von einem Punkt aus auf einer Linie markieren, zum Beispiel mit dem Zirkel oder dem Lineal. Beispiel: Von A aus 6 cm abtragen, du erhältst den Punkt B."
+        explanation: "Eine Strecke von bestimmter Länge von einem Punkt aus auf einer Linie markieren, mit dem Zirkel oder dem Lineal. Beispiel: Von A aus 6 cm abtragen, du erhältst den Punkt B."
       - type: definition
         term: Antragen
         explanation: "Einen Winkel von bestimmter Größe an eine Strecke zeichnen, mit dem Geodreieck am Punkt der Strecke. Beispiel: An die Strecke AB bei A einen Winkel von 50° antragen."
       - type: text
-        text: Mit dem **Zirkel** schlägst du einen Kreis um einen Punkt mit einem festen Radius. Das brauchst du, um zwei Längen zu kombinieren.
+        text: "Mit dem **Zirkel** schlägst du einen Kreis um einen Punkt mit einem festen Radius. Der Schnittpunkt zweier solcher Kreise hat von beiden Mittelpunkten einen festen Abstand. Beispiel: Kreise mit Radius 4 cm um A und 5 cm um B schneiden sich in Punkten, die 4 cm von A und 5 cm von B entfernt sind. Zwei Linien stehen **senkrecht**, wenn sie einen rechten Winkel (90°) bilden. Die **Mitte einer Strecke** teilt sie in zwei gleich lange Teile: Bei 8 cm ist sie 4 cm von jedem Ende entfernt. Du findest sie, indem du misst, halbierst und abträgst."
       - type: vue-component
         id: test-antragen
         component: Kurztest
@@ -32,7 +32,7 @@ blocks:
           options:
             - { text: "abtragen", correct: false, info: "Abtragen bedeutet, eine Länge zu markieren." }
             - { text: "antragen", correct: true, info: "Einen Winkel an eine Strecke zeichnen heißt antragen." }
-            - { text: "spiegeln", correct: false, info: "Spiegeln heißt, eine Figur an einer Geraden zu spiegeln." }
+            - { text: "spiegeln", correct: false, info: "Spiegeln heißt, eine Figur an einer Achse umzuklappen." }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
@@ -46,9 +46,10 @@ blocks:
     blocks:
       - type: text
         text: |
-          Du misst einen **Winkel** mit dem Geodreieck: Lege den Nullpunkt auf den Scheitel und eine Skala auf einen Schenkel, dann
-          liest du am anderen Schenkel die Größe in Grad (°) ab. Beispiel: Ein Winkel von 40° ist ein spitzer Winkel. Beim Zeichnen gehst
-          du umgekehrt vor.
+          Du misst einen **Winkel** mit dem Geodreieck. Der Scheitel ist die Ecke des Winkels, die Schenkel sind seine beiden Linien. Lege
+          die Mitte der Grundkante auf den Scheitel und den Nullstrich auf einen Schenkel, dann liest du am anderen Schenkel die
+          Größe in Grad (°) ab. Beispiel: Ein Winkel von 40° ist ein spitzer Winkel. Beim Zeichnen gehst du umgekehrt vor: Du trägst
+          die Gradzahl an.
       - type: vue-component
         id: test-winkel-messen
         component: Kurztest
@@ -63,6 +64,23 @@ blocks:
         nojs: |
           Kurztest: Der erste Schenkel liegt auf der Null des Geodreiecks. Wo liest du an einem rechten Winkel ab? 45°, 90° oder 180°.
           Antwort: 90°.
+      - type: vue-component
+        id: test-skala
+        component: Kurztest
+        props:
+          question: Ein Winkel sieht größer aus als ein rechter. Du liest an den zwei Skalen 50° und 130° ab. Welcher Wert gehört zum Winkel?
+          options:
+            - {
+                text: "50°",
+                correct: false,
+                info: "50° wäre ein spitzer Winkel. Der Winkel ist aber größer als ein rechter.",
+              }
+            - { text: "130°", correct: true, info: "Der Winkel ist stumpf, also größer als 90°." }
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Ein Winkel sieht größer aus als ein rechter. Du liest an den zwei Skalen 50° und 130° ab. Welcher Wert gehört zum
+          Winkel? Antwort: 130°, denn der Winkel ist stumpf, also größer als 90°.
       - type: text
         text: "Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) nach."
   - type: section
@@ -71,38 +89,64 @@ blocks:
     blocks:
       - type: definition
         term: Spiegeln
-        explanation: "Eine Figur an einer Geraden, der Spiegelachse, spiegeln. Jeder Punkt hat seinen Bildpunkt auf der anderen Seite im gleichen Abstand. Beispiel: Ein Punkt 2 cm links der Achse hat seinen Bildpunkt 2 cm rechts."
+        explanation: "Eine Figur an einer Geraden, der Spiegelachse, umklappen. Die Achse halbiert jede Strecke zwischen einem Punkt und seinem Bildpunkt senkrecht, beide liegen im gleichen Abstand auf verschiedenen Seiten. Beispiel: Ein Punkt 2 cm links der Achse hat seinen Bildpunkt 2 cm rechts."
       - type: definition
         term: Verschieben
-        explanation: "Eine Figur ohne Drehen um dieselbe Strecke in dieselbe Richtung bewegen. Beispiel: Alle Punkte 3 cm nach rechts."
+        explanation: "Eine Figur ohne Drehen um dieselbe Strecke in dieselbe Richtung bewegen. Beispiel: Alle Punkte 3 cm nach rechts."
       - type: definition
         term: Drehen
-        explanation: "Eine Figur um einen Punkt, das Drehzentrum, um einen Winkel drehen. Beispiel: Eine Drehung um 90° um den Punkt Z."
+        explanation: "Eine Figur um einen Punkt, das Drehzentrum Z, um einen Winkel drehen, zum Beispiel um 90° gegen den Uhrzeigersinn."
       - type: definition
         term: Bildfigur
-        explanation: "Die Figur, die nach dem Spiegeln, Verschieben oder Drehen entsteht. Bei diesen drei Bewegungen bleiben alle Längen und Winkel gleich. Beispiel: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm hat als Bildfigur wieder ein Dreieck mit 3 cm, 4 cm und 5 cm."
+        explanation: "Die Figur, die nach dem Spiegeln, Verschieben oder Drehen entsteht. Bei diesen drei Bewegungen bleiben alle Längen und Winkel gleich. Beispiel: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm hat als Bildfigur wieder ein Dreieck mit 3 cm, 4 cm und 5 cm."
       - type: vue-component
         id: test-bewegungen
         component: Kurztest
         props:
-          question: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm wird um 6 cm nach rechts verschoben. Wie lang sind die Seiten der Bildfigur?
+          question: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm wird um 6 cm nach rechts verschoben. Wie lang sind die Seiten der Bildfigur?
           options:
-            - { text: "3 cm, 4 cm und 5 cm", correct: true, info: "Beim Verschieben bleiben alle Längen gleich." }
+            - { text: "3 cm, 4 cm und 5 cm", correct: true, info: "Beim Verschieben bleiben alle Längen gleich." }
             - {
-                text: "9 cm, 10 cm und 11 cm",
+                text: "9 cm, 10 cm und 11 cm",
                 correct: false,
-                info: "Du hast 6 cm zu jeder Seite addiert. Die Verschiebung bewegt die Figur, sie verlängert nichts.",
+                info: "Du hast 6 cm zu jeder Seite addiert. Die Verschiebung bewegt die Figur, sie verlängert nichts.",
               }
             - {
-                text: "6 cm, 8 cm und 10 cm",
+                text: "6 cm, 8 cm und 10 cm",
                 correct: false,
                 info: "So wäre das Dreieck doppelt so groß geworden. Verschieben ändert die Größe nicht.",
               }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm wird um 6 cm nach rechts verschoben. Wie lang sind die Seiten der
-          Bildfigur? Antwort: 3 cm, 4 cm und 5 cm. Beim Verschieben bleiben alle Längen gleich.
+          Kurztest: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm wird um 6 cm nach rechts verschoben. Wie lang sind die Seiten der
+          Bildfigur? Antwort: 3 cm, 4 cm und 5 cm. Beim Verschieben bleiben alle Längen gleich.
+      - type: vue-component
+        id: test-spiegeln
+        component: Kurztest
+        props:
+          question: Ein Punkt liegt 2 cm links von der Spiegelachse. Wo liegt sein Bildpunkt?
+          options:
+            - {
+                text: "2 cm rechts der Achse",
+                correct: true,
+                info: "Der Bildpunkt hat denselben Abstand auf der anderen Seite.",
+              }
+            - {
+                text: "4 cm rechts der Achse",
+                correct: false,
+                info: "Der Abstand bleibt gleich, er verdoppelt sich nicht.",
+              }
+            - {
+                text: "2 cm links der Achse",
+                correct: false,
+                info: "Der Bildpunkt liegt auf der anderen Seite der Achse.",
+              }
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Ein Punkt liegt 2 cm links von der Spiegelachse. Wo liegt sein Bildpunkt? 2 cm rechts der Achse, 4 cm rechts oder
+          2 cm links. Antwort: 2 cm rechts der Achse, denn der Abstand bleibt gleich auf der anderen Seite.
       - type: text
         text: "Wenn du unsicher warst: Lies den Baustein **Spiegeln, Verschieben, Drehen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/) nach."
   - type: section
@@ -111,6 +155,6 @@ blocks:
     blocks:
       - type: text
         text: |
-          - **Zeichnen und Konstruieren:** Du kannst Figuren mit Geodreieck, Zirkel oder Geometriesoftware zeichnen und konstruieren.
-          - **Winkel messen und zeichnen:** Du kannst Winkel messen, zeichnen und nach ihrer Größe einteilen.
-          - **Spiegeln, Verschieben, Drehen:** Du kannst Figuren spiegeln, verschieben und drehen und die Bildfigur bestimmen.
+          - **Zeichnen und Konstruieren:** Du kannst eine Strecke abtragen, einen Winkel antragen und mit dem Zirkel einen Kreis schlagen.
+          - **Winkel messen und zeichnen:** Du kannst einen Winkel messen und zeichnen und dabei die richtige Skala wählen.
+          - **Spiegeln, Verschieben, Drehen:** Du kannst sagen, wo der Bildpunkt liegt, und weißt, dass Längen und Winkel gleich bleiben.

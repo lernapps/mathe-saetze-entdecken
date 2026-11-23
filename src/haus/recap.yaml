@@ -19,23 +19,29 @@ blocks:
         text: Ein Viereck hat vier Ecken, vier Seiten und vier Winkel. Für die besonderen Vierecke brauchst du zwei Begriffe.
       - type: definition
         term: Parallel
-        explanation: "Zwei Geraden oder Seiten sind parallel, wenn sie überall denselben Abstand haben und sich nie schneiden. Beispiel: Die gegenüberliegenden Seiten eines Rechtecks mit 5 cm Länge und 3 cm Breite sind je 3 cm oder 5 cm voneinander entfernt."
+        explanation: "Zwei Geraden oder Seiten sind parallel, wenn sie überall denselben Abstand haben und sich nie schneiden. Beispiel: Die lange Seite eines Rechtecks hat zur gegenüberliegenden Seite überall 3 cm Abstand."
       - type: definition
         term: Rechter Winkel
         explanation: "Ein Winkel mit 90°, wie die Ecke eines Geodreiecks. Beispiel: Jede Ecke eines Rechtecks ist ein rechter Winkel."
+      - type: definition
+        term: Benachbart und gegenüberliegend
+        explanation: "Zwei Seiten sind benachbart, wenn sie an einer Ecke zusammenstoßen, und gegenüberliegend, wenn sie keine Ecke gemeinsam haben. Beispiel: Beim Rechteck ABCD sind AB und BC benachbart, AB und CD gegenüberliegend."
+      - type: definition
+        term: Diagonale
+        explanation: "Eine Strecke zwischen zwei gegenüberliegenden Ecken eines Vierecks. Beispiel: Ein Rechteck hat zwei Diagonalen, von A nach C und von B nach D."
       - type: example
         title: Die sechs besonderen Vierecke
         blocks:
           - type: table
-            caption: Besondere Vierecke mit Beispielen
-            header: [Viereck, Das gilt, Beispiel]
+            caption: Besondere Vierecke mit je einem Beispiel
+            header: [Viereck, "Das gilt (Beispiel)"]
             rows:
-              - [Quadrat, "vier gleich lange Seiten und vier rechte Winkel", "Seiten 4 cm"]
-              - [Rechteck, "vier rechte Winkel, gegenüberliegende Seiten gleich lang", "5 cm und 3 cm"]
-              - [Raute, "vier gleich lange Seiten, gegenüberliegende Seiten parallel", "Seiten 4 cm"]
-              - [Parallelogramm, "zwei Paare paralleler Seiten", "Seiten 6 cm und 3 cm"]
-              - [Trapez, "mindestens ein Paar paralleler Seiten", "Seiten 6 cm und 4 cm parallel"]
-              - [Drachen, "zwei Paare benachbarter gleich langer Seiten", "Seiten 5 cm und 3 cm"]
+              - [Quadrat, "vier gleich lange Seiten und vier rechte Winkel, z. B. alle Seiten 4 cm"]
+              - [Rechteck, "vier rechte Winkel, gegenüberliegende Seiten parallel und gleich lang, z. B. 5 cm und 3 cm"]
+              - [Raute, "vier gleich lange Seiten, gegenüberliegende Seiten parallel, z. B. alle Seiten 4 cm"]
+              - [Parallelogramm, "zwei Paare paralleler Seiten, z. B. Seiten 6 cm und 3 cm"]
+              - [Trapez, "mindestens ein Paar paralleler Seiten, z. B. 6 cm und 4 cm parallel"]
+              - [Drachen, "zwei Paare benachbarter gleich langer Seiten, z. B. 5 cm, 5 cm, 3 cm, 3 cm"]
       - type: vue-component
         id: test-vierecke
         component: Kurztest
@@ -48,12 +54,30 @@ blocks:
                 correct: false,
                 info: "Ein Rechteck hat vier rechte Winkel, aber nur gegenüberliegende Seiten gleich lang.",
               }
-            - { text: "Raute", correct: true, info: "Alle Seiten gleich lang, die Winkel sind schief." }
+            - {
+                text: "Raute",
+                correct: true,
+                info: "Eine Raute hat vier gleich lange Seiten. Sind die Winkel nicht 90°, ist sie kein Quadrat.",
+              }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
           Kurztest: Welches Viereck hat vier gleich lange Seiten, aber keine rechten Winkel? Quadrat, Rechteck oder Raute. Antwort:
           die Raute. Ein Quadrat hat vier rechte Winkel, ein Rechteck hat nur gegenüberliegende Seiten gleich lang.
+      - type: vue-component
+        id: test-trapez
+        component: Kurztest
+        props:
+          question: Ein Viereck hat genau ein Paar paralleler Seiten. Was kann es sein?
+          options:
+            - { text: "Trapez", correct: true, info: "Ein Trapez braucht mindestens ein Paar paralleler Seiten." }
+            - { text: "Parallelogramm", correct: false, info: "Ein Parallelogramm hat zwei Paare paralleler Seiten." }
+            - { text: "Rechteck", correct: false, info: "Ein Rechteck hat zwei Paare paralleler Seiten." }
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Ein Viereck hat genau ein Paar paralleler Seiten. Was kann es sein? Trapez, Parallelogramm oder Rechteck. Antwort:
+          Trapez. Parallelogramm und Rechteck haben zwei Paare paralleler Seiten.
       - type: text
         text: "Wenn du unsicher warst: Lies den Baustein **Besondere Vierecke** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/vierecke-grundfiguren/) nach."
   - type: section
@@ -62,15 +86,18 @@ blocks:
     blocks:
       - type: definition
         term: Symmetrieachse
-        explanation: "Eine Gerade, an der du die Figur spiegeln kannst, sodass sie genau auf sich selbst fällt. Beispiel: Ein Rechteck mit den Seiten 5 cm und 3 cm hat zwei Symmetrieachsen, die Mittellinien durch die Seitenmitten."
+        explanation: "Eine Gerade, an der du die Figur spiegeln kannst, sodass sie genau auf sich selbst fällt. Beispiel: Ein Rechteck mit den Seiten 5 cm und 3 cm hat zwei Symmetrieachsen, die Mittellinien durch die Seitenmitten."
       - type: definition
         term: Punktsymmetrie
         explanation: "Eine Figur ist punktsymmetrisch, wenn sie nach einer halben Drehung (180°) um einen Punkt genau auf sich selbst fällt. Beispiel: Ein Parallelogramm dreht sich um den Schnittpunkt seiner Diagonalen auf sich selbst."
+      - type: definition
+        term: Drehsymmetrie
+        explanation: "Eine Figur ist drehsymmetrisch, wenn sie nach einer Drehung um einen Punkt um weniger als 360° auf sich selbst fällt. Beispiel: Ein Quadrat fällt nach 90° auf sich selbst."
       - type: vue-component
         id: test-symmetrie
         component: Kurztest
         props:
-          question: Wie viele Symmetrieachsen hat ein Rechteck mit den Seiten 5 cm und 3 cm?
+          question: Wie viele Symmetrieachsen hat ein Rechteck mit den Seiten 5 cm und 3 cm?
           options:
             - { text: "keine", correct: false, info: "Du kannst das Rechteck an den Mittellinien spiegeln." }
             - {
@@ -81,13 +108,39 @@ blocks:
             - {
                 text: vier,
                 correct: false,
-                info: "Vier Achsen hat nur das Quadrat, weil bei ihm auch die Diagonalen Achsen sind.",
+                info: "Unter den besonderen Vierecken hat nur das Quadrat vier Achsen, weil bei ihm auch die Diagonalen Achsen sind.",
               }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Wie viele Symmetrieachsen hat ein Rechteck mit den Seiten 5 cm und 3 cm? Keine, zwei oder vier. Antwort: zwei,
+          Kurztest: Wie viele Symmetrieachsen hat ein Rechteck mit den Seiten 5 cm und 3 cm? Keine, zwei oder vier. Antwort: zwei,
           die Mittellinien durch die Seitenmitten. Vier hat nur das Quadrat.
+      - type: vue-component
+        id: test-punktsymmetrie
+        component: Kurztest
+        props:
+          question: Welches Viereck ist immer punktsymmetrisch?
+          options:
+            - {
+                text: Parallelogramm,
+                correct: true,
+                info: "Nach einer halben Drehung um den Schnittpunkt der Diagonalen fällt es auf sich selbst.",
+              }
+            - {
+                text: Trapez,
+                correct: false,
+                info: "Ein Trapez ohne zwei Paare paralleler Seiten fällt nach einer halben Drehung nicht auf sich selbst.",
+              }
+            - {
+                text: Drachen,
+                correct: false,
+                info: "Ein Drachen, der keine Raute ist, fällt nach einer halben Drehung nicht auf sich selbst.",
+              }
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Welches Viereck ist immer punktsymmetrisch? Parallelogramm, Trapez oder Drachen. Antwort: Parallelogramm. Nach einer
+          halben Drehung um den Schnittpunkt der Diagonalen fällt es auf sich selbst.
       - type: text
         text: "Wenn du unsicher warst: Lies den Baustein **Symmetrie** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/symmetrie/) nach."
   - type: section
@@ -96,5 +149,5 @@ blocks:
     blocks:
       - type: text
         text: |
-          - **Besondere Vierecke:** Du kannst besondere Vierecke mit ihren Eigenschaften beschreiben und unterscheiden.
-          - **Symmetrie:** Du kannst Achsen-, Punkt- und Drehsymmetrie bei Figuren erkennen und nutzen.
+          - **Besondere Vierecke:** Du kannst die sechs Vierecke an ihren Eigenschaften unterscheiden, zum Beispiel ein Trapez von einem Parallelogramm.
+          - **Symmetrie:** Du kannst Symmetrieachsen zählen und sagen, ob eine Figur punkt- oder drehsymmetrisch ist.
