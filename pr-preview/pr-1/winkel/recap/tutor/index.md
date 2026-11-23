@@ -47,23 +47,27 @@ Begriffe, mach die Kurztests und prüfe am Ende die Checkliste.
 
 ### Winkel messen und zeichnen
 
-- **Winkel**: Ein Winkel entsteht, wenn zwei Strahlen von einem Punkt ausgehen. Der Punkt heißt Scheitel, die Strahlen heißen Schenkel. Du misst ihn in Grad (°). Beispiel: Zwei Schenkel, die sich wie ein aufgeklapptes Buch öffnen, bilden einen Winkel von 90°.
+- **Winkel**: Ein Winkel entsteht, wenn zwei Strahlen von einem Punkt ausgehen. Der Punkt heißt Scheitel, die Strahlen heißen Schenkel. Du misst ihn in Grad (°). Beispiel: Die Ecke einer Buchseite ist ein Winkel von 90°.
 
 - **Spitzer Winkel**: Ein Winkel kleiner als 90°. Beispiel: 35°.
 
 - **Stumpfer Winkel**: Ein Winkel zwischen 90° und 180°. Beispiel: 120°.
 
-- **Gestreckter Winkel**: Ein Winkel von 180°: Die beiden Schenkel bilden eine gerade Linie. Beispiel: Beide Seiten einer Geraden an einem Punkt ergeben zusammen 180°.
+- **Gestreckter Winkel**: Ein Winkel von 180°: Die beiden Schenkel bilden eine gerade Linie. Beispiel: Die Schenkel liegen auf einer Geraden, wie ein ausgestreckter Arm.
 
-Ein **rechter Winkel** hat 90°, wie die Ecke eines Geodreiecks.
+Ein **rechter Winkel** hat 90°, wie die Ecke eines Geodreiecks. Du misst einen Winkel mit dem Geodreieck: Der Nullstrich liegt auf einem Schenkel, die Mitte der Grundkante auf dem Scheitel, am anderen Schenkel liest du ab.
 
 Interaktiv: Kurztest: Ein Winkel misst 120°. Was für ein Winkel ist das? Spitz, rechter Winkel oder stumpf. Antwort: stumpf, denn 120° liegt zwischen 90° und 180°.
+
+Interaktiv: Kurztest: Ein Winkel sieht größer aus als ein rechter. Du liest an den zwei Skalen 50° und 130° ab. Welcher Wert gehört zum Winkel? Antwort: 130°, denn der Winkel ist stumpf, also größer als 90°.
 
 Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) nach.
 
 ### Ebene Grundfiguren
 
-- **Gleichschenkliges Dreieck**: Ein Dreieck mit zwei gleich langen Seiten, den Schenkeln. Die dritte Seite heißt Basis. Die beiden Winkel an der Basis sind die Basiswinkel, sie sind gleich groß. Beispiel: Schenkel 5 cm und 5 cm, Basis 6 cm, beide Basiswinkel 53°.
+- **Dreieck**: Eine Figur mit drei Ecken A, B, C, drei Seiten a, b, c und drei Winkeln α, β, γ. Die Seite a liegt der Ecke A gegenüber. Beispiel: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm.
+
+- **Gleichschenkliges Dreieck**: Ein Dreieck mit zwei gleich langen Seiten, den Schenkeln. Die dritte Seite heißt Basis. Die beiden Winkel an der Basis sind die Basiswinkel, sie sind gleich groß. Beispiel: Schenkel 5 cm und 5 cm, Basis 6 cm, beide Basiswinkel gleich groß (etwa 53°).
 
 - **Kreis**: Alle Punkte, die von einem Punkt, dem Mittelpunkt M, gleich weit entfernt sind. Beispiel: Alle Punkte mit 4 cm Abstand von M bilden einen Kreis.
 
@@ -79,22 +83,24 @@ Wenn du unsicher warst: Lies den Baustein **Ebene Grundfiguren** auf der [Lernla
 
 ### Zeichnen und Konstruieren
 
-Zwei Linien sind **parallel**, wenn sie überall denselben Abstand haben. Du zeichnest sie mit dem Geodreieck.
+Zwei Linien sind **parallel**, wenn sie überall denselben Abstand haben und sich nie schneiden. Beispiel: Die Längsseiten eines Rechtecks. Du zeichnest sie mit dem Geodreieck. Ein **rechter Winkel** hat 90°.
 
 - **Senkrecht**: Zwei Linien stehen senkrecht aufeinander, wenn sie einen rechten Winkel bilden (90°). Beispiel: Die Seiten eines Rechtecks in einer Ecke.
 
-- **Lot**: Die Senkrechte von einem Punkt auf eine Gerade. Beispiel: Du legst das Geodreieck so an die Gerade, dass seine Mittellinie durch den Punkt geht, und ziehst die Linie.
+- **Lot**: Die Senkrechte von einem Punkt auf eine Gerade. Beispiel: Von einem Punkt 3 cm über einer Geraden fällst du das Lot. Es trifft die Gerade senkrecht, der Abstand des Punktes von der Geraden ist 3 cm.
 
-- **Mitte einer Strecke**: Der Punkt, der die Strecke in zwei gleich lange Teile teilt. Beispiel: Bei einer Strecke von 8 cm ist die Mitte 4 cm von jedem Ende entfernt.
+- **Mitte einer Strecke**: Der Punkt, der die Strecke in zwei gleich lange Teile teilt. Beispiel: Bei einer Strecke von 8 cm ist die Mitte 4 cm von jedem Ende entfernt. Du findest sie, indem du die Strecke misst, die Länge halbierst und vom Ende aus abträgst.
 
 Mit dem **Zirkel** zeichnest du einen Kreis um einen Punkt mit einem Radius, den du vorher an einer Strecke abgegriffen hast.
 
 Interaktiv: Kurztest: Die Strecke AB ist 10 cm lang. Wie weit ist ihre Mitte M von A entfernt? 5 cm, 10 cm oder 20 cm. Antwort: 5 cm, denn die Mitte teilt die Strecke in zwei gleiche Teile.
 
+Interaktiv: Kurztest: Du fällst von einem Punkt P das Lot auf die Gerade g. Wie liegt die Linie zu g? Parallel, senkrecht oder schräg. Antwort: senkrecht, das Lot bildet mit g einen rechten Winkel.
+
 Wenn du unsicher warst: Lies den Baustein **Zeichnen und Konstruieren** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/konstruktionen/) nach.
 
 ### Du bist bereit, wenn du …
 
-- **Winkel messen und zeichnen:** Du kannst Winkel messen, zeichnen und nach ihrer Größe einteilen.
-- **Ebene Grundfiguren:** Du kannst ebene Grundfiguren erkennen, benennen und ihre Eigenschaften beschreiben.
-- **Zeichnen und Konstruieren:** Du kannst Figuren mit Geodreieck, Zirkel oder Geometriesoftware zeichnen und konstruieren.
+- **Winkel messen und zeichnen:** Du kannst einen Winkel messen, zeichnen und sagen, ob er spitz, recht, stumpf oder gestreckt ist.
+- **Ebene Grundfiguren:** Du kennst Dreieck, gleichschenkliges Dreieck und Kreis mit Radius und Durchmesser.
+- **Zeichnen und Konstruieren:** Du kannst eine Parallele und ein Lot zeichnen und die Mitte einer Strecke finden.

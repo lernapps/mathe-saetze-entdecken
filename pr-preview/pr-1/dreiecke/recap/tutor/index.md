@@ -47,11 +47,11 @@ am Ende die Checkliste.
 
 ### Zeichnen und Konstruieren
 
-- **Abtragen**: Eine Strecke von bestimmter Länge von einem Punkt aus auf einer Linie markieren, zum Beispiel mit dem Zirkel oder dem Lineal. Beispiel: Von A aus 6 cm abtragen, du erhältst den Punkt B.
+- **Abtragen**: Eine Strecke von bestimmter Länge von einem Punkt aus auf einer Linie markieren, mit dem Zirkel oder dem Lineal. Beispiel: Von A aus 6 cm abtragen, du erhältst den Punkt B.
 
 - **Antragen**: Einen Winkel von bestimmter Größe an eine Strecke zeichnen, mit dem Geodreieck am Punkt der Strecke. Beispiel: An die Strecke AB bei A einen Winkel von 50° antragen.
 
-Mit dem **Zirkel** schlägst du einen Kreis um einen Punkt mit einem festen Radius. Das brauchst du, um zwei Längen zu kombinieren.
+Mit dem **Zirkel** schlägst du einen Kreis um einen Punkt mit einem festen Radius. Der Schnittpunkt zweier solcher Kreise hat von beiden Mittelpunkten einen festen Abstand. Beispiel: Kreise mit Radius 4 cm um A und 5 cm um B schneiden sich in Punkten, die 4 cm von A und 5 cm von B entfernt sind. Zwei Linien stehen **senkrecht**, wenn sie einen rechten Winkel (90°) bilden. Die **Mitte einer Strecke** teilt sie in zwei gleich lange Teile: Bei 8 cm ist sie 4 cm von jedem Ende entfernt. Du findest sie, indem du misst, halbierst und abträgst.
 
 Interaktiv: Kurztest: Du sollst bei A an die Strecke AB einen Winkel von 50° zeichnen. Wie heißt das? Abtragen, antragen oder spiegeln. Antwort: antragen. Abtragen markiert eine Länge.
 
@@ -59,30 +59,35 @@ Wenn du unsicher warst: Lies den Baustein **Zeichnen und Konstruieren** auf der 
 
 ### Winkel messen und zeichnen
 
-Du misst einen **Winkel** mit dem Geodreieck: Lege den Nullpunkt auf den Scheitel und eine Skala auf einen Schenkel, dann
-liest du am anderen Schenkel die Größe in Grad (°) ab. Beispiel: Ein Winkel von 40° ist ein spitzer Winkel. Beim Zeichnen gehst
-du umgekehrt vor.
+Du misst einen **Winkel** mit dem Geodreieck. Der Scheitel ist die Ecke des Winkels, die Schenkel sind seine beiden Linien. Lege
+die Mitte der Grundkante auf den Scheitel und den Nullstrich auf einen Schenkel, dann liest du am anderen Schenkel die
+Größe in Grad (°) ab. Beispiel: Ein Winkel von 40° ist ein spitzer Winkel. Beim Zeichnen gehst du umgekehrt vor: Du trägst
+die Gradzahl an.
 
 Interaktiv: Kurztest: Der erste Schenkel liegt auf der Null des Geodreiecks. Wo liest du an einem rechten Winkel ab? 45°, 90° oder 180°. Antwort: 90°.
+
+Interaktiv: Kurztest: Ein Winkel sieht größer aus als ein rechter. Du liest an den zwei Skalen 50° und 130° ab. Welcher Wert gehört zum Winkel? Antwort: 130°, denn der Winkel ist stumpf, also größer als 90°.
 
 Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) nach.
 
 ### Spiegeln, Verschieben, Drehen
 
-- **Spiegeln**: Eine Figur an einer Geraden, der Spiegelachse, spiegeln. Jeder Punkt hat seinen Bildpunkt auf der anderen Seite im gleichen Abstand. Beispiel: Ein Punkt 2 cm links der Achse hat seinen Bildpunkt 2 cm rechts.
+- **Spiegeln**: Eine Figur an einer Geraden, der Spiegelachse, umklappen. Die Achse halbiert jede Strecke zwischen einem Punkt und seinem Bildpunkt senkrecht, beide liegen im gleichen Abstand auf verschiedenen Seiten. Beispiel: Ein Punkt 2 cm links der Achse hat seinen Bildpunkt 2 cm rechts.
 
 - **Verschieben**: Eine Figur ohne Drehen um dieselbe Strecke in dieselbe Richtung bewegen. Beispiel: Alle Punkte 3 cm nach rechts.
 
-- **Drehen**: Eine Figur um einen Punkt, das Drehzentrum, um einen Winkel drehen. Beispiel: Eine Drehung um 90° um den Punkt Z.
+- **Drehen**: Eine Figur um einen Punkt, das Drehzentrum Z, um einen Winkel drehen, zum Beispiel um 90° gegen den Uhrzeigersinn.
 
 - **Bildfigur**: Die Figur, die nach dem Spiegeln, Verschieben oder Drehen entsteht. Bei diesen drei Bewegungen bleiben alle Längen und Winkel gleich. Beispiel: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm hat als Bildfigur wieder ein Dreieck mit 3 cm, 4 cm und 5 cm.
 
 Interaktiv: Kurztest: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm wird um 6 cm nach rechts verschoben. Wie lang sind die Seiten der Bildfigur? Antwort: 3 cm, 4 cm und 5 cm. Beim Verschieben bleiben alle Längen gleich.
 
+Interaktiv: Kurztest: Ein Punkt liegt 2 cm links von der Spiegelachse. Wo liegt sein Bildpunkt? 2 cm rechts der Achse, 4 cm rechts oder 2 cm links. Antwort: 2 cm rechts der Achse, denn der Abstand bleibt gleich auf der anderen Seite.
+
 Wenn du unsicher warst: Lies den Baustein **Spiegeln, Verschieben, Drehen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/) nach.
 
 ### Du bist bereit, wenn du …
 
-- **Zeichnen und Konstruieren:** Du kannst Figuren mit Geodreieck, Zirkel oder Geometriesoftware zeichnen und konstruieren.
-- **Winkel messen und zeichnen:** Du kannst Winkel messen, zeichnen und nach ihrer Größe einteilen.
-- **Spiegeln, Verschieben, Drehen:** Du kannst Figuren spiegeln, verschieben und drehen und die Bildfigur bestimmen.
+- **Zeichnen und Konstruieren:** Du kannst eine Strecke abtragen, einen Winkel antragen und mit dem Zirkel einen Kreis schlagen.
+- **Winkel messen und zeichnen:** Du kannst einen Winkel messen und zeichnen und dabei die richtige Skala wählen.
+- **Spiegeln, Verschieben, Drehen:** Du kannst sagen, wo der Bildpunkt liegt, und weißt, dass Längen und Winkel gleich bleiben.

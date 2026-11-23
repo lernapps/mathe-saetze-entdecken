@@ -49,22 +49,28 @@ prüfe am Ende die Checkliste.
 
 Ein Viereck hat vier Ecken, vier Seiten und vier Winkel. Für die besonderen Vierecke brauchst du zwei Begriffe.
 
-- **Parallel**: Zwei Geraden oder Seiten sind parallel, wenn sie überall denselben Abstand haben und sich nie schneiden. Beispiel: Die gegenüberliegenden Seiten eines Rechtecks mit 5 cm Länge und 3 cm Breite sind je 3 cm oder 5 cm voneinander entfernt.
+- **Parallel**: Zwei Geraden oder Seiten sind parallel, wenn sie überall denselben Abstand haben und sich nie schneiden. Beispiel: Die lange Seite eines Rechtecks hat zur gegenüberliegenden Seite überall 3 cm Abstand.
 
 - **Rechter Winkel**: Ein Winkel mit 90°, wie die Ecke eines Geodreiecks. Beispiel: Jede Ecke eines Rechtecks ist ein rechter Winkel.
 
+- **Benachbart und gegenüberliegend**: Zwei Seiten sind benachbart, wenn sie an einer Ecke zusammenstoßen, und gegenüberliegend, wenn sie keine Ecke gemeinsam haben. Beispiel: Beim Rechteck ABCD sind AB und BC benachbart, AB und CD gegenüberliegend.
+
+- **Diagonale**: Eine Strecke zwischen zwei gegenüberliegenden Ecken eines Vierecks. Beispiel: Ein Rechteck hat zwei Diagonalen, von A nach C und von B nach D.
+
 **Beispiel: Die sechs besonderen Vierecke**
 
-Besondere Vierecke mit Beispielen:
-- Viereck | Das gilt | Beispiel
-- Quadrat | vier gleich lange Seiten und vier rechte Winkel | Seiten 4 cm
-- Rechteck | vier rechte Winkel, gegenüberliegende Seiten gleich lang | 5 cm und 3 cm
-- Raute | vier gleich lange Seiten, gegenüberliegende Seiten parallel | Seiten 4 cm
-- Parallelogramm | zwei Paare paralleler Seiten | Seiten 6 cm und 3 cm
-- Trapez | mindestens ein Paar paralleler Seiten | Seiten 6 cm und 4 cm parallel
-- Drachen | zwei Paare benachbarter gleich langer Seiten | Seiten 5 cm und 3 cm
+Besondere Vierecke mit je einem Beispiel:
+- Viereck | Das gilt (Beispiel)
+- Quadrat | vier gleich lange Seiten und vier rechte Winkel, z. B. alle Seiten 4 cm
+- Rechteck | vier rechte Winkel, gegenüberliegende Seiten parallel und gleich lang, z. B. 5 cm und 3 cm
+- Raute | vier gleich lange Seiten, gegenüberliegende Seiten parallel, z. B. alle Seiten 4 cm
+- Parallelogramm | zwei Paare paralleler Seiten, z. B. Seiten 6 cm und 3 cm
+- Trapez | mindestens ein Paar paralleler Seiten, z. B. 6 cm und 4 cm parallel
+- Drachen | zwei Paare benachbarter gleich langer Seiten, z. B. 5 cm, 5 cm, 3 cm, 3 cm
 
 Interaktiv: Kurztest: Welches Viereck hat vier gleich lange Seiten, aber keine rechten Winkel? Quadrat, Rechteck oder Raute. Antwort: die Raute. Ein Quadrat hat vier rechte Winkel, ein Rechteck hat nur gegenüberliegende Seiten gleich lang.
+
+Interaktiv: Kurztest: Ein Viereck hat genau ein Paar paralleler Seiten. Was kann es sein? Trapez, Parallelogramm oder Rechteck. Antwort: Trapez. Parallelogramm und Rechteck haben zwei Paare paralleler Seiten.
 
 Wenn du unsicher warst: Lies den Baustein **Besondere Vierecke** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/vierecke-grundfiguren/) nach.
 
@@ -74,11 +80,15 @@ Wenn du unsicher warst: Lies den Baustein **Besondere Vierecke** auf der [Lernla
 
 - **Punktsymmetrie**: Eine Figur ist punktsymmetrisch, wenn sie nach einer halben Drehung (180°) um einen Punkt genau auf sich selbst fällt. Beispiel: Ein Parallelogramm dreht sich um den Schnittpunkt seiner Diagonalen auf sich selbst.
 
+- **Drehsymmetrie**: Eine Figur ist drehsymmetrisch, wenn sie nach einer Drehung um einen Punkt um weniger als 360° auf sich selbst fällt. Beispiel: Ein Quadrat fällt nach 90° auf sich selbst.
+
 Interaktiv: Kurztest: Wie viele Symmetrieachsen hat ein Rechteck mit den Seiten 5 cm und 3 cm? Keine, zwei oder vier. Antwort: zwei, die Mittellinien durch die Seitenmitten. Vier hat nur das Quadrat.
+
+Interaktiv: Kurztest: Welches Viereck ist immer punktsymmetrisch? Parallelogramm, Trapez oder Drachen. Antwort: Parallelogramm. Nach einer halben Drehung um den Schnittpunkt der Diagonalen fällt es auf sich selbst.
 
 Wenn du unsicher warst: Lies den Baustein **Symmetrie** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/symmetrie/) nach.
 
 ### Du bist bereit, wenn du …
 
-- **Besondere Vierecke:** Du kannst besondere Vierecke mit ihren Eigenschaften beschreiben und unterscheiden.
-- **Symmetrie:** Du kannst Achsen-, Punkt- und Drehsymmetrie bei Figuren erkennen und nutzen.
+- **Besondere Vierecke:** Du kannst die sechs Vierecke an ihren Eigenschaften unterscheiden, zum Beispiel ein Trapez von einem Parallelogramm.
+- **Symmetrie:** Du kannst Symmetrieachsen zählen und sagen, ob eine Figur punkt- oder drehsymmetrisch ist.
