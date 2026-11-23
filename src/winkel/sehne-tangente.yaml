@@ -108,7 +108,7 @@ blocks:
       - type: text
         text: |
           Angenommen, der Radius steht nicht senkrecht auf der Geraden. Dann kannst du den Berührpunkt am Lot von *M* auf
-          die Gerade spiegeln (das Lot ist die Senkrechte von *M* auf die Gerade). Der Spiegelpunkt ist ein anderer Punkt. Der Spiegelpunkt liegt auch auf dem Kreis und auf der Geraden. Dann gäbe es zwei gemeinsame
+          die Gerade spiegeln (das Lot ist die Senkrechte von *M* auf die Gerade). Er ist ein anderer Punkt, weil der Berührpunkt nicht auf dem Lot liegt. Der Spiegelpunkt liegt auch auf dem Kreis und auf der Geraden. Dann gäbe es zwei gemeinsame
           Punkte, und die Gerade wäre keine Tangente. Also muss der Radius senkrecht stehen.
   - type: section
     id: merke

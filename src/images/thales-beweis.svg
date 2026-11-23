@@ -11,9 +11,9 @@
   <text x="52" y="152" font-style="italic" fill="#1a4f9c">α</text>
   <text x="256" y="152" font-style="italic" fill="#1a4f9c">β</text>
   <text x="97" y="76" font-style="italic" fill="#1a4f9c">α</text>
-  <text x="120" y="70" font-style="italic" fill="#1a4f9c">β</text>
+  <text x="130" y="72" font-style="italic" fill="#1a4f9c">β</text>
   <text x="112" y="24" font-style="italic" fill="#1a1a1a">γ = α + β</text>
-  <text x="140" y="106" font-style="italic" font-size="13" fill="#a33a00">r</text>
+  <text x="150" y="106" font-style="italic" font-size="13" fill="#a33a00">r</text>
   <text x="94" y="152" font-style="italic" font-size="13">r</text>
   <text x="224" y="152" font-style="italic" font-size="13">r</text>
 </svg>
