@@ -2,3 +2,17 @@
 title: Winkelsätze und der Satz des Thales
 summary: Winkel an Geraden und im Dreieck berechnen, Sehne, Sekante und Tangente unterscheiden und den Satz des Thales begründen.
 pages: [recap, winkelsaetze, sehne-tangente, thales]
+selfAssessment:
+  pages:
+    - exercises:
+        - /winkel/winkelsaetze/#dreieckswinkel
+        - /winkel/winkelsaetze/#stufenwinkel-nebenwinkel
+        - /winkel/winkelsaetze/#dreieckswinkel
+    - exercises:
+        - /winkel/sehne-tangente/#laengste-sehne
+        - /winkel/sehne-tangente/#begriffe-zuordnen
+        - /winkel/sehne-tangente/#lage-erkennen
+    - exercises:
+        - /winkel/thales/#beta-berechnen
+        - /winkel/thales/#umkehrung-erkennen
+        - /winkel/thales/#beta-berechnen
