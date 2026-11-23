@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -73,6 +73,17 @@ Scope: drin: alle 7 Bausteine, alle vier Kongruenzsätze, Mittelsenkrechten, Win
 Quellen geöffnet: Karte mathematik.json (lernapps.net). Hessen-Kerncurriculum und KMK nicht geöffnet: nicht geprüft; Karte gibt die Ordnung. Hinweis: Das Issue nennt `haus-der-vierecke` als Ausnahme (nur ein Baustein im Kapitel).
 
 Lernenden-Check der Musterseite (unabhängiger Prüfer, Klasse 7): gefunden und behoben: γ am Punkt C nicht markiert (jetzt in Figur), Anfasser sah aus wie Knopf (jetzt der Punkt selbst, fokussierbar), falsche r-Beschriftung im Beweisbild, M nicht im Zugmodus, Schritt 4 sprang zu 2γ (jetzt Schritt 5 und 6), Achtung-Box gab Wahr/Falsch-Antwort preis, Auftrag „Beobachte“ ohne Hinweis, Optionen der Begründungsfrage unterschiedlich lang. Offen/Laufzeit (nicht in dieser App behebbar): Hinweistext „Antworte zuerst: Wähle, tippe oder ordne alles zu“ bei Textfeld; Start bei zufälliger „Aufgabe Nr.“; Rückmeldung bei Wahr/Falsch allgemein („Lies dazu noch einmal“).
+
+## Review (Prüfer, die nicht geschrieben haben)
+
+Abhängigkeiten: #397 (Figuren zeichnen und abbilden), gebaut gegen die Bausteine der Karte; Fremdes in Sammel-Wiederholungen (`recap`).
+
+**Lernenden-Prüfer 1 (Thales, Klasse 7):** 10 Befunde behoben (γ unmarkiert, Anfasser wie Knopf, falsches r im Beweisbild, Sprung in Schritt 4, Merke gab Antwort preis, Auftrag ohne Hinweis, Optionen unterschiedlich lang u. a.).
+**Fachlicher Prüfer (alle Seiten, nachgerechnet):** 8 Fehler behoben (nojs-Zahl Inkreis 1,1 cm; falsche Begründung „nur Durchmesser“; Trapez „nur ein Paar“ vs. Definition; C nicht auf dem Kreis im Thales-Bild; Radius-Rückmeldung; SSA-Bedingung in Kongruenz; ARIA-Bereiche; Kreisgerade d = 6 außerhalb des Bildes). Weiter behoben: Beweislücken (Winkelsumme mit Geraden AC/BC, Tangente „Lot“, Mittelsenkrechte mit Umkehrung), Ordnungsaufgaben mit mehreren richtigen Reihenfolgen zusammengelegt, negative Falschoption, Scheitelwinkel in Merke, geschützte Leerzeichen vor cm/m, „man“ entfernt, Aufgaben ergänzt (Raute ist Drachen, SsW im Zuordnen, Inkreis konstruieren), Beweisumbenennung `beweis-erkennen` (Thales hat keine Umkehrung-Aufgabe). Nicht behoben (Entscheidung): Variablen in Aufgabentexten unkursiv (Aufgabentexte können kein Markdown), Passante, Seitenhalbierende (Baustein nennt sie nicht), Höhen-Abstände messen immer 0 (bewusst: sie bestätigen den Treffpunkt).
+**Lernenden-Prüfer 2 (ganze App, Klasse 7-8):** Befunde in der App behoben: Winkelsumme rundet nicht mehr auf 179,9°/180,1°, Viereckszug mit Gitter, Seitennamen, Startform ohne Eigenschaft und nicht abgeschnitten, Kreisgerade ohne „0 cm Sehne“, Winkelbögen und Griff am Geradenende, Buchstabe U/I/H am Treffpunkt, Lot und Fußpunkt erklärt, Haus-Bild mit Legende ohne Überdeckung, Kongruenz-Text verrät nichts. Offen/Laufzeit (nicht von dieser App behebbar, an den Orchestrator): Zahleneingabe „115 Grad“ wird als leer gewertet; allgemeine Rückmeldung „Lies dazu noch einmal den Text“; „Aufgabe Nr. 55“ zufällig; Quelle/Lizenz-Zeile unter jedem Bild; offene Aufgabe zeigt Musterlösung als Checkliste; Selbsteinschätzungs-Text bei 0 und 20 von 21 gleich.
+**Offen (nicht geprüft):** Hessisches Kerncurriculum und KMK nicht geöffnet; Thales-Seite vom zweiten Lernenden-Prüfer nur überflogen (nach Fixes vom ersten Prüfer geprüft); Glossar, Medienübersicht, Touch-Ziehen, Screenreader nicht geprüft; Prüfer 2 sah teils einen Zwischenstand.
+
+**Retro (Fakten):** Phasen: Explore, Plan, Code erreicht; Checkpoints Recherche, Plan, Musterseite vom Orchestrator beantwortet. Ein Blocker am Anfang (npx init abgelehnt, nach Freigabe gelöst). Rückfragen nach dem Plan: 0 an den Orchestrator außer dem Musterseiten-Checkpoint. Geraten: nur Deutsch, Story (Chat zweier erfundener Jugendlicher), Zugmodus als eigene Komponenten je Seite (6), Selbsteinschätzung in allen drei Kapiteln, `open-task` für die Begründung (daher `scope` überall), Reihenfolge der Kapitel-Seiten.
 
 ## Explore
 
@@ -235,10 +246,10 @@ page, which a link. -->
 - [x] Startseite, Baustein→Seite-Liste im Content-Guide, Medienübersicht, Katalogtext-Entwurf
 <!-- tasks: pages (5 added): the other pages or screens, after the pattern -->
 - [x] Update the content guide so that it describes the app as built (`app-content-matches`).
-- [ ] Run `npx --no -- lernapps check` until it passes.
-- [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
+- [x] Run `npx --no -- lernapps check` until it passes.
+- [x] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
-- [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
+- [x] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
       fixed.
 
 ## Commit
@@ -251,7 +262,7 @@ page, which a link. -->
 
 ### Tasks
 
-- [ ] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
+- [x] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
       decisions" why the app has none. Commit.
 - [ ] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
       every click only the creator can make, in one message.
