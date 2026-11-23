@@ -2,8 +2,10 @@
 
 ## Das brauchst du hier
 
-Wiederholung ohne Aufgaben: Winkel messen und zeichnen, ebene Grundfiguren (Dreieck, Kreis, Mittelpunkt, Radius) und
-das Zeichnen und Konstruieren mit Geodreieck und Zirkel, als Grundlage für die Winkelsätze und den Satz des Thales.
+Wiederholung ohne Aufgaben für das Kapitel „Winkelsätze und der Satz des Thales“. Winkel messen und zeichnen: Winkel,
+Schenkel, Scheitel, spitzer, stumpfer und gestreckter Winkel, rechter Winkel als 90°. Ebene Grundfiguren: Dreieck, gleichschenkliges Dreieck
+mit Basiswinkeln, Kreis mit Mittelpunkt, Radius und Durchmesser. Zeichnen und Konstruieren: parallel, senkrecht, Lot, Mitte
+einer Strecke, Zirkel und Geodreieck. Dazu ein Selbsttest mit Rückmeldung je Baustein und die Checkliste.
 
 ## Winkelsätze an Geraden und im Dreieck
 

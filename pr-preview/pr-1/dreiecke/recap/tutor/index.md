@@ -41,7 +41,48 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat keine Aufgabe. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/konstruktionen/, https://lernapps.net/apps/map/mathematik/c/winkel-messen/, https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/
 
-Kannst du das schon? Ich kann Figuren mit Geodreieck, Zirkel oder Geometriesoftware zeichnen und konstruieren
-(Zeichnen und Konstruieren). Ich kann Winkel messen, zeichnen und nach ihrer Größe einteilen (Winkel messen und
-zeichnen). Ich kann Figuren spiegeln, verschieben und drehen und die Bildfigur bestimmen (Spiegeln, Verschieben,
-Drehen).
+**Das brauchst du für dieses Kapitel.** Du konstruierst Dreiecke und vergleichst sie. Dafür musst du drei Dinge schon
+können: konstruieren, Winkel messen und die drei Bewegungen von Figuren. Lies die Begriffe, mach die Kurztests und prüfe
+am Ende die Checkliste.
+
+### Zeichnen und Konstruieren
+
+- **Abtragen**: Eine Strecke von bestimmter Länge von einem Punkt aus auf einer Linie markieren, zum Beispiel mit dem Zirkel oder dem Lineal. Beispiel: Von A aus 6 cm abtragen, du erhältst den Punkt B.
+
+- **Antragen**: Einen Winkel von bestimmter Größe an eine Strecke zeichnen, mit dem Geodreieck am Punkt der Strecke. Beispiel: An die Strecke AB bei A einen Winkel von 50° antragen.
+
+Mit dem **Zirkel** schlägst du einen Kreis um einen Punkt mit einem festen Radius. Das brauchst du, um zwei Längen zu kombinieren.
+
+Interaktiv: Kurztest: Du sollst bei A an die Strecke AB einen Winkel von 50° zeichnen. Wie heißt das? Abtragen, antragen oder spiegeln. Antwort: antragen. Abtragen markiert eine Länge.
+
+Wenn du unsicher warst: Lies den Baustein **Zeichnen und Konstruieren** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/konstruktionen/) nach.
+
+### Winkel messen und zeichnen
+
+Du misst einen **Winkel** mit dem Geodreieck: Lege den Nullpunkt auf den Scheitel und eine Skala auf einen Schenkel, dann
+liest du am anderen Schenkel die Größe in Grad (°) ab. Beispiel: Ein Winkel von 40° ist ein spitzer Winkel. Beim Zeichnen gehst
+du umgekehrt vor.
+
+Interaktiv: Kurztest: Der erste Schenkel liegt auf der Null des Geodreiecks. Wo liest du an einem rechten Winkel ab? 45°, 90° oder 180°. Antwort: 90°.
+
+Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) nach.
+
+### Spiegeln, Verschieben, Drehen
+
+- **Spiegeln**: Eine Figur an einer Geraden, der Spiegelachse, spiegeln. Jeder Punkt hat seinen Bildpunkt auf der anderen Seite im gleichen Abstand. Beispiel: Ein Punkt 2 cm links der Achse hat seinen Bildpunkt 2 cm rechts.
+
+- **Verschieben**: Eine Figur ohne Drehen um dieselbe Strecke in dieselbe Richtung bewegen. Beispiel: Alle Punkte 3 cm nach rechts.
+
+- **Drehen**: Eine Figur um einen Punkt, das Drehzentrum, um einen Winkel drehen. Beispiel: Eine Drehung um 90° um den Punkt Z.
+
+- **Bildfigur**: Die Figur, die nach dem Spiegeln, Verschieben oder Drehen entsteht. Bei diesen drei Bewegungen bleiben alle Längen und Winkel gleich. Beispiel: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm hat als Bildfigur wieder ein Dreieck mit 3 cm, 4 cm und 5 cm.
+
+Interaktiv: Kurztest: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm wird um 6 cm nach rechts verschoben. Wie lang sind die Seiten der Bildfigur? Antwort: 3 cm, 4 cm und 5 cm. Beim Verschieben bleiben alle Längen gleich.
+
+Wenn du unsicher warst: Lies den Baustein **Spiegeln, Verschieben, Drehen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/) nach.
+
+### Du bist bereit, wenn du …
+
+- **Zeichnen und Konstruieren:** Du kannst Figuren mit Geodreieck, Zirkel oder Geometriesoftware zeichnen und konstruieren.
+- **Winkel messen und zeichnen:** Du kannst Winkel messen, zeichnen und nach ihrer Größe einteilen.
+- **Spiegeln, Verschieben, Drehen:** Du kannst Figuren spiegeln, verschieben und drehen und die Bildfigur bestimmen.

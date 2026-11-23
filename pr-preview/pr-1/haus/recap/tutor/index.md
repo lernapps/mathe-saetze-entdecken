@@ -41,6 +41,44 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat keine Aufgabe. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/vierecke-grundfiguren/, https://lernapps.net/apps/map/mathematik/c/symmetrie/
 
-Kannst du das schon? Ich kann besondere Vierecke mit ihren Eigenschaften beschreiben und unterscheiden (Besondere
-Vierecke): Quadrat, Rechteck, Raute, Parallelogramm, Trapez und Drachen. Ich kann Achsen-, Punkt- und
-Drehsymmetrie bei Figuren erkennen und nutzen (Symmetrie).
+**Das brauchst du für dieses Kapitel.** Im Haus der Vierecke ordnest du Vierecke nach ihren Eigenschaften. Dafür musst
+du zwei Dinge schon können: die besonderen Vierecke und die Symmetrie. Lies die Begriffe, mach die Kurztests und
+prüfe am Ende die Checkliste.
+
+### Besondere Vierecke
+
+Ein Viereck hat vier Ecken, vier Seiten und vier Winkel. Für die besonderen Vierecke brauchst du zwei Begriffe.
+
+- **Parallel**: Zwei Geraden oder Seiten sind parallel, wenn sie überall denselben Abstand haben und sich nie schneiden. Beispiel: Die gegenüberliegenden Seiten eines Rechtecks mit 5 cm Länge und 3 cm Breite sind je 3 cm oder 5 cm voneinander entfernt.
+
+- **Rechter Winkel**: Ein Winkel mit 90°, wie die Ecke eines Geodreiecks. Beispiel: Jede Ecke eines Rechtecks ist ein rechter Winkel.
+
+**Beispiel: Die sechs besonderen Vierecke**
+
+Besondere Vierecke mit Beispielen:
+- Viereck | Das gilt | Beispiel
+- Quadrat | vier gleich lange Seiten und vier rechte Winkel | Seiten 4 cm
+- Rechteck | vier rechte Winkel, gegenüberliegende Seiten gleich lang | 5 cm und 3 cm
+- Raute | vier gleich lange Seiten, gegenüberliegende Seiten parallel | Seiten 4 cm
+- Parallelogramm | zwei Paare paralleler Seiten | Seiten 6 cm und 3 cm
+- Trapez | mindestens ein Paar paralleler Seiten | Seiten 6 cm und 4 cm parallel
+- Drachen | zwei Paare benachbarter gleich langer Seiten | Seiten 5 cm und 3 cm
+
+Interaktiv: Kurztest: Welches Viereck hat vier gleich lange Seiten, aber keine rechten Winkel? Quadrat, Rechteck oder Raute. Antwort: die Raute. Ein Quadrat hat vier rechte Winkel, ein Rechteck hat nur gegenüberliegende Seiten gleich lang.
+
+Wenn du unsicher warst: Lies den Baustein **Besondere Vierecke** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/vierecke-grundfiguren/) nach.
+
+### Symmetrie
+
+- **Symmetrieachse**: Eine Gerade, an der du die Figur spiegeln kannst, sodass sie genau auf sich selbst fällt. Beispiel: Ein Rechteck mit den Seiten 5 cm und 3 cm hat zwei Symmetrieachsen, die Mittellinien durch die Seitenmitten.
+
+- **Punktsymmetrie**: Eine Figur ist punktsymmetrisch, wenn sie nach einer halben Drehung (180°) um einen Punkt genau auf sich selbst fällt. Beispiel: Ein Parallelogramm dreht sich um den Schnittpunkt seiner Diagonalen auf sich selbst.
+
+Interaktiv: Kurztest: Wie viele Symmetrieachsen hat ein Rechteck mit den Seiten 5 cm und 3 cm? Keine, zwei oder vier. Antwort: zwei, die Mittellinien durch die Seitenmitten. Vier hat nur das Quadrat.
+
+Wenn du unsicher warst: Lies den Baustein **Symmetrie** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/symmetrie/) nach.
+
+### Du bist bereit, wenn du …
+
+- **Besondere Vierecke:** Du kannst besondere Vierecke mit ihren Eigenschaften beschreiben und unterscheiden.
+- **Symmetrie:** Du kannst Achsen-, Punkt- und Drehsymmetrie bei Figuren erkennen und nutzen.

@@ -9,8 +9,9 @@ begründen mit bekannten Sätzen, üben, in eigenen Worten begründen.
 
 ### Das brauchst du hier
 
-Wiederholung ohne Aufgaben: besondere Vierecke mit ihren Eigenschaften (Quadrat, Rechteck, Raute, Parallelogramm,
-Trapez, Drachen) und Symmetrie (Achsen-, Punkt- und Drehsymmetrie), als Grundlage für das Haus der Vierecke.
+Wiederholung ohne Aufgaben für das Kapitel „Das Haus der Vierecke“. Besondere Vierecke: parallele Seiten, rechter Winkel,
+Quadrat, Rechteck, Raute, Parallelogramm, Trapez und Drachen mit ihren Eigenschaften. Symmetrie: Symmetrieachse und
+Punktsymmetrie. Dazu ein Selbsttest mit Rückmeldung je Baustein und die Checkliste, wann Lernende bereit sind.
 
 ### Das Haus der Vierecke
 
@@ -27,8 +28,10 @@ Winkel und Symmetrien werden gemessen.
 
 ### Das brauchst du hier
 
-Wiederholung ohne Aufgaben: Winkel messen und zeichnen, ebene Grundfiguren (Dreieck, Kreis, Mittelpunkt, Radius) und
-das Zeichnen und Konstruieren mit Geodreieck und Zirkel, als Grundlage für die Winkelsätze und den Satz des Thales.
+Wiederholung ohne Aufgaben für das Kapitel „Winkelsätze und der Satz des Thales“. Winkel messen und zeichnen: Winkel,
+Schenkel, Scheitel, spitzer, stumpfer und gestreckter Winkel, rechter Winkel als 90°. Ebene Grundfiguren: Dreieck, gleichschenkliges Dreieck
+mit Basiswinkeln, Kreis mit Mittelpunkt, Radius und Durchmesser. Zeichnen und Konstruieren: parallel, senkrecht, Lot, Mitte
+einer Strecke, Zirkel und Geodreieck. Dazu ein Selbsttest mit Rückmeldung je Baustein und die Checkliste.
 
 ### Winkelsätze an Geraden und im Dreieck
 
@@ -59,8 +62,10 @@ Konstruktionsschritte ordnen, Begründung in eigenen Worten.
 
 ### Das brauchst du hier
 
-Wiederholung ohne Aufgaben: Zeichnen und Konstruieren mit Geodreieck und Zirkel, Winkel messen und zeichnen, und
-Spiegeln, Verschieben und Drehen von Figuren, als Grundlage für das Konstruieren und Vergleichen von Dreiecken.
+Wiederholung ohne Aufgaben für das Kapitel „Dreiecke konstruieren und vergleichen“. Zeichnen und Konstruieren: Strecke
+abtragen, Winkel antragen, Kreis mit dem Zirkel schlagen. Winkel messen und zeichnen: Winkel mit dem Geodreieck messen und
+zeichnen. Spiegeln, Verschieben, Drehen: die drei Bewegungen, Bildfigur, Länge und Winkel bleiben gleich. Dazu ein Selbsttest
+mit Rückmeldung je Baustein und die Checkliste.
 
 ### Dreiecke konstruieren
 

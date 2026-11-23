@@ -2,8 +2,10 @@
 
 ## Das brauchst du hier
 
-Wiederholung ohne Aufgaben: Zeichnen und Konstruieren mit Geodreieck und Zirkel, Winkel messen und zeichnen, und
-Spiegeln, Verschieben und Drehen von Figuren, als Grundlage für das Konstruieren und Vergleichen von Dreiecken.
+Wiederholung ohne Aufgaben für das Kapitel „Dreiecke konstruieren und vergleichen“. Zeichnen und Konstruieren: Strecke
+abtragen, Winkel antragen, Kreis mit dem Zirkel schlagen. Winkel messen und zeichnen: Winkel mit dem Geodreieck messen und
+zeichnen. Spiegeln, Verschieben, Drehen: die drei Bewegungen, Bildfigur, Länge und Winkel bleiben gleich. Dazu ein Selbsttest
+mit Rückmeldung je Baustein und die Checkliste.
 
 ## Dreiecke konstruieren
 
