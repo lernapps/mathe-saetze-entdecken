@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das Haus der Vierecke
+summary: Vierecke ziehen, nach Eigenschaften ordnen und begründen, warum jedes Quadrat ein Rechteck ist.
+pages: [recap, haus-der-vierecke]

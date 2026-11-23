@@ -1,0 +1,234 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Winkelsätze an Geraden und im Dreieck
+description: "An Parallelen und im Dreieck ziehen, Winkelbeziehungen entdecken und fehlende Winkel berechnen."
+competencies: [winkelsaetze]
+scope: |
+  Winkelsätze: Scheitelwinkel und Nebenwinkel (Nebenwinkel ergänzen sich zu 180°), an zwei Parallelen sind Stufenwinkel
+  gleich groß und Wechselwinkel gleich groß. Der Winkelsummensatz: In jedem Dreieck ergeben die Winkel zusammen 180°.
+  Entdeckt wird beides im Zugmodus (Neigung einer Geraden an Parallelen ändern, Ecke C eines Dreiecks ziehen, Winkel
+  werden gemessen). Begründet wird der Winkelsummensatz mit einer Parallelen zu AB durch C und den Wechselwinkeln.
+  Aufgaben: fehlende Winkel im Dreieck, Nebenwinkel, Stufenwinkel, Beweisschritte ordnen, Begründung.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: |
+          Du kannst gleich fehlende Winkel berechnen, ohne sie zu messen. Du brauchst nur einen Winkel und einen Satz.
+      - type: text
+        text: |
+          **Piet:** Im Schulgarten kreuzen zwei Wege. Ich habe einen Winkel gemessen, 70°.
+
+          **Selin:** Dann kennst du den Winkel daneben schon, ohne zu messen.
+      - type: single-choice
+        id: nebenwinkel-erkennen
+        text: Zwei gerade Wege kreuzen sich. Ein Winkel ist 70° groß. Wie groß ist der Winkel direkt daneben (der Nebenwinkel)?
+        options:
+          - text: 110°
+            correct: true
+            info: Die beiden Winkel liegen zusammen auf einer Geraden, ein gestreckter Winkel hat 180°. 180° − 70° = 110°.
+          - text: 70°
+            correct: false
+            info: So groß ist nur der Winkel gegenüber (der Scheitelwinkel), nicht der daneben.
+          - text: 20°
+            correct: false
+            info: 20° wäre 90° − 70°. Hier geht es aber um eine Gerade, also um 180°.
+        explanation: Nebenwinkel ergänzen sich zu 180°.
+        links:
+          - title: Nebenwinkel (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Nebenwinkel"
+  - type: section
+    id: entdecken
+    title: An Parallelen ziehen
+    blocks:
+      - type: text
+        text: |
+          Die Geraden *g* und *h* sind parallel. Eine dritte Gerade schneidet beide. Ziehe den Punkt auf der oberen
+          Geraden oder ändere die Neigung mit den Pfeiltasten (Tabulatortaste zum Punkt). Stelle drei verschiedene
+          Neigungen ein und lies jedes Mal α, β, γ und δ ab.
+      - type: vue-component
+        id: zug-parallelen
+        component: Winkelzug
+        props:
+          kind: parallelen
+          handle: "Neigung der Geraden zwischen den Parallelen, mit den Pfeiltasten ändern"
+          position: "α {alpha}°, β {beta}°, γ {gamma}°, δ {delta}°"
+          measure: "α = {alpha}°, β = {beta}°, γ = {gamma}°, δ = {delta}°"
+          reset: Neigung zurück auf den Start
+        nojs: |
+          Zwei parallele Geraden *g* und *h*, eine dritte Gerade schneidet beide. Bei jeder Neigung messen die Winkel:
+          Bei 60° ist α = 60°, β = 60°, γ = 60° und δ = 120°. Bei 90° sind alle vier Winkel 90°. Bei 130° ist α = 130°,
+          β = 130°, γ = 130° und δ = 50°. α und β liegen an gleichen Stellen der beiden Parallelen (Stufenwinkel), α und γ
+          liegen innen auf verschiedenen Seiten (Wechselwinkel), α und δ liegen nebeneinander auf einer Geraden
+          (Nebenwinkel).
+  - type: section
+    id: vermutung
+    title: Was ist immer gleich?
+    blocks:
+      - type: multiple-choice
+        id: parallelen-vermuten
+        text: Welche Aussagen stimmen bei jeder Neigung?
+        options:
+          - text: α und β sind gleich groß.
+            correct: true
+            info: Die Winkel liegen an beiden Parallelen an derselben Stelle (Stufenwinkel). Die Messung zeigt immer gleiche Werte.
+          - text: α und γ sind gleich groß.
+            correct: true
+            info: Die Winkel liegen innen auf verschiedenen Seiten der Geraden (Wechselwinkel). Sie sind gleich groß.
+          - text: α und δ sind gleich groß.
+            correct: false
+            info: α und δ sind gleich nur bei 90°. Sonst ist δ der Nebenwinkel von α.
+          - text: α und δ ergeben zusammen 180°.
+            correct: true
+            info: α und δ liegen nebeneinander auf einer Geraden, sie sind Nebenwinkel.
+        explanation: Stufenwinkel und Wechselwinkel an Parallelen sind gleich, Nebenwinkel ergänzen sich zu 180°. Das ist erst eine Vermutung aus den Messungen.
+        links:
+          - title: Stufenwinkel und Wechselwinkel (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Stufenwinkel_und_Wechselwinkel"
+  - type: section
+    id: dreieck
+    title: Im Dreieck ziehen
+    blocks:
+      - type: text
+        text: |
+          Das Dreieck *ABC* hat die feste Seite *AB*. Ziehe die Ecke *C* mit der Maus oder mit den Pfeiltasten. Stelle
+          *C* an drei verschiedene Stellen und lies jedes Mal α, β und γ ab. Rechne sie zusammen.
+      - type: vue-component
+        id: zug-dreieck
+        component: Winkelzug
+        props:
+          kind: dreieck
+          handle: "Ecke C des Dreiecks, mit den Pfeiltasten ziehen"
+          position: "α {alpha}°, β {beta}°, γ {gamma}°"
+          measure: "α = {alpha}°, β = {beta}°, γ = {gamma}°"
+          reset: Ecke C zurück auf den Start
+        nojs: |
+          Ein Dreieck *ABC* mit fester Seite *AB*. Drei Stellungen der Ecke *C*: α = 45°, β = 45°, γ = 90°. Oder
+          α = 63,4°, β = 33,7°, γ = 82,9°. Oder α = 14°, β = 90°, γ = 76°. Die Winkel ändern sich, ihre Summe nicht.
+      - type: number
+        id: winkelsumme-vermuten
+        text: Wie groß ist die Summe α + β + γ bei jeder Stellung von C?
+        answer: 180
+        tolerance: 0
+        unit: "°"
+        explanation: Die drei Winkel ergeben immer 180°. Das ist der Winkelsummensatz. Gleich begründest du ihn.
+        links:
+          - title: Innenwinkelsumme (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Innenwinkelsumme"
+  - type: section
+    id: warum
+    title: Warum ist die Summe 180°?
+    blocks:
+      - type: text
+        text: |
+          Zeichne durch *C* die Parallele *p* zu *AB*. Dann kannst du die Wechselwinkel an Parallelen nutzen.
+      - type: figure
+        image: images/winkelsumme-beweis.svg
+        source: eigene Zeichnung
+        licence: CC0-1.0
+        alt: Ein Dreieck ABC mit einer gestrichelten Parallelen p zu AB durch C. Bei C liegen nebeneinander drei Winkel auf der Geraden p. Der linke ist mit α beschriftet, der mittlere mit γ und der rechte mit β. Bei A und B sind α und β eingetragen.
+        caption: Schau auf die drei Winkel bei C. Sie liegen nebeneinander auf der Geraden p.
+      - type: text
+        text: |
+          1. Der linke Winkel bei *C* ist ein Wechselwinkel zu α an *p* und *AB*, also gleich α.
+          2. Der rechte Winkel bei *C* ist ein Wechselwinkel zu β, also gleich β.
+          3. Die drei Winkel bei *C* liegen nebeneinander auf der Geraden *p*.
+          4. Darum gilt α + γ + β = 180°.
+  - type: section
+    id: merke
+    title: Merke
+    blocks:
+      - type: table
+        caption: Drei Winkelpaare an zwei Geraden, die von einer dritten geschnitten werden
+        header: [Name, Lage, An Parallelen]
+        rows:
+          - [Nebenwinkel, nebeneinander auf einer Geraden, ergeben zusammen 180°]
+          - [Stufenwinkel, an der gleichen Stelle beider Geraden, gleich groß]
+          - [Wechselwinkel, innen auf verschiedenen Seiten der schneidenden Geraden, gleich groß]
+      - type: definition
+        term: Winkelsummensatz
+        explanation: In jedem Dreieck ergeben die drei Winkel zusammen 180°.
+      - type: note
+        title: Achtung
+        blocks:
+          - type: text
+            text: Stufen- und Wechselwinkel sind nur an Parallelen gleich groß.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: dreieckswinkel
+        given:
+          a: { int: [30, 80], step: 5 }
+          b: { int: [30, 80], step: 5 }
+        where: ["a + b != 90"]
+        task:
+          text: "In einem Dreieck sind α = {{a}}° und β = {{b}}°. Wie groß ist γ?"
+        answer: { value: "180 - a - b", compare: { number: { format: integer, unit: "°" } } }
+        mistakes:
+          - value: "a + b"
+            message: "Das ist die Summe von α und β. γ fehlt noch bis zur Winkelsumme von 180°."
+          - value: "360 - a - b"
+            message: "Im Dreieck ist die Winkelsumme 180°, nicht 360°."
+        hint: "Die drei Winkel eines Dreiecks ergeben zusammen 180°."
+        steps:
+          - "Winkelsumme: α + β + γ = 180°."
+          - "γ = 180° − {{a}}° − {{b}}° = {{answer}}°."
+      - type: generated
+        id: stufenwinkel-nebenwinkel
+        given:
+          a: { oneOf: [35, 40, 50, 55, 65, 70, 115, 125, 140] }
+        task:
+          text: "Die Geraden g und h sind parallel, eine dritte Gerade schneidet beide. An g liegt der Winkel α = {{a}}°. An h liegt an derselben Stelle der Stufenwinkel β. Wie groß ist der Nebenwinkel von β?"
+        answer: { value: "180 - a", compare: { number: { format: integer, unit: "°" } } }
+        mistakes:
+          - value: "a"
+            message: "Das ist β selbst. Gesucht ist der Nebenwinkel von β, also 180° − β."
+          - value: "90 - a"
+            message: "Nebenwinkel ergeben 180°, nicht 90°."
+        hint: "Stufenwinkel an Parallelen sind gleich groß. Nebenwinkel ergeben zusammen 180°."
+        steps:
+          - "An Parallelen sind Stufenwinkel gleich: β = α = {{a}}°."
+          - "Nebenwinkel ergeben 180°: 180° − {{a}}° = {{answer}}°."
+      - type: true-false
+        id: winkelsumme-pruefen
+        text: Ein Dreieck hat die Winkel 100°, 50° und 40°.
+        answer: false
+        explanation: Die Summe ist 190°. In einem Dreieck sind es immer 180°, so ein Dreieck gibt es nicht.
+        links:
+          - title: Innenwinkelsumme (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Innenwinkelsumme"
+      - type: ordering
+        id: winkelsumme-schritte
+        text: Bringe die Schritte der Begründung des Winkelsummensatzes in die richtige Reihenfolge.
+        items:
+          - Zeichne durch C die Parallele zu AB.
+          - Der linke Winkel bei C ist gleich α (Wechselwinkel).
+          - Der rechte Winkel bei C ist gleich β (Wechselwinkel).
+          - Die drei Winkel bei C liegen auf einer Geraden und ergeben 180°.
+        explanation: Erst die Hilfslinie, dann die Winkel, am Ende die Gerade. So steht α + γ + β = 180°.
+        links:
+          - title: Innenwinkelsumme (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Innenwinkelsumme"
+  - type: section
+    id: begruendung
+    title: Begründe in eigenen Worten
+    blocks:
+      - type: open-task
+        id: winkelsumme-begruenden
+        task: Erkläre in zwei bis vier Sätzen, warum die Winkel in jedem Dreieck zusammen 180° ergeben.
+        points:
+          - text: Durch C wird die Parallele zu AB gezeichnet.
+            source: /winkel/winkelsaetze/#warum
+          - text: Die Winkel bei A und B kommen als Wechselwinkel bei C noch einmal vor.
+            source: /winkel/winkelsaetze/#warum
+          - text: Die drei Winkel bei C liegen auf einer Geraden, sie ergeben 180°.
+            source: /winkel/winkelsaetze/#warum
+          - text: Ganze Sätze mit einer Begründung (weil …, darum …).
+            kind: form
+        solution: |
+          Ich zeichne durch C die Parallele zu AB. Der linke Winkel bei C ist ein Wechselwinkel zu α, der rechte ist ein
+          Wechselwinkel zu β, also sind sie gleich groß. Die drei Winkel α, γ und β liegen bei C nebeneinander auf einer
+          Geraden, darum ergeben sie 180°.

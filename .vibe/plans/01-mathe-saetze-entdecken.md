@@ -8,7 +8,7 @@ phase: code
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: { accessible: 1, app-content-guide: 1 }
+failedChecks: { accessible: 1, app-content-guide: 1, checks-pass: 1 }
 ---
 
 # Plan: mathe-saetze-entdecken, first version
@@ -224,9 +224,10 @@ page, which a link. -->
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Musterseite Satz des Thales (Kapitel 2) mit Komponente Zugmodus (Tastatur, nojs-Form, Textalternative), Zyklus entdecken→Vermutung→Warum→Begründung, ≥4 Aufgaben mit Rückmeldung; Recap-Seite K2 als Stub
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
+      Creator: Musterseite angenommen (Orchestrator in Vertretung)
 - [ ] Kapitel 1: Recap und Seite Haus der Vierecke (Datei viereck-eigenschaften, Zuordnen, Wahr/Falsch mit Begründung), Kapitelrückblick
 - [ ] Kapitel 2: Recap, Seiten Winkelsätze und Sehne/Sekante/Tangente (generated Winkelaufgaben mit Mistakes), Rückblick
 - [ ] Kapitel 3: Recap, Seite Dreieckskonstruktion mit Komponente Konstruktion und Eindeutigkeit

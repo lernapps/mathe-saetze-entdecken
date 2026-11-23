@@ -1,0 +1,206 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Sehne, Sekante und Tangente
+description: "Eine Gerade am Kreis verschieben, gemeinsame Punkte zählen und Sehne, Sekante und Tangente unterscheiden."
+competencies: [kreis-sehne-tangente]
+scope: |
+  Eine Gerade und ein Kreis haben null, einen oder zwei gemeinsame Punkte. Eine Sekante schneidet den Kreis in zwei
+  Punkten. Die Sehne ist die Strecke zwischen diesen beiden Punkten, die längste Sehne ist der Durchmesser. Eine
+  Tangente berührt den Kreis in genau einem Punkt, dem Berührpunkt, und steht dort senkrecht auf dem Radius. Im
+  Zugmodus wird eine Gerade vom Mittelpunkt weg verschoben, der Abstand und die gemeinsamen Punkte werden gemessen.
+  Aufgaben: Begriffe zuordnen, Lage erkennen, längste Sehne, Tangente zeichnen (Schritte ordnen), Begründung.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: |
+          Du kannst gleich Sehne, Sekante und Tangente unterscheiden und eine Tangente zeichnen.
+      - type: text
+        text: |
+          **Selin:** Ich lege eine Schnur über den runden Teich.
+
+          **Piet:** Mal trifft sie den Rand zweimal, mal nur einmal, mal gar nicht.
+      - type: multiple-choice
+        id: gemeinsame-punkte
+        text: Wie viele gemeinsame Punkte können eine Gerade und ein Kreis haben? Wähle alle Möglichkeiten.
+        options:
+          - text: keinen
+            correct: true
+            info: Die Gerade kann am Kreis vorbeilaufen.
+          - text: genau einen
+            correct: true
+            info: Die Gerade kann den Kreis gerade berühren.
+          - text: genau zwei
+            correct: true
+            info: Die Gerade kann durch den Kreis laufen und ihn zweimal treffen.
+          - text: drei
+            correct: false
+            info: Eine Gerade ist gerade. Sie kann einen Kreis höchstens zweimal treffen.
+        explanation: Null, ein oder zwei gemeinsame Punkte. Welche Lage welchen Namen hat, siehst du gleich.
+        links:
+          - title: Kreis (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Kreis"
+  - type: section
+    id: entdecken
+    title: Die Gerade verschieben
+    blocks:
+      - type: text
+        text: |
+          Der Kreis hat den Radius 4 cm. Die Gerade liegt im Abstand *d* vom Mittelpunkt *M*. Verschiebe sie mit den
+          Pfeiltasten (Tabulatortaste zum Punkt rechts) oder mit der Maus. Stelle *d* auf 0 cm, 2 cm, 4 cm und 5 cm ein
+          und lies jedes Mal die gemeinsamen Punkte ab.
+      - type: vue-component
+        id: zug-kreisgerade
+        component: Kreisgerade
+        props:
+          handle: "Abstand der Geraden vom Mittelpunkt, mit den Pfeiltasten ändern"
+          position: "Abstand {d} cm, {n} gemeinsame Punkte"
+          measure: "Abstand d = {d} cm · gemeinsame Punkte: {n} · Strecke zwischen ihnen: {s} cm"
+          reset: Gerade zurück auf den Start
+        nojs: |
+          Ein Kreis mit Radius 4 cm und eine waagerechte Gerade im Abstand *d* vom Mittelpunkt. Bei d = 0 cm gibt es zwei
+          gemeinsame Punkte, die Strecke zwischen ihnen ist 8 cm lang. Bei d = 2 cm sind es zwei Punkte, die Strecke ist
+          6,9 cm lang. Bei d = 4 cm gibt es genau einen gemeinsamen Punkt, die Gerade berührt den Kreis. Bei d = 5 cm gibt
+          es keinen gemeinsamen Punkt.
+  - type: section
+    id: vermutung
+    title: Was fällt auf?
+    blocks:
+      - type: single-choice
+        id: wann-beruehrt
+        text: Bei welchem Abstand d berührt die Gerade den Kreis in genau einem Punkt?
+        options:
+          - text: d = 2 cm
+            correct: false
+            info: Bei 2 cm gibt es zwei gemeinsame Punkte, die Gerade läuft durch den Kreis.
+          - text: d = 4 cm
+            correct: true
+            info: 4 cm ist der Radius. Dann berührt die Gerade den Kreis genau einmal.
+          - text: d = 5 cm
+            correct: false
+            info: Bei 5 cm gibt es keinen gemeinsamen Punkt, die Gerade liegt außerhalb.
+        explanation: "Abstand gleich Radius: Die Gerade berührt den Kreis."
+        links:
+          - title: Tangente (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Tangente"
+      - type: single-choice
+        id: tangente-winkel
+        text: Bei d = 4 cm zeigt die gestrichelte Strecke vom Mittelpunkt M zum Berührpunkt. Welchen Winkel bildet sie mit der Geraden?
+        options:
+          - text: 45°
+            correct: false
+            info: Die Strecke steht im Bild nicht schräg zur Geraden.
+          - text: 60°
+            correct: false
+            info: Im Bild steht die Strecke nicht schief zur Geraden.
+          - text: 90°
+            correct: true
+            info: Die Strecke steht senkrecht auf der Geraden, im Bild ein rechter Winkel.
+        explanation: Die Tangente steht im Berührpunkt senkrecht auf dem Radius.
+        links:
+          - title: Tangente (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Tangente"
+  - type: section
+    id: warum
+    title: Warum steht die Tangente senkrecht?
+    blocks:
+      - type: text
+        text: |
+          Angenommen, der Radius steht nicht senkrecht auf der Geraden. Dann kannst du den Berührpunkt an der Senkrechten
+          durch *M* spiegeln. Der Spiegelpunkt liegt auch auf dem Kreis und auf der Geraden. Dann gäbe es zwei gemeinsame
+          Punkte, und die Gerade wäre keine Tangente. Also muss der Radius senkrecht stehen.
+  - type: section
+    id: merke
+    title: Merke
+    blocks:
+      - type: definition
+        term: Sekante
+        explanation: Eine Gerade, die den Kreis in zwei Punkten schneidet.
+      - type: definition
+        term: Sehne
+        explanation: Die Strecke zwischen den beiden Schnittpunkten einer Sekante. Die längste Sehne ist der Durchmesser.
+      - type: definition
+        term: Tangente
+        explanation: Eine Gerade, die den Kreis in genau einem Punkt berührt. Sie steht dort senkrecht auf dem Radius.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: begriffe-zuordnen
+        text: Ordne jedem Begriff die passende Beschreibung zu.
+        pairs:
+          - left: Sekante
+            right: Gerade mit zwei gemeinsamen Punkten
+          - left: Sehne
+            right: Strecke zwischen zwei Punkten auf dem Kreis
+          - left: Tangente
+            right: Gerade mit genau einem gemeinsamen Punkt
+        explanation: Sekante und Tangente sind Geraden, die Sehne eine Strecke.
+        links:
+          - title: Sekante (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Sekante"
+      - type: single-choice
+        id: lage-erkennen
+        text: Ein Kreis hat den Radius 3 cm. Eine Gerade hat vom Mittelpunkt den Abstand 3 cm. Was ist die Gerade?
+        options:
+          - text: eine Sekante
+            correct: false
+            info: Eine Sekante schneidet den Kreis zweimal, dann wäre der Abstand kleiner als 3 cm.
+          - text: eine Tangente
+            correct: true
+            info: Der Abstand ist so groß wie der Radius, die Gerade berührt den Kreis genau einmal.
+          - text: eine Sehne
+            correct: false
+            info: Eine Sehne ist eine Strecke, keine Gerade.
+        explanation: "Abstand gleich Radius: Tangente."
+        links:
+          - title: Tangente (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Tangente"
+      - type: generated
+        id: laengste-sehne
+        given:
+          r: { int: [2, 12] }
+        task:
+          text: "Ein Kreis hat den Radius {{r}} cm. Wie lang ist seine längste Sehne? Gib die Länge in cm an."
+        answer: { value: "2 * r", compare: { number: { format: integer, unit: cm } } }
+        mistakes:
+          - value: "r"
+            message: "Das ist der Radius. Die längste Sehne geht durch den Mittelpunkt, sie ist der Durchmesser."
+        hint: "Die längste Sehne geht durch den Mittelpunkt M."
+        steps:
+          - "Die längste Sehne ist der Durchmesser."
+          - "Durchmesser = 2 · Radius = 2 · {{r}} cm = {{answer}} cm."
+      - type: ordering
+        id: tangente-zeichnen
+        text: Du sollst die Tangente an einen Punkt P auf dem Kreis zeichnen. Bringe die Schritte in die richtige Reihenfolge.
+        items:
+          - Zeichne den Kreis um M und markiere P auf dem Kreis.
+          - Zeichne den Radius von M nach P.
+          - Lege das Geodreieck so an, dass es im Punkt P senkrecht zum Radius steht.
+          - Zeichne die Gerade durch P. Sie ist die Tangente.
+        explanation: Die Tangente steht in P senkrecht auf dem Radius, darum brauchst du erst den Radius.
+        links:
+          - title: Tangente (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Tangente"
+  - type: section
+    id: begruendung
+    title: Begründe in eigenen Worten
+    blocks:
+      - type: open-task
+        id: tangente-begruenden
+        task: Erkläre in zwei bis vier Sätzen, warum die Tangente im Berührpunkt senkrecht auf dem Radius steht.
+        points:
+          - text: Stünde der Radius schief, könnte man den Berührpunkt an der Senkrechten durch M spiegeln.
+            source: /winkel/sehne-tangente/#warum
+          - text: Der Spiegelpunkt läge auch auf dem Kreis und auf der Geraden, es gäbe zwei gemeinsame Punkte.
+            source: /winkel/sehne-tangente/#warum
+          - text: Eine Tangente hat aber nur einen gemeinsamen Punkt, also steht der Radius senkrecht.
+            source: /winkel/sehne-tangente/#merke
+          - text: Ganze Sätze mit einer Begründung (weil …, darum …).
+            kind: form
+        solution: |
+          Wenn der Radius nicht senkrecht auf der Geraden stünde, könnte ich den Berührpunkt an der Senkrechten durch M
+          spiegeln. Der Spiegelpunkt läge auch auf dem Kreis und auf der Geraden. Dann hätten die Gerade und der Kreis
+          zwei gemeinsame Punkte, aber eine Tangente hat nur einen. Darum steht der Radius senkrecht.

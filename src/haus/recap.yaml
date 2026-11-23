@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+recap: [mathematik/vierecke-grundfiguren, mathematik/symmetrie]
+scope: |
+  Wiederholung ohne Aufgaben: besondere Vierecke mit ihren Eigenschaften (Quadrat, Rechteck, Raute, Parallelogramm,
+  Trapez, Drachen) und Symmetrie (Achsen-, Punkt- und Drehsymmetrie), als Grundlage für das Haus der Vierecke.
+blocks:
+  - type: text
+    text: |
+      Kannst du das schon? Ich kann besondere Vierecke mit ihren Eigenschaften beschreiben und unterscheiden (Besondere
+      Vierecke): Quadrat, Rechteck, Raute, Parallelogramm, Trapez und Drachen. Ich kann Achsen-, Punkt- und
+      Drehsymmetrie bei Figuren erkennen und nutzen (Symmetrie).
