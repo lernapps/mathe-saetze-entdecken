@@ -20,14 +20,15 @@ defineProps<{
   reset: string;
 }>();
 
-const start = { c: { x: 5, y: 3 }, d: { x: 0, y: 3 } };
+const start = { c: { x: 6, y: 3 }, d: { x: 1, y: 4 } };
 const c = ref<P>({ ...start.c });
 const d = ref<P>({ ...start.d });
 const dragging = ref<"c" | "d" | null>(null);
 const svg = ref<SVGSVGElement | null>(null);
 
-// 30 px per cm, A = (40, 170)
-const px = (p: P) => ({ x: 40 + 30 * p.x, y: 170 - 30 * p.y });
+// 26 px per cm, A = (40, 172)
+const px = (p: P) => ({ x: 40 + 26 * p.x, y: 172 - 26 * p.y });
+const grid = Array.from({ length: 10 * 7 }, (_, i) => px({ x: i % 10, y: Math.floor(i / 10) }));
 const pa = px({ x: 0, y: 0 });
 const pb = px({ x: 5, y: 0 });
 const pc = computed(() => px(c.value));
@@ -49,8 +50,8 @@ function move(event: PointerEvent): void {
   const box = svg.value.getBoundingClientRect();
   const k = 330 / box.width;
   const p = clampPoint({
-    x: ((event.clientX - box.left) * k - 40) / 30,
-    y: (170 - (event.clientY - box.top) * k) / 30,
+    x: ((event.clientX - box.left) * k - 40) / 26,
+    y: (172 - (event.clientY - box.top) * k) / 26,
   });
   (dragging.value === "c" ? c : d).value = p;
 }
@@ -78,6 +79,7 @@ function resetPosition(): void {
       @pointercancel="dragging = null"
     >
       <g aria-hidden="true">
+        <circle v-for="(g, i) in grid" :key="i" :cx="g.x" :cy="g.y" r="1.5" class="viereckszug-grid" />
         <polygon
           :points="`${pa.x},${pa.y} ${pb.x},${pb.y} ${pc.x},${pc.y} ${pd.x},${pd.y}`"
           class="viereckszug-shape"
@@ -137,6 +139,10 @@ function resetPosition(): void {
   stroke: var(--page-accent);
   stroke-width: 2.5;
   fill-opacity: 0.5;
+}
+
+.viereckszug-grid {
+  fill: var(--page-muted);
 }
 
 .viereckszug-invalid {

@@ -24,5 +24,5 @@ test("d stays in range and keys move one centimetre", () => {
 });
 
 test("texts are filled with a decimal comma", () => {
-  expect(fill("d = {d}\u00A0cm, {n} Punkte, Sehne {s}\u00A0cm", 3)).toBe("d = 3\u00A0cm, 2 Punkte, Sehne 5,3\u00A0cm");
+  expect(fill("d = {d}\u00A0cm, {n} Punkte, Sehne {s}", 3)).toBe("d = 3\u00A0cm, 2 Punkte, Sehne 5,3\u00A0cm");
 });

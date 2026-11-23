@@ -206,7 +206,7 @@ blocks:
         items:
           - Zeichne die Winkelhalbierenden bei A und bei B.
           - Markiere den Schnittpunkt I der beiden Linien.
-          - Fälle von I das Lot auf die Seite AB. Der Fußpunkt ist F.
+          - Fälle von I das Lot auf die Seite AB. Der Fußpunkt F ist der Punkt, wo das Lot AB trifft.
           - Zeichne den Kreis um I durch F.
         explanation: I ist der Mittelpunkt, der Abstand IF ist der Radius.
         links:

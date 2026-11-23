@@ -52,7 +52,23 @@ const ext = computed(() => {
 // figure for the triangle: A = (−2, 0), B = (2, 0), 50 px per unit, origin at (160, 150)
 const px = (v: { x: number; y: number }) => ({ x: 160 + 50 * v.x, y: 150 - 50 * v.y });
 const cPx = computed(() => px(corner.value));
-const handlePx = computed(() => (props.kind === "parallelen" ? u.value : cPx.value));
+const handlePx = computed(() => (props.kind === "parallelen" ? { x: ext.value.x2, y: ext.value.y2 } : cPx.value));
+// small arcs for the four angles of the parallels (radius 18): α and β from the right ray up to the line, δ from the
+// left ray, γ from the left ray down
+const arc = (cx: number, cy: number, from: "left" | "right", sweep: 0 | 1, towards: "up" | "down") => {
+  const r = (phi.value * Math.PI) / 180;
+  const sx = from === "right" ? 18 : -18;
+  const dir = towards === "up" ? 1 : -1;
+  const ex = dir * 18 * Math.cos(r);
+  const ey = -dir * 18 * Math.sin(r);
+  return `M ${cx + sx} ${cy} A 18 18 0 0 ${sweep} ${cx + ex} ${cy + ey}`;
+};
+const arcs = computed(() => [
+  arc(o.x, o.y, "right", 0, "up"),
+  arc(o.x, o.y, "left", 1, "up"),
+  arc(u.value.x, u.value.y, "right", 0, "up"),
+  arc(u.value.x, u.value.y, "left", 0, "down"),
+]);
 
 function onKey(event: KeyboardEvent): void {
   if (props.kind === "parallelen") {
@@ -107,10 +123,11 @@ function resetPosition(): void {
         <line x1="10" y1="50" x2="310" y2="50" class="winkelzug-line" />
         <line x1="10" y1="140" x2="310" y2="140" class="winkelzug-line" />
         <line :x1="ext.x1" :y1="ext.y1" :x2="ext.x2" :y2="ext.y2" class="winkelzug-accent" />
-        <text :x="o.x + 14" :y="o.y - 6" class="winkelzug-angle">α</text>
-        <text :x="o.x - 24" :y="o.y - 6" class="winkelzug-angle">δ</text>
-        <text :x="u.x + 14" :y="u.y - 6" class="winkelzug-angle">β</text>
-        <text :x="u.x - 24" :y="u.y + 18" class="winkelzug-angle">γ</text>
+        <path v-for="(a, i) in arcs" :key="i" :d="a" class="winkelzug-arc" />
+        <text :x="o.x + 22" :y="o.y - 8" class="winkelzug-angle">α</text>
+        <text :x="o.x - 34" :y="o.y - 8" class="winkelzug-angle">δ</text>
+        <text :x="u.x + 22" :y="u.y - 8" class="winkelzug-angle">β</text>
+        <text :x="u.x - 34" :y="u.y + 22" class="winkelzug-angle">γ</text>
         <text x="296" y="44" class="winkelzug-label">g</text>
         <text x="296" y="134" class="winkelzug-label">h</text>
       </g>
@@ -158,6 +175,12 @@ function resetPosition(): void {
 .winkelzug-line {
   stroke: var(--page-text);
   stroke-width: 2;
+}
+
+.winkelzug-arc {
+  fill: none;
+  stroke: var(--page-accent);
+  stroke-width: 1.5;
 }
 
 .winkelzug-accent {

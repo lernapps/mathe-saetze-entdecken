@@ -41,13 +41,12 @@ export function parallelAngles(phi: number): { alpha: number; beta: number; gamm
   };
 }
 
-/** The angles of the triangle A = (−2, 0), B = (2, 0), C. */
+/** The angles of the triangle A = (−2, 0), B = (2, 0), C, each rounded to one decimal; γ is the rest to 180°, so the
+ *  shown angles add up to exactly 180°. */
 export function triangleAngles(c: Corner): { alpha: number; beta: number; gamma: number } {
-  return {
-    alpha: between(4, 0, c.x + 2, c.y),
-    beta: between(-4, 0, c.x - 2, c.y),
-    gamma: between(-2 - c.x, -c.y, 2 - c.x, -c.y),
-  };
+  const alpha = Math.round(between(4, 0, c.x + 2, c.y) * 10) / 10;
+  const beta = Math.round(between(-4, 0, c.x - 2, c.y) * 10) / 10;
+  return { alpha, beta, gamma: Math.round((180 - alpha - beta) * 10) / 10 };
 }
 
 export function fillAngles(template: string, values: Record<string, number>): string {

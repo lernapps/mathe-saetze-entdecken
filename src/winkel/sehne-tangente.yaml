@@ -56,7 +56,7 @@ blocks:
         props:
           handle: "Abstand der Geraden vom Mittelpunkt, mit den Pfeiltasten ändern"
           position: "Abstand {d} cm, {n} gemeinsame Punkte"
-          measure: "Abstand d = {d} cm · gemeinsame Punkte: {n} · Strecke zwischen ihnen: {s} cm"
+          measure: "Abstand d = {d} cm · gemeinsame Punkte: {n} · Strecke zwischen ihnen: {s}"
           reset: Gerade zurück auf den Start
         nojs: |
           Ein Kreis mit Radius 4 cm und eine waagerechte Gerade im Abstand *d* vom Mittelpunkt. Bei d = 0 cm gibt es zwei
@@ -108,7 +108,7 @@ blocks:
       - type: text
         text: |
           Angenommen, der Radius steht nicht senkrecht auf der Geraden. Dann kannst du den Berührpunkt am Lot von *M* auf
-          die Gerade spiegeln. Der Spiegelpunkt ist ein anderer Punkt. Der Spiegelpunkt liegt auch auf dem Kreis und auf der Geraden. Dann gäbe es zwei gemeinsame
+          die Gerade spiegeln (das Lot ist die Senkrechte von *M* auf die Gerade). Der Spiegelpunkt ist ein anderer Punkt. Der Spiegelpunkt liegt auch auf dem Kreis und auf der Geraden. Dann gäbe es zwei gemeinsame
           Punkte, und die Gerade wäre keine Tangente. Also muss der Radius senkrecht stehen.
   - type: section
     id: merke

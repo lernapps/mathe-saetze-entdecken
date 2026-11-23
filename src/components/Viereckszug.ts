@@ -85,7 +85,7 @@ function num(value: number): string {
 export function fill(template: string, corners: Corners, yes: string, no: string): string {
   const m = measure(corners);
   return template
-    .replaceAll("{seiten}", m.sides.map((s) => `${num(s)}\u00A0cm`).join(" · "))
+    .replaceAll("{seiten}", m.sides.map((s, i) => `${["AB", "BC", "CD", "DA"][i]} ${num(s)}\u00A0cm`).join(" · "))
     .replaceAll("{parallel}", String(m.parallelPairs))
     .replaceAll("{recht}", String(m.rightAngles))
     .replaceAll("{achsen}", String(m.axes))

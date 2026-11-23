@@ -103,6 +103,9 @@ function down(event: PointerEvent): void {
         <line v-for="(l, k) in lines" :key="k" :x1="l.x1" :y1="l.y1" :x2="l.x2" :y2="l.y2" class="linien-line" />
         <polygon :points="`${pa.x},${pa.y} ${pb.x},${pb.y} ${pc.x},${pc.y}`" class="linien-triangle" />
         <circle :cx="point.x" :cy="point.y" r="4" class="linien-dot" />
+        <text :x="point.x + 8" :y="point.y + 16" class="linien-label">
+          {{ kind === "umkreis" ? "U" : kind === "inkreis" ? "I" : "H" }}
+        </text>
         <text :x="pa.x - 14" :y="pa.y + 14" class="linien-label">A</text>
         <text :x="pb.x + 6" :y="pb.y + 14" class="linien-label">B</text>
         <text :x="pc.x + 18" :y="pc.y - 6" class="linien-label">C</text>

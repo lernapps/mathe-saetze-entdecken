@@ -19,11 +19,18 @@ test("at parallels, Stufenwinkel and Wechselwinkel are equal and Nebenwinkel add
   }
 });
 
+function triangleAnglesExact(x: number, y: number): number {
+  const u = Math.atan2(y, x + 2);
+  const v = Math.atan2(y, 2 - x);
+  return 180 - (u * 180) / Math.PI - (v * 180) / Math.PI;
+}
+
 test("the angles of every triangle add up to 180°", () => {
   for (let x = -3; x <= 3; x += 0.25)
     for (let y = 0.5; y <= 3; y += 0.25) {
       const t = triangleAngles({ x, y });
-      expect(t.alpha + t.beta + t.gamma).toBeCloseTo(180, 6);
+      expect(t.alpha + t.beta + t.gamma).toBeCloseTo(180, 9);
+      expect(Math.abs(t.gamma - triangleAnglesExact(x, y))).toBeLessThan(0.11);
     }
 });
 

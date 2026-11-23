@@ -20,8 +20,8 @@ const d = ref(start);
 const dragging = ref(false);
 const svg = ref<SVGSVGElement | null>(null);
 
-// 18 px per cm, M at (160, 118)
-const scale = 18;
+// 17 px per cm, M at (160, 118)
+const scale = 17;
 const y = computed(() => 118 - scale * d.value);
 const half = computed(() => (chordLength(d.value) / 2) * scale);
 const points = computed(() => {

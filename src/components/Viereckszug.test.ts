@@ -39,6 +39,6 @@ test("only convex quadrilaterals count; positions stay on the grid", () => {
 
 test("texts are filled with decimal commas", () => {
   expect(fill("{seiten} | {parallel} | {recht} | {achsen} | {punkt}", corners.drachen, "ja", "nein")).toBe(
-    "5\u00A0cm · 3,2\u00A0cm · 3,2\u00A0cm · 5\u00A0cm | 0 | 1 | 1 | nein",
+    "AB 5\u00A0cm · BC 3,2\u00A0cm · CD 3,2\u00A0cm · DA 5\u00A0cm | 0 | 1 | 1 | nein",
   );
 });

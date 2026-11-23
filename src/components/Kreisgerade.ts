@@ -27,7 +27,7 @@ export function fill(template: string, d: number): string {
   return template
     .replaceAll("{d}", String(d))
     .replaceAll("{n}", String(commonPoints(d)))
-    .replaceAll("{s}", formatNumber(chordLength(d)))
+    .replaceAll("{s}", chordLength(d) > 0 ? `${formatNumber(chordLength(d))}\u00A0cm` : "–")
     .replaceAll("{r}", String(RADIUS));
 }
 

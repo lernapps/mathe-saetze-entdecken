@@ -44,8 +44,8 @@ blocks:
     blocks:
       - type: text
         text: |
-          Die Geraden *g* und *h* sind parallel. Eine dritte Gerade schneidet beide. Ziehe den Punkt auf der oberen
-          Geraden oder ändere die Neigung mit den Pfeiltasten (Tabulatortaste zum Punkt). Stelle drei verschiedene
+          Die Geraden *g* und *h* sind parallel. Eine dritte Gerade schneidet beide. Ziehe den Punkt am oberen Ende der
+          dritten Geraden oder ändere die Neigung mit den Pfeiltasten (Tabulatortaste zum Punkt). Stelle drei verschiedene
           Neigungen ein und lies jedes Mal α, β, γ und δ ab.
       - type: vue-component
         id: zug-parallelen

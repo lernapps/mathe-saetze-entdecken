@@ -47,7 +47,7 @@ blocks:
       - type: text
         text: |
           Wähle gegebene Stücke und verschiebe den Regler. Die Anzeige zählt, wie viele verschiedene Dreiecke zu den Stücken
-          passen. Bei genau einem sind zwei Dreiecke mit diesen Stücken immer gleich. Probiere SSS, SWS, WSW, SSA und WWW.
+          passen. Zähle bei jeder Einstellung mit. Probiere SSS, SWS, WSW, SSA und WWW.
       - type: vue-component
         id: zug-stuecke-kongruenz
         component: Dreiecksstuecke
