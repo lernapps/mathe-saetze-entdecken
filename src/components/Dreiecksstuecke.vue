@@ -40,7 +40,7 @@ const shapes = computed(() =>
     const a = px(t.a);
     const b = px(t.b);
     const c = px(t.c);
-    return { points: `${a.x},${a.y} ${b.x},${b.y} ${c.x},${c.y}`, b, c, side: sideLength(t.a, t.b) };
+    return { points: `${a.x},${a.y} ${b.x},${b.y} ${c.x},${c.y}`, a, b, c, side: sideLength(t.a, t.b) };
   }),
 );
 
@@ -70,7 +70,11 @@ function choose(i: number): void {
         <polygon :points="s.points" class="stuecke-shape" :class="{ 'stuecke-second': k === 1 }" />
         <circle :cx="s.c.x" :cy="s.c.y" r="4" class="stuecke-dot" />
         <text :x="s.c.x + 8" :y="s.c.y - 6" class="stuecke-label">C</text>
-        <text :x="s.b.x + 6" :y="s.b.y + 14" class="stuecke-label">B</text>
+        <text :x="s.b.x + 6" :y="s.b.y + 14" class="stuecke-label">{{ k === 1 ? "B′" : "B" }}</text>
+        <text v-if="k === 0" :x="(s.a.x + s.b.x) / 2 - 4" :y="s.a.y + 14" class="stuecke-label">c</text>
+        <text v-if="k === 0" :x="(s.b.x + s.c.x) / 2 + 6" :y="(s.b.y + s.c.y) / 2" class="stuecke-label">a</text>
+        <text v-if="k === 0" :x="(s.a.x + s.c.x) / 2 - 12" :y="(s.a.y + s.c.y) / 2 - 4" class="stuecke-label">b</text>
+        <text v-if="k === 0" :x="s.a.x + 14" :y="s.a.y - 5" class="stuecke-label">α</text>
       </g>
       <text x="14" y="182" class="stuecke-label">A</text>
     </svg>

@@ -105,7 +105,7 @@ blocks:
         options:
           - text: keins
             correct: false
-            info: Der Regler zeigt bei a = 4 cm Dreiecke.
+            info: Probiere a = 4 cm am Regler, du siehst Dreiecke.
           - text: genau eins
             correct: false
             info: Bei a = 4 cm siehst du zwei Dreiecke.

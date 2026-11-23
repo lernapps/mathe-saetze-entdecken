@@ -56,7 +56,7 @@ blocks:
           handleC: "Ecke C, mit den Pfeiltasten ziehen"
           handleD: "Ecke D, mit den Pfeiltasten ziehen"
           measure: "Seiten: {seiten} · parallele Seitenpaare: {parallel} · rechte Winkel: {recht} · Symmetrieachsen: {achsen} · punktsymmetrisch: {punkt}"
-          notConvex: "So entsteht kein Viereck mit Ecken A, B, C, D in dieser Reihenfolge. Ziehe die Ecken auseinander."
+          notConvex: "Hier kreuzen sich Seiten oder eine Ecke zeigt nach innen. Es entsteht kein Viereck ABCD. Ziehe C oder D an eine andere Stelle."
           yes: ja
           no: nein
           reset: Ecken zurück auf den Start
