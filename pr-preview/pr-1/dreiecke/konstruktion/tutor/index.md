@@ -135,7 +135,7 @@ Die Reihenfolge der Buchstaben ist wichtig. Bei SWS liegt der Winkel zwischen de
 - Aufgabe: Wie viele verschiedene Dreiecke passen zu b = 5 cm, α = 40° und a = 4 cm (a liegt α gegenüber)?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✗ keins – Der Regler zeigt bei a = 4 cm Dreiecke.
+  - ✗ keins – Probiere a = 4 cm am Regler, du siehst Dreiecke.
   - ✗ genau eins – Bei a = 4 cm siehst du zwei Dreiecke.
   - ✓ zwei – Der Kreis um C schneidet den Schenkel zweimal.
 - Lösung: zwei

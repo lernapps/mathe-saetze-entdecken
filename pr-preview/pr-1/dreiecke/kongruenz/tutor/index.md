@@ -69,7 +69,7 @@ Interaktiv: Gegebene Stücke und die Zahl der Dreiecke, die dazu passen. SSS (a 
 Legen drei Stücke das Dreieck fest, dann kannst du es nur auf eine Art konstruieren. Zwei Dreiecke, die in diesen
 Stücken übereinstimmen, entstehen aus derselben Konstruktion. Die Konstruktion liefert dasselbe Dreieck, nur an
 einem anderen Ort. Also passen die Dreiecke aufeinander. Bei SSA liegt der Winkel α bei *A* und der Seite *a* gegenüber. Ist *a* kleiner als *b*, aber größer als der Abstand von
-*C* zur Seite *AB*, gibt es zwei Konstruktionen. Ist *a* mindestens so lang wie *b*, ist die Konstruktion eindeutig. Das ist der Satz SsW.
+*C* zur Seite *AB*, gibt es zwei Konstruktionen. Ist *a* mindestens so lang wie *b*, ist die Konstruktion eindeutig. Das ist der Satz SsW: zwei Seiten und der Winkel, der der größeren Seite gegenüberliegt.
 
 ### Merke
 
