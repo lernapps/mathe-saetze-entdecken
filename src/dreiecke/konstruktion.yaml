@@ -1,0 +1,244 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Dreiecke konstruieren
+description: "Aus drei Stücken Dreiecke bauen und herausfinden, wann es kein, genau ein oder zwei Dreiecke gibt."
+competencies: [dreieckskonstruktion]
+scope: |
+  Ein Dreieck wird aus drei Stücken konstruiert. Drei Seiten (SSS): Es gibt ein Dreieck, wenn jede Seite kürzer ist als
+  die beiden anderen zusammen (Dreiecksungleichung). Zwei Seiten und der eingeschlossene Winkel (SWS): immer genau ein
+  Dreieck. Eine Seite und die beiden anliegenden Winkel (WSW): genau ein Dreieck, wenn die Winkel zusammen weniger als
+  180° ergeben. Zwei Seiten und ein Winkel, der einer Seite gegenüberliegt (SSA): kein, ein oder zwei Dreiecke. Ist die
+  gegenüberliegende Seite kürzer als die andere, aber länger als der Abstand des Punktes C von der Grundseite, gibt es
+  zwei Dreiecke. Konstruiert wird mit Zirkel und Geodreieck. Entdeckt wird im Zugmodus: ein Stück verändern, die
+  Dreiecke zählen. Aufgaben: Schritte der Konstruktion ordnen, kleinste und größte Seite, eindeutige Angaben erkennen.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: |
+          Du kannst gleich Dreiecke aus Seiten und Winkeln konstruieren und sagen, ob die Konstruktion eindeutig ist.
+      - type: text
+        text: |
+          **Selin:** Für ein dreieckiges Beet haben wir drei Holzlatten.
+
+          **Piet:** Mal passt ein Dreieck, mal nicht. Wann passt es?
+      - type: single-choice
+        id: latten
+        text: Welche drei Latten lassen sich zu einem Dreieck legen?
+        options:
+          - text: 3 m, 4 m und 5 m
+            correct: true
+            info: Jede Latte ist kürzer als die beiden anderen zusammen.
+          - text: 2 m, 3 m und 8 m
+            correct: false
+            info: 2 m + 3 m ist nur 5 m, die 8-m-Latte ist zu lang.
+          - text: 1 m, 2 m und 3 m
+            correct: false
+            info: 1 m + 2 m ist genau 3 m, die Latten liegen flach.
+        explanation: Jede Seite muss kürzer sein als die beiden anderen zusammen.
+        links:
+          - title: Dreiecksungleichung (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Dreiecksungleichung"
+  - type: section
+    id: entdecken
+    title: Stücke verändern
+    blocks:
+      - type: text
+        text: |
+          Wähle die Stücke. Verschiebe den Regler und beobachte, wie viele verschiedene Dreiecke zu den Stücken passen.
+          Beginne mit SSS und schiebe *c* von 1 cm bis 11 cm. Probiere dann die anderen Stücke. Bei „zwei Seiten und ein
+          Winkel“ siehst du ein zweites Dreieck gestrichelt.
+      - type: vue-component
+        id: zug-stuecke-konstruktion
+        component: Dreiecksstuecke
+        props:
+          modes: [sss, sws, wsw, ssa]
+          labels:
+            - "SSS: drei Seiten"
+            - "SWS: zwei Seiten und der Winkel dazwischen"
+            - "WSW: eine Seite und die zwei Winkel daran"
+            - "SSA: zwei Seiten und ein Winkel gegenüber einer Seite"
+          given:
+            - "Gegeben: a = 4 cm, b = 6 cm, c = {v} cm"
+            - "Gegeben: b = 5 cm, c = 6 cm, α = {v}°"
+            - "Gegeben: c = 6 cm, α = 50°, β = {v}°"
+            - "Gegeben: b = 5 cm, α = 40°, a = {v} cm (a liegt α gegenüber)"
+          slider:
+            - "Seite c in cm"
+            - "Winkel α in Grad"
+            - "Winkel β in Grad"
+            - "Seite a in cm"
+          result: "Anzahl verschiedener Dreiecke: {n}"
+          words: [keins, eins, zwei, unendlich viele]
+          legend: Gegebene Stücke
+        nojs: |
+          Drei Stücke bestimmen ein Dreieck. SSS mit a = 4 cm und b = 6 cm: Bei c = 2 cm, 1 cm und 10 cm entsteht kein
+          Dreieck, bei c = 3 cm bis 9 cm genau eins. SWS mit b = 5 cm und c = 6 cm: Für jeden Winkel α von 20° bis 160°
+          entsteht genau ein Dreieck. WSW mit c = 6 cm und α = 50°: Für β bis 120° entsteht genau ein Dreieck, ab β = 130°
+          keins. SSA mit b = 5 cm und α = 40°: Für a = 3 cm entsteht keins, für a = 3,5 cm bis 4,5 cm entstehen zwei, für
+          a = 5 cm und mehr genau eins.
+  - type: section
+    id: vermutung
+    title: Was fällt auf?
+    blocks:
+      - type: multiple-choice
+        id: sss-vermuten
+        text: Bei a = 4 cm und b = 6 cm. Für welche Seiten c entsteht ein Dreieck?
+        options:
+          - text: c = 1 cm
+            correct: false
+            info: 4 cm + 1 cm ist kürzer als 6 cm.
+          - text: c = 2 cm
+            correct: false
+            info: 4 cm + 2 cm ist genau 6 cm, flach.
+          - text: c = 3 cm
+            correct: true
+            info: 3 cm liegt zwischen 2 cm und 10 cm.
+          - text: c = 9 cm
+            correct: true
+            info: 9 cm ist kürzer als 10 cm.
+          - text: c = 10 cm
+            correct: false
+            info: 4 cm + 6 cm ist genau 10 cm, flach.
+        explanation: c muss größer sein als der Unterschied und kleiner als die Summe der anderen Seiten.
+        links:
+          - title: Dreiecksungleichung (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Dreiecksungleichung"
+      - type: single-choice
+        id: ssa-vermuten
+        text: Wie viele verschiedene Dreiecke passen zu b = 5 cm, α = 40° und a = 4 cm (a liegt α gegenüber)?
+        options:
+          - text: keins
+            correct: false
+            info: Der Regler zeigt bei a = 4 cm Dreiecke.
+          - text: genau eins
+            correct: false
+            info: Bei a = 4 cm siehst du zwei Dreiecke.
+          - text: zwei
+            correct: true
+            info: Der Kreis um C schneidet den Schenkel zweimal.
+        explanation: Bei SSA gibt es manchmal zwei Lösungen.
+        links:
+          - title: Kongruenzsatz (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Kongruenzsatz"
+  - type: section
+    id: warum
+    title: Warum ist das so?
+    blocks:
+      - type: text
+        text: |
+          Bei SSS schlägst du zwei Kreise mit dem Zirkel, um *A* mit Radius *b* und um *B* mit Radius *a*. Die Kreise
+          schneiden sich nur, wenn *c* in das Fenster zwischen dem Unterschied und der Summe passt. Die beiden
+          Schnittpunkte liegen spiegelbildlich zu *AB*. Beide Dreiecke sind gleich, nur gespiegelt.
+      - type: text
+        text: |
+          Bei SSA schlägst du einen Kreis mit Radius *a* um *C*. Der freie Schenkel von *A* aus kann ihn zweimal
+          schneiden, einmal oder gar nicht. Das hängt davon ab, wie groß *a* im Vergleich zu *b* und zum Abstand von *C*
+          zu *AB* ist.
+  - type: section
+    id: merke
+    title: Merke
+    blocks:
+      - type: table
+        caption: Wann legen drei Stücke ein Dreieck fest?
+        header: [Stücke, Dreiecke]
+        rows:
+          - [SSS, "ein Dreieck, wenn jede Seite kürzer ist als die beiden anderen zusammen"]
+          - [SWS, immer genau ein Dreieck]
+          - [WSW, "ein Dreieck, wenn die zwei Winkel zusammen weniger als 180° haben"]
+          - [SSA, "keins, eins oder zwei Dreiecke"]
+      - type: note
+        title: Achtung
+        blocks:
+          - type: text
+            text: Die Reihenfolge der Buchstaben ist wichtig. Bei SWS liegt der Winkel zwischen den beiden Seiten. Bei SSA liegt er einer der Seiten gegenüber.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: multiple-choice
+        id: eindeutig-erkennen
+        text: Welche Angaben legen genau ein Dreieck fest?
+        options:
+          - text: a = 4 cm, b = 6 cm, c = 5 cm
+            correct: true
+            info: SSS, jede Seite ist kürzer als die anderen zusammen.
+          - text: a = 4 cm, b = 6 cm, c = 11 cm
+            correct: false
+            info: 4 cm + 6 cm reicht nicht bis 11 cm.
+          - text: b = 5 cm, α = 40°, a = 4 cm (a liegt α gegenüber)
+            correct: false
+            info: Hier passen zwei Dreiecke.
+          - text: c = 6 cm, α = 50°, β = 60°
+            correct: true
+            info: WSW, 50° + 60° ist weniger als 180°.
+        explanation: SSS und WSW legen hier ein Dreieck fest.
+        links:
+          - title: Kongruenzsatz (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Kongruenzsatz"
+      - type: generated
+        id: kleinste-seite
+        given:
+          a: { int: [3, 9] }
+          b: { int: [3, 9] }
+        where: ["a > b"]
+        task:
+          text: "Von einem Dreieck kennst du die Seiten a = {{a}} cm und b = {{b}} cm. Die dritte Seite c soll eine ganze Zahl in cm sein. Gib die kleinste ganze Zahl in cm an, bei der noch ein Dreieck entsteht."
+        answer: { value: "a - b + 1", compare: { number: { format: integer, unit: cm } } }
+        mistakes:
+          - value: "a - b"
+            message: "Bei diesem Wert liegen die Seiten flach. c muss länger sein als der Unterschied."
+          - value: "a + b"
+            message: "Das ist die Länge, bei der die Seiten flach liegen. Gefragt ist die kleinste."
+        hint: "c ist länger als der Unterschied."
+        steps:
+          - "Der Unterschied der Seiten ist {{a}} cm − {{b}} cm."
+          - "c muss länger sein, also ist die kleinste ganze Zahl {{answer}} cm."
+      - type: generated
+        id: groesste-seite
+        given:
+          a: { int: [3, 9] }
+          b: { int: [3, 9] }
+        task:
+          text: "Von einem Dreieck kennst du die Seiten a = {{a}} cm und b = {{b}} cm. Die dritte Seite c soll eine ganze Zahl in cm sein. Gib die größte ganze Zahl in cm an, bei der noch ein Dreieck entsteht."
+        answer: { value: "a + b - 1", compare: { number: { format: integer, unit: cm } } }
+        mistakes:
+          - value: "a + b"
+            message: "Bei dieser Länge liegen die Seiten flach. c muss kürzer sein als die Summe."
+        hint: "c ist kürzer als die Summe."
+        steps:
+          - "Die Summe der Seiten ist {{a}} cm + {{b}} cm."
+          - "c muss kürzer sein, also ist die größte ganze Zahl {{answer}} cm."
+      - type: ordering
+        id: sws-konstruieren
+        text: Du sollst ein Dreieck aus b, c und dem Winkel α dazwischen konstruieren. Bringe die Schritte in die richtige Reihenfolge.
+        items:
+          - Zeichne die Strecke c = AB.
+          - Trage bei A den Winkel α an.
+          - Trage auf dem freien Schenkel von A aus die Länge b ab. Du erhältst C.
+          - Verbinde C mit B.
+        explanation: Erst die feste Seite, dann der Winkel, dann die zweite Seite.
+        links:
+          - title: Dreieckskonstruktion (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Dreieck#Konstruktion"
+  - type: section
+    id: begruendung
+    title: Begründe in eigenen Worten
+    blocks:
+      - type: open-task
+        id: ssa-begruenden
+        task: Erkläre in zwei bis vier Sätzen, warum bei zwei Seiten und einem Winkel, der der kürzeren Seite gegenüberliegt, zwei Dreiecke passen können.
+        points:
+          - text: Man schlägt einen Kreis um C mit dem Radius der Seite a.
+            source: /dreiecke/konstruktion/#warum
+          - text: Der freie Schenkel des Winkels schneidet den Kreis zweimal.
+            source: /dreiecke/konstruktion/#warum
+          - text: Beide Schnittpunkte können die Ecke B sein, und beide Dreiecke haben die gegebenen Stücke.
+            source: /dreiecke/konstruktion/#warum
+          - text: Ganze Sätze mit einer Begründung (weil …, darum …).
+            kind: form
+        solution: |
+          Ich schlage um C einen Kreis mit dem Radius a. Der freie Schenkel des Winkels α schneidet diesen Kreis zweimal.
+          Beide Schnittpunkte können die Ecke B sein. Beide Dreiecke haben die gegebenen Seiten und den gegebenen Winkel,
+          sind aber verschieden.

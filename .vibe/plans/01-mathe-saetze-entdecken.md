@@ -228,8 +228,8 @@ page, which a link. -->
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
       Creator: Musterseite angenommen (Orchestrator in Vertretung)
-- [ ] Kapitel 1: Recap und Seite Haus der Vierecke (Datei viereck-eigenschaften, Zuordnen, Wahr/Falsch mit Begründung), Kapitelrückblick
-- [ ] Kapitel 2: Recap, Seiten Winkelsätze und Sehne/Sekante/Tangente (generated Winkelaufgaben mit Mistakes), Rückblick
+- [x] Kapitel 1: Recap und Seite Haus der Vierecke (Datei viereck-eigenschaften, Zuordnen, Wahr/Falsch mit Begründung), Kapitelrückblick
+- [x] Kapitel 2: Recap, Seiten Winkelsätze und Sehne/Sekante/Tangente (generated Winkelaufgaben mit Mistakes), Rückblick
 - [ ] Kapitel 3: Recap, Seite Dreieckskonstruktion mit Komponente Konstruktion und Eindeutigkeit
 - [ ] Kapitel 3: Seiten Kongruenz (Kongruenzsätze, SSA/WWW-Gegenbeispiel) und Besondere Linien im Dreieck (Um-/Inkreis), Rückblick
 - [ ] Startseite, Baustein→Seite-Liste im Content-Guide, Medienübersicht, Katalogtext-Entwurf

@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+recap: [mathematik/konstruktionen, mathematik/winkel-messen, mathematik/bewegungen-figuren]
+scope: |
+  Wiederholung ohne Aufgaben: Zeichnen und Konstruieren mit Geodreieck und Zirkel, Winkel messen und zeichnen, und
+  Spiegeln, Verschieben und Drehen von Figuren, als Grundlage für das Konstruieren und Vergleichen von Dreiecken.
+blocks:
+  - type: text
+    text: |
+      Kannst du das schon? Ich kann Figuren mit Geodreieck, Zirkel oder Geometriesoftware zeichnen und konstruieren
+      (Zeichnen und Konstruieren). Ich kann Winkel messen, zeichnen und nach ihrer Größe einteilen (Winkel messen und
+      zeichnen). Ich kann Figuren spiegeln, verschieben und drehen und die Bildfigur bestimmen (Spiegeln, Verschieben,
+      Drehen).

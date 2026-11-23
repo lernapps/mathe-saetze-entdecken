@@ -208,3 +208,12 @@ blocks:
           Ich zeichne den Mittelpunkt M des Kreises. Dann sind MA, MB und MC gleich lang, es entstehen zwei
           gleichschenklige Dreiecke. Darin sind die Basiswinkel gleich: der Winkel bei C ist α plus β. Die
           Winkelsumme im Dreieck ABC ist 180°, also 2 · γ = 180° und γ = 90°.
+  - type: section
+    id: rueckblick
+    title: Rückblick
+    blocks:
+      - type: text
+        text: |
+          Du hast an Parallelen und im Dreieck Winkelbeziehungen entdeckt und den Winkelsummensatz begründet. Du kannst
+          Sehne, Sekante und Tangente unterscheiden. Du kannst mit dem Satz des Thales erklären, warum der Winkel im
+          Halbkreis immer 90° ist.

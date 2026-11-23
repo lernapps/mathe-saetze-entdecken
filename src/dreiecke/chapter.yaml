@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Dreiecke konstruieren und vergleichen
+summary: Dreiecke aus gegebenen Stücken konstruieren, Kongruenzsätze nutzen und besondere Linien im Dreieck zeichnen.
+pages: [recap, konstruktion, kongruenz, linien]

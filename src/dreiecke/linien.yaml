@@ -1,0 +1,265 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Besondere Linien im Dreieck
+description: "Die Ecke eines Dreiecks ziehen und entdecken, dass sich Mittelsenkrechten, Winkelhalbierende und Höhen in einem Punkt treffen."
+competencies: [linien-im-dreieck]
+scope: |
+  Besondere Linien im Dreieck. Die Mittelsenkrechte einer Seite steht in der Mitte der Seite senkrecht auf ihr, jeder
+  ihrer Punkte ist von den Enden der Seite gleich weit entfernt. Die drei Mittelsenkrechten treffen sich in einem
+  Punkt U, dem Mittelpunkt des Umkreises durch alle drei Ecken. Die Winkelhalbierende teilt einen Winkel, ihre Punkte
+  sind von beiden Schenkeln gleich weit entfernt. Die drei Winkelhalbierenden treffen sich im Mittelpunkt I des
+  Inkreises, der alle drei Seiten von innen berührt. Eine Höhe geht durch eine Ecke und steht senkrecht auf der
+  gegenüberliegenden Seite, die drei Höhen treffen sich in einem Punkt. Bei einem stumpfwinkligen Dreieck liegen U und
+  der Höhenschnittpunkt außerhalb, bei einem rechtwinkligen Dreieck liegt U in der Mitte der Hypotenuse. Begründet wird,
+  warum sich die Mittelsenkrechten in einem Punkt treffen. Entdeckt wird im Zugmodus: Ecke C ziehen, Abstände messen.
+blocks:
+  - type: section
+    id: einstieg
+    title: Worum es geht
+    blocks:
+      - type: text
+        text: |
+          Du kannst gleich Mittelsenkrechten, Winkelhalbierende und Höhen im Dreieck zeichnen und Um- und Inkreis
+          konstruieren.
+      - type: text
+        text: |
+          **Selin:** Wir suchen einen Punkt für den Brunnen. Er soll von drei Beeten gleich weit entfernt sein.
+
+          **Piet:** Und ein Teich soll als größter Kreis in ein dreieckiges Beet passen.
+      - type: number
+        id: mitte-abstand
+        text: Die Strecke AB ist 8 cm lang. M ist ihre Mitte. Wie weit ist M von A entfernt?
+        answer: 4
+        tolerance: 0
+        unit: cm
+        explanation: Die Mitte teilt die Strecke in zwei gleiche Teile, 8 cm geteilt durch 2 ist 4 cm.
+        links:
+          - title: Mittelsenkrechte (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Mittelsenkrechte"
+  - type: section
+    id: umkreis
+    title: Mittelsenkrechten ziehen
+    blocks:
+      - type: text
+        text: |
+          Die Mittelsenkrechte einer Seite geht durch die Mitte der Seite und steht senkrecht auf ihr. Ziehe die Ecke *C*
+          mit den Pfeiltasten (Tabulatortaste zum Punkt) oder mit der Maus. Der Punkt *U* ist der Treffpunkt der drei
+          Linien. Stelle *C* an drei Stellen ein und vergleiche die drei Abstände.
+      - type: vue-component
+        id: zug-umkreis
+        component: Liniendreieck
+        props:
+          kind: umkreis
+          handle: "Ecke C, mit den Pfeiltasten ziehen"
+          position: "Abstände von U zu A, B und C: {w1} cm, {w2} cm, {w3} cm"
+          measure: "Abstand von U zu A, B, C: {w1} cm · {w2} cm · {w3} cm. U liegt {lage} des Dreiecks."
+          inside: innerhalb
+          outside: außerhalb oder auf einer Seite
+          reset: Ecke C zurück auf den Start
+        nojs: |
+          Ein Dreieck *ABC* mit den drei Mittelsenkrechten der Seiten. Sie treffen sich in einem Punkt *U*, der von *A*, *B*
+          und *C* gleich weit entfernt ist. Bei *C* = (0 | 3) ist der Abstand von *U* zu allen drei Ecken 2,2 cm. Bei
+          *C* = (0,5 | 2,5) sind es 2,1 cm. Bei *C* = (2,5 | 2) sind es 2,5 cm. Um *U* liegt ein Kreis durch *A*, *B*
+          und *C*, der Umkreis.
+      - type: single-choice
+        id: umkreis-vermuten
+        text: Was gilt für den Treffpunkt U der drei Mittelsenkrechten?
+        options:
+          - text: U ist von A, B und C gleich weit entfernt.
+            correct: true
+            info: Die Messung zeigt dreimal denselben Abstand.
+          - text: U ist von A am weitesten entfernt.
+            correct: false
+            info: Die drei Abstände sind gleich groß, A ist nicht besonders.
+          - text: U liegt immer auf einer Seite des Dreiecks.
+            correct: false
+            info: Bei einem rechten Winkel liegt U auf einer Seite, sonst innen oder außen.
+        explanation: Darum gibt es einen Kreis um U durch A, B und C.
+        links:
+          - title: Umkreis (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Umkreis"
+  - type: section
+    id: warum
+    title: Warum treffen sie sich in einem Punkt?
+    blocks:
+      - type: text
+        text: |
+          1. Ein Punkt auf der Mittelsenkrechten von *AB* ist von *A* und *B* gleich weit entfernt.
+          2. Ein Punkt auf der Mittelsenkrechten von *BC* ist von *B* und *C* gleich weit entfernt.
+          3. Der Schnittpunkt *U* dieser beiden Linien ist von *A*, *B* und *C* gleich weit entfernt.
+          4. Dann liegt *U* auch auf der Mittelsenkrechten von *CA*. Alle drei treffen sich in *U*.
+  - type: section
+    id: inkreis
+    title: Winkelhalbierende ziehen
+    blocks:
+      - type: text
+        text: |
+          Eine Winkelhalbierende teilt einen Winkel in zwei gleiche Teile. Ziehe *C* und beobachte den Treffpunkt *I* der
+          drei Winkelhalbierenden. Vergleiche seine Abstände zu den drei Seiten.
+      - type: vue-component
+        id: zug-inkreis
+        component: Liniendreieck
+        props:
+          kind: inkreis
+          handle: "Ecke C, mit den Pfeiltasten ziehen"
+          position: "Abstände von I zu den drei Seiten: {w1} cm, {w2} cm, {w3} cm"
+          measure: "Abstand von I zu den drei Seiten: {w1} cm · {w2} cm · {w3} cm. I liegt {lage} des Dreiecks."
+          inside: innerhalb
+          outside: außerhalb
+          reset: Ecke C zurück auf den Start
+        nojs: |
+          Ein Dreieck *ABC* mit den drei Winkelhalbierenden. Sie treffen sich in einem Punkt *I* im Inneren des Dreiecks. *I*
+          ist von allen drei Seiten gleich weit entfernt, der Kreis um *I* mit diesem Abstand berührt alle drei Seiten, der
+          Inkreis. Bei *C* = (0 | 3) ist der Abstand 1,2 cm.
+      - type: single-choice
+        id: inkreis-vermuten
+        text: Du willst im dreieckigen Beet einen runden Teich so groß wie möglich anlegen. Wo liegt sein Mittelpunkt?
+        options:
+          - text: im Treffpunkt der Mittelsenkrechten
+            correct: false
+            info: Dieser Punkt ist gleich weit von den Ecken, nicht von den Seiten.
+          - text: im Treffpunkt der Winkelhalbierenden
+            correct: true
+            info: Er ist von allen drei Seiten gleich weit entfernt.
+          - text: in der Mitte einer Seite
+            correct: false
+            info: Dort wäre der Kreis an den anderen Seiten schnell am Rand.
+        explanation: Die Winkelhalbierenden treffen sich im Mittelpunkt des Inkreises.
+        links:
+          - title: Inkreis (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Inkreis"
+  - type: section
+    id: hoehen
+    title: Höhen ziehen
+    blocks:
+      - type: text
+        text: |
+          Eine Höhe geht durch eine Ecke und steht senkrecht auf der gegenüberliegenden Seite. Ziehe *C* und beobachte den
+          Punkt *H*, in dem die Höhen zusammentreffen.
+      - type: vue-component
+        id: zug-hoehen
+        component: Liniendreieck
+        props:
+          kind: hoehen
+          handle: "Ecke C, mit den Pfeiltasten ziehen"
+          position: "Abstände von H zu den drei Höhen: {w1} cm, {w2} cm, {w3} cm"
+          measure: "Abstand von H zu den drei Höhen: {w1} cm · {w2} cm · {w3} cm. H liegt {lage} des Dreiecks."
+          inside: innerhalb
+          outside: außerhalb oder auf einer Ecke
+          reset: Ecke C zurück auf den Start
+        nojs: |
+          Ein Dreieck *ABC* mit den drei Höhen. Sie treffen sich in einem Punkt *H*. Die Abstände von *H* zu den drei Höhen
+          sind 0 cm, *H* liegt auf allen drei. Bei einem Dreieck mit stumpfem Winkel liegt *H* außerhalb, bei
+          *C* = (−2,5 | 1,5) zum Beispiel.
+      - type: single-choice
+        id: hoehen-vermuten
+        text: In wie vielen Punkten schneiden sich die drei Höhen eines Dreiecks?
+        options:
+          - text: in einem Punkt
+            correct: true
+            info: Der Abstand von H zu allen drei Höhen ist 0, H liegt auf jeder.
+          - text: in drei Punkten
+            correct: false
+            info: Die dritte Höhe läuft durch den Schnittpunkt der anderen.
+          - text: in keinem Punkt
+            correct: false
+            info: Die Messung zeigt 0 cm Abstand, H liegt auf jeder Höhe.
+        explanation: Die drei Höhen treffen sich in einem Punkt, auch wenn dieser außerhalb des Dreiecks liegt.
+        links:
+          - title: Höhe (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Höhe_(Geometrie)"
+  - type: section
+    id: merke
+    title: Merke
+    blocks:
+      - type: table
+        caption: Besondere Linien im Dreieck
+        header: [Linie, Treffpunkt und Kreis]
+        rows:
+          - [Mittelsenkrechte, "Treffpunkt U, gleich weit von den Ecken, Mittelpunkt des Umkreises"]
+          - [Winkelhalbierende, "Treffpunkt I, gleich weit von den Seiten, Mittelpunkt des Inkreises"]
+          - [Höhe, "Treffpunkt H, senkrecht zur Seite durch die gegenüberliegende Ecke"]
+      - type: note
+        title: Achtung
+        blocks:
+          - type: text
+            text: U kann außerhalb des Dreiecks liegen, bei einem stumpfen Winkel. I liegt immer innerhalb.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: ordering
+        id: umkreis-konstruieren
+        text: Du sollst den Umkreis eines Dreiecks ABC konstruieren. Bringe die Schritte in die richtige Reihenfolge.
+        items:
+          - Zeichne die Mittelsenkrechte von AB.
+          - Zeichne die Mittelsenkrechte von BC.
+          - Markiere den Schnittpunkt U der beiden Linien.
+          - Zeichne den Kreis um U durch A.
+        explanation: Zwei Mittelsenkrechten reichen für U. Dann bestimmt der Abstand zu A den Radius.
+        links:
+          - title: Umkreis (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Umkreis"
+      - type: matching
+        id: linie-zuordnen
+        text: Ordne jeder Linie ihre Eigenschaft zu.
+        pairs:
+          - left: Mittelsenkrechte
+            right: steht in der Mitte einer Seite senkrecht auf ihr
+          - left: Winkelhalbierende
+            right: teilt einen Winkel in zwei gleiche Teile
+          - left: Höhe
+            right: geht durch eine Ecke senkrecht zur gegenüberliegenden Seite
+        explanation: Jede Linie ist durch ihre Lage zu Ecken, Seiten und Winkeln erklärt.
+        links:
+          - title: Dreieck (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Dreieck"
+      - type: true-false
+        id: umkreis-innen
+        text: Der Mittelpunkt des Umkreises liegt in jedem Dreieck im Inneren.
+        answer: false
+        explanation: Bei einem Dreieck mit stumpfem Winkel liegt er außerhalb, bei einem rechten Winkel liegt er auf der Seite.
+        links:
+          - title: Umkreis (Wikipedia)
+            url: "https://de.wikipedia.org/wiki/Umkreis"
+      - type: generated
+        id: umkreisradius
+        given:
+          c: { int: [4, 20], step: 2 }
+        task:
+          text: "Ein Dreieck hat bei C einen rechten Winkel. Die Seite AB ist {{c}} cm lang. Der Umkreis geht durch A, B und C und sein Mittelpunkt liegt in der Mitte von AB. Wie groß ist der Radius des Umkreises?"
+        answer: { value: "c / 2", compare: { number: { format: integer, unit: cm } } }
+        mistakes:
+          - value: "c"
+            message: "Das ist der Durchmesser AB. Der Radius ist die halbe Strecke vom Mittelpunkt zu einer Ecke."
+        hint: "Der Mittelpunkt liegt in der Mitte von AB, der Radius ist der Abstand zu A."
+        steps:
+          - "Der Mittelpunkt M liegt in der Mitte von AB, also ist AM = {{c}} cm : 2."
+          - "Der Radius ist {{answer}} cm."
+  - type: section
+    id: begruendung
+    title: Begründe in eigenen Worten
+    blocks:
+      - type: open-task
+        id: umkreis-begruenden
+        task: Erkläre in zwei bis vier Sätzen, warum sich die drei Mittelsenkrechten eines Dreiecks in einem Punkt treffen.
+        points:
+          - text: Jeder Punkt der Mittelsenkrechten einer Seite ist von den beiden Enden der Seite gleich weit entfernt.
+            source: /dreiecke/linien/#warum
+          - text: Der Schnittpunkt zweier Mittelsenkrechten ist von allen drei Ecken gleich weit entfernt.
+            source: /dreiecke/linien/#warum
+          - text: Darum liegt er auch auf der dritten Mittelsenkrechten.
+            source: /dreiecke/linien/#warum
+          - text: Ganze Sätze mit einer Begründung (weil …, darum …).
+            kind: form
+        solution: |
+          Jeder Punkt auf der Mittelsenkrechten einer Seite ist von den beiden Enden dieser Seite gleich weit entfernt. Der
+          Schnittpunkt zweier Mittelsenkrechten ist darum von allen drei Ecken gleich weit entfernt. Dann liegt er auch auf
+          der dritten Mittelsenkrechten, und alle drei treffen sich in einem Punkt.
+  - type: section
+    id: rueckblick
+    title: Rückblick
+    blocks:
+      - type: text
+        text: |
+          Du hast Dreiecke aus Stücken gebaut und gesehen, wann sie eindeutig sind. Du kannst mit den Kongruenzsätzen
+          begründen, dass Dreiecke gleich sind. Du kennst die besonderen Linien und ihre Treffpunkte.
