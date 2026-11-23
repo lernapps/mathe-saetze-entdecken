@@ -13,10 +13,17 @@ Gymnasium Sek I, Stufe 7-8 (Hessen als Annahme). Ordnung aus der Lernlandkarte M
 
 ## Competencies
 
-- Kapitel `haus` (Das Haus der Vierecke): `haus-der-vierecke` – Ich kann Vierecke nach ihren Eigenschaften im Haus der Vierecke ordnen und begründen. Seite `haus/haus-der-vierecke`. Recap `haus/recap`: `vierecke-grundfiguren`, `symmetrie`.
-- Kapitel `winkel` (Winkelsätze und der Satz des Thales): `winkelsaetze` – Ich kann mit Winkelsätzen und dem Winkelsummensatz fehlende Winkel berechnen. · `kreis-sehne-tangente` – Ich kann Sehne, Sekante und Tangente am Kreis unterscheiden und eine Tangente zeichnen. · `satz-des-thales` – Ich kann den Satz des Thales erklären und bei Konstruktionen anwenden. Seiten `winkel/winkelsaetze`, `winkel/sehne-tangente`, `winkel/thales`. Recap `winkel/recap`: `winkel-messen`, `grundfiguren-eben`, `konstruktionen`.
-- Kapitel `dreiecke` (Dreiecke konstruieren und vergleichen): `dreieckskonstruktion` – Ich kann Dreiecke aus Seiten und Winkeln konstruieren und sagen, ob die Konstruktion eindeutig ist. · `kongruenz` – Ich kann erkennen und begründen, dass Figuren deckungsgleich sind, und die Kongruenzsätze für Dreiecke anwenden. · `linien-im-dreieck` – Ich kann Mittelsenkrechten, Winkelhalbierenden und Höhen im Dreieck konstruieren und Um- und Inkreis zeichnen. Seiten `dreiecke/konstruktion`, `dreiecke/kongruenz`, `dreiecke/linien`. Recap `dreiecke/recap`: `konstruktionen`, `winkel-messen`, `bewegungen-figuren`.
-Die Exercise-ids je Seite stehen am Ende dieses Abschnitts, sobald die Seiten gebaut sind (Stand: nur `thales` im Bau).
+Baustein → Seite (Datei, Übungs-ids). Jede Seite hat `scope`; Abschnitts-ids siehe „Content structure“.
+
+- `haus-der-vierecke` – Ich kann Vierecke nach ihren Eigenschaften im Haus der Vierecke ordnen und begründen. `src/haus/haus-der-vierecke.yaml`: `rechte-winkel`, `zug-viereck` (Komponente), `quadrat-ist-rechteck`, `rechteck-ist-quadrat`, `immer-parallelogramm`, `eigenschaft-zuordnen`, `achsen-zaehlen` (generated aus `src/data/vierecke.yaml`), `quadrat-rechteck-begruenden`. Recap `src/haus/recap.yaml` (`vierecke-grundfiguren`, `symmetrie`).
+- `winkelsaetze` – Ich kann mit Winkelsätzen und dem Winkelsummensatz fehlende Winkel berechnen. `src/winkel/winkelsaetze.yaml`: `nebenwinkel-erkennen`, `zug-parallelen`, `parallelen-vermuten`, `zug-dreieck`, `winkelsumme-vermuten`, `dreieckswinkel`, `stufenwinkel-nebenwinkel`, `winkelsumme-pruefen`, `winkelsumme-schritte`, `winkelsumme-begruenden`.
+- `kreis-sehne-tangente` – Ich kann Sehne, Sekante und Tangente am Kreis unterscheiden und eine Tangente zeichnen. `src/winkel/sehne-tangente.yaml`: `gemeinsame-punkte`, `zug-kreisgerade`, `wann-beruehrt`, `tangente-winkel`, `begriffe-zuordnen`, `lage-erkennen`, `laengste-sehne`, `tangente-zeichnen`, `tangente-begruenden`.
+- `satz-des-thales` – Ich kann den Satz des Thales erklären und bei Konstruktionen anwenden. `src/winkel/thales.yaml` (Musterseite): `winkelsumme-wiederholen`, `zugmodus-thales`, `welcher-winkel`, `nur-durchmesser`, `beta-berechnen`, `rechtwinkliges-dreieck`, `umkehrung-erkennen`, `thales-begruenden`. Recap `src/winkel/recap.yaml` (`winkel-messen`, `grundfiguren-eben`, `konstruktionen`).
+- `dreieckskonstruktion` – Ich kann Dreiecke aus Seiten und Winkeln konstruieren und sagen, ob die Konstruktion eindeutig ist. `src/dreiecke/konstruktion.yaml`: `latten`, `zug-stuecke-konstruktion`, `sss-vermuten`, `ssa-vermuten`, `eindeutig-erkennen`, `kleinste-seite`, `groesste-seite`, `sws-konstruieren`, `ssa-begruenden`. Recap `src/dreiecke/recap.yaml` (`konstruktionen`, `winkel-messen`, `bewegungen-figuren`).
+- `kongruenz` – Ich kann erkennen und begründen, dass Figuren deckungsgleich sind, und die Kongruenzsätze für Dreiecke anwenden. `src/dreiecke/kongruenz.yaml`: `deckungsgleich`, `zug-stuecke-kongruenz`, `welche-stuecke`, `satz-zuordnen`, `gleiche-winkel`, `ssa-kleinere-seite`, `winkel-kongruent`, `www-begruenden`.
+- `linien-im-dreieck` – Ich kann Mittelsenkrechten, Winkelhalbierenden und Höhen im Dreieck konstruieren und Um- und Inkreis zeichnen. `src/dreiecke/linien.yaml`: `mitte-abstand`, `zug-umkreis`, `umkreis-vermuten`, `zug-inkreis`, `inkreis-vermuten`, `zug-hoehen`, `hoehen-vermuten`, `umkreis-konstruieren`, `linie-zuordnen`, `umkreis-innen`, `umkreisradius`, `umkreis-begruenden`.
+
+Kapitel `haus`, `winkel`, `dreiecke` in `src/app.yaml`; Seitenreihenfolge in den `chapter.yaml`.
 
 ## Content structure
 
@@ -28,15 +35,16 @@ Wörter der Karte (Haus der Vierecke, Winkelsätze, Sehne, Sekante, Tangente, Sa
 
 ## Exercise patterns
 
-- Zugmodus (Komponente `Zugmodus`, Datei `src/components/Zugmodus.vue`, `Zugmodus.ts`): ziehbare Figur, Messwerte. Tastatur: Pfeiltasten bewegen, Tab wechselt den Punkt; `nojs`-Form mit drei Stellungen; Textalternative sagt, was gleich bleibt; `aria-live` für den Messwert. Zeigt nie die Antwort. Je Seite eine Konfiguration (Punkte, Messgrößen).
-- Wahr/Falsch mit Begründung, Zuordnen (Viereck ↔ Eigenschaft, Daten `src/data/viereck-eigenschaften.yaml`), Ordnen (nur feste Reihenfolge, z. B. Konstruktionsschritte), Einfach-/Mehrfachwahl mit begründeten Falschoptionen (Kongruenzsatz: SSS, SWS, WSW, SsW, keiner).
-- `generated` Winkelaufgaben (Mistakes: Nebenwinkel statt Scheitelwinkel, Summe 90° statt 180°), `generated` Eindeutigkeit (0/1/2 Lösungen, nie unsinnige Größen).
-- Zirkelzeichnen wird nicht geprüft: Konstruktion über Ordnen der Schritte und Komponente `Konstruktion`.
+Zugmodus-Komponenten (alle in `src/components/`, je `<Name>.vue`, `<Name>.ts` mit der Logik, `<Name>.test.ts`): `Zugmodus` (Thales, Punkt C auf dem Halbkreis), `Winkelzug` (`kind: parallelen` oder `dreieck`), `Kreisgerade` (Gerade im Abstand d vom Mittelpunkt), `Viereckszug` (Ecken C und D auf dem Gitter), `Dreiecksstuecke` (`modes`: sss, sws, wsw, ssa, www; ein Stück per Regler), `Liniendreieck` (`kind: umkreis`, `inkreis` oder `hoehen`). Gemeinsam: der bewegliche Punkt ist ein SVG-Kreis mit `role="slider"`, `tabindex="0"`, `aria-label` und `aria-valuetext`; Pfeiltasten bewegen ihn, Maus und Touch ziehen ihn; `aria-live` meldet die Messwerte; jede Komponente hat `nojs` mit drei Stellungen und Zahlen; sie misst, sie nennt nie die Aussage („bleibt gleich“). Ein Prop heißt nie wie eine importierte Funktion der Komponente (`measure`), sonst greift die Vorlage die Funktion.
+- Wahr/Falsch mit Begründung in `explanation`, Zuordnen (`matching`), Ordnen (`ordering`, nur feste Reihenfolge, z. B. Konstruktionsschritte), Auswahl mit begründeten Falschoptionen (`info` je Option).
+- `generated`: Winkel berechnen (`dreieckswinkel`, `stufenwinkel-nebenwinkel`, `beta-berechnen`, `winkel-kongruent`; Mistakes: Summe statt Rest, 360° statt 180°), kleinste und größte Seite (`kleinste-seite`, `groesste-seite`), `achsen-zaehlen` aus `src/data/vierecke.yaml` (Felder `name`, `eigenschaft`, `achsen`), Umkreisradius (`umkreisradius`). Ein Mistake darf für keine gezogene Zahl gleich der Antwort sein (Build prüft; `where` einengen).
+- Begründung: `open-task` je Seite, Punkte mit `source` auf `#warum`/`#merke`, die App prüft sie nicht, die Lernenden vergleichen selbst. Dafür steht `scope` auf jeder Seite.
+- Zirkelzeichnen wird nicht geprüft: Konstruktion über Ordnen der Schritte.
 - Jede Rückmeldung nennt den Grund und bei häufigen Fehlern den Fehlertyp.
 
 ## Figures
 
-Selbst gezeichnetes SVG und Komponenten, nie Bilder aus Schulbüchern. Konventionen: Punkte *A*, *B*, *C* gegen den Uhrzeigersinn; Winkel mit Bogen und Beschriftung (nicht Farbe allein); gesuchte Größe nie beschriftet. Jede Figur hat `alt` (was sie zeigt) und `caption` (worauf achten). 360 px: Figuren skalieren, nebeneinander gestellte Stellungen stapeln.
+Selbst gezeichnetes SVG (`src/images/thales-beweis.svg`, `winkelsumme-beweis.svg`, `haus-der-vierecke.svg`, Quelle „eigene Zeichnung“, Lizenz CC0-1.0) und Komponenten, nie Bilder aus Schulbüchern. Konventionen: Punkte *A*, *B*, *C* gegen den Uhrzeigersinn; Winkel mit Bogen und Beschriftung (nicht Farbe allein); gesuchte Größe nie beschriftet. Jede Figur hat `alt` (was sie zeigt) und `caption` (worauf achten). 360 px: Figuren skalieren, nebeneinander gestellte Stellungen stapeln.
 
 ## Sources
 

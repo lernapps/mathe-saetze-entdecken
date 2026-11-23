@@ -230,11 +230,11 @@ page, which a link. -->
       Creator: Musterseite angenommen (Orchestrator in Vertretung)
 - [x] Kapitel 1: Recap und Seite Haus der Vierecke (Datei viereck-eigenschaften, Zuordnen, Wahr/Falsch mit Begründung), Kapitelrückblick
 - [x] Kapitel 2: Recap, Seiten Winkelsätze und Sehne/Sekante/Tangente (generated Winkelaufgaben mit Mistakes), Rückblick
-- [ ] Kapitel 3: Recap, Seite Dreieckskonstruktion mit Komponente Konstruktion und Eindeutigkeit
-- [ ] Kapitel 3: Seiten Kongruenz (Kongruenzsätze, SSA/WWW-Gegenbeispiel) und Besondere Linien im Dreieck (Um-/Inkreis), Rückblick
-- [ ] Startseite, Baustein→Seite-Liste im Content-Guide, Medienübersicht, Katalogtext-Entwurf
+- [x] Kapitel 3: Recap, Seite Dreieckskonstruktion mit Komponente Konstruktion und Eindeutigkeit
+- [x] Kapitel 3: Seiten Kongruenz (Kongruenzsätze, SSA/WWW-Gegenbeispiel) und Besondere Linien im Dreieck (Um-/Inkreis), Rückblick
+- [x] Startseite, Baustein→Seite-Liste im Content-Guide, Medienübersicht, Katalogtext-Entwurf
 <!-- tasks: pages (5 added): the other pages or screens, after the pattern -->
-- [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
+- [x] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
