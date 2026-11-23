@@ -43,7 +43,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Herausfinden, bei welchen drei Stücken zwei Dreiecke immer gleich sind, und daraus die Kongruenzsätze ableiten.
 
-### Worum es geht
+### Was du hier lernst
 
 Du kannst gleich begründen, dass zwei Dreiecke deckungsgleich sind, und die Kongruenzsätze nutzen.
 
@@ -55,7 +55,7 @@ Du kannst gleich begründen, dass zwei Dreiecke deckungsgleich sind, und die Kon
 
 ### Stücke vergleichen
 
-Wähle gegebene Stücke und verschiebe den Regler. Die Anzeige zählt, wie viele verschiedene Dreiecke zu den Stücken
+Wähle gegebene Stücke (S steht für eine Seite, W für einen Winkel, SWS heißt Seite, Winkel, Seite) und verschiebe den Regler. Die Anzeige zählt, wie viele verschiedene Dreiecke zu den Stücken
 passen. Zähle bei jeder Einstellung mit. Probiere SSS, SWS, WSW, SSA und WWW.
 
 Interaktiv: Gegebene Stücke und die Zahl der Dreiecke, die dazu passen. SSS (a = 4 cm, b = 6 cm, c = 5 cm): ein Dreieck. SWS (b = 5 cm, c = 6 cm, α = 60°): ein Dreieck. WSW (c = 6 cm, α = 50°, β = 60°): ein Dreieck. SSA (b = 5 cm, α = 40°, a = 4 cm): zwei Dreiecke, bei a = 5 cm ein Dreieck. WWW (α = 50°, β = 60°, γ = 70°): unendlich viele Dreiecke, jede Größe passt.

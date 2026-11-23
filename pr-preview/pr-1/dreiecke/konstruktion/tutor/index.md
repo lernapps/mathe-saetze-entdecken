@@ -43,7 +43,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Aus drei Stücken Dreiecke bauen und herausfinden, wann es kein, genau ein oder zwei Dreiecke gibt.
 
-### Worum es geht
+### Was du hier lernst
 
 Du kannst gleich Dreiecke aus Seiten und Winkeln konstruieren und sagen, ob die Konstruktion eindeutig ist.
 
@@ -55,7 +55,7 @@ Du kannst gleich Dreiecke aus Seiten und Winkeln konstruieren und sagen, ob die 
 
 ### Stücke verändern
 
-Wähle die Stücke. Verschiebe den Regler und beobachte, wie viele verschiedene Dreiecke zu den Stücken passen.
+Ein Dreieck hat die Ecken A, B, C, die Seiten a, b, c (a liegt A gegenüber) und die Winkel α, β, γ. S steht für eine Seite, W für einen Winkel: SWS heißt Seite, Winkel, Seite. Wähle die Stücke. Verschiebe den Regler und beobachte, wie viele verschiedene Dreiecke zu den Stücken passen.
 Beginne mit SSS und schiebe *c* von 1 cm bis 11 cm. Probiere dann die anderen Stücke. Bei „zwei Seiten und ein
 Winkel“ siehst du ein zweites Dreieck gestrichelt.
 

@@ -43,7 +43,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Eine Gerade am Kreis verschieben, gemeinsame Punkte zählen und Sehne, Sekante und Tangente unterscheiden.
 
-### Worum es geht
+### Was du hier lernst
 
 Du kannst gleich Sehne, Sekante und Tangente unterscheiden und eine Tangente zeichnen.
 

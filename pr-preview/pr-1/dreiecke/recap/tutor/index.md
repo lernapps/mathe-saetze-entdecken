@@ -64,7 +64,7 @@ die Mitte der Grundkante auf den Scheitel und den Nullstrich auf einen Schenkel,
 Größe in Grad (°) ab. Beispiel: Ein Winkel von 40° ist ein spitzer Winkel. Beim Zeichnen gehst du umgekehrt vor: Du trägst
 die Gradzahl an.
 
-Interaktiv: Kurztest: Der erste Schenkel liegt auf der Null des Geodreiecks. Wo liest du an einem rechten Winkel ab? 45°, 90° oder 180°. Antwort: 90°.
+Interaktiv: Kurztest: Der Nullstrich liegt auf einem Schenkel. Am anderen Schenkel liest du auf den zwei Skalen 65° und 115° ab. Der Winkel sieht spitz aus. Welcher Wert gehört zum Winkel? Antwort: 65°, denn ein spitzer Winkel ist kleiner als 90°.
 
 Interaktiv: Kurztest: Ein Winkel sieht größer aus als ein rechter. Du liest an den zwei Skalen 50° und 130° ab. Welcher Wert gehört zum Winkel? Antwort: 130°, denn der Winkel ist stumpf, also größer als 90°.
 
@@ -82,7 +82,7 @@ Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der
 
 Interaktiv: Kurztest: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm wird um 6 cm nach rechts verschoben. Wie lang sind die Seiten der Bildfigur? Antwort: 3 cm, 4 cm und 5 cm. Beim Verschieben bleiben alle Längen gleich.
 
-Interaktiv: Kurztest: Ein Punkt liegt 2 cm links von der Spiegelachse. Wo liegt sein Bildpunkt? 2 cm rechts der Achse, 4 cm rechts oder 2 cm links. Antwort: 2 cm rechts der Achse, denn der Abstand bleibt gleich auf der anderen Seite.
+Interaktiv: Kurztest: Ein Punkt hat 3 cm Abstand zur Spiegelachse. Wie weit sind der Punkt und sein Bildpunkt voneinander entfernt? 3 cm, 6 cm oder 9 cm. Antwort: 6 cm, denn der Bildpunkt hat auf der anderen Seite denselben Abstand.
 
 Wenn du unsicher warst: Lies den Baustein **Spiegeln, Verschieben, Drehen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/) nach.
 

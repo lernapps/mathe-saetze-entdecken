@@ -43,7 +43,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Einen Punkt auf dem Halbkreis ziehen, den rechten Winkel entdecken und begründen, warum er immer entsteht.
 
-### Worum es geht
+### Was du hier lernst
 
 Du kannst gleich erklären, warum ein Winkel am Kreis immer 90° groß ist. Du brauchst dafür die Winkelsumme
 im Dreieck.

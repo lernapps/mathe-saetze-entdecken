@@ -43,7 +43,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Die Ecke eines Dreiecks ziehen und entdecken, dass sich Mittelsenkrechten, Winkelhalbierende und Höhen in einem Punkt treffen.
 
-### Worum es geht
+### Was du hier lernst
 
 Du kannst gleich Mittelsenkrechten, Winkelhalbierende und Höhen im Dreieck zeichnen und Um- und Inkreis
 konstruieren.

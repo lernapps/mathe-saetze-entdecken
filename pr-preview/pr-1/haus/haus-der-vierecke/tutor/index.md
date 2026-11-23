@@ -43,7 +43,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Ein Viereck ziehen, bis es ein anderes ist, die Vierecke nach Eigenschaften ordnen und begründen, warum ein Quadrat ein Rechteck ist.
 
-### Worum es geht
+### Was du hier lernst
 
 Du kannst gleich Vierecke nach ihren Eigenschaften ordnen und begründen, warum ein Quadrat auch ein Rechteck
 ist.
@@ -56,7 +56,7 @@ ist.
 
 ### Das Viereck ziehen
 
-Die Ecken *A* und *B* bleiben liegen. Du ziehst *C* und *D* auf dem Gitter, ein Kästchen ist 1 cm. Mit der
+Die Ecken *A* und *B* bleiben liegen. Du ziehst *C* und *D* von Gitterpunkt zu Gitterpunkt, zwischen zwei Punkten liegt 1 cm. Mit der
 Tastatur wählst du eine Ecke mit der Tabulatortaste und bewegst sie mit den Pfeiltasten. Stelle der Reihe nach
 ein: zwei Paare paralleler Seiten, vier rechte Winkel, vier gleich lange Seiten, und dann alles zugleich.
 Lies jedes Mal unter dem Bild ab, was sich ändert.

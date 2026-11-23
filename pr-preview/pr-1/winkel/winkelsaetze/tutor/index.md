@@ -43,7 +43,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 An Parallelen und im Dreieck ziehen, Winkelbeziehungen entdecken und fehlende Winkel berechnen.
 
-### Worum es geht
+### Was du hier lernst
 
 Du kannst gleich fehlende Winkel berechnen, ohne sie zu messen. Du brauchst nur einen Winkel und einen Satz.
 

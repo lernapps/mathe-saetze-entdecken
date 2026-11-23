@@ -57,7 +57,7 @@ Begriffe, mach die Kurztests und prüfe am Ende die Checkliste.
 
 Ein **rechter Winkel** hat 90°, wie die Ecke eines Geodreiecks. Du misst einen Winkel mit dem Geodreieck: Der Nullstrich liegt auf einem Schenkel, die Mitte der Grundkante auf dem Scheitel, am anderen Schenkel liest du ab.
 
-Interaktiv: Kurztest: Ein Winkel misst 120°. Was für ein Winkel ist das? Spitz, rechter Winkel oder stumpf. Antwort: stumpf, denn 120° liegt zwischen 90° und 180°.
+Interaktiv: Kurztest: Ein Winkel ist halb so groß wie ein gestreckter Winkel. Was für ein Winkel ist das? Spitz, rechter Winkel oder stumpf. Antwort: rechter Winkel, denn 180° : 2 = 90°.
 
 Interaktiv: Kurztest: Ein Winkel sieht größer aus als ein rechter. Du liest an den zwei Skalen 50° und 130° ab. Welcher Wert gehört zum Winkel? Antwort: 130°, denn der Winkel ist stumpf, also größer als 90°.
 
@@ -75,7 +75,7 @@ Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der
 
 - **Durchmesser**: Eine Strecke durch den Mittelpunkt von einem Punkt des Kreises zum gegenüberliegenden, doppelt so lang wie der Radius. Beispiel: Radius 4 cm, Durchmesser 8 cm.
 
-Interaktiv: Kurztest: Ein Kreis hat den Radius 3 cm. Wie lang ist sein Durchmesser? 1,5 cm, 6 cm oder 9 cm. Antwort: 6 cm, denn der Durchmesser ist doppelt so lang wie der Radius.
+Interaktiv: Kurztest: Ein Kreis hat den Durchmesser 14 cm. Wie lang ist sein Radius? 28 cm, 7 cm oder 14 cm. Antwort: 7 cm, denn der Radius ist die Hälfte des Durchmessers.
 
 Interaktiv: Kurztest: In einem gleichschenkligen Dreieck ist ein Basiswinkel 55° groß. Wie groß ist der andere Basiswinkel? 35°, 55° oder 125°. Antwort: 55°, denn die Basiswinkel sind gleich groß.
 
@@ -93,7 +93,7 @@ Zwei Linien sind **parallel**, wenn sie überall denselben Abstand haben und sic
 
 Mit dem **Zirkel** zeichnest du einen Kreis um einen Punkt mit einem Radius, den du vorher an einer Strecke abgegriffen hast.
 
-Interaktiv: Kurztest: Die Strecke AB ist 10 cm lang. Wie weit ist ihre Mitte M von A entfernt? 5 cm, 10 cm oder 20 cm. Antwort: 5 cm, denn die Mitte teilt die Strecke in zwei gleiche Teile.
+Interaktiv: Kurztest: Die Strecke AB ist 13 cm lang. Wie weit ist ihre Mitte M von A entfernt? 6 cm, 6,5 cm oder 7 cm. Antwort: 6,5 cm, denn 13 cm : 2 = 6,5 cm.
 
 Interaktiv: Kurztest: Du fällst von einem Punkt P das Lot auf die Gerade g. Wie liegt die Linie zu g? Parallel, senkrecht oder schräg. Antwort: senkrecht, das Lot bildet mit g einen rechten Winkel.
 
