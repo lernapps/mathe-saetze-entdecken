@@ -9,12 +9,14 @@ blocks:
   - type: text
     text: |
       **Das brauchst du für dieses Kapitel.** Im Haus der Vierecke ordnest du Vierecke nach ihren Eigenschaften. Dafür musst
-      du zwei Dinge schon können: die besonderen Vierecke und die Symmetrie. Lies die Begriffe, mach die Kurztests und
+      du zwei Dinge schon können: die besonderen Vierecke und die Symmetrie. Lies die Begriffe, löse die zwei Aufgaben und
       prüfe am Ende die Checkliste.
   - type: section
     id: besondere-vierecke
     title: Besondere Vierecke
     blocks:
+      - type: text
+        text: "Wenn du Vierecke ordnen willst, musst du sie an ihren Eigenschaften unterscheiden. Dafür helfen dir diese Begriffe."
       - type: text
         text: Ein Viereck hat vier Ecken, vier Seiten und vier Winkel. Für die besonderen Vierecke brauchst du zwei Begriffe.
       - type: definition
@@ -42,48 +44,12 @@ blocks:
               - [Parallelogramm, "zwei Paare paralleler Seiten, z. B. Seiten 6 cm und 3 cm"]
               - [Trapez, "mindestens ein Paar paralleler Seiten, z. B. 6 cm und 4 cm parallel"]
               - [Drachen, "zwei Paare benachbarter gleich langer Seiten, z. B. 5 cm, 5 cm, 3 cm, 3 cm"]
-      - type: vue-component
-        id: test-vierecke
-        component: Kurztest
-        props:
-          question: Welches Viereck hat vier gleich lange Seiten, aber keine rechten Winkel?
-          options:
-            - { text: "Quadrat", correct: false, info: "Ein Quadrat hat vier rechte Winkel." }
-            - {
-                text: Rechteck,
-                correct: false,
-                info: "Ein Rechteck hat vier rechte Winkel, aber nur gegenüberliegende Seiten gleich lang.",
-              }
-            - {
-                text: "Raute",
-                correct: true,
-                info: "Eine Raute hat vier gleich lange Seiten. Sind die Winkel nicht 90°, ist sie kein Quadrat.",
-              }
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: |
-          Kurztest: Welches Viereck hat vier gleich lange Seiten, aber keine rechten Winkel? Quadrat, Rechteck oder Raute. Antwort:
-          die Raute. Ein Quadrat hat vier rechte Winkel, ein Rechteck hat nur gegenüberliegende Seiten gleich lang.
-      - type: vue-component
-        id: test-trapez
-        component: Kurztest
-        props:
-          question: Ein Viereck hat genau ein Paar paralleler Seiten. Was kann es sein?
-          options:
-            - { text: "Trapez", correct: true, info: "Ein Trapez braucht mindestens ein Paar paralleler Seiten." }
-            - { text: "Parallelogramm", correct: false, info: "Ein Parallelogramm hat zwei Paare paralleler Seiten." }
-            - { text: "Rechteck", correct: false, info: "Ein Rechteck hat zwei Paare paralleler Seiten." }
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: |
-          Kurztest: Ein Viereck hat genau ein Paar paralleler Seiten. Was kann es sein? Trapez, Parallelogramm oder Rechteck. Antwort:
-          Trapez. Parallelogramm und Rechteck haben zwei Paare paralleler Seiten.
-      - type: text
-        text: "Wenn du unsicher warst: Lies den Baustein **Besondere Vierecke** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/vierecke-grundfiguren/) nach."
   - type: section
     id: symmetrie
     title: Symmetrie
     blocks:
+      - type: text
+        text: "Wenn du Vierecke genauer unterscheiden willst, hilft dir die Symmetrie: Sie sagt, wie sich eine Figur spiegeln und drehen lässt."
       - type: definition
         term: Symmetrieachse
         explanation: "Eine Gerade, an der du die Figur spiegeln kannst, sodass sie genau auf sich selbst fällt. Beispiel: Ein Rechteck mit den Seiten 5 cm und 3 cm hat zwei Symmetrieachsen, die Mittellinien durch die Seitenmitten."
@@ -93,56 +59,45 @@ blocks:
       - type: definition
         term: Drehsymmetrie
         explanation: "Eine Figur ist drehsymmetrisch, wenn sie nach einer Drehung um einen Punkt um weniger als 360° auf sich selbst fällt. Beispiel: Ein Quadrat fällt nach 90° auf sich selbst."
-      - type: vue-component
-        id: test-symmetrie
-        component: Kurztest
-        props:
-          question: Wie viele Symmetrieachsen hat ein Rechteck mit den Seiten 5 cm und 3 cm?
-          options:
-            - { text: "keine", correct: false, info: "Du kannst das Rechteck an den Mittellinien spiegeln." }
-            - {
-                text: zwei,
-                correct: true,
-                info: "Eine Achse geht durch die Mitten der langen Seiten, die andere durch die Mitten der kurzen Seiten.",
-              }
-            - {
-                text: vier,
-                correct: false,
-                info: "Unter den besonderen Vierecken hat nur das Quadrat vier Achsen, weil bei ihm auch die Diagonalen Achsen sind.",
-              }
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: |
-          Kurztest: Wie viele Symmetrieachsen hat ein Rechteck mit den Seiten 5 cm und 3 cm? Keine, zwei oder vier. Antwort: zwei,
-          die Mittellinien durch die Seitenmitten. Vier hat nur das Quadrat.
-      - type: vue-component
-        id: test-punktsymmetrie
-        component: Kurztest
-        props:
-          question: Welches Viereck ist immer punktsymmetrisch?
-          options:
-            - {
-                text: Parallelogramm,
-                correct: true,
-                info: "Nach einer halben Drehung um den Schnittpunkt der Diagonalen fällt es auf sich selbst.",
-              }
-            - {
-                text: Trapez,
-                correct: false,
-                info: "Ein Trapez ohne zwei Paare paralleler Seiten fällt nach einer halben Drehung nicht auf sich selbst.",
-              }
-            - {
-                text: Drachen,
-                correct: false,
-                info: "Ein Drachen, der keine Raute ist, fällt nach einer halben Drehung nicht auf sich selbst.",
-              }
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: |
-          Kurztest: Welches Viereck ist immer punktsymmetrisch? Parallelogramm, Trapez oder Drachen. Antwort: Parallelogramm. Nach einer
-          halben Drehung um den Schnittpunkt der Diagonalen fällt es auf sich selbst.
+  - type: section
+    id: selbsttest
+    title: Kannst du das?
+    blocks:
       - type: text
-        text: "Wenn du unsicher warst: Lies den Baustein **Symmetrie** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/symmetrie/) nach."
+        text: "Zwei Aufgaben zeigen dir, ob du die Voraussetzungen für dieses Kapitel hast. Wenn eine nicht klappt, lies den Baustein [Besondere Vierecke](https://lernapps.net/apps/map/mathematik/c/vierecke-grundfiguren/) oder [Symmetrie](https://lernapps.net/apps/map/mathematik/c/symmetrie/) auf der Lernlandkarte nach."
+      - type: multiple-choice
+        id: test-parallel
+        text: "Welche Vierecke haben immer zwei Paare paralleler Seiten? Wähle alle."
+        options:
+          - text: "Rechteck"
+            correct: true
+            info: "Gegenüberliegende Seiten sind parallel."
+          - text: "Raute"
+            correct: true
+            info: "Gegenüberliegende Seiten sind parallel, alle vier Seiten sind gleich lang."
+          - text: "Parallelogramm"
+            correct: true
+            info: "Es ist durch zwei Paare paralleler Seiten erklärt."
+          - text: "Trapez"
+            correct: false
+            info: "Ein Trapez braucht nur ein Paar paralleler Seiten."
+          - text: "Drachen"
+            correct: false
+            info: "Ein Drachen hat zwei Paare benachbarter gleich langer Seiten, aber keine parallelen Seiten."
+        explanation: "Rechteck, Raute und Parallelogramm haben zwei Paare paralleler Seiten. Beim Trapez ist ein Paar genug, der Drachen hat keins."
+      - type: matching
+        id: test-achsen
+        text: "Ordne jedem Viereck seine Symmetrieachsen zu (ohne Sonderfall, zum Beispiel ist ein Rechteck hier kein Quadrat)."
+        pairs:
+          - left: "Rechteck"
+            right: "zwei Symmetrieachsen"
+          - left: "Quadrat"
+            right: "vier Symmetrieachsen"
+          - left: "Drachen"
+            right: "eine Symmetrieachse"
+          - left: "Parallelogramm"
+            right: "keine Symmetrieachse"
+        explanation: "Das Rechteck hat zwei Achsen durch die Seitenmitten. Beim Quadrat kommen die Diagonalen dazu. Der Drachen hat die Diagonale zwischen den gleich langen Seitenpaaren als Achse. Das Parallelogramm ist nur punktsymmetrisch."
   - type: section
     id: bereit
     title: Du bist bereit, wenn du …

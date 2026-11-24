@@ -37,6 +37,8 @@ blocks:
     title: Mittelsenkrechten ziehen
     blocks:
       - type: text
+        text: "Wenn du einen Punkt suchst, der von drei Orten gleich weit entfernt ist, hilft dir die Mittelsenkrechte."
+      - type: text
         text: |
           Die Mittelsenkrechte einer Seite geht durch die Mitte der Seite und steht senkrecht auf ihr. Ziehe die Ecke *C*
           mit den Pfeiltasten (Tabulatortaste zum Punkt) oder mit der Maus. Der Punkt *U* ist der Treffpunkt der drei
@@ -77,6 +79,8 @@ blocks:
     title: Warum treffen sie sich in einem Punkt?
     blocks:
       - type: text
+        text: "Wenn du sicher sein willst, dass sich drei Mittelsenkrechten immer in einem Punkt treffen, begründest du es mit Abständen."
+      - type: text
         text: |
           Merke vorab: Ein Punkt ist genau dann von *A* und *B* gleich weit entfernt, wenn er auf der Mittelsenkrechten von *AB* liegt.
 
@@ -88,6 +92,8 @@ blocks:
     id: inkreis
     title: Winkelhalbierende ziehen
     blocks:
+      - type: text
+        text: "Wenn du einen möglichst großen Kreis in ein Dreieck legen willst, suchst du seinen Mittelpunkt."
       - type: text
         text: |
           Eine Winkelhalbierende teilt einen Winkel in zwei gleiche Teile. Ziehe *C* und beobachte den Treffpunkt *I* der
@@ -127,6 +133,8 @@ blocks:
     title: Höhen ziehen
     blocks:
       - type: text
+        text: "Wenn du eine Linie suchst, die von einer Ecke senkrecht zur Gegenseite läuft, zeichnest du eine Höhe."
+      - type: text
         text: |
           Eine Höhe geht durch eine Ecke und steht senkrecht auf der gegenüberliegenden Seite. Ziehe *C* und beobachte den
           Punkt *H*, in dem die Höhen zusammentreffen.
@@ -164,6 +172,8 @@ blocks:
     id: merke
     title: Merke
     blocks:
+      - type: text
+        text: "Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst."
       - type: table
         caption: Besondere Linien im Dreieck
         header: [Linie, Treffpunkt und Kreis]
@@ -180,6 +190,8 @@ blocks:
     id: uebung
     title: Übung
     blocks:
+      - type: text
+        text: "Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen."
       - type: ordering
         id: umkreis-konstruieren
         text: Du sollst den Umkreis eines Dreiecks ABC konstruieren. Bringe die Schritte in die richtige Reihenfolge.
@@ -231,6 +243,8 @@ blocks:
     id: begruendung
     title: Begründe in eigenen Worten
     blocks:
+      - type: text
+        text: "Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen."
       - type: open-task
         id: umkreis-begruenden
         task: Erkläre in zwei bis vier Sätzen, warum sich die drei Mittelsenkrechten eines Dreiecks in einem Punkt treffen.

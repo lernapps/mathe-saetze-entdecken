@@ -43,6 +43,8 @@ blocks:
     title: Die Gerade verschieben
     blocks:
       - type: text
+        text: "Wenn du eine Gerade und einen Kreis zusammen zeichnest, fragst du dich: Wann treffen sie sich, und wie oft? Das probierst du aus."
+      - type: text
         text: |
           Der Kreis hat den Radius 4 cm. Die Gerade liegt im Abstand *d* vom Mittelpunkt *M*. Verschiebe sie mit den
           Pfeiltasten (Tabulatortaste zum Punkt rechts) oder mit der Maus. Stelle *d* auf 0 cm, 2 cm, 4 cm und 5 cm ein
@@ -65,6 +67,8 @@ blocks:
     id: vermutung
     title: Was fällt auf?
     blocks:
+      - type: text
+        text: "Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt."
       - type: single-choice
         id: wann-beruehrt
         text: Bei welchem Abstand d berührt die Gerade den Kreis in genau einem Punkt?
@@ -98,6 +102,8 @@ blocks:
     title: Warum steht die Tangente senkrecht?
     blocks:
       - type: text
+        text: "Wenn du eine Tangente zeichnen willst, musst du wissen, wie sie zum Radius liegt."
+      - type: text
         text: |
           Angenommen, der Radius steht nicht senkrecht auf der Geraden. Dann kannst du den Berührpunkt am Lot von *M* auf
           die Gerade spiegeln (das Lot ist die Senkrechte von *M* auf die Gerade). Er ist ein anderer Punkt, weil der Berührpunkt nicht auf dem Lot liegt. Der Spiegelpunkt liegt auch auf dem Kreis und auf der Geraden. Dann gäbe es zwei gemeinsame
@@ -106,6 +112,8 @@ blocks:
     id: merke
     title: Merke
     blocks:
+      - type: text
+        text: "Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst."
       - type: definition
         term: Sekante
         explanation: Eine Gerade, die den Kreis in zwei Punkten schneidet.
@@ -119,6 +127,8 @@ blocks:
     id: uebung
     title: Übung
     blocks:
+      - type: text
+        text: "Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen."
       - type: matching
         id: begriffe-zuordnen
         text: Ordne jedem Begriff die passende Beschreibung zu.
@@ -171,6 +181,8 @@ blocks:
     id: begruendung
     title: Begründe in eigenen Worten
     blocks:
+      - type: text
+        text: "Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen."
       - type: open-task
         id: tangente-begruenden
         task: Erkläre in zwei bis vier Sätzen, warum die Tangente im Berührpunkt senkrecht auf dem Radius steht.

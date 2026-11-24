@@ -42,6 +42,8 @@ blocks:
     title: Stücke vergleichen
     blocks:
       - type: text
+        text: "Wenn du zwei Dreiecke vergleichen willst, möchtest du möglichst wenig messen. Welche Stücke reichen?"
+      - type: text
         text: |
           Wähle gegebene Stücke (S steht für eine Seite, W für einen Winkel, SWS heißt Seite, Winkel, Seite) und verschiebe den Regler. Die Anzeige zählt, wie viele verschiedene Dreiecke zu den Stücken
           passen. Zähle bei jeder Einstellung mit. Probiere SSS, SWS, WSW, SSA und WWW.
@@ -80,6 +82,8 @@ blocks:
     id: vermutung
     title: Was fällt auf?
     blocks:
+      - type: text
+        text: "Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt."
       - type: multiple-choice
         id: welche-stuecke
         text: Bei welchen Stücken passt immer nur ein Dreieck, wenn die Stücke ein Dreieck erlauben?
@@ -102,6 +106,8 @@ blocks:
     title: Warum gilt das?
     blocks:
       - type: text
+        text: "Wenn du sicher sein willst, dass drei solche Stücke reichen, hilft dir die Konstruktion."
+      - type: text
         text: |
           Legen drei Stücke das Dreieck fest, dann kannst du es nur auf eine Art konstruieren. Zwei Dreiecke, die in diesen
           Stücken übereinstimmen, entstehen aus derselben Konstruktion. Die Konstruktion liefert dasselbe Dreieck, nur an
@@ -111,6 +117,8 @@ blocks:
     id: merke
     title: Merke
     blocks:
+      - type: text
+        text: "Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst."
       - type: table
         caption: Die Kongruenzsätze für Dreiecke
         header: [Satz, Stücke]
@@ -128,6 +136,8 @@ blocks:
     id: uebung
     title: Übung
     blocks:
+      - type: text
+        text: "Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen."
       - type: matching
         id: satz-zuordnen
         text: Ordne den Angaben den passenden Kongruenzsatz zu.
@@ -184,6 +194,8 @@ blocks:
     id: begruendung
     title: Begründe in eigenen Worten
     blocks:
+      - type: text
+        text: "Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen."
       - type: open-task
         id: www-begruenden
         task: Erkläre in zwei bis vier Sätzen, warum drei gleiche Winkel nicht reichen, damit zwei Dreiecke kongruent sind.

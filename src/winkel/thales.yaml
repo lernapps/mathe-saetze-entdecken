@@ -44,6 +44,8 @@ blocks:
     title: Am Halbkreis ziehen
     blocks:
       - type: text
+        text: "Wenn du einen rechten Winkel zeichnen willst, ohne ihn zu messen, brauchst du einen Weg. Der Halbkreis zeigt einen."
+      - type: text
         text: |
           Der Weg *AB* ist der Durchmesser des Kreises, *M* ist seine Mitte. Ziehe den Punkt *C* auf dem Halbkreis. Mit der Maus oder
           dem Finger ziehst du den markierten Punkt *C*. Mit der Tastatur wählst du den Punkt mit der Tabulatortaste und
@@ -66,6 +68,8 @@ blocks:
     id: vermutung
     title: Was bleibt gleich?
     blocks:
+      - type: text
+        text: "Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt."
       - type: single-choice
         id: welcher-winkel
         text: Welcher Winkel bleibt gleich groß, wenn du C auf dem Halbkreis ziehst?
@@ -84,6 +88,8 @@ blocks:
     id: warum
     title: Warum ist das so?
     blocks:
+      - type: text
+        text: "Wenn du sicher sein willst, dass es immer klappt, reicht das Ziehen nicht, du brauchst einen Beweis."
       - type: text
         text: |
           Messen zeigt dir nur einzelne Stellungen. Ein Beweis gilt für jede. Ein Beweis erklärt mit Sätzen, die du schon hast, warum eine Vermutung immer stimmt. Im Bild
@@ -116,6 +122,8 @@ blocks:
     id: merke
     title: Merke
     blocks:
+      - type: text
+        text: "Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst."
       - type: definition
         term: Satz des Thales
         explanation: Liegt der Punkt *C* (nicht *A* oder *B*) auf dem Kreis über dem Durchmesser *AB*, dann hat das Dreieck *ABC* bei *C* einen rechten Winkel.
@@ -128,6 +136,8 @@ blocks:
     id: uebung
     title: Übung
     blocks:
+      - type: text
+        text: "Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen."
       - type: true-false
         id: nur-durchmesser
         text: Der Satz des Thales gilt auch, wenn AB kein Durchmesser des Kreises ist, sondern eine kürzere Sehne.
@@ -178,6 +188,8 @@ blocks:
     id: begruendung
     title: Begründe in eigenen Worten
     blocks:
+      - type: text
+        text: "Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen."
       - type: open-task
         id: thales-begruenden
         task: Erkläre in zwei bis vier Sätzen, warum der Winkel bei C im Halbkreis immer 90° groß ist.

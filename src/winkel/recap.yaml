@@ -11,11 +11,13 @@ blocks:
     text: |
       **Das brauchst du für dieses Kapitel.** Du berechnest Winkel, arbeitest am Kreis und konstruierst. Dafür musst du drei
       Dinge schon können: Winkel messen, die ebenen Grundfiguren und das Zeichnen mit Geodreieck und Zirkel. Lies die
-      Begriffe, mach die Kurztests und prüfe am Ende die Checkliste.
+      Begriffe, löse die zwei Aufgaben und prüfe am Ende die Checkliste.
   - type: section
     id: winkel-messen
     title: Winkel messen und zeichnen
     blocks:
+      - type: text
+        text: "Wenn du Winkel berechnen willst, musst du erst wissen, was ein Winkel ist und wie groß er sein kann."
       - type: definition
         term: Winkel
         explanation: "Ein Winkel entsteht, wenn zwei Strahlen von einem Punkt ausgehen. Der Punkt heißt Scheitel, die Strahlen heißen Schenkel. Du misst ihn in Grad (°). Beispiel: Die Ecke einer Buchseite ist ein Winkel von 90°."
@@ -30,46 +32,12 @@ blocks:
         explanation: "Ein Winkel von 180°: Die beiden Schenkel bilden eine gerade Linie. Beispiel: Die Schenkel liegen auf einer Geraden, wie ein ausgestreckter Arm."
       - type: text
         text: "Ein **rechter Winkel** hat 90°, wie die Ecke eines Geodreiecks. Du misst einen Winkel mit dem Geodreieck: Der Nullstrich liegt auf einem Schenkel, die Mitte der Grundkante auf dem Scheitel, am anderen Schenkel liest du ab."
-      - type: vue-component
-        id: test-winkel
-        component: Kurztest
-        props:
-          question: "Ein Winkel ist halb so groß wie ein gestreckter Winkel. Was für ein Winkel ist das?"
-          options:
-            - {
-                text: "spitz",
-                correct: false,
-                info: "Spitz ist kleiner als 90°. Die Hälfte von 180° ist aber genau 90°.",
-              }
-            - { text: "rechter Winkel", correct: true, info: "180° : 2 = 90°, das ist ein rechter Winkel." }
-            - { text: "stumpf", correct: false, info: "Stumpf ist größer als 90°, die Hälfte von 180° ist es nicht." }
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: |
-          Kurztest: Ein Winkel ist halb so groß wie ein gestreckter Winkel. Was für ein Winkel ist das? Spitz, rechter Winkel oder stumpf. Antwort: rechter Winkel, denn 180° : 2 = 90°.
-      - type: vue-component
-        id: test-skala
-        component: Kurztest
-        props:
-          question: Ein Winkel sieht größer aus als ein rechter. Du liest an den zwei Skalen 50° und 130° ab. Welcher Wert gehört zum Winkel?
-          options:
-            - {
-                text: "50°",
-                correct: false,
-                info: "50° wäre ein spitzer Winkel. Der Winkel ist aber größer als ein rechter.",
-              }
-            - { text: "130°", correct: true, info: "Der Winkel ist stumpf, also größer als 90°." }
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: |
-          Kurztest: Ein Winkel sieht größer aus als ein rechter. Du liest an den zwei Skalen 50° und 130° ab. Welcher Wert gehört zum
-          Winkel? Antwort: 130°, denn der Winkel ist stumpf, also größer als 90°.
-      - type: text
-        text: "Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) nach."
   - type: section
     id: grundfiguren-eben
     title: Ebene Grundfiguren
     blocks:
+      - type: text
+        text: "Wenn du am Kreis und im Dreieck rechnen willst, brauchst du die Namen der Teile."
       - type: definition
         term: Dreieck
         explanation: "Eine Figur mit drei Ecken A, B, C, drei Seiten a, b, c und drei Winkeln α, β, γ. Die Seite a liegt der Ecke A gegenüber. Beispiel: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm."
@@ -85,47 +53,12 @@ blocks:
       - type: definition
         term: Durchmesser
         explanation: "Eine Strecke durch den Mittelpunkt von einem Punkt des Kreises zum gegenüberliegenden, doppelt so lang wie der Radius. Beispiel: Radius 4 cm, Durchmesser 8 cm."
-      - type: vue-component
-        id: test-kreis
-        component: Kurztest
-        props:
-          question: "Ein Kreis hat den Durchmesser 14 cm. Wie lang ist sein Radius?"
-          options:
-            - {
-                text: "28 cm",
-                correct: false,
-                info: "Das wäre das Doppelte des Durchmessers. Der Radius ist die Hälfte.",
-              }
-            - { text: "7 cm", correct: true, info: "Der Radius ist halb so lang wie der Durchmesser: 14 cm : 2." }
-            - { text: "14 cm", correct: false, info: "So lang ist der Durchmesser, nicht der Radius." }
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: |
-          Kurztest: Ein Kreis hat den Durchmesser 14 cm. Wie lang ist sein Radius? 28 cm, 7 cm oder 14 cm. Antwort: 7 cm, denn der Radius ist die Hälfte des Durchmessers.
-      - type: vue-component
-        id: test-gleichschenklig
-        component: Kurztest
-        props:
-          question: In einem gleichschenkligen Dreieck ist ein Basiswinkel 55° groß. Wie groß ist der andere Basiswinkel?
-          options:
-            - { text: "35°", correct: false, info: "Die Basiswinkel sind gleich groß, nicht Ergänzungen zu 90°." }
-            - {
-                text: 55°,
-                correct: true,
-                info: "Die beiden Basiswinkel eines gleichschenkligen Dreiecks sind gleich groß.",
-              }
-            - { text: "125°", correct: false, info: "Dieser Wert ergänzt 55° zu 180°. Das gilt hier nicht." }
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: |
-          Kurztest: In einem gleichschenkligen Dreieck ist ein Basiswinkel 55° groß. Wie groß ist der andere Basiswinkel? 35°, 55°
-          oder 125°. Antwort: 55°, denn die Basiswinkel sind gleich groß.
-      - type: text
-        text: "Wenn du unsicher warst: Lies den Baustein **Ebene Grundfiguren** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/) nach."
   - type: section
     id: konstruktionen
     title: Zeichnen und Konstruieren
     blocks:
+      - type: text
+        text: "Wenn du eine Aussage mit einer Zeichnung prüfen willst, musst du genau zeichnen können."
       - type: text
         text: "Zwei Linien sind **parallel**, wenn sie überall denselben Abstand haben und sich nie schneiden. Beispiel: Die Längsseiten eines Rechtecks. Du zeichnest sie mit dem Geodreieck. Ein **rechter Winkel** hat 90°."
       - type: definition
@@ -139,43 +72,42 @@ blocks:
         explanation: "Der Punkt, der die Strecke in zwei gleich lange Teile teilt. Beispiel: Bei einer Strecke von 8 cm ist die Mitte 4 cm von jedem Ende entfernt. Du findest sie, indem du die Strecke misst, die Länge halbierst und vom Ende aus abträgst."
       - type: text
         text: Mit dem **Zirkel** zeichnest du einen Kreis um einen Punkt mit einem Radius, den du vorher an einer Strecke abgegriffen hast.
-      - type: vue-component
-        id: test-mitte
-        component: Kurztest
-        props:
-          question: "Die Strecke AB ist 13 cm lang. Wie weit ist ihre Mitte M von A entfernt?"
-          options:
-            - {
-                text: "6 cm",
-                correct: false,
-                info: "6 cm + 6 cm sind erst 12 cm. Die Mitte teilt 13 cm in zwei gleiche Teile.",
-              }
-            - { text: "6,5 cm", correct: true, info: "13 cm : 2 = 6,5 cm." }
-            - { text: "7 cm", correct: false, info: "7 cm + 7 cm sind 14 cm, das ist zu viel." }
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: |
-          Kurztest: Die Strecke AB ist 13 cm lang. Wie weit ist ihre Mitte M von A entfernt? 6 cm, 6,5 cm oder 7 cm. Antwort: 6,5 cm, denn 13 cm : 2 = 6,5 cm.
-      - type: vue-component
-        id: test-lot
-        component: Kurztest
-        props:
-          question: Du fällst von einem Punkt P das Lot auf die Gerade g. Wie liegt die Linie zu g?
-          options:
-            - { text: "parallel", correct: false, info: "Parallele Linien schneiden sich nie, das Lot trifft g aber." }
-            - {
-                text: "senkrecht",
-                correct: true,
-                info: "Das Lot ist die Senkrechte von P auf g und bildet mit g einen rechten Winkel.",
-              }
-            - { text: "schräg", correct: false, info: "Das Lot steht nicht schräg, es bildet einen rechten Winkel." }
-          right: Richtig.
-          wrong: Nicht richtig.
-        nojs: |
-          Kurztest: Du fällst von einem Punkt P das Lot auf die Gerade g. Wie liegt die Linie zu g? Parallel, senkrecht oder schräg.
-          Antwort: senkrecht, das Lot bildet mit g einen rechten Winkel.
+  - type: section
+    id: selbsttest
+    title: Kannst du das?
+    blocks:
       - type: text
-        text: "Wenn du unsicher warst: Lies den Baustein **Zeichnen und Konstruieren** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/konstruktionen/) nach."
+        text: "Zwei Aufgaben zeigen dir, ob du die Voraussetzungen für dieses Kapitel hast. Wenn eine nicht klappt, lies den Baustein [Winkel messen und zeichnen](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) oder [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/) oder [Zeichnen und Konstruieren](https://lernapps.net/apps/map/mathematik/c/konstruktionen/) auf der Lernlandkarte nach."
+      - type: matching
+        id: test-winkelarten
+        text: "Ordne jedem Winkel seine Art zu."
+        pairs:
+          - left: "35°"
+            right: "spitzer Winkel"
+          - left: "halb so groß wie ein gestreckter Winkel"
+            right: "rechter Winkel"
+          - left: "120°"
+            right: "stumpfer Winkel"
+          - left: "180°"
+            right: "gestreckter Winkel"
+        explanation: "Spitz heißt kleiner als 90°, stumpf zwischen 90° und 180°. Die Hälfte von 180° ist 90°, das ist ein rechter Winkel."
+      - type: multiple-choice
+        id: test-grundfiguren
+        text: "Welche Aussagen stimmen? Wähle alle."
+        options:
+          - text: "Der Durchmesser eines Kreises ist doppelt so lang wie sein Radius."
+            correct: true
+            info: "Der Radius geht vom Mittelpunkt zum Kreis, der Durchmesser durch den Mittelpunkt von Rand zu Rand."
+          - text: "Die Basiswinkel eines gleichschenkligen Dreiecks sind gleich groß."
+            correct: true
+            info: "Das gilt für die beiden Winkel an der Basis."
+          - text: "Das Lot von einem Punkt auf eine Gerade steht senkrecht auf der Geraden."
+            correct: true
+            info: "Das Lot bildet mit der Geraden einen rechten Winkel."
+          - text: "Die Mitte einer Strecke von 13 cm ist 7 cm von jedem Ende entfernt."
+            correct: false
+            info: "13 cm : 2 = 6,5 cm. Bei 7 cm wären die beiden Teile zusammen 14 cm."
+        explanation: "Die drei ersten Aussagen sind Grundlagen für dieses Kapitel. Die Mitte teilt die Strecke in zwei gleich lange Teile."
   - type: section
     id: bereit
     title: Du bist bereit, wenn du …
