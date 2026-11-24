@@ -22,9 +22,11 @@ Der Lernumfang dieser Seite, mit dem, was dazugehört und was nicht: [Scope](../
 
 ## Wo das Kind gerade ist
 
+- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=test-parallel`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
 - Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.
 - Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.
 - „Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.
+- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/haus/recap/?via=tutor#test-parallel`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
 
 ## Besondere Anforderungen
 
@@ -42,10 +44,12 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat höchstens zwei Aufgaben zur Kontrolle. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/vierecke-grundfiguren/, https://lernapps.net/apps/map/mathematik/c/symmetrie/
 
 **Das brauchst du für dieses Kapitel.** Im Haus der Vierecke ordnest du Vierecke nach ihren Eigenschaften. Dafür musst
-du zwei Dinge schon können: die besonderen Vierecke und die Symmetrie. Lies die Begriffe, mach die Kurztests und
+du zwei Dinge schon können: die besonderen Vierecke und die Symmetrie. Lies die Begriffe, löse die zwei Aufgaben und
 prüfe am Ende die Checkliste.
 
 ### Besondere Vierecke
+
+Wenn du Vierecke ordnen willst, musst du sie an ihren Eigenschaften unterscheiden. Dafür helfen dir diese Begriffe.
 
 Ein Viereck hat vier Ecken, vier Seiten und vier Winkel. Für die besonderen Vierecke brauchst du zwei Begriffe.
 
@@ -68,13 +72,9 @@ Besondere Vierecke mit je einem Beispiel:
 - Trapez | mindestens ein Paar paralleler Seiten, z. B. 6 cm und 4 cm parallel
 - Drachen | zwei Paare benachbarter gleich langer Seiten, z. B. 5 cm, 5 cm, 3 cm, 3 cm
 
-Interaktiv: Kurztest: Welches Viereck hat vier gleich lange Seiten, aber keine rechten Winkel? Quadrat, Rechteck oder Raute. Antwort: die Raute. Ein Quadrat hat vier rechte Winkel, ein Rechteck hat nur gegenüberliegende Seiten gleich lang.
-
-Interaktiv: Kurztest: Ein Viereck hat genau ein Paar paralleler Seiten. Was kann es sein? Trapez, Parallelogramm oder Rechteck. Antwort: Trapez. Parallelogramm und Rechteck haben zwei Paare paralleler Seiten.
-
-Wenn du unsicher warst: Lies den Baustein **Besondere Vierecke** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/vierecke-grundfiguren/) nach.
-
 ### Symmetrie
+
+Wenn du Vierecke genauer unterscheiden willst, hilft dir die Symmetrie: Sie sagt, wie sich eine Figur spiegeln und drehen lässt.
 
 - **Symmetrieachse**: Eine Gerade, an der du die Figur spiegeln kannst, sodass sie genau auf sich selbst fällt. Beispiel: Ein Rechteck mit den Seiten 5 cm und 3 cm hat zwei Symmetrieachsen, die Mittellinien durch die Seitenmitten.
 
@@ -82,13 +82,37 @@ Wenn du unsicher warst: Lies den Baustein **Besondere Vierecke** auf der [Lernla
 
 - **Drehsymmetrie**: Eine Figur ist drehsymmetrisch, wenn sie nach einer Drehung um einen Punkt um weniger als 360° auf sich selbst fällt. Beispiel: Ein Quadrat fällt nach 90° auf sich selbst.
 
-Interaktiv: Kurztest: Wie viele Symmetrieachsen hat ein Rechteck mit den Seiten 5 cm und 3 cm? Keine, zwei oder vier. Antwort: zwei, die Mittellinien durch die Seitenmitten. Vier hat nur das Quadrat.
+### Kannst du das?
 
-Interaktiv: Kurztest: Welches Viereck ist immer punktsymmetrisch? Parallelogramm, Trapez oder Drachen. Antwort: Parallelogramm. Nach einer halben Drehung um den Schnittpunkt der Diagonalen fällt es auf sich selbst.
+Zwei Aufgaben zeigen dir, ob du die Voraussetzungen für dieses Kapitel hast. Wenn eine nicht klappt, lies den Baustein [Besondere Vierecke](https://lernapps.net/apps/map/mathematik/c/vierecke-grundfiguren/) oder [Symmetrie](https://lernapps.net/apps/map/mathematik/c/symmetrie/) auf der Lernlandkarte nach.
 
-Wenn du unsicher warst: Lies den Baustein **Symmetrie** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/symmetrie/) nach.
+- Aufgabe `test-parallel` (unten)
+
+- Aufgabe `test-achsen` (unten)
 
 ### Du bist bereit, wenn du …
 
 - **Besondere Vierecke:** Du kannst die sechs Vierecke an ihren Eigenschaften unterscheiden, zum Beispiel ein Trapez von einem Parallelogramm.
 - **Symmetrie:** Du kannst Symmetrieachsen zählen und sagen, ob eine Figur punkt- oder drehsymmetrisch ist.
+
+### Aufgabe test-parallel
+
+- Aufgabe: Welche Vierecke haben immer zwei Paare paralleler Seiten? Wähle alle.
+- Antwortformat: alle richtigen Antworten wählen
+- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✓ Rechteck – Gegenüberliegende Seiten sind parallel.
+  - ✓ Raute – Gegenüberliegende Seiten sind parallel, alle vier Seiten sind gleich lang.
+  - ✓ Parallelogramm – Es ist durch zwei Paare paralleler Seiten erklärt.
+  - ✗ Trapez – Ein Trapez braucht nur ein Paar paralleler Seiten.
+  - ✗ Drachen – Ein Drachen hat zwei Paare benachbarter gleich langer Seiten, aber keine parallelen Seiten.
+- Lösung: Rechteck; Raute; Parallelogramm
+- Erklärung: Rechteck, Raute und Parallelogramm haben zwei Paare paralleler Seiten. Beim Trapez ist ein Paar genug, der Drachen hat keins.
+- Link: [../?via=tutor#test-parallel](../?via=tutor#test-parallel)
+
+### Aufgabe test-achsen
+
+- Aufgabe: Ordne jedem Viereck seine Symmetrieachsen zu (ohne Sonderfall, zum Beispiel ist ein Rechteck hier kein Quadrat).
+- Antwortformat: jedem Eintrag links den passenden rechts zuordnen
+- Lösung: Rechteck – zwei Symmetrieachsen; Quadrat – vier Symmetrieachsen; Drachen – eine Symmetrieachse; Parallelogramm – keine Symmetrieachse
+- Erklärung: Das Rechteck hat zwei Achsen durch die Seitenmitten. Beim Quadrat kommen die Diagonalen dazu. Der Drachen hat die Diagonale zwischen den gleich langen Seitenpaaren als Achse. Das Parallelogramm ist nur punktsymmetrisch.
+- Link: [../?via=tutor#test-achsen](../?via=tutor#test-achsen)

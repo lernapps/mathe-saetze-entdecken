@@ -22,9 +22,11 @@ Der Lernumfang dieser Seite, mit dem, was dazugehört und was nicht: [Scope](../
 
 ## Wo das Kind gerade ist
 
+- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=test-winkelarten`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
 - Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.
 - Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.
 - „Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.
+- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/winkel/recap/?via=tutor#test-winkelarten`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
 
 ## Besondere Anforderungen
 
@@ -43,9 +45,11 @@ Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon kön
 
 **Das brauchst du für dieses Kapitel.** Du berechnest Winkel, arbeitest am Kreis und konstruierst. Dafür musst du drei
 Dinge schon können: Winkel messen, die ebenen Grundfiguren und das Zeichnen mit Geodreieck und Zirkel. Lies die
-Begriffe, mach die Kurztests und prüfe am Ende die Checkliste.
+Begriffe, löse die zwei Aufgaben und prüfe am Ende die Checkliste.
 
 ### Winkel messen und zeichnen
+
+Wenn du Winkel berechnen willst, musst du erst wissen, was ein Winkel ist und wie groß er sein kann.
 
 - **Winkel**: Ein Winkel entsteht, wenn zwei Strahlen von einem Punkt ausgehen. Der Punkt heißt Scheitel, die Strahlen heißen Schenkel. Du misst ihn in Grad (°). Beispiel: Die Ecke einer Buchseite ist ein Winkel von 90°.
 
@@ -57,13 +61,9 @@ Begriffe, mach die Kurztests und prüfe am Ende die Checkliste.
 
 Ein **rechter Winkel** hat 90°, wie die Ecke eines Geodreiecks. Du misst einen Winkel mit dem Geodreieck: Der Nullstrich liegt auf einem Schenkel, die Mitte der Grundkante auf dem Scheitel, am anderen Schenkel liest du ab.
 
-Interaktiv: Kurztest: Ein Winkel ist halb so groß wie ein gestreckter Winkel. Was für ein Winkel ist das? Spitz, rechter Winkel oder stumpf. Antwort: rechter Winkel, denn 180° : 2 = 90°.
-
-Interaktiv: Kurztest: Ein Winkel sieht größer aus als ein rechter. Du liest an den zwei Skalen 50° und 130° ab. Welcher Wert gehört zum Winkel? Antwort: 130°, denn der Winkel ist stumpf, also größer als 90°.
-
-Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) nach.
-
 ### Ebene Grundfiguren
+
+Wenn du am Kreis und im Dreieck rechnen willst, brauchst du die Namen der Teile.
 
 - **Dreieck**: Eine Figur mit drei Ecken A, B, C, drei Seiten a, b, c und drei Winkeln α, β, γ. Die Seite a liegt der Ecke A gegenüber. Beispiel: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm.
 
@@ -75,13 +75,9 @@ Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der
 
 - **Durchmesser**: Eine Strecke durch den Mittelpunkt von einem Punkt des Kreises zum gegenüberliegenden, doppelt so lang wie der Radius. Beispiel: Radius 4 cm, Durchmesser 8 cm.
 
-Interaktiv: Kurztest: Ein Kreis hat den Durchmesser 14 cm. Wie lang ist sein Radius? 28 cm, 7 cm oder 14 cm. Antwort: 7 cm, denn der Radius ist die Hälfte des Durchmessers.
-
-Interaktiv: Kurztest: In einem gleichschenkligen Dreieck ist ein Basiswinkel 55° groß. Wie groß ist der andere Basiswinkel? 35°, 55° oder 125°. Antwort: 55°, denn die Basiswinkel sind gleich groß.
-
-Wenn du unsicher warst: Lies den Baustein **Ebene Grundfiguren** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/) nach.
-
 ### Zeichnen und Konstruieren
+
+Wenn du eine Aussage mit einer Zeichnung prüfen willst, musst du genau zeichnen können.
 
 Zwei Linien sind **parallel**, wenn sie überall denselben Abstand haben und sich nie schneiden. Beispiel: Die Längsseiten eines Rechtecks. Du zeichnest sie mit dem Geodreieck. Ein **rechter Winkel** hat 90°.
 
@@ -93,14 +89,37 @@ Zwei Linien sind **parallel**, wenn sie überall denselben Abstand haben und sic
 
 Mit dem **Zirkel** zeichnest du einen Kreis um einen Punkt mit einem Radius, den du vorher an einer Strecke abgegriffen hast.
 
-Interaktiv: Kurztest: Die Strecke AB ist 13 cm lang. Wie weit ist ihre Mitte M von A entfernt? 6 cm, 6,5 cm oder 7 cm. Antwort: 6,5 cm, denn 13 cm : 2 = 6,5 cm.
+### Kannst du das?
 
-Interaktiv: Kurztest: Du fällst von einem Punkt P das Lot auf die Gerade g. Wie liegt die Linie zu g? Parallel, senkrecht oder schräg. Antwort: senkrecht, das Lot bildet mit g einen rechten Winkel.
+Zwei Aufgaben zeigen dir, ob du die Voraussetzungen für dieses Kapitel hast. Wenn eine nicht klappt, lies den Baustein [Winkel messen und zeichnen](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) oder [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/) oder [Zeichnen und Konstruieren](https://lernapps.net/apps/map/mathematik/c/konstruktionen/) auf der Lernlandkarte nach.
 
-Wenn du unsicher warst: Lies den Baustein **Zeichnen und Konstruieren** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/konstruktionen/) nach.
+- Aufgabe `test-winkelarten` (unten)
+
+- Aufgabe `test-grundfiguren` (unten)
 
 ### Du bist bereit, wenn du …
 
 - **Winkel messen und zeichnen:** Du kannst einen Winkel messen, zeichnen und sagen, ob er spitz, recht, stumpf oder gestreckt ist.
 - **Ebene Grundfiguren:** Du kennst Dreieck, gleichschenkliges Dreieck und Kreis mit Radius und Durchmesser.
 - **Zeichnen und Konstruieren:** Du kannst eine Parallele und ein Lot zeichnen und die Mitte einer Strecke finden.
+
+### Aufgabe test-winkelarten
+
+- Aufgabe: Ordne jedem Winkel seine Art zu.
+- Antwortformat: jedem Eintrag links den passenden rechts zuordnen
+- Lösung: 35° – spitzer Winkel; halb so groß wie ein gestreckter Winkel – rechter Winkel; 120° – stumpfer Winkel; 180° – gestreckter Winkel
+- Erklärung: Spitz heißt kleiner als 90°, stumpf zwischen 90° und 180°. Die Hälfte von 180° ist 90°, das ist ein rechter Winkel.
+- Link: [../?via=tutor#test-winkelarten](../?via=tutor#test-winkelarten)
+
+### Aufgabe test-grundfiguren
+
+- Aufgabe: Welche Aussagen stimmen? Wähle alle.
+- Antwortformat: alle richtigen Antworten wählen
+- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✓ Der Durchmesser eines Kreises ist doppelt so lang wie sein Radius. – Der Radius geht vom Mittelpunkt zum Kreis, der Durchmesser durch den Mittelpunkt von Rand zu Rand.
+  - ✓ Die Basiswinkel eines gleichschenkligen Dreiecks sind gleich groß. – Das gilt für die beiden Winkel an der Basis.
+  - ✓ Das Lot von einem Punkt auf eine Gerade steht senkrecht auf der Geraden. – Das Lot bildet mit der Geraden einen rechten Winkel.
+  - ✗ Die Mitte einer Strecke von 13 cm ist 7 cm von jedem Ende entfernt. – 13 cm : 2 = 6,5 cm. Bei 7 cm wären die beiden Teile zusammen 14 cm.
+- Lösung: Der Durchmesser eines Kreises ist doppelt so lang wie sein Radius.; Die Basiswinkel eines gleichschenkligen Dreiecks sind gleich groß.; Das Lot von einem Punkt auf eine Gerade steht senkrecht auf der Geraden.
+- Erklärung: Die drei ersten Aussagen sind Grundlagen für dieses Kapitel. Die Mitte teilt die Strecke in zwei gleich lange Teile.
+- Link: [../?via=tutor#test-grundfiguren](../?via=tutor#test-grundfiguren)

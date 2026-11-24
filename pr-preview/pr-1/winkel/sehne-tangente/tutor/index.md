@@ -55,6 +55,8 @@ Du kannst gleich Sehne, Sekante und Tangente unterscheiden und eine Tangente zei
 
 ### Die Gerade verschieben
 
+Wenn du eine Gerade und einen Kreis zusammen zeichnest, fragst du dich: Wann treffen sie sich, und wie oft? Das probierst du aus.
+
 Der Kreis hat den Radius 4 cm. Die Gerade liegt im Abstand *d* vom Mittelpunkt *M*. Verschiebe sie mit den
 Pfeiltasten (Tabulatortaste zum Punkt rechts) oder mit der Maus. Stelle *d* auf 0 cm, 2 cm, 4 cm und 5 cm ein
 und lies jedes Mal die gemeinsamen Punkte ab.
@@ -63,17 +65,23 @@ Interaktiv: Ein Kreis mit Radius 4 cm und eine waagerechte Gerade im Abstand *d*
 
 ### Was fällt auf?
 
+Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+
 - Aufgabe `wann-beruehrt` (unten)
 
 - Aufgabe `tangente-winkel` (unten)
 
 ### Warum steht die Tangente senkrecht?
 
+Wenn du eine Tangente zeichnen willst, musst du wissen, wie sie zum Radius liegt.
+
 Angenommen, der Radius steht nicht senkrecht auf der Geraden. Dann kannst du den Berührpunkt am Lot von *M* auf
 die Gerade spiegeln (das Lot ist die Senkrechte von *M* auf die Gerade). Er ist ein anderer Punkt, weil der Berührpunkt nicht auf dem Lot liegt. Der Spiegelpunkt liegt auch auf dem Kreis und auf der Geraden. Dann gäbe es zwei gemeinsame
 Punkte, und die Gerade wäre keine Tangente. Also muss der Radius senkrecht stehen.
 
 ### Merke
+
+Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
 
 - **Sekante**: Eine Gerade, die den Kreis in zwei Punkten schneidet.
 
@@ -82,6 +90,8 @@ Punkte, und die Gerade wäre keine Tangente. Also muss der Radius senkrecht steh
 - **Tangente**: Eine Gerade, die den Kreis in genau einem Punkt berührt. Sie steht dort senkrecht auf dem Radius.
 
 ### Übung
+
+Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
 
 - Aufgabe `begriffe-zuordnen` (unten)
 
@@ -92,6 +102,8 @@ Punkte, und die Gerade wäre keine Tangente. Also muss der Radius senkrecht steh
 - Aufgabe `tangente-zeichnen` (unten)
 
 ### Begründe in eigenen Worten
+
+Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen.
 
 - Aufgabe `tangente-begruenden` (unten)
 

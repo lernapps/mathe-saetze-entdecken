@@ -55,6 +55,8 @@ Du kannst gleich Dreiecke aus Seiten und Winkeln konstruieren und sagen, ob die 
 
 ### Stücke verändern
 
+Wenn du ein Dreieck bauen willst, fragst du dich, welche drei Stücke genügen und wann es mehrere Lösungen gibt.
+
 Ein Dreieck hat die Ecken A, B, C, die Seiten a, b, c (a liegt A gegenüber) und die Winkel α, β, γ. S steht für eine Seite, W für einen Winkel: SWS heißt Seite, Winkel, Seite. Wähle die Stücke. Verschiebe den Regler und beobachte, wie viele verschiedene Dreiecke zu den Stücken passen.
 Beginne mit SSS und schiebe *c* von 1 cm bis 11 cm. Probiere dann die anderen Stücke. Bei „zwei Seiten und ein
 Winkel“ siehst du ein zweites Dreieck gestrichelt.
@@ -63,11 +65,15 @@ Interaktiv: Drei Stücke bestimmen ein Dreieck. SSS mit a = 4 cm und b = 6 cm: B
 
 ### Was fällt auf?
 
+Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+
 - Aufgabe `sss-vermuten` (unten)
 
 - Aufgabe `ssa-vermuten` (unten)
 
 ### Warum ist das so?
+
+Wenn du wissen willst, warum es manchmal zwei Lösungen gibt, schaust du, wie sich die Zirkelkreise schneiden.
 
 Bei SSS schlägst du zwei Kreise mit dem Zirkel, um *A* mit Radius *b* und um *B* mit Radius *a*. Die Kreise
 schneiden sich nur, wenn *c* in das Fenster zwischen dem Unterschied und der Summe passt. Die beiden
@@ -78,6 +84,8 @@ schneiden, einmal oder gar nicht. Das hängt davon ab, wie groß *a* im Vergleic
 zu *AB* ist.
 
 ### Merke
+
+Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
 
 Wann legen drei Stücke ein Dreieck fest?:
 - Stücke | Dreiecke
@@ -92,6 +100,8 @@ Die Reihenfolge der Buchstaben ist wichtig. Bei SWS liegt der Winkel zwischen de
 
 ### Übung
 
+Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+
 - Aufgabe `eindeutig-erkennen` (unten)
 
 - Aufgabe `kleinste-seite` (unten)
@@ -101,6 +111,8 @@ Die Reihenfolge der Buchstaben ist wichtig. Bei SWS liegt der Winkel zwischen de
 - Aufgabe `sws-konstruieren` (unten)
 
 ### Begründe in eigenen Worten
+
+Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen.
 
 - Aufgabe `ssa-begruenden` (unten)
 

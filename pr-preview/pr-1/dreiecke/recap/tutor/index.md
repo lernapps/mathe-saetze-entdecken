@@ -22,9 +22,11 @@ Der Lernumfang dieser Seite, mit dem, was dazugehört und was nicht: [Scope](../
 
 ## Wo das Kind gerade ist
 
+- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?uebung=test-konstruieren`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
 - Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.
 - Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.
 - „Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.
+- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/dreiecke/recap/?via=tutor#test-konstruieren`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
 
 ## Besondere Anforderungen
 
@@ -42,10 +44,12 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat höchstens zwei Aufgaben zur Kontrolle. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/konstruktionen/, https://lernapps.net/apps/map/mathematik/c/winkel-messen/, https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/
 
 **Das brauchst du für dieses Kapitel.** Du konstruierst Dreiecke und vergleichst sie. Dafür musst du drei Dinge schon
-können: konstruieren, Winkel messen und die drei Bewegungen von Figuren. Lies die Begriffe, mach die Kurztests und prüfe
+können: konstruieren, Winkel messen und die drei Bewegungen von Figuren. Lies die Begriffe, löse die zwei Aufgaben und prüfe
 am Ende die Checkliste.
 
 ### Zeichnen und Konstruieren
+
+Wenn du ein Dreieck aus gegebenen Stücken zeichnen willst, musst du Längen und Winkel genau abtragen können.
 
 - **Abtragen**: Eine Strecke von bestimmter Länge von einem Punkt aus auf einer Linie markieren, mit dem Zirkel oder dem Lineal. Beispiel: Von A aus 6 cm abtragen, du erhältst den Punkt B.
 
@@ -53,24 +57,18 @@ am Ende die Checkliste.
 
 Mit dem **Zirkel** schlägst du einen Kreis um einen Punkt mit einem festen Radius. Der Schnittpunkt zweier solcher Kreise hat von beiden Mittelpunkten einen festen Abstand. Beispiel: Kreise mit Radius 4 cm um A und 5 cm um B schneiden sich in Punkten, die 4 cm von A und 5 cm von B entfernt sind. Zwei Linien stehen **senkrecht**, wenn sie einen rechten Winkel (90°) bilden. Die **Mitte einer Strecke** teilt sie in zwei gleich lange Teile: Bei 8 cm ist sie 4 cm von jedem Ende entfernt. Du findest sie, indem du misst, halbierst und abträgst.
 
-Interaktiv: Kurztest: Du sollst bei A an die Strecke AB einen Winkel von 50° zeichnen. Wie heißt das? Abtragen, antragen oder spiegeln. Antwort: antragen. Abtragen markiert eine Länge.
-
-Wenn du unsicher warst: Lies den Baustein **Zeichnen und Konstruieren** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/konstruktionen/) nach.
-
 ### Winkel messen und zeichnen
+
+Wenn du die Winkel von Dreiecken vergleichen willst, musst du sie richtig messen können.
 
 Du misst einen **Winkel** mit dem Geodreieck. Der Scheitel ist die Ecke des Winkels, die Schenkel sind seine beiden Linien. Lege
 die Mitte der Grundkante auf den Scheitel und den Nullstrich auf einen Schenkel, dann liest du am anderen Schenkel die
 Größe in Grad (°) ab. Beispiel: Ein Winkel von 40° ist ein spitzer Winkel. Beim Zeichnen gehst du umgekehrt vor: Du trägst
 die Gradzahl an.
 
-Interaktiv: Kurztest: Der Nullstrich liegt auf einem Schenkel. Am anderen Schenkel liest du auf den zwei Skalen 65° und 115° ab. Der Winkel sieht spitz aus. Welcher Wert gehört zum Winkel? Antwort: 65°, denn ein spitzer Winkel ist kleiner als 90°.
-
-Interaktiv: Kurztest: Ein Winkel sieht größer aus als ein rechter. Du liest an den zwei Skalen 50° und 130° ab. Welcher Wert gehört zum Winkel? Antwort: 130°, denn der Winkel ist stumpf, also größer als 90°.
-
-Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) nach.
-
 ### Spiegeln, Verschieben, Drehen
+
+Wenn du fragst, ob zwei Dreiecke dasselbe Dreieck sind, hilft dir das Bewegen von Figuren.
 
 - **Spiegeln**: Eine Figur an einer Geraden, der Spiegelachse, umklappen. Die Achse halbiert jede Strecke zwischen einem Punkt und seinem Bildpunkt senkrecht, beide liegen im gleichen Abstand auf verschiedenen Seiten. Beispiel: Ein Punkt 2 cm links der Achse hat seinen Bildpunkt 2 cm rechts.
 
@@ -80,14 +78,41 @@ Wenn du unsicher warst: Lies den Baustein **Winkel messen und zeichnen** auf der
 
 - **Bildfigur**: Die Figur, die nach dem Spiegeln, Verschieben oder Drehen entsteht. Bei diesen drei Bewegungen bleiben alle Längen und Winkel gleich. Beispiel: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm hat als Bildfigur wieder ein Dreieck mit 3 cm, 4 cm und 5 cm.
 
-Interaktiv: Kurztest: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm wird um 6 cm nach rechts verschoben. Wie lang sind die Seiten der Bildfigur? Antwort: 3 cm, 4 cm und 5 cm. Beim Verschieben bleiben alle Längen gleich.
+### Kannst du das?
 
-Interaktiv: Kurztest: Ein Punkt hat 3 cm Abstand zur Spiegelachse. Wie weit sind der Punkt und sein Bildpunkt voneinander entfernt? 3 cm, 6 cm oder 9 cm. Antwort: 6 cm, denn der Bildpunkt hat auf der anderen Seite denselben Abstand.
+Zwei Aufgaben zeigen dir, ob du die Voraussetzungen für dieses Kapitel hast. Wenn eine nicht klappt, lies den Baustein [Zeichnen und Konstruieren](https://lernapps.net/apps/map/mathematik/c/konstruktionen/) oder [Winkel messen und zeichnen](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) oder [Spiegeln, Verschieben, Drehen](https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/) auf der Lernlandkarte nach.
 
-Wenn du unsicher warst: Lies den Baustein **Spiegeln, Verschieben, Drehen** auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/) nach.
+- Aufgabe `test-konstruieren` (unten)
+
+- Aufgabe `test-skala` (unten)
 
 ### Du bist bereit, wenn du …
 
 - **Zeichnen und Konstruieren:** Du kannst eine Strecke abtragen, einen Winkel antragen und mit dem Zirkel einen Kreis schlagen.
 - **Winkel messen und zeichnen:** Du kannst einen Winkel messen und zeichnen und dabei die richtige Skala wählen.
 - **Spiegeln, Verschieben, Drehen:** Du kannst sagen, wo der Bildpunkt liegt, und weißt, dass Längen und Winkel gleich bleiben.
+
+### Aufgabe test-konstruieren
+
+- Aufgabe: Welche Aussagen stimmen? Wähle alle.
+- Antwortformat: alle richtigen Antworten wählen
+- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✓ Einen Winkel an eine Strecke zeichnen heißt antragen. – Abtragen dagegen bedeutet, eine Länge zu markieren.
+  - ✓ Ein Punkt mit 3 cm Abstand zur Spiegelachse ist von seinem Bildpunkt 6 cm entfernt. – 3 cm bis zur Achse und 3 cm von der Achse zum Bildpunkt.
+  - ✗ Beim Verschieben um 6 cm werden alle Seiten einer Figur um 6 cm länger. – Beim Verschieben bleiben alle Längen und Winkel gleich, die Figur wandert nur.
+  - ✓ Der Schnittpunkt zweier Kreise um A und B hat von A und von B jeweils den Radius als Abstand. – Jeder Kreis um einen Punkt besteht aus Punkten mit dem Radius als Abstand zu seinem Mittelpunkt.
+- Lösung: Einen Winkel an eine Strecke zeichnen heißt antragen.; Ein Punkt mit 3 cm Abstand zur Spiegelachse ist von seinem Bildpunkt 6 cm entfernt.; Der Schnittpunkt zweier Kreise um A und B hat von A und von B jeweils den Radius als Abstand.
+- Erklärung: Antragen, Spiegeln und Kreise mit dem Zirkel brauchst du in diesem Kapitel. Verschieben ändert keine Länge.
+- Link: [../?via=tutor#test-konstruieren](../?via=tutor#test-konstruieren)
+
+### Aufgabe test-skala
+
+- Aufgabe: Der Nullstrich liegt auf einem Schenkel. Am anderen Schenkel liest du auf den zwei Skalen 65° und 115° ab. Der Winkel sieht spitz aus. Welcher Wert gehört zum Winkel?
+- Antwortformat: eine Antwort wählen
+- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✓ 65° – Ein spitzer Winkel ist kleiner als 90°.
+  - ✗ 115° – 115° wäre ein stumpfer Winkel, größer als 90°.
+  - ✗ 90° – 90° steht auf keiner der beiden Skalen, die du abgelesen hast.
+- Lösung: 65°
+- Erklärung: Du liest die Skala ab, auf der der Nullstrich liegt, und prüfst mit dem Augenmaß, ob der Winkel spitz oder stumpf ist.
+- Link: [../?via=tutor#test-skala](../?via=tutor#test-skala)

@@ -55,6 +55,8 @@ Du kannst gleich begründen, dass zwei Dreiecke deckungsgleich sind, und die Kon
 
 ### Stücke vergleichen
 
+Wenn du zwei Dreiecke vergleichen willst, möchtest du möglichst wenig messen. Welche Stücke reichen?
+
 Wähle gegebene Stücke (S steht für eine Seite, W für einen Winkel, SWS heißt Seite, Winkel, Seite) und verschiebe den Regler. Die Anzeige zählt, wie viele verschiedene Dreiecke zu den Stücken
 passen. Zähle bei jeder Einstellung mit. Probiere SSS, SWS, WSW, SSA und WWW.
 
@@ -62,9 +64,13 @@ Interaktiv: Gegebene Stücke und die Zahl der Dreiecke, die dazu passen. SSS (a 
 
 ### Was fällt auf?
 
+Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+
 - Aufgabe `welche-stuecke` (unten)
 
 ### Warum gilt das?
+
+Wenn du sicher sein willst, dass drei solche Stücke reichen, hilft dir die Konstruktion.
 
 Legen drei Stücke das Dreieck fest, dann kannst du es nur auf eine Art konstruieren. Zwei Dreiecke, die in diesen
 Stücken übereinstimmen, entstehen aus derselben Konstruktion. Die Konstruktion liefert dasselbe Dreieck, nur an
@@ -72,6 +78,8 @@ einem anderen Ort. Also passen die Dreiecke aufeinander. Bei SSA liegt der Winke
 *C* zur Seite *AB*, gibt es zwei Konstruktionen. Ist *a* mindestens so lang wie *b*, ist die Konstruktion eindeutig. Das ist der Satz SsW: zwei Seiten und der Winkel, der der größeren Seite gegenüberliegt.
 
 ### Merke
+
+Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
 
 Die Kongruenzsätze für Dreiecke:
 - Satz | Stücke
@@ -86,6 +94,8 @@ WWW ist kein Kongruenzsatz. Dreiecke mit gleichen Winkeln können verschieden gr
 
 ### Übung
 
+Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+
 - Aufgabe `satz-zuordnen` (unten)
 
 - Aufgabe `gleiche-winkel` (unten)
@@ -95,6 +105,8 @@ WWW ist kein Kongruenzsatz. Dreiecke mit gleichen Winkeln können verschieden gr
 - Aufgabe `winkel-kongruent` (unten)
 
 ### Begründe in eigenen Worten
+
+Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen.
 
 - Aufgabe `www-begruenden` (unten)
 

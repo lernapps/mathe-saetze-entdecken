@@ -56,6 +56,8 @@ konstruieren.
 
 ### Mittelsenkrechten ziehen
 
+Wenn du einen Punkt suchst, der von drei Orten gleich weit entfernt ist, hilft dir die Mittelsenkrechte.
+
 Die Mittelsenkrechte einer Seite geht durch die Mitte der Seite und steht senkrecht auf ihr. Ziehe die Ecke *C*
 mit den Pfeiltasten (Tabulatortaste zum Punkt) oder mit der Maus. Der Punkt *U* ist der Treffpunkt der drei
 Linien. Stelle *C* an drei Stellen ein und vergleiche die drei Abstände.
@@ -66,6 +68,8 @@ Interaktiv: Ein Dreieck *ABC* mit den drei Mittelsenkrechten der Seiten. Sie tre
 
 ### Warum treffen sie sich in einem Punkt?
 
+Wenn du sicher sein willst, dass sich drei Mittelsenkrechten immer in einem Punkt treffen, begründest du es mit Abständen.
+
 Merke vorab: Ein Punkt ist genau dann von *A* und *B* gleich weit entfernt, wenn er auf der Mittelsenkrechten von *AB* liegt.
 
 1. Ein Punkt auf der Mittelsenkrechten von *AB* ist von *A* und *B* gleich weit entfernt.
@@ -74,6 +78,8 @@ Merke vorab: Ein Punkt ist genau dann von *A* und *B* gleich weit entfernt, wenn
 4. Dann liegt *U* auch auf der Mittelsenkrechten von *CA*. Alle drei treffen sich in *U*.
 
 ### Winkelhalbierende ziehen
+
+Wenn du einen möglichst großen Kreis in ein Dreieck legen willst, suchst du seinen Mittelpunkt.
 
 Eine Winkelhalbierende teilt einen Winkel in zwei gleiche Teile. Ziehe *C* und beobachte den Treffpunkt *I* der
 drei Winkelhalbierenden. Vergleiche seine Abstände zu den drei Seiten.
@@ -84,6 +90,8 @@ Interaktiv: Ein Dreieck *ABC* mit den drei Winkelhalbierenden. Sie treffen sich 
 
 ### Höhen ziehen
 
+Wenn du eine Linie suchst, die von einer Ecke senkrecht zur Gegenseite läuft, zeichnest du eine Höhe.
+
 Eine Höhe geht durch eine Ecke und steht senkrecht auf der gegenüberliegenden Seite. Ziehe *C* und beobachte den
 Punkt *H*, in dem die Höhen zusammentreffen.
 
@@ -92,6 +100,8 @@ Interaktiv: Ein Dreieck *ABC* mit den drei Höhen. Sie treffen sich in einem Pun
 - Aufgabe `hoehen-vermuten` (unten)
 
 ### Merke
+
+Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
 
 Besondere Linien im Dreieck:
 - Linie | Treffpunkt und Kreis
@@ -105,6 +115,8 @@ U kann außerhalb des Dreiecks liegen, bei einem stumpfen Winkel. I liegt immer 
 
 ### Übung
 
+Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+
 - Aufgabe `umkreis-konstruieren` (unten)
 
 - Aufgabe `inkreis-konstruieren` (unten)
@@ -116,6 +128,8 @@ U kann außerhalb des Dreiecks liegen, bei einem stumpfen Winkel. I liegt immer 
 - Aufgabe `umkreisradius` (unten)
 
 ### Begründe in eigenen Worten
+
+Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen.
 
 - Aufgabe `umkreis-begruenden` (unten)
 

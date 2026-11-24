@@ -58,6 +58,8 @@ im Dreieck.
 
 ### Am Halbkreis ziehen
 
+Wenn du einen rechten Winkel zeichnen willst, ohne ihn zu messen, brauchst du einen Weg. Der Halbkreis zeigt einen.
+
 Der Weg *AB* ist der Durchmesser des Kreises, *M* ist seine Mitte. Ziehe den Punkt *C* auf dem Halbkreis. Mit der Maus oder
 dem Finger ziehst du den markierten Punkt *C*. Mit der Tastatur wählst du den Punkt mit der Tabulatortaste und
 bewegst ihn mit den Pfeiltasten. Stelle *C* nah an *A*, in die Mitte und nah an *B*. Lies jedes Mal die Winkel *α*, *β* und *γ* ab.
@@ -66,9 +68,13 @@ Interaktiv: Ein Halbkreis über dem Durchmesser *AB*, darauf der Punkt *C*. Drei
 
 ### Was bleibt gleich?
 
+Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+
 - Aufgabe `welcher-winkel` (unten)
 
 ### Warum ist das so?
+
+Wenn du sicher sein willst, dass es immer klappt, reicht das Ziehen nicht, du brauchst einen Beweis.
 
 Messen zeigt dir nur einzelne Stellungen. Ein Beweis gilt für jede. Ein Beweis erklärt mit Sätzen, die du schon hast, warum eine Vermutung immer stimmt. Im Bild
 siehst du den Radius von *M*, der Mitte des Kreises, nach *C*. Dann sind *MA*, *MB* und *MC* alle gleich lang, nämlich so lang wie der Radius *r*.
@@ -94,6 +100,8 @@ In Schritt 1 und 2 sind die Basiswinkel gleich, weil die Dreiecke gleichschenkli
 
 ### Merke
 
+Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
+
 - **Satz des Thales**: Liegt der Punkt *C* (nicht *A* oder *B*) auf dem Kreis über dem Durchmesser *AB*, dann hat das Dreieck *ABC* bei *C* einen rechten Winkel.
 
 **Merke: Achtung**
@@ -101,6 +109,8 @@ In Schritt 1 und 2 sind die Basiswinkel gleich, weil die Dreiecke gleichschenkli
 Der Satz gilt nur, wenn *AB* der Durchmesser ist und *C* auf dem Kreis liegt.
 
 ### Übung
+
+Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
 
 - Aufgabe `nur-durchmesser` (unten)
 
@@ -111,6 +121,8 @@ Der Satz gilt nur, wenn *AB* der Durchmesser ist und *C* auf dem Kreis liegt.
 - Aufgabe `beweis-erkennen` (unten)
 
 ### Begründe in eigenen Worten
+
+Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen.
 
 - Aufgabe `thales-begruenden` (unten)
 

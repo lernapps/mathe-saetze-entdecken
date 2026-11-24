@@ -56,6 +56,8 @@ ist.
 
 ### Das Viereck ziehen
 
+Wenn du wissen willst, welche Vierecke zusammengehören, probierst du aus, welche Eigenschaften du mit C und D einstellen kannst.
+
 Die Ecken *A* und *B* bleiben liegen. Du ziehst *C* und *D* von Gitterpunkt zu Gitterpunkt, zwischen zwei Punkten liegt 1 cm. Mit der
 Tastatur wählst du eine Ecke mit der Tabulatortaste und bewegst sie mit den Pfeiltasten. Stelle der Reihe nach
 ein: zwei Paare paralleler Seiten, vier rechte Winkel, vier gleich lange Seiten, und dann alles zugleich.
@@ -65,9 +67,13 @@ Interaktiv: Ein Viereck *ABCD* auf einem Gitter, *A* = (0 | 0) und *B* = (5 | 0)
 
 ### Was gehört zu was?
 
+Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+
 - Aufgabe `quadrat-ist-rechteck` (unten)
 
 ### Warum ist das so?
+
+Wenn du begründen willst, warum ein Quadrat ein Rechteck ist, vergleichst du, was jedes Viereck mindestens haben muss.
 
 „*A* ist ein *B*“ gilt, wenn *A* alle Eigenschaften von *B* hat. Ein Rechteck ist ein Parallelogramm mit vier
 rechten Winkeln. Ein Quadrat hat zwei Paare paralleler Seiten und vier rechte Winkel, dazu vier gleich lange
@@ -79,6 +85,8 @@ Beim Quadrat gibt es zwei Wege nach oben, über das Rechteck und über die Raute
 Rechteck und auch eine Raute.
 
 ### Merke
+
+Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
 
 Eigenschaften im Haus der Vierecke:
 - Viereck | Eigenschaft
@@ -95,6 +103,8 @@ Der Pfeil gilt nur in eine Richtung. Jedes Quadrat ist ein Rechteck, aber nicht 
 
 ### Übung
 
+Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+
 - Aufgabe `rechteck-ist-quadrat` (unten)
 
 - Aufgabe `raute-ist-drachen` (unten)
@@ -106,6 +116,8 @@ Der Pfeil gilt nur in eine Richtung. Jedes Quadrat ist ein Rechteck, aber nicht 
 - Aufgabe `achsen-zaehlen` (unten)
 
 ### Begründe in eigenen Worten
+
+Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen.
 
 - Aufgabe `quadrat-rechteck-begruenden` (unten)
 

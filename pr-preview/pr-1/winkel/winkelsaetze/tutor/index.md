@@ -55,6 +55,8 @@ Du kannst gleich fehlende Winkel berechnen, ohne sie zu messen. Du brauchst nur 
 
 ### An Parallelen ziehen
 
+Wenn du Winkel nicht jedes Mal messen willst, suchst du Beziehungen, die immer gelten. Dafür änderst du die Neigung einer Geraden an Parallelen und liest die Winkel ab.
+
 Die Geraden *g* und *h* sind parallel. Eine dritte Gerade schneidet beide. Ziehe den Punkt am oberen Ende der
 dritten Geraden oder ändere die Neigung mit den Pfeiltasten (Tabulatortaste zum Punkt). Stelle drei verschiedene
 Neigungen ein und lies jedes Mal α, β, γ und δ ab.
@@ -63,9 +65,13 @@ Interaktiv: Zwei parallele Geraden *g* und *h*, eine dritte Gerade schneidet bei
 
 ### Was ist immer gleich?
 
+Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+
 - Aufgabe `parallelen-vermuten` (unten)
 
 ### Im Dreieck ziehen
+
+Wenn du nur zwei Winkel eines Dreiecks kennst und den dritten ausrechnen willst, suchst du, was alle Dreiecke gemeinsam haben.
 
 Das Dreieck *ABC* hat die feste Seite *AB*. Ziehe die Ecke *C* mit der Maus oder mit den Pfeiltasten. Stelle
 *C* an drei verschiedene Stellen und lies jedes Mal α, β und γ ab. Rechne sie zusammen.
@@ -75,6 +81,8 @@ Interaktiv: Ein Dreieck *ABC* mit fester Seite *AB*. Drei Stellungen der Ecke *C
 - Aufgabe `winkelsumme-vermuten` (unten)
 
 ### Warum ist die Summe 180°?
+
+Wenn du sicher sein willst, dass die Winkelsumme immer 180° ist, reicht Messen nicht.
 
 Zeichne durch *C* die Parallele *p* zu *AB*. Dann kannst du die Wechselwinkel an Parallelen nutzen.
 
@@ -86,6 +94,8 @@ Bild: Ein Dreieck ABC mit einer gestrichelten Parallelen p zu AB durch C. Bei C 
 4. Darum gilt α + γ + β = 180°.
 
 ### Merke
+
+Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
 
 Drei Winkelpaare an zwei Geraden, die von einer dritten geschnitten werden:
 - Name | Lage | An Parallelen
@@ -102,6 +112,8 @@ Stufen- und Wechselwinkel sind nur an Parallelen gleich groß.
 
 ### Übung
 
+Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+
 - Aufgabe `dreieckswinkel` (unten)
 
 - Aufgabe `stufenwinkel-nebenwinkel` (unten)
@@ -111,6 +123,8 @@ Stufen- und Wechselwinkel sind nur an Parallelen gleich groß.
 - Aufgabe `winkelsumme-schritte` (unten)
 
 ### Begründe in eigenen Worten
+
+Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen.
 
 - Aufgabe `winkelsumme-begruenden` (unten)
 
