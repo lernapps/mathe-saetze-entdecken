@@ -65,7 +65,7 @@ Interaktiv: Drei Stücke bestimmen ein Dreieck. SSS mit a = 4 cm und b = 6 cm: B
 
 ### Was fällt auf?
 
-Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+Wenn du an der Figur etwas entdeckt hast, hältst du es als Vermutung fest und prüfst sie dann.
 
 - Aufgabe `sss-vermuten` (unten)
 
@@ -85,7 +85,7 @@ zu *AB* ist.
 
 ### Merke
 
-Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
+Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst.
 
 Wann legen drei Stücke ein Dreieck fest?:
 - Stücke | Dreiecke
@@ -100,7 +100,7 @@ Die Reihenfolge der Buchstaben ist wichtig. Bei SWS liegt der Winkel zwischen de
 
 ### Übung
 
-Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen.
 
 - Aufgabe `eindeutig-erkennen` (unten)
 

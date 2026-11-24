@@ -68,7 +68,7 @@ Interaktiv: Ein Halbkreis über dem Durchmesser *AB*, darauf der Punkt *C*. Drei
 
 ### Was bleibt gleich?
 
-Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+Wenn du an der Figur etwas entdeckt hast, hältst du es als Vermutung fest und prüfst sie dann.
 
 - Aufgabe `welcher-winkel` (unten)
 
@@ -100,7 +100,7 @@ In Schritt 1 und 2 sind die Basiswinkel gleich, weil die Dreiecke gleichschenkli
 
 ### Merke
 
-Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
+Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst.
 
 - **Satz des Thales**: Liegt der Punkt *C* (nicht *A* oder *B*) auf dem Kreis über dem Durchmesser *AB*, dann hat das Dreieck *ABC* bei *C* einen rechten Winkel.
 
@@ -110,7 +110,7 @@ Der Satz gilt nur, wenn *AB* der Durchmesser ist und *C* auf dem Kreis liegt.
 
 ### Übung
 
-Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen.
 
 - Aufgabe `nur-durchmesser` (unten)
 

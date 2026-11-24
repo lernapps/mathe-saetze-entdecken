@@ -95,13 +95,13 @@ Wenn du eine Linie suchst, die von einer Ecke senkrecht zur Gegenseite läuft, z
 Eine Höhe geht durch eine Ecke und steht senkrecht auf der gegenüberliegenden Seite. Ziehe *C* und beobachte den
 Punkt *H*, in dem die Höhen zusammentreffen.
 
-Interaktiv: Ein Dreieck *ABC* mit den drei Höhen. Sie treffen sich in einem Punkt *H*. Die Abstände von *H* zu den drei Höhen sind 0 cm, *H* liegt auf allen drei. Bei einem Dreieck mit stumpfem Winkel liegt *H* außerhalb, bei *C* = (−2,5 | 1,5) zum Beispiel.
+Interaktiv: Ein Dreieck *ABC* mit den drei Höhen. Sie treffen sich in einem Punkt *H*. Bei einem Dreieck mit stumpfem Winkel liegt *H* außerhalb, bei *C* = (−2,5 | 1,5) zum Beispiel.
 
 - Aufgabe `hoehen-vermuten` (unten)
 
 ### Merke
 
-Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
+Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst.
 
 Besondere Linien im Dreieck:
 - Linie | Treffpunkt und Kreis
@@ -115,7 +115,7 @@ U kann außerhalb des Dreiecks liegen, bei einem stumpfen Winkel. I liegt immer 
 
 ### Übung
 
-Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen.
 
 - Aufgabe `umkreis-konstruieren` (unten)
 

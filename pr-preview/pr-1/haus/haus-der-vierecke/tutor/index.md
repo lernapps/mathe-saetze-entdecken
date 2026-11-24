@@ -67,7 +67,7 @@ Interaktiv: Ein Viereck *ABCD* auf einem Gitter, *A* = (0 | 0) und *B* = (5 | 0)
 
 ### Was gehört zu was?
 
-Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+Wenn du an der Figur etwas entdeckt hast, hältst du es als Vermutung fest und prüfst sie dann.
 
 - Aufgabe `quadrat-ist-rechteck` (unten)
 
@@ -86,7 +86,7 @@ Rechteck und auch eine Raute.
 
 ### Merke
 
-Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
+Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst.
 
 Eigenschaften im Haus der Vierecke:
 - Viereck | Eigenschaft
@@ -103,7 +103,7 @@ Der Pfeil gilt nur in eine Richtung. Jedes Quadrat ist ein Rechteck, aber nicht 
 
 ### Übung
 
-Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen.
 
 - Aufgabe `rechteck-ist-quadrat` (unten)
 

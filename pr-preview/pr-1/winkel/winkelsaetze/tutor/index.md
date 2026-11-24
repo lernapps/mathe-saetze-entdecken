@@ -65,7 +65,7 @@ Interaktiv: Zwei parallele Geraden *g* und *h*, eine dritte Gerade schneidet bei
 
 ### Was ist immer gleich?
 
-Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+Wenn du an der Figur etwas entdeckt hast, hältst du es als Vermutung fest und prüfst sie dann.
 
 - Aufgabe `parallelen-vermuten` (unten)
 
@@ -82,7 +82,7 @@ Interaktiv: Ein Dreieck *ABC* mit fester Seite *AB*. Drei Stellungen der Ecke *C
 
 ### Warum ist die Summe 180°?
 
-Wenn du sicher sein willst, dass die Winkelsumme immer 180° ist, reicht Messen nicht.
+Wenn du sicher sein willst, dass die Winkelsumme in jedem Dreieck 180° ist, brauchst du eine Begründung für alle Dreiecke, nicht nur Messungen.
 
 Zeichne durch *C* die Parallele *p* zu *AB*. Dann kannst du die Wechselwinkel an Parallelen nutzen.
 
@@ -95,7 +95,7 @@ Bild: Ein Dreieck ABC mit einer gestrichelten Parallelen p zu AB durch C. Bei C 
 
 ### Merke
 
-Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
+Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst.
 
 Drei Winkelpaare an zwei Geraden, die von einer dritten geschnitten werden:
 - Name | Lage | An Parallelen
@@ -112,7 +112,7 @@ Stufen- und Wechselwinkel sind nur an Parallelen gleich groß.
 
 ### Übung
 
-Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen.
 
 - Aufgabe `dreieckswinkel` (unten)
 

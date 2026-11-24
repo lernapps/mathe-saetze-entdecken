@@ -65,7 +65,7 @@ Interaktiv: Ein Kreis mit Radius 4 cm und eine waagerechte Gerade im Abstand *d*
 
 ### Was fällt auf?
 
-Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+Wenn du an der Figur etwas entdeckt hast, hältst du es als Vermutung fest und prüfst sie dann.
 
 - Aufgabe `wann-beruehrt` (unten)
 
@@ -81,7 +81,7 @@ Punkte, und die Gerade wäre keine Tangente. Also muss der Radius senkrecht steh
 
 ### Merke
 
-Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
+Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst.
 
 - **Sekante**: Eine Gerade, die den Kreis in zwei Punkten schneidet.
 
@@ -91,7 +91,7 @@ Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
 
 ### Übung
 
-Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen.
 
 - Aufgabe `begriffe-zuordnen` (unten)
 

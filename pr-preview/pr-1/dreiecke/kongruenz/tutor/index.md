@@ -64,7 +64,7 @@ Interaktiv: Gegebene Stücke und die Zahl der Dreiecke, die dazu passen. SSS (a 
 
 ### Was fällt auf?
 
-Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt.
+Wenn du an der Figur etwas entdeckt hast, hältst du es als Vermutung fest und prüfst sie dann.
 
 - Aufgabe `welche-stuecke` (unten)
 
@@ -79,7 +79,9 @@ einem anderen Ort. Also passen die Dreiecke aufeinander. Bei SSA liegt der Winke
 
 ### Merke
 
-Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst.
+Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst.
+
+- **Kongruent**: Zwei Figuren sind kongruent (deckungsgleich), wenn sie sich durch Verschieben, Drehen und Spiegeln genau aufeinanderlegen lassen. Beispiel: Zwei Dreiecke mit den Seiten 3 cm, 4 cm und 5 cm sind kongruent.
 
 Die Kongruenzsätze für Dreiecke:
 - Satz | Stücke
@@ -94,7 +96,7 @@ WWW ist kein Kongruenzsatz. Dreiecke mit gleichen Winkeln können verschieden gr
 
 ### Übung
 
-Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen.
+Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen.
 
 - Aufgabe `satz-zuordnen` (unten)
 
