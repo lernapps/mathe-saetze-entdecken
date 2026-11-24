@@ -56,6 +56,7 @@ blocks:
           position: "Winkel bei A {α}°, bei B {β}°, bei C {γ}°"
           measure: "α = {α}°, β = {β}°, γ = {γ}°"
           reset: Punkt C zurück auf den Start
+          atStart: Die Figur steht am Start.
         nojs: |
           Ein Halbkreis über dem Durchmesser *AB*, darauf der Punkt *C*. Drei Stellungen von *C*, gemessen am Dreieck
           *ABC*: Steht *C* nah bei *B*, ist α = 15°, β = 75° und γ = 90°. Steht *C* oben in der Mitte, ist α = 45°,

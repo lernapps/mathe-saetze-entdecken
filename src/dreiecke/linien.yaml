@@ -52,6 +52,7 @@ blocks:
           inside: innerhalb
           outside: außerhalb oder auf einer Seite
           reset: Ecke C zurück auf den Start
+          atStart: Die Figur steht am Start.
         nojs: |
           Ein Dreieck *ABC* mit den drei Mittelsenkrechten der Seiten. Sie treffen sich in einem Punkt *U*, der von *A*, *B*
           und *C* gleich weit entfernt ist. Bei *C* = (0 | 3) ist der Abstand von *U* zu allen drei Ecken 2,2 cm. Bei
@@ -102,6 +103,7 @@ blocks:
           inside: innerhalb
           outside: außerhalb
           reset: Ecke C zurück auf den Start
+          atStart: Die Figur steht am Start.
         nojs: |
           Ein Dreieck *ABC* mit den drei Winkelhalbierenden. Sie treffen sich in einem Punkt *I* im Inneren des Dreiecks. *I*
           ist von allen drei Seiten gleich weit entfernt, der Kreis um *I* mit diesem Abstand berührt alle drei Seiten, der
@@ -139,6 +141,7 @@ blocks:
           inside: innerhalb
           outside: außerhalb oder auf einer Ecke
           reset: Ecke C zurück auf den Start
+          atStart: Die Figur steht am Start.
         nojs: |
           Ein Dreieck *ABC* mit den drei Höhen. Sie treffen sich in einem Punkt *H*. Die Abstände von *H* zu den drei Höhen
           sind 0 cm, *H* liegt auf allen drei. Bei einem Dreieck mit stumpfem Winkel liegt *H* außerhalb, bei

@@ -24,6 +24,8 @@ const props = defineProps<{
   measure: string;
   /** The label of the reset button. */
   reset: string;
+  /** What stands beside the reset button while everything is at the start. */
+  atStart: string;
 }>();
 
 const phi = ref(60);
@@ -103,6 +105,8 @@ function down(event: PointerEvent): void {
   move(event);
 }
 
+const atStartNow = computed(() => phi.value === 60 && corner.value.x === 1 && corner.value.y === 2);
+
 function resetPosition(): void {
   phi.value = 60;
   corner.value = { x: 1, y: 2 };
@@ -160,7 +164,8 @@ function resetPosition(): void {
       />
     </svg>
     <p class="winkelzug-measure" aria-live="polite">{{ text(measure) }}</p>
-    <button type="button" class="winkelzug-reset" @click="resetPosition">{{ reset }}</button>
+    <button type="button" class="winkelzug-reset" :disabled="atStartNow" @click="resetPosition">{{ reset }}</button>
+    <span v-if="atStartNow" class="winkelzug-note">{{ atStart }}</span>
   </div>
 </template>
 
@@ -226,7 +231,30 @@ function resetPosition(): void {
 }
 
 .winkelzug-reset {
-  min-height: 44px;
+  font: inherit;
+  min-height: 2.75rem;
   margin-top: 0.5rem;
+  padding: 0.375rem 0.875rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
+  background: var(--page-background);
+  color: var(--page-accent);
+  cursor: pointer;
+}
+
+.winkelzug-reset:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.winkelzug-reset:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
+}
+
+.winkelzug-note {
+  margin-left: 0.5rem;
+  color: var(--page-muted);
+  font-size: 0.9375rem;
 }
 </style>

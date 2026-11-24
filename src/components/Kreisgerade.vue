@@ -13,6 +13,8 @@ defineProps<{
   measure: string;
   /** The label of the reset button. */
   reset: string;
+  /** What stands beside the reset button while everything is at the start. */
+  atStart: string;
 }>();
 
 const start = 2;
@@ -85,7 +87,8 @@ function down(event: PointerEvent): void {
       />
     </svg>
     <p class="kreisgerade-measure" aria-live="polite">{{ fill(measure, d) }}</p>
-    <button type="button" class="kreisgerade-reset" @click="d = start">{{ reset }}</button>
+    <button type="button" class="kreisgerade-reset" :disabled="d === start" @click="d = start">{{ reset }}</button>
+    <span v-if="d === start" class="kreisgerade-note">{{ atStart }}</span>
   </div>
 </template>
 
@@ -147,7 +150,30 @@ function down(event: PointerEvent): void {
 }
 
 .kreisgerade-reset {
-  min-height: 44px;
+  font: inherit;
+  min-height: 2.75rem;
   margin-top: 0.5rem;
+  padding: 0.375rem 0.875rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
+  background: var(--page-background);
+  color: var(--page-accent);
+  cursor: pointer;
+}
+
+.kreisgerade-reset:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.kreisgerade-reset:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
+}
+
+.kreisgerade-note {
+  margin-left: 0.5rem;
+  color: var(--page-muted);
+  font-size: 0.9375rem;
 }
 </style>

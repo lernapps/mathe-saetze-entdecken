@@ -60,6 +60,7 @@ blocks:
           yes: ja
           no: nein
           reset: Ecken zurück auf den Start
+          atStart: Die Figur steht am Start.
         nojs: |
           Ein Viereck *ABCD* auf einem Gitter, *A* = (0 | 0) und *B* = (5 | 0). Drei Stellungen von *C* und *D*:
           *C* = (5 | 5), *D* = (0 | 5): alle Seiten 5 cm, zwei parallele Seitenpaare, vier rechte Winkel, vier

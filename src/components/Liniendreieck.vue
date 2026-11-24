@@ -19,6 +19,8 @@ const props = defineProps<{
   outside: string;
   /** The label of the reset button. */
   reset: string;
+  /** What stands beside the reset button while everything is at the start. */
+  atStart: string;
 }>();
 
 const c = ref<Pt>({ x: 0.5, y: 2.5 });
@@ -127,7 +129,10 @@ function down(event: PointerEvent): void {
       />
     </svg>
     <p class="linien-measure" aria-live="polite">{{ text(measure) }}</p>
-    <button type="button" class="linien-reset" @click="c = { x: 0.5, y: 2.5 }">{{ reset }}</button>
+    <button type="button" class="linien-reset" :disabled="c.x === 0.5 && c.y === 2.5" @click="c = { x: 0.5, y: 2.5 }">
+      {{ reset }}
+    </button>
+    <span v-if="c.x === 0.5 && c.y === 2.5" class="linien-note">{{ atStart }}</span>
   </div>
 </template>
 
@@ -187,7 +192,30 @@ function down(event: PointerEvent): void {
 }
 
 .linien-reset {
-  min-height: 44px;
+  font: inherit;
+  min-height: 2.75rem;
   margin-top: 0.5rem;
+  padding: 0.375rem 0.875rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
+  background: var(--page-background);
+  color: var(--page-accent);
+  cursor: pointer;
+}
+
+.linien-reset:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.linien-reset:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
+}
+
+.linien-note {
+  margin-left: 0.5rem;
+  color: var(--page-muted);
+  font-size: 0.9375rem;
 }
 </style>

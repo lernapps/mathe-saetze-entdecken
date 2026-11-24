@@ -53,6 +53,7 @@ blocks:
           position: "α {alpha}°, β {beta}°, γ {gamma}°, δ {delta}°"
           measure: "α = {alpha}°, β = {beta}°, γ = {gamma}°, δ = {delta}°"
           reset: Neigung zurück auf den Start
+          atStart: Die Figur steht am Start.
         nojs: |
           Zwei parallele Geraden *g* und *h*, eine dritte Gerade schneidet beide. Bei jeder Neigung messen die Winkel:
           Bei 60° ist α = 60°, β = 60°, γ = 60° und δ = 120°. Bei 90° sind alle vier Winkel 90°. Bei 130° ist α = 130°,
@@ -97,6 +98,7 @@ blocks:
           position: "α {alpha}°, β {beta}°, γ {gamma}°"
           measure: "α = {alpha}°, β = {beta}°, γ = {gamma}°"
           reset: Ecke C zurück auf den Start
+          atStart: Die Figur steht am Start.
         nojs: |
           Ein Dreieck *ABC* mit fester Seite *AB*. Drei Stellungen der Ecke *C*: α = 45°, β = 45°, γ = 90°. Oder
           α = 63,4°, β = 33,7°, γ = 82,9°. Oder α = 14°, β = 90°, γ = 76°. Die Winkel ändern sich, ihre Summe nicht.

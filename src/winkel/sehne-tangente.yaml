@@ -55,6 +55,7 @@ blocks:
           position: "Abstand {d} cm, {n} gemeinsame Punkte"
           measure: "Abstand d = {d} cm · gemeinsame Punkte: {n} · Strecke zwischen ihnen: {s}"
           reset: Gerade zurück auf den Start
+          atStart: Die Figur steht am Start.
         nojs: |
           Ein Kreis mit Radius 4 cm und eine waagerechte Gerade im Abstand *d* vom Mittelpunkt. Bei d = 0 cm gibt es zwei
           gemeinsame Punkte, die Strecke zwischen ihnen ist 8 cm lang. Bei d = 2 cm sind es zwei Punkte, die Strecke ist
