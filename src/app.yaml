@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+format: 2
+strand: mathematik/geometrie
+title: "Sätze entdecken und begründen: Vierecke, Winkel, Dreiecke und Kreise"
+intro: |
+  Du ziehst an Figuren und beobachtest, was gleich bleibt. Daraus wird eine Vermutung, dann ein Satz mit einer
+  Begründung. Für Klasse 7 und 8.
+languages: [de]
+scope:
+  text: |
+    Sätze der ebenen Geometrie in Klasse 7 und 8: das Haus der Vierecke, Winkelsätze und der Winkelsummensatz,
+    Sehne, Sekante und Tangente, der Satz des Thales, die Konstruktion von Dreiecken, die Kongruenzsätze und die
+    besonderen Linien im Dreieck mit Um- und Inkreis. Jede Seite folgt dem Weg: ziehen und beobachten, vermuten,
+    begründen mit bekannten Sätzen, üben, in eigenen Worten begründen.
+  out:
+    - Ähnlichkeit, Satz des Pythagoras und Trigonometrie
+    - Zeichnen und Abbilden als Grundlage (nur kurz wiederholt)
+    - Seitenhalbierende und Schwerpunkt
+chapters: [haus, winkel, dreiecke]

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Dreiecke konstruieren und vergleichen
+summary: Dreiecke aus gegebenen Stücken konstruieren, Kongruenzsätze nutzen und besondere Linien im Dreieck zeichnen.
+pages: [recap, konstruktion, kongruenz, linien]
+selfAssessment:
+  pages:
+    - exercises:
+        - /dreiecke/konstruktion/#kleinste-seite
+        - /dreiecke/konstruktion/#groesste-seite
+        - /dreiecke/konstruktion/#eindeutig-erkennen
+    - exercises:
+        - /dreiecke/kongruenz/#winkel-kongruent
+        - /dreiecke/kongruenz/#satz-zuordnen
+        - /dreiecke/kongruenz/#ssa-kleinere-seite
+    - exercises:
+        - /dreiecke/linien/#umkreisradius
+        - /dreiecke/linien/#linie-zuordnen
+        - /dreiecke/linien/#umkreisradius

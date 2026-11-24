@@ -1,0 +1,119 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+recap: [mathematik/winkel-messen, mathematik/grundfiguren-eben, mathematik/konstruktionen]
+scope: |
+  Wiederholung ohne Aufgaben für das Kapitel „Winkelsätze und der Satz des Thales“. Winkel messen und zeichnen: Winkel,
+  Schenkel, Scheitel, spitzer, stumpfer und gestreckter Winkel, rechter Winkel als 90°. Ebene Grundfiguren: Dreieck, gleichschenkliges Dreieck
+  mit Basiswinkeln, Kreis mit Mittelpunkt, Radius und Durchmesser. Zeichnen und Konstruieren: parallel, senkrecht, Lot, Mitte
+  einer Strecke, Zirkel und Geodreieck. Dazu ein Selbsttest mit Rückmeldung je Baustein und die Checkliste.
+blocks:
+  - type: text
+    text: |
+      **Das brauchst du für dieses Kapitel.** Du berechnest Winkel, arbeitest am Kreis und konstruierst. Dafür musst du drei
+      Dinge schon können: Winkel messen, die ebenen Grundfiguren und das Zeichnen mit Geodreieck und Zirkel. Lies die
+      Begriffe, löse die zwei Aufgaben und prüfe am Ende die Checkliste.
+  - type: section
+    id: winkel-messen
+    title: Winkel messen und zeichnen
+    blocks:
+      - type: text
+        text: "Wenn du Winkel berechnen willst, musst du erst wissen, was ein Winkel ist und wie groß er sein kann."
+      - type: definition
+        term: Winkel
+        explanation: "Ein Winkel entsteht, wenn zwei Strahlen von einem Punkt ausgehen. Der Punkt heißt Scheitel, die Strahlen heißen Schenkel. Du misst ihn in Grad (°). Beispiel: Die Ecke einer Buchseite ist ein Winkel von 90°."
+      - type: definition
+        term: Spitzer Winkel
+        explanation: "Ein Winkel kleiner als 90°. Beispiel: 35°."
+      - type: definition
+        term: Stumpfer Winkel
+        explanation: "Ein Winkel zwischen 90° und 180°. Beispiel: 120°."
+      - type: definition
+        term: Gestreckter Winkel
+        explanation: "Ein Winkel von 180°: Die beiden Schenkel bilden eine gerade Linie. Beispiel: Die Schenkel liegen auf einer Geraden, wie ein ausgestreckter Arm."
+      - type: text
+        text: "Ein **rechter Winkel** hat 90°, wie die Ecke eines Geodreiecks. Du misst einen Winkel mit dem Geodreieck: Der Nullstrich liegt auf einem Schenkel, die Mitte der Grundkante auf dem Scheitel, am anderen Schenkel liest du ab."
+  - type: section
+    id: grundfiguren-eben
+    title: Ebene Grundfiguren
+    blocks:
+      - type: text
+        text: "Wenn du am Kreis und im Dreieck rechnen willst, brauchst du die Namen der Teile."
+      - type: definition
+        term: Dreieck
+        explanation: "Eine Figur mit drei Ecken A, B, C, drei Seiten a, b, c und drei Winkeln α, β, γ. Die Seite a liegt der Ecke A gegenüber. Beispiel: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm."
+      - type: definition
+        term: Gleichschenkliges Dreieck
+        explanation: "Ein Dreieck mit zwei gleich langen Seiten, den Schenkeln. Die dritte Seite heißt Basis. Die beiden Winkel an der Basis sind die Basiswinkel, sie sind gleich groß. Beispiel: Schenkel 5 cm und 5 cm, Basis 6 cm, beide Basiswinkel gleich groß (etwa 53°)."
+      - type: definition
+        term: Kreis
+        explanation: "Alle Punkte, die von einem Punkt, dem Mittelpunkt M, gleich weit entfernt sind. Beispiel: Alle Punkte mit 4 cm Abstand von M bilden einen Kreis."
+      - type: definition
+        term: Radius
+        explanation: "Die Strecke vom Mittelpunkt zu einem Punkt auf dem Kreis, oder ihre Länge. Beispiel: Radius 4 cm."
+      - type: definition
+        term: Durchmesser
+        explanation: "Eine Strecke durch den Mittelpunkt von einem Punkt des Kreises zum gegenüberliegenden, doppelt so lang wie der Radius. Beispiel: Radius 4 cm, Durchmesser 8 cm."
+  - type: section
+    id: konstruktionen
+    title: Zeichnen und Konstruieren
+    blocks:
+      - type: text
+        text: "Wenn du eine Aussage mit einer Zeichnung prüfen willst, musst du genau zeichnen können."
+      - type: text
+        text: "Zwei Linien sind **parallel**, wenn sie überall denselben Abstand haben und sich nie schneiden. Beispiel: Die Längsseiten eines Rechtecks. Du zeichnest sie mit dem Geodreieck. Ein **rechter Winkel** hat 90°."
+      - type: definition
+        term: Senkrecht
+        explanation: "Zwei Linien stehen senkrecht aufeinander, wenn sie einen rechten Winkel bilden (90°). Beispiel: Die Seiten eines Rechtecks in einer Ecke."
+      - type: definition
+        term: Lot
+        explanation: "Die Senkrechte von einem Punkt auf eine Gerade. Beispiel: Von einem Punkt 3 cm über einer Geraden fällst du das Lot. Es trifft die Gerade senkrecht, der Abstand des Punktes von der Geraden ist 3 cm."
+      - type: definition
+        term: Mitte einer Strecke
+        explanation: "Der Punkt, der die Strecke in zwei gleich lange Teile teilt. Beispiel: Bei einer Strecke von 8 cm ist die Mitte 4 cm von jedem Ende entfernt. Du findest sie, indem du die Strecke misst, die Länge halbierst und vom Ende aus abträgst."
+      - type: text
+        text: Mit dem **Zirkel** zeichnest du einen Kreis um einen Punkt mit einem Radius, den du vorher an einer Strecke abgegriffen hast.
+  - type: section
+    id: selbsttest
+    title: Kannst du das?
+    blocks:
+      - type: text
+        text: "Zwei Aufgaben zeigen dir, ob du die Voraussetzungen für dieses Kapitel hast. Wenn eine nicht klappt, lies den Baustein [Winkel messen und zeichnen](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) oder [Ebene Grundfiguren](https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/) oder [Zeichnen und Konstruieren](https://lernapps.net/apps/map/mathematik/c/konstruktionen/) auf der Lernlandkarte nach."
+      - type: matching
+        id: test-winkelarten
+        text: "Ordne jedem Winkel seine Art zu."
+        pairs:
+          - left: "35°"
+            right: "spitzer Winkel"
+          - left: "halb so groß wie ein gestreckter Winkel"
+            right: "rechter Winkel"
+          - left: "120°"
+            right: "stumpfer Winkel"
+          - left: "180°"
+            right: "gestreckter Winkel"
+        explanation: "Spitz heißt kleiner als 90°, stumpf zwischen 90° und 180°. Die Hälfte von 180° ist 90°, das ist ein rechter Winkel."
+      - type: multiple-choice
+        id: test-grundfiguren
+        text: "Welche Aussagen stimmen? Wähle alle."
+        options:
+          - text: "Der Durchmesser eines Kreises ist doppelt so lang wie sein Radius."
+            correct: true
+            info: "Der Radius geht vom Mittelpunkt zum Kreis, der Durchmesser durch den Mittelpunkt von Rand zu Rand."
+          - text: "Die Basiswinkel eines gleichschenkligen Dreiecks sind gleich groß."
+            correct: true
+            info: "Das gilt für die beiden Winkel an der Basis."
+          - text: "Das Lot von einem Punkt auf eine Gerade steht senkrecht auf der Geraden."
+            correct: true
+            info: "Das Lot bildet mit der Geraden einen rechten Winkel."
+          - text: "Die Mitte einer Strecke von 13 cm ist 7 cm von jedem Ende entfernt."
+            correct: false
+            info: "13 cm : 2 = 6,5 cm. Bei 7 cm wären die beiden Teile zusammen 14 cm."
+        explanation: "Die drei ersten Aussagen sind Grundlagen für dieses Kapitel. Die Mitte teilt die Strecke in zwei gleich lange Teile."
+  - type: section
+    id: bereit
+    title: Du bist bereit, wenn du …
+    blocks:
+      - type: text
+        text: |
+          - **Winkel messen und zeichnen:** Du kannst einen Winkel messen, zeichnen und sagen, ob er spitz, recht, stumpf oder gestreckt ist.
+          - **Ebene Grundfiguren:** Du kennst Dreieck, gleichschenkliges Dreieck und Kreis mit Radius und Durchmesser.
+          - **Zeichnen und Konstruieren:** Du kannst eine Parallele und ein Lot zeichnen und die Mitte einer Strecke finden.

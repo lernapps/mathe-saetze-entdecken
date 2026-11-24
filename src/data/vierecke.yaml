@@ -1,0 +1,15 @@
+- name: Parallelogramm
+  eigenschaft: "zwei Paare paralleler Seiten, aber keine rechten Winkel und nicht alle Seiten gleich lang"
+  achsen: 0
+- name: Rechteck
+  eigenschaft: "vier rechte Winkel, aber nicht alle Seiten gleich lang"
+  achsen: 2
+- name: Raute
+  eigenschaft: "vier gleich lange Seiten, aber keine rechten Winkel"
+  achsen: 2
+- name: Quadrat
+  eigenschaft: "vier gleich lange Seiten und vier rechte Winkel"
+  achsen: 4
+- name: Drachen
+  eigenschaft: "zwei Paare benachbarter gleich langer Seiten, aber nicht alle vier Seiten gleich lang und keine parallelen Seiten"
+  achsen: 1

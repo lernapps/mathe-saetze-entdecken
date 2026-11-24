@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" role="img" aria-labelledby="t d">
+<title id="t">Skizze Zugmodus Satz des Thales</title>
+<desc id="d">Halbkreis über AB, Punkt C auf dem Kreis, Winkel bei C mit Messwert, Pfeiltasten-Hinweis.</desc>
+<rect width="360" height="260" fill="#fff"/>
+<path d="M40 190 A140 140 0 0 1 320 190" fill="none" stroke="#222" stroke-width="2"/>
+<line x1="40" y1="190" x2="320" y2="190" stroke="#222" stroke-width="2"/>
+<polygon points="40,190 320,190 120,72" fill="none" stroke="#06c" stroke-width="2"/>
+<circle cx="120" cy="72" r="9" fill="#fff" stroke="#c40" stroke-width="3"/>
+<text x="28" y="210" font-size="14">A</text><text x="324" y="210" font-size="14">B</text><text x="104" y="60" font-size="14">C</text>
+<text x="100" y="105" font-size="13">γ = 90°</text>
+<text x="20" y="245" font-size="12">Ziehe C mit Maus oder Pfeiltasten. Tab wechselt den Punkt.</text>
+</svg>

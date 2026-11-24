@@ -1,0 +1,104 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du hier
+recap: [mathematik/konstruktionen, mathematik/winkel-messen, mathematik/bewegungen-figuren]
+scope: |
+  Wiederholung ohne Aufgaben für das Kapitel „Dreiecke konstruieren und vergleichen“. Zeichnen und Konstruieren: Strecke
+  abtragen, Winkel antragen, Kreis mit dem Zirkel schlagen. Winkel messen und zeichnen: Winkel mit dem Geodreieck messen und
+  zeichnen. Spiegeln, Verschieben, Drehen: die drei Bewegungen, Bildfigur, Länge und Winkel bleiben gleich. Dazu ein Selbsttest
+  mit Rückmeldung je Baustein und die Checkliste.
+blocks:
+  - type: text
+    text: |
+      **Das brauchst du für dieses Kapitel.** Du konstruierst Dreiecke und vergleichst sie. Dafür musst du drei Dinge schon
+      können: konstruieren, Winkel messen und die drei Bewegungen von Figuren. Lies die Begriffe, löse die zwei Aufgaben und prüfe
+      am Ende die Checkliste.
+  - type: section
+    id: konstruktionen
+    title: Zeichnen und Konstruieren
+    blocks:
+      - type: text
+        text: "Wenn du ein Dreieck aus gegebenen Stücken zeichnen willst, musst du Längen und Winkel genau abtragen können."
+      - type: definition
+        term: Abtragen
+        explanation: "Eine Strecke von bestimmter Länge von einem Punkt aus auf einer Linie markieren, mit dem Zirkel oder dem Lineal. Beispiel: Von A aus 6 cm abtragen, du erhältst den Punkt B."
+      - type: definition
+        term: Antragen
+        explanation: "Einen Winkel von bestimmter Größe an eine Strecke zeichnen, mit dem Geodreieck am Punkt der Strecke. Beispiel: An die Strecke AB bei A einen Winkel von 50° antragen."
+      - type: text
+        text: "Mit dem **Zirkel** schlägst du einen Kreis um einen Punkt mit einem festen Radius. Der Schnittpunkt zweier solcher Kreise hat von beiden Mittelpunkten einen festen Abstand. Beispiel: Kreise mit Radius 4 cm um A und 5 cm um B schneiden sich in Punkten, die 4 cm von A und 5 cm von B entfernt sind. Zwei Linien stehen **senkrecht**, wenn sie einen rechten Winkel (90°) bilden. Die **Mitte einer Strecke** teilt sie in zwei gleich lange Teile: Bei 8 cm ist sie 4 cm von jedem Ende entfernt. Du findest sie, indem du misst, halbierst und abträgst."
+  - type: section
+    id: winkel-messen
+    title: Winkel messen und zeichnen
+    blocks:
+      - type: text
+        text: "Wenn du die Winkel von Dreiecken vergleichen willst, musst du sie richtig messen können."
+      - type: text
+        text: |
+          Du misst einen **Winkel** mit dem Geodreieck. Der Scheitel ist die Ecke des Winkels, die Schenkel sind seine beiden Linien. Lege
+          die Mitte der Grundkante auf den Scheitel und den Nullstrich auf einen Schenkel, dann liest du am anderen Schenkel die
+          Größe in Grad (°) ab. Beispiel: Ein Winkel von 40° ist ein spitzer Winkel. Beim Zeichnen gehst du umgekehrt vor: Du trägst
+          die Gradzahl an.
+  - type: section
+    id: bewegungen
+    title: Spiegeln, Verschieben, Drehen
+    blocks:
+      - type: text
+        text: "Wenn du fragst, ob zwei Dreiecke dasselbe Dreieck sind, hilft dir das Bewegen von Figuren."
+      - type: definition
+        term: Spiegeln
+        explanation: "Eine Figur an einer Geraden, der Spiegelachse, umklappen. Die Achse halbiert jede Strecke zwischen einem Punkt und seinem Bildpunkt senkrecht, beide liegen im gleichen Abstand auf verschiedenen Seiten. Beispiel: Ein Punkt 2 cm links der Achse hat seinen Bildpunkt 2 cm rechts."
+      - type: definition
+        term: Verschieben
+        explanation: "Eine Figur ohne Drehen um dieselbe Strecke in dieselbe Richtung bewegen. Beispiel: Alle Punkte 3 cm nach rechts."
+      - type: definition
+        term: Drehen
+        explanation: "Eine Figur um einen Punkt, das Drehzentrum Z, um einen Winkel drehen, zum Beispiel um 90° gegen den Uhrzeigersinn."
+      - type: definition
+        term: Bildfigur
+        explanation: "Die Figur, die nach dem Spiegeln, Verschieben oder Drehen entsteht. Bei diesen drei Bewegungen bleiben alle Längen und Winkel gleich. Beispiel: Ein Dreieck mit den Seiten 3 cm, 4 cm und 5 cm hat als Bildfigur wieder ein Dreieck mit 3 cm, 4 cm und 5 cm."
+  - type: section
+    id: selbsttest
+    title: Kannst du das?
+    blocks:
+      - type: text
+        text: "Zwei Aufgaben zeigen dir, ob du die Voraussetzungen für dieses Kapitel hast. Wenn eine nicht klappt, lies den Baustein [Zeichnen und Konstruieren](https://lernapps.net/apps/map/mathematik/c/konstruktionen/) oder [Winkel messen und zeichnen](https://lernapps.net/apps/map/mathematik/c/winkel-messen/) oder [Spiegeln, Verschieben, Drehen](https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/) auf der Lernlandkarte nach."
+      - type: multiple-choice
+        id: test-konstruieren
+        text: "Welche Aussagen stimmen? Wähle alle."
+        options:
+          - text: "Einen Winkel an eine Strecke zeichnen heißt antragen."
+            correct: true
+            info: "Abtragen dagegen bedeutet, eine Länge zu markieren."
+          - text: "Ein Punkt mit 3 cm Abstand zur Spiegelachse ist von seinem Bildpunkt 6 cm entfernt."
+            correct: true
+            info: "3 cm bis zur Achse und 3 cm von der Achse zum Bildpunkt."
+          - text: "Beim Verschieben um 6 cm werden alle Seiten einer Figur um 6 cm länger."
+            correct: false
+            info: "Beim Verschieben bleiben alle Längen und Winkel gleich, die Figur wandert nur."
+          - text: "Der Schnittpunkt zweier Kreise um A und B hat von A und von B jeweils den Radius als Abstand."
+            correct: true
+            info: "Jeder Kreis um einen Punkt besteht aus Punkten mit dem Radius als Abstand zu seinem Mittelpunkt."
+        explanation: "Antragen, Spiegeln und Kreise mit dem Zirkel brauchst du in diesem Kapitel. Verschieben ändert keine Länge."
+      - type: single-choice
+        id: test-skala
+        text: "Der Nullstrich liegt auf einem Schenkel. Am anderen Schenkel liest du auf den zwei Skalen 65° und 115° ab. Der Winkel sieht spitz aus. Welcher Wert gehört zum Winkel?"
+        options:
+          - text: "65°"
+            correct: true
+            info: "Ein spitzer Winkel ist kleiner als 90°."
+          - text: "115°"
+            correct: false
+            info: "115° wäre ein stumpfer Winkel, größer als 90°."
+          - text: "90°"
+            correct: false
+            info: "90° steht auf keiner der beiden Skalen, die du abgelesen hast."
+        explanation: "Du liest die Skala ab, auf der der Nullstrich liegt, und prüfst mit dem Augenmaß, ob der Winkel spitz oder stumpf ist."
+  - type: section
+    id: bereit
+    title: Du bist bereit, wenn du …
+    blocks:
+      - type: text
+        text: |
+          - **Zeichnen und Konstruieren:** Du kannst eine Strecke abtragen, einen Winkel antragen und mit dem Zirkel einen Kreis schlagen.
+          - **Winkel messen und zeichnen:** Du kannst einen Winkel messen und zeichnen und dabei die richtige Skala wählen.
+          - **Spiegeln, Verschieben, Drehen:** Du kannst sagen, wo der Bildpunkt liegt, und weißt, dass Längen und Winkel gleich bleiben.

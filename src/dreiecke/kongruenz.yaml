@@ -1,0 +1,217 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Kongruenz und die Kongruenzsätze
+description: "Herausfinden, bei welchen drei Stücken zwei Dreiecke immer gleich sind, und daraus die Kongruenzsätze ableiten."
+competencies: [kongruenz]
+scope: |
+  Zwei Figuren sind kongruent (deckungsgleich), wenn sie durch Verschieben, Drehen und Spiegeln aufeinander passen. Zwei
+  Dreiecke sind kongruent, wenn sie in drei passenden Stücken übereinstimmen, die das Dreieck eindeutig festlegen. Das
+  sind die Kongruenzsätze: SSS (drei Seiten), SWS (zwei Seiten und der Winkel dazwischen), WSW (eine Seite und die beiden
+  Winkel daran) und SsW (zwei Seiten und der Winkel, der der größeren Seite gegenüberliegt). Kein Kongruenzsatz sind WWW
+  (drei Winkel, das Dreieck lässt sich vergrößern) und SSA, wenn der Winkel der kleineren Seite gegenüberliegt. Begründet
+  wird: Stimmen zwei Dreiecke in solchen Stücken überein, lassen sie sich auf dieselbe Weise konstruieren, also decken sie
+  sich. Entdeckt wird im Zugmodus: gegebene Stücke wählen, ein Stück verändern, die Dreiecke zählen.
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Du kannst gleich begründen, dass zwei Dreiecke deckungsgleich sind, und die Kongruenzsätze nutzen.
+      - type: text
+        text: |
+          **Piet:** Wir brauchen zwei gleiche Beete. Reicht es, wenn ich wenige Maße vergleiche?
+
+          **Selin:** Welche Maße reichen? Das finden wir heraus.
+      - type: multiple-choice
+        id: deckungsgleich
+        text: Zwei Dreiecke passen genau aufeinander. Was stimmt dann?
+        options:
+          - text: Ihre Seiten sind paarweise gleich lang.
+            correct: true
+            info: Beim Aufeinanderlegen decken sich auch die Seiten, sie sind gleich lang.
+          - text: Ihre Winkel sind paarweise gleich groß.
+            correct: true
+            info: Auch die Winkel decken sich, sie sind gleich groß.
+          - text: Sie haben dieselbe Lage auf dem Blatt.
+            correct: false
+            info: Man darf ein Dreieck verschieben, drehen und spiegeln, ohne dass es sich ändert.
+        explanation: Deckungsgleiche Dreiecke stimmen in allen Seiten und Winkeln überein, nur die Lage darf verschieden sein.
+  - type: section
+    id: entdecken
+    title: Stücke vergleichen
+    blocks:
+      - type: text
+        text: "Wenn du zwei Dreiecke vergleichen willst, möchtest du möglichst wenig messen. Welche Stücke reichen?"
+      - type: text
+        text: |
+          Wähle gegebene Stücke (S steht für eine Seite, W für einen Winkel, SWS heißt Seite, Winkel, Seite) und verschiebe den Regler. Die Anzeige zählt, wie viele verschiedene Dreiecke zu den Stücken
+          passen. Zähle bei jeder Einstellung mit. Probiere SSS, SWS, WSW, SSA und WWW.
+      - type: vue-component
+        id: zug-stuecke-kongruenz
+        component: Dreiecksstuecke
+        props:
+          modes: [sss, sws, wsw, ssa, www]
+          labels:
+            - "SSS: drei Seiten"
+            - "SWS: zwei Seiten und der Winkel dazwischen"
+            - "WSW: eine Seite und die zwei Winkel daran"
+            - "SSA: zwei Seiten und ein Winkel gegenüber einer Seite"
+            - "WWW: drei Winkel"
+          given:
+            - "Gegeben: a = 4 cm, b = 6 cm, c = {v} cm"
+            - "Gegeben: b = 5 cm, c = 6 cm, α = {v}°"
+            - "Gegeben: c = 6 cm, α = 50°, β = {v}°"
+            - "Gegeben: b = 5 cm, α = 40°, a = {v} cm (a liegt α gegenüber)"
+            - "Gegeben: α = 50°, β = 60°, γ = 70°, die Seite c ist {v} cm lang"
+          slider:
+            - "Seite c in cm"
+            - "Winkel α in Grad"
+            - "Winkel β in Grad"
+            - "Seite a in cm"
+            - "Seite c in cm"
+          result: "Anzahl verschiedener Dreiecke: {n}"
+          words: [keins, eins, zwei, unendlich viele]
+          legend: Gegebene Stücke
+        nojs: |
+          Gegebene Stücke und die Zahl der Dreiecke, die dazu passen. SSS (a = 4 cm, b = 6 cm, c = 5 cm): ein Dreieck. SWS
+          (b = 5 cm, c = 6 cm, α = 60°): ein Dreieck. WSW (c = 6 cm, α = 50°, β = 60°): ein Dreieck. SSA (b = 5 cm,
+          α = 40°, a = 4 cm): zwei Dreiecke, bei a = 5 cm ein Dreieck. WWW (α = 50°, β = 60°, γ = 70°): unendlich viele
+          Dreiecke, jede Größe passt.
+  - type: section
+    id: vermutung
+    title: Was fällt auf?
+    blocks:
+      - type: text
+        text: "Wenn du an der Figur etwas entdeckt hast, hältst du es als Vermutung fest und prüfst sie dann."
+      - type: multiple-choice
+        id: welche-stuecke
+        text: Bei welchen Stücken passt immer nur ein Dreieck, wenn die Stücke ein Dreieck erlauben?
+        options:
+          - text: SSS
+            correct: true
+            info: Die drei Seiten legen die Winkel fest, es passt genau ein Dreieck.
+          - text: SWS
+            correct: true
+            info: Die Seiten und der Winkel dazwischen legen die dritte Seite fest.
+          - text: WSW
+            correct: true
+            info: Die Seite und die zwei Winkel daran legen die anderen Ecken fest.
+          - text: WWW
+            correct: false
+            info: Es passen unendlich viele Dreiecke, jedes größere hat dieselben Winkel.
+        explanation: SSS, SWS und WSW legen ein Dreieck fest. WWW nicht, und SSA nur manchmal.
+  - type: section
+    id: warum
+    title: Warum gilt das?
+    blocks:
+      - type: text
+        text: "Wenn du sicher sein willst, dass drei solche Stücke reichen, hilft dir die Konstruktion."
+      - type: text
+        text: |
+          Legen drei Stücke das Dreieck fest, dann kannst du es nur auf eine Art konstruieren. Zwei Dreiecke, die in diesen
+          Stücken übereinstimmen, entstehen aus derselben Konstruktion. Die Konstruktion liefert dasselbe Dreieck, nur an
+          einem anderen Ort. Also passen die Dreiecke aufeinander. Bei SSA liegt der Winkel α bei *A* und der Seite *a* gegenüber. Ist *a* kleiner als *b*, aber größer als der Abstand von
+          *C* zur Seite *AB*, gibt es zwei Konstruktionen. Ist *a* mindestens so lang wie *b*, ist die Konstruktion eindeutig. Das ist der Satz SsW: zwei Seiten und der Winkel, der der größeren Seite gegenüberliegt.
+  - type: section
+    id: merke
+    title: Merke
+    blocks:
+      - type: text
+        text: "Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst."
+      - type: definition
+        term: Kongruent
+        explanation: "Zwei Figuren sind kongruent (deckungsgleich), wenn sie sich durch Verschieben, Drehen und Spiegeln genau aufeinanderlegen lassen. Beispiel: Zwei Dreiecke mit den Seiten 3 cm, 4 cm und 5 cm sind kongruent."
+      - type: table
+        caption: Die Kongruenzsätze für Dreiecke
+        header: [Satz, Stücke]
+        rows:
+          - [SSS, drei Seiten]
+          - [SWS, zwei Seiten und der Winkel dazwischen]
+          - [WSW, eine Seite und die zwei Winkel daran]
+          - [SsW, "zwei Seiten und der Winkel, der der größeren Seite gegenüberliegt"]
+      - type: note
+        title: Achtung
+        blocks:
+          - type: text
+            text: WWW ist kein Kongruenzsatz. Dreiecke mit gleichen Winkeln können verschieden groß sein.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: text
+        text: "Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen."
+      - type: matching
+        id: satz-zuordnen
+        text: Ordne den Angaben den passenden Kongruenzsatz zu.
+        pairs:
+          - left: "a = 5 cm, b = 6 cm, c = 7 cm"
+            right: SSS
+          - left: "b = 5 cm, c = 6 cm, α = 40° (α liegt zwischen b und c)"
+            right: SWS
+          - left: "c = 6 cm, α = 50°, β = 60°"
+            right: WSW
+          - left: "a = 7 cm, b = 5 cm, α = 60° (α liegt der längeren Seite a gegenüber)"
+            right: SsW
+          - left: "α = 50°, β = 60°, γ = 70°"
+            right: kein Kongruenzsatz
+        explanation: Wichtig ist, wo der Winkel liegt. Bei drei Winkeln fehlt eine Seite.
+      - type: true-false
+        id: gleiche-winkel
+        text: Zwei Dreiecke mit denselben drei Winkeln sind immer kongruent.
+        answer: false
+        explanation: Ein Dreieck lässt sich vergrößern, ohne dass sich die Winkel ändern. WWW ist kein Kongruenzsatz.
+      - type: single-choice
+        id: ssa-kleinere-seite
+        text: Zwei Dreiecke stimmen in zwei Seiten und in einem Winkel überein. Der Winkel liegt der kürzeren der beiden Seiten gegenüber. Sind sie kongruent?
+        options:
+          - text: Ja, immer.
+            correct: false
+            info: Hier passen manchmal zwei Dreiecke zu den Stücken, die Dreiecke können verschieden sein.
+          - text: Nicht unbedingt.
+            correct: true
+            info: Der Kreis um C schneidet den Schenkel zweimal, es können zwei verschiedene Dreiecke entstehen.
+          - text: Nein, nie.
+            correct: false
+            info: Es kann sein, dass die Dreiecke kongruent sind, es ist aber nicht sicher.
+        explanation: Liegt der Winkel der kürzeren Seite gegenüber, ist das kein Kongruenzsatz.
+      - type: generated
+        id: winkel-kongruent
+        given:
+          a: { int: [30, 80], step: 5 }
+          b: { int: [30, 80], step: 5 }
+        where: ["a + b != 90"]
+        task:
+          text: "Die Dreiecke ABC und DEF sind kongruent, dabei gehören A zu D, B zu E und C zu F. Im Dreieck ABC sind α = {{a}}° und β = {{b}}°. Wie groß ist der Winkel bei F?"
+        answer: { value: "180 - a - b", compare: { number: { format: integer, unit: "°" } } }
+        mistakes:
+          - value: "a + b"
+            message: "Das ist die Summe von α und β. Der Winkel bei F ist so groß wie γ bei C, also 180° − α − β."
+          - value: "180 - a"
+            message: "Das ist die Summe von β und γ. Der Winkel bei F ist nur γ, so groß wie der Winkel bei C."
+        hint: "Kongruente Dreiecke haben gleiche Winkel an passenden Ecken. Rechne γ mit der Winkelsumme."
+        steps:
+          - "Bei C ist γ = 180° − {{a}}° − {{b}}° = {{answer}}°."
+          - "C gehört zu F, der Winkel bei F ist {{answer}}°."
+  - type: section
+    id: begruendung
+    title: Begründe in eigenen Worten
+    blocks:
+      - type: text
+        text: "Wenn du einen Satz wirklich verstanden hast, kannst du ihn mit eigenen Worten begründen."
+      - type: open-task
+        id: www-begruenden
+        task: Erkläre in zwei bis vier Sätzen, warum drei gleiche Winkel nicht reichen, damit zwei Dreiecke kongruent sind.
+        points:
+          - text: Ein Dreieck lässt sich vergrößern, ohne dass sich seine Winkel ändern.
+            source: /dreiecke/kongruenz/#entdecken
+          - text: Das größere Dreieck hat dieselben Winkel, aber längere Seiten.
+            source: /dreiecke/kongruenz/#merke
+          - text: Kongruente Dreiecke müssen auch gleich lange Seiten haben, darum reicht WWW nicht.
+            source: /dreiecke/kongruenz/#warum
+          - text: Ganze Sätze mit einer Begründung (weil …, darum …).
+            kind: form
+        solution: |
+          Ich kann ein Dreieck vergrößern, ohne dass sich seine Winkel ändern. Das größere Dreieck hat dieselben drei
+          Winkel, aber längere Seiten. Kongruente Dreiecke müssen auch in den Seiten übereinstimmen, darum reichen drei
+          gleiche Winkel nicht.

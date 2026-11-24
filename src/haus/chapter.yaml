@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das Haus der Vierecke
+summary: Vierecke ziehen, nach Eigenschaften ordnen und begründen, warum jedes Quadrat ein Rechteck ist.
+pages: [recap, haus-der-vierecke]
+selfAssessment:
+  pages:
+    - exercises:
+        - /haus/haus-der-vierecke/#achsen-zaehlen
+        - /haus/haus-der-vierecke/#immer-parallelogramm
+        - /haus/haus-der-vierecke/#achsen-zaehlen
