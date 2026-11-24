@@ -2,6 +2,7 @@
 // The drag mode for quadrilaterals: A and B stay, the learner moves C and D on a grid of 1 cm (arrow keys or drag) and
 // reads the sides, the parallel pairs, the right angles and the symmetries of the quadrilateral ABCD.
 import { computed, ref } from "vue";
+import { focusHandle } from "./Fokus.ts";
 import { clampPoint, fill, isConvex, pointForKey, type P } from "./Viereckszug.ts";
 
 defineProps<{
@@ -68,9 +69,11 @@ const atStartNow = computed(
   () => c.value.x === start.c.x && c.value.y === start.c.y && d.value.x === start.d.x && d.value.y === start.d.y,
 );
 
-function resetPosition(): void {
+function resetPosition(event: Event): void {
   c.value = { ...start.c };
   d.value = { ...start.d };
+
+  focusHandle(event);
 }
 </script>
 
@@ -99,7 +102,7 @@ function resetPosition(): void {
       <circle
         :cx="pc.x"
         :cy="pc.y"
-        r="13"
+        r="17"
         class="viereckszug-hit"
         role="slider"
         tabindex="0"
@@ -114,7 +117,7 @@ function resetPosition(): void {
       <circle
         :cx="pd.x"
         :cy="pd.y"
-        r="13"
+        r="17"
         class="viereckszug-hit"
         role="slider"
         tabindex="0"
@@ -128,7 +131,9 @@ function resetPosition(): void {
       />
     </svg>
     <p class="viereckszug-measure" aria-live="polite">{{ line(measure, notConvex, yes, no) }}</p>
-    <button type="button" class="viereckszug-reset" :disabled="atStartNow" @click="resetPosition">{{ reset }}</button>
+    <button type="button" class="viereckszug-reset" :disabled="atStartNow" @click="resetPosition($event)">
+      {{ reset }}
+    </button>
     <span v-if="atStartNow" class="viereckszug-note">{{ atStart }}</span>
   </div>
 </template>

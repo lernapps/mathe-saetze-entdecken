@@ -2,6 +2,7 @@
 // The drag mode for the theorem of Thales: the learner drags C along the half circle over AB (pointer or arrow keys) and
 // reads the three angles of the triangle ABC. The page says what to watch; the figure only measures.
 import { computed, ref } from "vue";
+import { focusHandle } from "./Fokus.ts";
 import { angles, clampT, fill, tForKey, tFromPointer } from "./Zugmodus.ts";
 
 const props = defineProps<{
@@ -55,8 +56,10 @@ function down(event: PointerEvent): void {
   move(event);
 }
 
-function resetPosition(): void {
+function resetPosition(event: Event): void {
   t.value = clampT(start);
+
+  focusHandle(event);
 }
 </script>
 
@@ -84,7 +87,7 @@ function resetPosition(): void {
       <circle
         :cx="c.x"
         :cy="c.y"
-        r="14"
+        r="18"
         class="zugmodus-hit"
         role="slider"
         tabindex="0"
@@ -98,7 +101,9 @@ function resetPosition(): void {
       />
     </svg>
     <p class="zugmodus-measure" aria-live="polite">{{ fill(measure, measured) }}</p>
-    <button type="button" class="zugmodus-reset" :disabled="t === start" @click="resetPosition">{{ reset }}</button>
+    <button type="button" class="zugmodus-reset" :disabled="t === start" @click="resetPosition($event)">
+      {{ reset }}
+    </button>
     <span v-if="t === start" class="zugmodus-note">{{ atStart }}</span>
   </div>
 </template>

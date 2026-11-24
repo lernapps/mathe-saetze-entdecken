@@ -144,15 +144,14 @@ blocks:
         props:
           kind: hoehen
           handle: "Ecke C, mit den Pfeiltasten ziehen"
-          position: "Abstände von H zu den drei Höhen: {w1} cm, {w2} cm, {w3} cm"
-          measure: "Abstand von H zu den drei Höhen: {w1} cm · {w2} cm · {w3} cm. H liegt {lage} des Dreiecks."
+          position: "H liegt {lage} des Dreiecks"
+          measure: "Die drei Höhen treffen sich in H. H liegt {lage} des Dreiecks."
           inside: innerhalb
           outside: außerhalb oder auf einer Ecke
           reset: Ecke C zurück auf den Start
           atStart: Die Figur steht am Start.
         nojs: |
-          Ein Dreieck *ABC* mit den drei Höhen. Sie treffen sich in einem Punkt *H*. Die Abstände von *H* zu den drei Höhen
-          sind 0 cm, *H* liegt auf allen drei. Bei einem Dreieck mit stumpfem Winkel liegt *H* außerhalb, bei
+          Ein Dreieck *ABC* mit den drei Höhen. Sie treffen sich in einem Punkt *H*. Bei einem Dreieck mit stumpfem Winkel liegt *H* außerhalb, bei
           *C* = (−2,5 | 1,5) zum Beispiel.
       - type: single-choice
         id: hoehen-vermuten
@@ -173,7 +172,7 @@ blocks:
     title: Merke
     blocks:
       - type: text
-        text: "Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst."
+        text: "Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst."
       - type: table
         caption: Besondere Linien im Dreieck
         header: [Linie, Treffpunkt und Kreis]
@@ -191,7 +190,7 @@ blocks:
     title: Übung
     blocks:
       - type: text
-        text: "Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen."
+        text: "Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen."
       - type: ordering
         id: umkreis-konstruieren
         text: Du sollst den Umkreis eines Dreiecks ABC konstruieren. Bringe die Schritte in die richtige Reihenfolge.

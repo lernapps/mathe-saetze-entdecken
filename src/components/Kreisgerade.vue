@@ -2,6 +2,7 @@
 // The drag mode for a line and a circle: the learner moves a line away from the centre M (arrow keys or drag) and reads
 // the distance and the number of common points. The figure only measures; the page says what to watch.
 import { computed, ref } from "vue";
+import { focusHandle } from "./Fokus.ts";
 import { RADIUS, chordLength, clampD, commonPoints, dForKey, fill } from "./Kreisgerade.ts";
 
 defineProps<{
@@ -31,6 +32,11 @@ const points = computed(() => {
   if (n === 2) return [160 - half.value, 160 + half.value];
   return n === 1 ? [160] : [];
 });
+
+function resetPosition(event: Event): void {
+  d.value = start;
+  focusHandle(event);
+}
 
 function onKey(event: KeyboardEvent): void {
   const next = dForKey(d.value, event.key);
@@ -73,7 +79,7 @@ function down(event: PointerEvent): void {
       <circle
         cx="296"
         :cy="y"
-        r="14"
+        r="18"
         class="kreisgerade-hit"
         role="slider"
         tabindex="0"
@@ -87,7 +93,9 @@ function down(event: PointerEvent): void {
       />
     </svg>
     <p class="kreisgerade-measure" aria-live="polite">{{ fill(measure, d) }}</p>
-    <button type="button" class="kreisgerade-reset" :disabled="d === start" @click="d = start">{{ reset }}</button>
+    <button type="button" class="kreisgerade-reset" :disabled="d === start" @click="resetPosition($event)">
+      {{ reset }}
+    </button>
     <span v-if="d === start" class="kreisgerade-note">{{ atStart }}</span>
   </div>
 </template>

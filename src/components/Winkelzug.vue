@@ -3,6 +3,7 @@
 // (arrow keys or drag) and reads four angles. kind "dreieck": the corner C of the triangle ABC moves and the three
 // angles are read. The figure only measures; the page says what to watch.
 import { computed, ref } from "vue";
+import { focusHandle } from "./Fokus.ts";
 import {
   clampCorner,
   clampPhi,
@@ -107,9 +108,11 @@ function down(event: PointerEvent): void {
 
 const atStartNow = computed(() => phi.value === 60 && corner.value.x === 1 && corner.value.y === 2);
 
-function resetPosition(): void {
+function resetPosition(event: Event): void {
   phi.value = 60;
   corner.value = { x: 1, y: 2 };
+
+  focusHandle(event);
 }
 </script>
 
@@ -150,7 +153,7 @@ function resetPosition(): void {
       <circle
         :cx="handlePx.x"
         :cy="handlePx.y"
-        r="14"
+        r="18"
         class="winkelzug-hit"
         role="slider"
         tabindex="0"
@@ -164,7 +167,9 @@ function resetPosition(): void {
       />
     </svg>
     <p class="winkelzug-measure" aria-live="polite">{{ text(measure) }}</p>
-    <button type="button" class="winkelzug-reset" :disabled="atStartNow" @click="resetPosition">{{ reset }}</button>
+    <button type="button" class="winkelzug-reset" :disabled="atStartNow" @click="resetPosition($event)">
+      {{ reset }}
+    </button>
     <span v-if="atStartNow" class="winkelzug-note">{{ atStart }}</span>
   </div>
 </template>

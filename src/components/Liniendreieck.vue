@@ -3,6 +3,7 @@
 // bisectors (kind "umkreis"), the angle bisectors ("inkreis") or the altitudes ("hoehen") are drawn and the distances
 // that should be equal are measured. The figure only measures; the page says what to watch.
 import { computed, ref } from "vue";
+import { focusHandle } from "./Fokus.ts";
 import { A, B, clampC, cornerForKey, fill, incentre, measure as measureOf, type Pt } from "./Liniendreieck.ts";
 
 const props = defineProps<{
@@ -69,6 +70,11 @@ const lines = computed<Seg[]>(() => {
 
 const text = (template: string) => fill(template, props.kind, c.value, props.inside, props.outside);
 
+function resetPosition(event: Event): void {
+  c.value = { x: 0.5, y: 2.5 };
+  focusHandle(event);
+}
+
 function onKey(event: KeyboardEvent): void {
   const next = cornerForKey(c.value, event.key);
   if (next === undefined) return;
@@ -115,7 +121,7 @@ function down(event: PointerEvent): void {
       <circle
         :cx="pc.x"
         :cy="pc.y"
-        r="13"
+        r="17"
         class="linien-hit"
         role="slider"
         tabindex="0"
@@ -129,7 +135,7 @@ function down(event: PointerEvent): void {
       />
     </svg>
     <p class="linien-measure" aria-live="polite">{{ text(measure) }}</p>
-    <button type="button" class="linien-reset" :disabled="c.x === 0.5 && c.y === 2.5" @click="c = { x: 0.5, y: 2.5 }">
+    <button type="button" class="linien-reset" :disabled="c.x === 0.5 && c.y === 2.5" @click="resetPosition($event)">
       {{ reset }}
     </button>
     <span v-if="c.x === 0.5 && c.y === 2.5" class="linien-note">{{ atStart }}</span>

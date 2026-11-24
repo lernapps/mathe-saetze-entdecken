@@ -68,7 +68,7 @@ blocks:
     title: Was fällt auf?
     blocks:
       - type: text
-        text: "Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt."
+        text: "Wenn du an der Figur etwas entdeckt hast, hältst du es als Vermutung fest und prüfst sie dann."
       - type: single-choice
         id: wann-beruehrt
         text: Bei welchem Abstand d berührt die Gerade den Kreis in genau einem Punkt?
@@ -113,7 +113,7 @@ blocks:
     title: Merke
     blocks:
       - type: text
-        text: "Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst."
+        text: "Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst."
       - type: definition
         term: Sekante
         explanation: Eine Gerade, die den Kreis in zwei Punkten schneidet.
@@ -128,7 +128,7 @@ blocks:
     title: Übung
     blocks:
       - type: text
-        text: "Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen."
+        text: "Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen."
       - type: matching
         id: begriffe-zuordnen
         text: Ordne jedem Begriff die passende Beschreibung zu.

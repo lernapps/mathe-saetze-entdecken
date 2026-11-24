@@ -67,7 +67,7 @@ blocks:
     title: Was ist immer gleich?
     blocks:
       - type: text
-        text: "Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt."
+        text: "Wenn du an der Figur etwas entdeckt hast, hältst du es als Vermutung fest und prüfst sie dann."
       - type: multiple-choice
         id: parallelen-vermuten
         text: Welche Aussagen stimmen bei jeder Neigung?
@@ -120,7 +120,7 @@ blocks:
     title: Warum ist die Summe 180°?
     blocks:
       - type: text
-        text: "Wenn du sicher sein willst, dass die Winkelsumme immer 180° ist, reicht Messen nicht."
+        text: "Wenn du sicher sein willst, dass die Winkelsumme in jedem Dreieck 180° ist, brauchst du eine Begründung für alle Dreiecke, nicht nur Messungen."
       - type: text
         text: |
           Zeichne durch *C* die Parallele *p* zu *AB*. Dann kannst du die Wechselwinkel an Parallelen nutzen.
@@ -141,7 +141,7 @@ blocks:
     title: Merke
     blocks:
       - type: text
-        text: "Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst."
+        text: "Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst."
       - type: table
         caption: Drei Winkelpaare an zwei Geraden, die von einer dritten geschnitten werden
         header: [Name, Lage, An Parallelen]
@@ -163,7 +163,7 @@ blocks:
     title: Übung
     blocks:
       - type: text
-        text: "Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen."
+        text: "Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen."
       - type: generated
         id: dreieckswinkel
         given:

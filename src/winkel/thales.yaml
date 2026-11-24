@@ -69,7 +69,7 @@ blocks:
     title: Was bleibt gleich?
     blocks:
       - type: text
-        text: "Wenn du aus Messungen etwas vermutest, prüfst du zuerst, was gleich bleibt."
+        text: "Wenn du an der Figur etwas entdeckt hast, hältst du es als Vermutung fest und prüfst sie dann."
       - type: single-choice
         id: welcher-winkel
         text: Welcher Winkel bleibt gleich groß, wenn du C auf dem Halbkreis ziehst?
@@ -123,7 +123,7 @@ blocks:
     title: Merke
     blocks:
       - type: text
-        text: "Damit du den Satz nicht vergisst, steht er hier kurz zusammengefasst."
+        text: "Wenn du den Satz später wieder brauchst, findest du ihn hier kurz zusammengefasst."
       - type: definition
         term: Satz des Thales
         explanation: Liegt der Punkt *C* (nicht *A* oder *B*) auf dem Kreis über dem Durchmesser *AB*, dann hat das Dreieck *ABC* bei *C* einen rechten Winkel.
@@ -137,7 +137,7 @@ blocks:
     title: Übung
     blocks:
       - type: text
-        text: "Wenn du den Satz anwenden willst, rechnest und begründest du an neuen Fällen."
+        text: "Wenn du prüfen willst, ob du das anwenden kannst, löst du Aufgaben mit neuen Zahlen und neuen Fällen."
       - type: true-false
         id: nur-durchmesser
         text: Der Satz des Thales gilt auch, wenn AB kein Durchmesser des Kreises ist, sondern eine kürzere Sehne.
