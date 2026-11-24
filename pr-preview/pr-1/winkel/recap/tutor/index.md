@@ -39,7 +39,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 ## Kontext: die Seite „Das brauchst du hier“
 
-Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat keine Aufgabe. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/winkel-messen/, https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/, https://lernapps.net/apps/map/mathematik/c/konstruktionen/
+Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat höchstens zwei Aufgaben zur Kontrolle. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/winkel-messen/, https://lernapps.net/apps/map/mathematik/c/grundfiguren-eben/, https://lernapps.net/apps/map/mathematik/c/konstruktionen/
 
 **Das brauchst du für dieses Kapitel.** Du berechnest Winkel, arbeitest am Kreis und konstruierst. Dafür musst du drei
 Dinge schon können: Winkel messen, die ebenen Grundfiguren und das Zeichnen mit Geodreieck und Zirkel. Lies die

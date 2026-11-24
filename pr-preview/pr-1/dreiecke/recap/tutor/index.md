@@ -39,7 +39,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 ## Kontext: die Seite „Das brauchst du hier“
 
-Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat keine Aufgabe. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/konstruktionen/, https://lernapps.net/apps/map/mathematik/c/winkel-messen/, https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/
+Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat höchstens zwei Aufgaben zur Kontrolle. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/konstruktionen/, https://lernapps.net/apps/map/mathematik/c/winkel-messen/, https://lernapps.net/apps/map/mathematik/c/bewegungen-figuren/
 
 **Das brauchst du für dieses Kapitel.** Du konstruierst Dreiecke und vergleichst sie. Dafür musst du drei Dinge schon
 können: konstruieren, Winkel messen und die drei Bewegungen von Figuren. Lies die Begriffe, mach die Kurztests und prüfe
